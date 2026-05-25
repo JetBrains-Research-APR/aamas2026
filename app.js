@@ -271,9 +271,11 @@ function sessionHTML(s, dayDate, slotRange, tf) {
   const notice = s.schedule_status
     ? `<div class="session-notice">Schedule ${esc(s.schedule_status)}.</div>`
     : '';
-  const link = s.link
-    ? `<div class="session-link"><a href="${esc(s.link)}" target="_blank" rel="noopener">↗ workshop site</a></div>`
-    : '';
+  // The title itself links out (see `titleHTML` below), so no separate row.
+  const titleText = esc(s.display || s.code || '(untitled session)');
+  const titleHTML = s.link
+    ? `<a class="session-title-link" href="${esc(s.link)}" target="_blank" rel="noopener">${titleText} <span class="ext-icon" aria-hidden="true">↗</span></a>`
+    : titleText;
 
   const visiblePapers = (s.papers || [])
     .filter((p) => p.is_heading || paperMatchesSearch(p, state.search))
@@ -297,14 +299,13 @@ function sessionHTML(s, dayDate, slotRange, tf) {
 
   return `<article class="session ${starred ? 'starred' : ''}">
     <div class="session-head">
-      <div class="session-title">${esc(s.display || s.code || '(untitled session)')}</div>
+      <div class="session-title">${titleHTML}</div>
       ${starButton(s._id)}
     </div>
     <div class="session-meta">${badges.join('')}</div>
     ${chair}
     ${desc}
     ${notice}
-    ${link}
     ${papersBlock}
   </article>`;
 }
@@ -360,9 +361,13 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     const s = c.session;
     const starred = state.starred.has(s._id);
     const room = s.room ? `<div class="tt-col-room">${esc(s.room)}</div>` : '';
+    const nameText = esc(s.display || s.code || '');
+    const nameHTML = s.link
+      ? `<a class="tt-col-name" href="${esc(s.link)}" target="_blank" rel="noopener">${nameText} <span class="ext-icon" aria-hidden="true">↗</span></a>`
+      : `<span class="tt-col-name">${nameText}</span>`;
     return `<div class="tt-col-header${starred ? ' starred' : ''}">
       <div class="tt-col-title">
-        <span class="tt-col-name">${esc(s.display || s.code || '')}</span>
+        ${nameHTML}
         ${starButton(s._id)}
       </div>
       ${room}

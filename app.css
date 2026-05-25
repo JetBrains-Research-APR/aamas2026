@@ -187,6 +187,34 @@ a:hover { text-decoration: underline; }
   line-height: 1.3;
 }
 
+/* Linked workshop/session titles (both card view and timetable column header).
+   Inherit text color so the title looks unchanged; reveal the link affordance
+   via the trailing arrow and an underline on hover. */
+.session-title-link,
+a.tt-col-name {
+  color: inherit;
+  text-decoration: none;
+}
+
+.session-title-link:hover,
+a.tt-col-name:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-dim);
+  text-underline-offset: 2px;
+}
+
+.ext-icon {
+  font-size: 0.8em;
+  color: var(--text-faint);
+  font-weight: normal;
+  margin-left: 1px;
+}
+
+.session-title-link:hover .ext-icon,
+a.tt-col-name:hover .ext-icon {
+  color: var(--link);
+}
+
 .session-meta {
   display: flex;
   flex-wrap: wrap;
