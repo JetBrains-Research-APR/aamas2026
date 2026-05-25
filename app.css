@@ -455,7 +455,9 @@ a.tt-col-name:hover .ext-icon {
   transition: filter 0.1s ease, transform 0.08s ease;
 }
 
-.boring:hover { filter: grayscale(0) opacity(0.95); }
+@media (hover: hover) {
+  .boring:hover { filter: grayscale(0) opacity(0.95); }
+}
 .boring.on { filter: none; }
 .boring:active { transform: scale(1.15); }
 
@@ -596,7 +598,9 @@ a.tt-col-name:hover .ext-icon {
 .tt-card .star { right: 22px; font-size: 14px; color: var(--text-faint); }
 .tt-card .star.on { color: var(--accent); }
 .tt-card .boring { right: 4px; font-size: 11px; filter: grayscale(1) opacity(0.45); }
-.tt-card .boring:hover { filter: grayscale(0) opacity(0.95); }
+@media (hover: hover) {
+  .tt-card .boring:hover { filter: grayscale(0) opacity(0.95); }
+}
 .tt-card .boring.on { filter: none; }
 
 .tt-card-time {
@@ -690,7 +694,9 @@ a.tt-col-name:hover .ext-icon {
 .tt-group-item .star { right: 22px; font-size: 13px; color: var(--text-faint); }
 .tt-group-item .star.on { color: var(--accent); }
 .tt-group-item .boring { right: 4px; font-size: 10px; filter: grayscale(1) opacity(0.45); }
-.tt-group-item .boring:hover { filter: grayscale(0) opacity(0.95); }
+@media (hover: hover) {
+  .tt-group-item .boring:hover { filter: grayscale(0) opacity(0.95); }
+}
 .tt-group-item .boring.on { filter: none; }
 
 .tt-empty {
