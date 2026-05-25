@@ -22,6 +22,7 @@ const state = {
   starredOnly: false,
   hidePast: false,
   nextWindow: false,
+  timetable: false,
 };
 
 const NEXT_WINDOW_MIN = 120;
@@ -288,6 +289,89 @@ function sessionHTML(s, dayDate, slotRange, tf) {
   </article>`;
 }
 
+// Time-aligned columns for the workshops slot. Each surviving workshop becomes
+// a column; papers are absolutely positioned by their parsed [start, end] over
+// a shared time rail. Workshops with zero usable papers drop out (e.g. the
+// "schedule not yet published" ones — those still appear in the card view).
+const TT_PX_PER_MIN = 2;
+const TT_TICK_MIN = 30;
+
+function timetableHTML(sessions, dayDate, slotRange, tf) {
+  const cols = [];
+  for (const s of sessions) {
+    const items = [];
+    for (const p of s.papers || []) {
+      if (!(p.is_heading || paperMatchesSearch(p, state.search))) continue;
+      if (!paperPasses(p, dayDate, slotRange, tf)) continue;
+      const r = parseTimeRange(p.time);
+      if (!r) continue;
+      items.push({ p, range: r });
+    }
+    if (items.length) cols.push({ session: s, items });
+  }
+  if (!cols.length) {
+    return '<div class="tt-empty">No timed workshop entries match the current filters.</div>';
+  }
+
+  let lo = Infinity, hi = -Infinity;
+  for (const c of cols) for (const { range } of c.items) {
+    if (range.start < lo) lo = range.start;
+    if (range.end > hi) hi = range.end;
+  }
+  lo = Math.floor(lo / TT_TICK_MIN) * TT_TICK_MIN;
+  hi = Math.ceil(hi / TT_TICK_MIN) * TT_TICK_MIN;
+  const totalH = (hi - lo) * TT_PX_PER_MIN;
+  const yOf = (m) => (m - lo) * TT_PX_PER_MIN;
+  const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+
+  const ticks = [];
+  for (let t = lo; t <= hi; t += TT_TICK_MIN) ticks.push(t);
+  const tickHTML = ticks.map((t) => `<div class="tt-tick" style="top: ${yOf(t)}px">${fmt(t)}</div>`).join('');
+  const gridHTML = ticks.map((t) => `<div class="tt-gridline" style="top: ${yOf(t)}px"></div>`).join('');
+
+  const headers = cols.map((c) => {
+    const s = c.session;
+    const starred = state.starred.has(s._id);
+    const room = s.room ? `<div class="tt-col-room">${esc(s.room)}</div>` : '';
+    return `<div class="tt-col-header${starred ? ' starred' : ''}">
+      <div class="tt-col-title">
+        <span class="tt-col-name">${esc(s.display || s.code || '')}</span>
+        ${starButton(s._id)}
+      </div>
+      ${room}
+    </div>`;
+  }).join('');
+
+  const bodies = cols.map((c) => {
+    const cards = c.items.map(({ p, range }) => {
+      const top = yOf(range.start);
+      const h = Math.max(24, (range.end - range.start) * TT_PX_PER_MIN - 2);
+      const cls = ['tt-card'];
+      if (p.is_heading) cls.push('heading');
+      else if (state.starred.has(p._id)) cls.push('starred');
+      const star = p.is_heading ? '' : starButton(p._id);
+      return `<div class="${cls.join(' ')}" style="top: ${top}px; height: ${h}px;">
+        <div class="tt-card-time">${esc(p.time || '')}</div>
+        <div class="tt-card-title">${esc(p.title)}</div>
+        ${p.authors ? `<div class="tt-card-authors">${esc(p.authors)}</div>` : ''}
+        ${star}
+      </div>`;
+    }).join('');
+    return `<div class="tt-col" style="height: ${totalH}px">${gridHTML}${cards}</div>`;
+  }).join('');
+
+  return `<div class="timetable" style="--col-count: ${cols.length}">
+    <div class="tt-headers">
+      <div class="tt-rail-header"></div>
+      ${headers}
+    </div>
+    <div class="tt-body">
+      <div class="tt-rail" style="height: ${totalH}px">${tickHTML}</div>
+      ${bodies}
+    </div>
+  </div>`;
+}
+
 function dayHTML(day, tf) {
   const dayDate = getDayDate(day);
   const slots = tf ? day.slots.filter((s) => slotPasses(s, dayDate, tf)) : day.slots;
@@ -298,9 +382,13 @@ function dayHTML(day, tf) {
     if (tf) sessions = sessions.filter((s) => sessionPasses(s, dayDate, slotRange, tf));
     visibleSessions += sessions.length;
     if (!sessions.length) return '';
+    const isWorkshopsSlot = slot.slot === 'Workshops';
+    const body = state.timetable && isWorkshopsSlot
+      ? timetableHTML(sessions, dayDate, slotRange, tf)
+      : `<div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, slotRange, tf)).join('')}</div>`;
     return `<section class="slot">
       <h3 class="slot-heading">${esc(slot.slot)}</h3>
-      <div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, slotRange, tf)).join('')}</div>
+      ${body}
     </section>`;
   }).join('');
 
@@ -391,6 +479,12 @@ function wireEvents() {
     render();
   });
 
+  // Workshop-timetable toggle
+  $('#timetable').addEventListener('change', (e) => {
+    state.timetable = e.target.checked;
+    render();
+  });
+
   // Star button clicks (event delegation on the document)
   $('#program').addEventListener('click', (e) => {
     const btn = e.target.closest('.star');
@@ -404,7 +498,7 @@ function wireEvents() {
     btn.textContent = on ? '★' : '☆';
     btn.setAttribute('aria-label', on ? 'Unstar' : 'Star');
     // Also toggle the .starred class on the enclosing card/row
-    const card = btn.closest('.session, .paper');
+    const card = btn.closest('.session, .paper, .tt-card, .tt-col-header');
     if (card) card.classList.toggle('starred', on);
     // Update counts; only re-render fully if starred-only is on
     $('#starCount').textContent = String(state.starred.size);
