@@ -2,6 +2,8 @@
 
 // ---------------- Constants ----------------
 const STAR_KEY = 'aamas2026:starred';
+const PREFS_KEY = 'aamas2026:prefs';
+const PREF_FIELDS = ['starredOnly', 'hidePast', 'nextWindow', 'timetable'];
 const DATA_URL = 'program-merged.json';
 
 // Map full day strings -> short tab labels and date keys.
@@ -178,6 +180,24 @@ function toggleStar(id) {
   if (state.starred.has(id)) state.starred.delete(id);
   else state.starred.add(id);
   saveStars();
+}
+
+// ---------------- Toggle persistence ----------------
+function loadPrefs() {
+  try {
+    const raw = localStorage.getItem(PREFS_KEY);
+    if (!raw) return;
+    const p = JSON.parse(raw);
+    for (const k of PREF_FIELDS) {
+      if (typeof p?.[k] === 'boolean') state[k] = p[k];
+    }
+  } catch {}
+}
+
+function savePrefs() {
+  const p = {};
+  for (const k of PREF_FIELDS) p[k] = state[k];
+  localStorage.setItem(PREFS_KEY, JSON.stringify(p));
 }
 
 // ---------------- Matching / filtering ----------------
@@ -513,29 +533,21 @@ function wireEvents() {
     }, 80);
   });
 
-  // Starred-only toggle
-  $('#starredOnly').addEventListener('change', (e) => {
-    state.starredOnly = e.target.checked;
-    render();
-  });
-
-  // Hide-past toggle
-  $('#hidePast').addEventListener('change', (e) => {
-    state.hidePast = e.target.checked;
-    render();
-  });
-
-  // Next-2-hours toggle
-  $('#nextWindow').addEventListener('change', (e) => {
-    state.nextWindow = e.target.checked;
-    render();
-  });
-
-  // Workshop-timetable toggle
-  $('#timetable').addEventListener('change', (e) => {
-    state.timetable = e.target.checked;
-    render();
-  });
+  // Toggles: bind each checkbox to its state field and sync its initial
+  // `checked` from state (so loadPrefs values are reflected in the UI).
+  const bindToggle = (id, key) => {
+    const el = $('#' + id);
+    el.checked = state[key];
+    el.addEventListener('change', (e) => {
+      state[key] = e.target.checked;
+      savePrefs();
+      render();
+    });
+  };
+  bindToggle('starredOnly', 'starredOnly');
+  bindToggle('hidePast', 'hidePast');
+  bindToggle('nextWindow', 'nextWindow');
+  bindToggle('timetable', 'timetable');
 
   // Star button clicks (event delegation on the document)
   $('#program').addEventListener('click', (e) => {
@@ -562,6 +574,7 @@ function wireEvents() {
 async function main() {
   try {
     state.starred = loadStars();
+    loadPrefs();
     state.data = await loadData();
 
     // Default day: today if within range, else 'All'
