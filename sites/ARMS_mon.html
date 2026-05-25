@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMS 2026 - Autonomous Robots and Multirobot Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            border-top: 4px solid #0f172a; /* Classic academic dark blue top bar */
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+        }
+        
+        .tech-gradient-text {
+            background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Section Titles - Blue/Slate Theme */
+        .section-title {
+            @apply text-4xl md:text-5xl font-extrabold text-slate-900 mb-10 relative inline-block uppercase tracking-tight;
+        }
+        
+        .section-title::after {
+            content: '';
+            @apply block w-1/2 h-2 bg-gradient-to-r from-blue-600 to-cyan-500 mt-3 rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col relative bg-grid">
+
+    <!-- Decorative Background Elements (Cooler tones) -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute -top-[10%] -right-[10%] w-[600px] h-[600px] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+        <div class="absolute top-[40%] -left-[10%] w-[500px] h-[500px] bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+        <div class="absolute -bottom-[20%] left-[30%] w-[400px] h-[400px] bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-glass transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-slate-800 tracking-tight">ARMS <span class="text-blue-700">2026</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Home</a>
+                    <a href="#call" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Call</a>
+                    <a href="#submission" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Submission</a>
+                    <a href="#program" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Program</a>
+                    <a href="#committee" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Committees</a>
+                    <a href="#venue" class="text-slate-600 hover:text-blue-700 font-medium transition-colors text-sm uppercase tracking-wide">Venue</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-700 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Home</a>
+                <a href="#call" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Call</a>
+                <a href="#submission" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Submission</a>
+                <a href="#program" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Program</a>
+                <a href="#committee" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Committees</a>
+                <a href="#venue" class="mobile-link block px-3 py-3 text-slate-600 hover:text-blue-700 hover:bg-slate-50 rounded-lg font-medium text-sm uppercase tracking-wide">Venue</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6 flex flex-col items-center justify-center min-h-[60vh] text-center">
+        <div class="animate-fade-in-up">
+            <div class="mb-8 flex justify-center">
+                <!-- UPDATED LOGO: Mobile Robot / Rover Style -->
+                <svg width="220" height="140" viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" class="h-32 md:h-40 w-auto drop-shadow-xl hover:scale-105 transition-transform duration-500">
+                    <defs>
+                        <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#334155;stop-opacity:1" /> <!-- Slate-700 -->
+                            <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" /> <!-- Slate-800 -->
+                        </linearGradient>
+                        <linearGradient id="sensorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" /> <!-- Blue-500 -->
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" /> <!-- Cyan-500 -->
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Rear Wheel (Left) -->
+                    <circle cx="60" cy="110" r="22" fill="#0f172a" stroke="#475569" stroke-width="4" />
+                    <!-- Front Wheel (Left) -->
+                    <circle cx="160" cy="110" r="22" fill="#0f172a" stroke="#475569" stroke-width="4" />
+
+                    <!-- Main Chassis Body -->
+                    <path d="M 40 85 L 180 85 Q 200 85 200 65 L 180 45 L 60 45 Q 40 45 40 65 Z" fill="url(#bodyGrad)" />
+                    
+                    <!-- Top Sensor/Lidar Turret -->
+                    <rect x="90" y="25" width="40" height="20" rx="4" fill="#475569" />
+                    <rect x="95" y="20" width="30" height="5" fill="#3b82f6" class="animate-pulse" />
+                    <path d="M 110 25 L 110 45" stroke="#94a3b8" stroke-width="2" />
+
+                    <!-- Front Camera/Sensor Eye -->
+                    <circle cx="170" cy="65" r="10" fill="white" stroke="#334155" stroke-width="2" />
+                    <circle cx="170" cy="65" r="4" fill="#06b6d4" />
+
+                    <!-- Antenna -->
+                    <line x1="60" y1="45" x2="50" y2="10" stroke="#64748b" stroke-width="2" />
+                    <circle cx="50" cy="10" r="3" fill="#ef4444" />
+                    
+                    <!-- Speed lines -->
+                    <path d="M 10 90 L 30 90" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" />
+                    <path d="M 5 100 L 25 100" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-4">
+                ARMS <span class="tech-gradient-text">2026</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-medium text-slate-600 mb-8 max-w-2xl mx-auto">
+                Autonomous Robots and Multirobot Systems
+            </h2>
+            
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <p class="text-slate-500 font-medium">
+                    A one-day workshop held on <strong class="text-slate-700">May 25, 2026</strong> <br>
+                    affiliated with <br>
+                    <span class="text-slate-800 font-semibold">The 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</span>
+                </p>
+                <img src="https://cyprusconferences.org/aamas2026/wp-content/uploads/2025/05/AAMAS2026-removebg-preview.png" 
+                     alt="AAMAS 2026 Logo" class="h-24 md:h-28 hover:scale-105 transition-transform duration-300"
+                     onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Container -->
+    <div class="max-w-5xl mx-auto px-6 space-y-24 pb-24">
+
+        <!-- Call for Papers -->
+        <section id="call" class="scroll-mt-24">
+            <h3 class="section-title">Call for Papers</h3>
+            <div class="glass-panel p-8 rounded-2xl space-y-8">
+                
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Overview</h4>
+                    <p class="text-slate-700 leading-relaxed">
+                        Robots are agents, too. Indeed, agents researchers often use robotics problems as motivating examples. Both practical and analytical techniques developed by agents researchers influence, and are influenced by, research in autonomous robots and multi-robot systems. Despite the overlap between the agents and robotics research areas, researchers from these communities only have a few opportunities to meet and interact. The Robotics and Control Area of Interest in the main AAMAS conference (formerly, the "Robotics Track") is one such opportunity. The goal of this workshop is to build on this opportunity, offering an informal and dedicated forum where agents and robotics researchers can interact, discuss promising research directions and open problems, and foster further collaborations.
+                    </p>
+                </div>
+
+                <!-- Topics -->
+                <div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Contributions & Topics</h4>
+                    <p class="text-slate-700 leading-relaxed mb-4">
+                        Contributions are sought in all areas of robotics, in particular as related to autonomous agents research. Theoretical papers are welcome, as long as they clearly specify the connection to challenges in robotics. Empirical studies should ideally present experiments with real robots, though studies in simulation are also acceptable. Papers that focus on mechanical aspects and low-level control should make an effort to relate this work to the agents community. Areas of particular interest include (but are not limited to):
+                    </p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 list-disc list-inside text-slate-700 mb-5 text-sm md:text-base">
+                        <li>Knowledge representation and reasoning</li>
+                        <li>Machine learning in robot/agent settings</li>
+                        <li>Single- and multi-robot (agent) planning</li>
+                        <li>Human-robot interaction and teamwork</li>
+                        <li>Multi-robot teamwork</li>
+                        <li>Game-theoretic coordination</li>
+                        <li>Market-based methods for coalition formation</li>
+                        <li>Large-scale multi-robot systems and swarms</li>
+                        <li>Imitation and learning by demonstration</li>
+                        <li>Canonical robotics problems (soccer, coverage, etc.)</li>
+                    </ul>
+                    <p class="text-slate-700 leading-relaxed italic text-sm border-l-2 border-blue-500 pl-4">
+                        We particularly welcome papers with accompanying demos of real robots, which can come as recorded videos (please use YouTube or general-purpose repositories to share the video if it is ready at the submission time) or as live demos during the workshop.
+                    </p>
+                </div>
+
+                <!-- Policies Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                    <!-- Fast Track -->
+                    <div class="bg-blue-50 border-l-4 border-blue-600 p-5 rounded-r-lg">
+                        <h4 class="font-bold text-blue-900 mb-2 text-lg">Fast-Track Review</h4>
+                        <p class="text-slate-700 text-sm leading-relaxed">
+                            As part of our coordination with the main AAMAS conference, we offer a fast-track review process to robotic papers that were initially submitted as full papers but have been accepted as extended abstracts ("short papers") to the main AAMAS conference. While extended abstracts are typically presented as posters at AAMAS, authors who submit their original full version to ARMS fast-track will have the opportunity to give a full oral presentation of their work at the workshop. Authors should submit their original full version of the paper. Please include the original AAMAS paper number with your submission.
+                        </p>
+                    </div>
+
+                    <!-- Proceedings -->
+                    <div class="bg-slate-100 border-l-4 border-slate-500 p-5 rounded-r-lg">
+                        <h4 class="font-bold text-slate-900 mb-2 text-lg">Proceedings Policy</h4>
+                        <p class="text-slate-700 text-sm leading-relaxed">
+                            ARMS is a non-archival workshop that accepts both original contributions and papers that have been published elsewhere. Since there are no formal proceedings, presenting original work here usually does not preclude future publication. However, authors must verify the specific prior-publication policies of any journal or conference they intend to target.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Submission Instructions -->
+        <section id="submission" class="scroll-mt-24">
+            <h3 class="section-title">Submission</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 glass-panel p-8 rounded-2xl">
+                    <h4 class="text-xl font-semibold text-slate-800 mb-4">Submissions and Publication</h4>
+                    
+                    <div class="space-y-4 text-slate-600">
+                        <p>
+                            The submissions should follow AAMAS 2026 format. You can check the 
+                            <a href="https://cyprusconferences.org/aamas2026/submission-instructions/" target="_blank" class="text-blue-600 hover:text-blue-700 underline">instructions here</a> 
+                            or directly download the 
+                            <a href="https://cyprusconferences.org/aamas2026/wp-content/uploads/2025/06/AAMAS-2026-Formatting-Instructions-pre-CR.zip" class="text-blue-600 hover:text-blue-700 underline font-medium">
+                                <i class="fa-solid fa-file-zipper mr-1"></i>LaTeX style file
+                            </a>.
+                        </p>
+
+                        <ul class="list-disc list-inside space-y-2 pt-2">
+                            <li><strong>Length:</strong> Papers should not exceed 8 pages + references.</li>
+                            <li><strong>Review Process:</strong> Papers will be reviewed by at least 2 reviewers. The criteria for selection will include: originality, readability, relevance to workshop themes, soundness, and overall quality.</li>
+                            <li><strong>Anonymity:</strong> Papers do <u>not</u> have to be anonymized; we follow a single-blind review process.</li>
+                            <li><strong>Proceedings:</strong> There will be no archival proceedings; papers will be made available to the workshop participants upon request.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://openreview.net/group?id=ifaamas.org/AAMAS/2026/Workshop/ARMS" target="_blank" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Submit Paper via OpenReview
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Important Dates -->
+                <div class="glass-panel p-6 rounded-2xl h-fit border-t-4 border-t-cyan-500">
+                    <h4 class="text-lg font-bold text-slate-800 mb-4 uppercase tracking-wider">Important Dates</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-24 font-bold text-cyan-600 text-sm flex flex-col">
+                                <span class="line-through text-slate-400 text-xs font-normal">Feb 04, 2026</span>
+                                <span class="line-through text-slate-400 text-xs font-normal">Feb 18, 2026</span>
+                                <span class="text-red-600">Feb 25, 2026</span>
+                            </div>
+                            <div class="text-sm text-slate-600">
+                                Paper submission deadline
+                                <span class="block text-red-600 text-xs font-bold mt-0.5 uppercase tracking-wide">(Final Extension)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-24 font-bold text-cyan-600 text-sm flex flex-col">
+                                <span class="line-through text-slate-400 text-xs font-normal">Mar 20, 2026</span>
+                                <span class="text-amber-600">Mar 24, 2026</span>
+                            </div>
+                            <div class="text-sm text-slate-600">
+                                Notification of acceptance
+                                <span class="block text-amber-600 text-xs font-semibold mt-0.5">(Postponed)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-24 font-bold text-cyan-600 text-sm whitespace-nowrap">May 24, 2026</div>
+                            <div class="text-sm text-slate-600">Camera-ready deadline</div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-24 font-bold text-cyan-600 text-sm whitespace-nowrap">May 25, 2026</div>
+                            <div class="text-sm text-slate-600">Workshop Date</div>
+                        </div>
+                    </div>
+                    <!-- Added AoE Note -->
+                    <div class="mt-6 pt-4 border-t border-slate-200">
+                        <p class="text-xs text-slate-500 italic text-center">
+                            * All deadlines are Anywhere on Earth (AoE).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program -->
+        <section id="program" class="scroll-mt-24">
+            <h3 class="section-title">Program</h3>
+            <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b border-slate-200 pb-4 gap-4">
+                    <p class="text-slate-600 font-medium text-lg">
+                        This is a one-day workshop held on <strong class="text-slate-800">May 25, 2026</strong>.<br>
+                        <span class="text-base mt-2 block text-slate-500"><i class="fa-regular fa-clock text-blue-500 mr-2"></i>Each presentation is 15 minutes, followed by 5 minutes for questions.</span>
+                    </p>
+                    
+                    <!-- Download Flyer Button -->
+                    <a href="ARMS_2026_program_flyer.pdf" download class="inline-flex items-center px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-lg transition-colors border border-slate-300 shadow-sm shrink-0">
+                        <i class="fa-solid fa-file-pdf text-red-500 mr-2"></i> Download Program PDF
+                    </a>
+                </div>
+                
+                <div class="space-y-3">
+                    
+                    <!-- Intro -->
+                    <div class="flex flex-col md:flex-row md:items-center p-4 bg-slate-100/70 rounded-xl border border-slate-200">
+                        <div class="md:w-36 font-bold text-blue-700 shrink-0 mb-1 md:mb-0">8:45 - 8:55</div>
+                        <div class="font-semibold text-slate-800 flex items-center">
+                            <i class="fa-solid fa-microphone mr-3 text-slate-400"></i> Intro
+                        </div>
+                    </div>
+
+                    <!-- Papers Session 1 -->
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">8:55 - 9:15</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Decentralized Ergodic Coverage Control in Unknown Time-Varying Environments</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Maria G. Mendoza, Victoria Marie Tuck, Chinmay Maheshwari, S. Shankar Sastry</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">9:15 - 9:35</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">MonkeyBot: A Planning Domain for Adhesion-Free Multi-Limb Robotic Climbing</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Evgeny Mishlyakov, Mikhail Gruntov, Alexander Shleyfman, Erez Karpas</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">9:35 - 9:55</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Multi-Agent Pickup and Delivery with Velocity</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Filippo Cipollone, Benedetta Flammini, Francesco Amigoni</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">9:55 - 10:15</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Joint Search and Track of Hostile Drones through Multi-Agent Deep Reinforcement Learning</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Zeba Mohsin Wase, Katerina Papadaki, Panayiota Valianti, Panayiotis Kolios</p>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Break 1 -->
+                    <div class="flex flex-col md:flex-row md:items-center p-4 bg-slate-100/70 rounded-xl border border-slate-200">
+                        <div class="md:w-36 font-bold text-blue-700 shrink-0 mb-1 md:mb-0">10:15 - 11:00</div>
+                        <div class="font-semibold text-slate-800 flex items-center">
+                            <i class="fa-solid fa-mug-hot mr-3 text-orange-500"></i> Coffee break
+                        </div>
+                    </div>
+
+                    <!-- Papers Session 2 -->
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">11:00 - 11:20</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Robust Visual Planning under Partial Observability and Perceptual Uncertainty</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Guy Azran, Michael Navat, Sarah Keren</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">11:20 - 11:40</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Intermittent Cooperation in Path Planning for Selfish Agents</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Itay Shedlezki, Noa Agmon</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">11:40 - 12:00</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Modular Reinforcement Learning For Cooperative Swarms</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Erel Shtossel, Gal Kaminka</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">12:00 - 12:20</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Seeing More by Seeing Less: The Hidden Power of Uninformed Robots</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Mohammad Nomaan Husain, Mohammad Salahshour, Andreagiovanni Reina</p>
+                        </div>
+                    </div>
+
+                    <!-- Lunch Break -->
+                    <div class="flex flex-col md:flex-row md:items-center p-4 bg-slate-100/70 rounded-xl border border-slate-200">
+                        <div class="md:w-36 font-bold text-blue-700 shrink-0 mb-1 md:mb-0">12:30 - 14:00</div>
+                        <div class="font-semibold text-slate-800 flex items-center">
+                            <i class="fa-solid fa-utensils mr-3 text-orange-500"></i> Lunch break
+                        </div>
+                    </div>
+
+                    <!-- Papers Session 3 -->
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">14:00 - 14:20</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Multi-Constrained Learning Robots under Full Signal Temporal Logic Specifications</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Davide Bergamasco, Alessandro Farinelli, Daniele Meli</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">14:20 - 14:40</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Towards Verifiable Multi-Robot Missions: From Logical Specifications to Behavior Trees</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">José-Luis Vilchis-Medina</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">14:40 - 15:00</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">More Views, More Problems? A Critical Analysis of Multi-View Aggregation for Agent Perception</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Federico Tavella, Amber Drinkwater, Angelo Cangelosi</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all relative">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">15:00 - 15:20</div>
+                        <div>
+                            <div class="flex items-start md:items-center gap-2 flex-col md:flex-row mb-1">
+                                <h5 class="font-bold text-slate-900 text-lg leading-snug">Beyond Kalman Filtering: A Dual Quaternion Geometric Observer for Robust 6DoF Pose Estimation</h5>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 border border-purple-200 shrink-0">
+                                    <i class="fa-solid fa-video mr-1"></i> Video Presentation
+                                </span>
+                            </div>
+                            <p class="text-slate-600 text-sm mt-1.5">Ilya Afanasyev</p>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Break 2 -->
+                    <div class="flex flex-col md:flex-row md:items-center p-4 bg-slate-100/70 rounded-xl border border-slate-200">
+                        <div class="md:w-36 font-bold text-blue-700 shrink-0 mb-1 md:mb-0">15:30 - 16:15</div>
+                        <div class="font-semibold text-slate-800 flex items-center">
+                            <i class="fa-solid fa-mug-hot mr-3 text-orange-500"></i> Coffee break
+                        </div>
+                    </div>
+
+                    <!-- Papers Session 4 -->
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">16:15 - 16:35</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Blending ontologies and language models to generate sound and natural robot explanations</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Alberto Olivares-Alarcos, Muhammad Ahsan Fatwaddin Shodiq, Satrio Dwi Sanjaya, Hsien-I Lin, Guillem Alenyà</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">16:35 - 16:55</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Trust in a Multi-Agent System: Using Natural Language Rules and a Policing Agent to Encourage Trustworthy Behavior</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Cory Koster, Maria Gini</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row p-4 border border-transparent hover:border-slate-200 hover:bg-white rounded-xl transition-all">
+                        <div class="md:w-36 font-bold text-slate-600 shrink-0 pt-0.5 mb-1 md:mb-0">16:55 - 17:15</div>
+                        <div>
+                            <h5 class="font-bold text-slate-900 text-lg leading-snug">Exploring the Influence of Interaction with Embodied Autonomous Agents on Community Imaginaries of Robot Futures</h5>
+                            <p class="text-slate-600 text-sm mt-1.5">Razanne Abu-Aisheh, Marisela Gutierrez Lopez, Laurene Cheilan, Marcela Munera, Helen Manchester, Sabine Hauert</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Committee -->
+        <section id="committee" class="scroll-mt-24">
+            <h3 class="section-title">Committees</h3>
+            
+            <h4 class="text-xl font-semibold text-slate-800 mb-6 pl-2 border-l-4 border-blue-600">Contact Organizers</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <!-- Chair 1 -->
+                <div class="glass-panel p-6 rounded-xl flex items-center space-x-4 border-t-4 border-t-blue-600">
+                    <div class="bg-slate-100 rounded-full w-16 h-16 flex items-center justify-center text-slate-400 text-2xl font-bold shrink-0">
+                        NB
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Nicola Basilico</h4>
+                        <p class="text-slate-500 text-sm">University of Milan, Italy</p>
+                        <a href="mailto:nicola.basilico@unimi.it" class="text-xs text-blue-600 hover:underline mt-1 block">
+                            <i class="fa-solid fa-envelope mr-1"></i> nicola.basilico@unimi.it
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chair 2 -->
+                <div class="glass-panel p-6 rounded-xl flex items-center space-x-4 border-t-4 border-t-blue-600">
+                    <div class="bg-slate-100 rounded-full w-16 h-16 flex items-center justify-center text-slate-400 text-2xl font-bold shrink-0">
+                        MS
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">Mohan Sridharan</h4>
+                        <p class="text-slate-500 text-sm">University of Edinburgh, UK</p>
+                        <a href="mailto:m.sridharan@ed.ac.uk" class="text-xs text-blue-600 hover:underline mt-1 block">
+                            <i class="fa-solid fa-envelope mr-1"></i> m.sridharan@ed.ac.uk
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <h4 class="text-xl font-semibold text-slate-800 mb-6 pl-2 border-l-4 border-slate-400">Organizing Committee</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Member 1 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Noa Agmon</h5>
+                    <p class="text-sm text-slate-500">Bar Ilan University, Israel</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Francesco Amigoni</h5>
+                    <p class="text-sm text-slate-500">Politecnico di Milano, Italy</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Joydeep Biswas</h5>
+                    <p class="text-sm text-slate-500">University of Texas at Austin, USA</p>
+                </div>
+                <!-- Member 4 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Alessandro Farinelli</h5>
+                    <p class="text-sm text-slate-500">University of Verona, Italy</p>
+                </div>
+                <!-- Member 5 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Maria Gini</h5>
+                    <p class="text-sm text-slate-500">University of Minnesota, USA</p>
+                </div>
+                <!-- Member 6 -->
+                <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                    <h5 class="font-bold text-slate-800">Gal Kaminka</h5>
+                    <p class="text-sm text-slate-500">Bar Ilan University, Israel</p>
+                </div>
+            </div>
+
+            <!-- Program Committee Section -->
+            <div class="mt-12">
+                <h4 class="text-xl font-semibold text-slate-800 mb-6 pl-2 border-l-4 border-slate-300">Program Committee</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Chris Archibald</h5>
+                        <p class="text-sm text-slate-500">Brigham Young University, USA</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Jacopo Banfi</h5>
+                        <p class="text-sm text-slate-500">Lila Sciences, USA</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Simanta Barman</h5>
+                        <p class="text-sm text-slate-500">University of Minnesota, USA</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Alberto Castellini</h5>
+                        <p class="text-sm text-slate-500">University of Verona, Italy</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Benedetta Flammini</h5>
+                        <p class="text-sm text-slate-500">Politecnico di Milano, Italy</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Matteo Luperto</h5>
+                        <p class="text-sm text-slate-500">University of Milan, Italy</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Ionut Moraru</h5>
+                        <p class="text-sm text-slate-500">University of Lincoln, UK</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Manisha Natarajan</h5>
+                        <p class="text-sm text-slate-500">Georgia Institute of Technology, USA</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Carlo Pinciroli</h5>
+                        <p class="text-sm text-slate-500">Worcester Polytechnic Institute, USA</p>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                        <h5 class="font-bold text-slate-800">Elizabeth Sklar</h5>
+                        <p class="text-sm text-slate-500">University of Lincoln, UK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue -->
+        <section id="venue" class="scroll-mt-24">
+            <h3 class="section-title">Venue</h3>
+            <div class="glass-panel p-12 rounded-2xl text-center">
+                <div class="max-w-3xl mx-auto">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6">
+                        <i class="fa-solid fa-map-location-dot text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Co-located with AAMAS 2026</h4>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        The one-day workshop will take place on <strong>May 25, 2026</strong>, at the AAMAS 2026 conference venue in Cyprus, in room <strong>Leda</strong>.
+                    </p>
+                    
+                    <a href="https://cyprusconferences.org/aamas2026/" target="_blank" class="inline-flex items-center px-8 py-4 bg-white border border-slate-200 shadow-sm text-blue-600 font-bold rounded-xl hover:text-blue-700 hover:border-blue-200 hover:shadow-md transition-all duration-300 group">
+                        Visit AAMAS Website 
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Editions (Minor Section) -->
+        <section id="past-editions" class="pt-12 border-t border-slate-200/60 pb-12">
+            <h4 class="text-sm font-bold text-slate-400 mb-6 text-center uppercase tracking-widest">Past Editions</h4>
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 max-w-4xl mx-auto text-sm">
+                <a href="https://arms2025.di.unimi.it" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2025</a>
+                <span class="text-slate-300">•</span>
+                <a href="https://arms2024.di.unimi.it" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2024</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2023/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2023</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2022/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2022</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2021/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2021</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2020/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2020</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2019/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2019</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2018/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2018</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2017/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2017</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2016/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2016</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://u.cs.biu.ac.il/~agmon/arms2015/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2015</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://ii.tudelft.nl/arms2014/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2014</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://ii.tudelft.nl/arms2013/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2013</a>
+                <span class="text-slate-300">•</span>
+                <a href="http://ii.tudelft.nl/arms2012/" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">ARMS 2012</a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            if (btn && menu) {
+                // Toggle Menu
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (menu.classList.contains('hidden')) {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    } else {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                    }
+                });
+
+                // Close menu when a link is clicked
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                        const icon = btn.querySelector('i');
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+
+                // Close menu when resizing to desktop view
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth >= 768) { // md breakpoint
+                        menu.classList.add('hidden');
+                        const icon = btn.querySelector('i');
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

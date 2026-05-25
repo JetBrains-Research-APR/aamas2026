@@ -1,0 +1,995 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <!-- 2020-05-27 Wed 14:56 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      International Workshop on Autonomous Agents and Multi-Agent Systems for
+      Space Applications
+    </title>
+    <meta name="author" content="Gauthier Picard" />
+    <!--meta property="og:image" content="https://images.nasa.gov/images/landing_bg..jpg" /-->
+    <meta
+      property="og:image"
+      content="https://mas-space.github.io/aamas2026ws/img/bg.jpg"
+    />
+    <meta
+      property="og:title"
+      content="International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mas-space.github.io/aamas2026ws/"
+    />
+    <meta
+      property="og:description"
+      content="This workshop aims at disseminating and sharing recent advances in the use of agent-based and multi-agent-based models and techniques in the Space domain."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bigblow/css/htmlize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bigblow/css/bigblow.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bigblow/css/hideshow.css"
+    />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/FP_Satellite_icon.svg/240px-FP_Satellite_icon.svg.png"
+    />
+    <script
+      type="text/javascript"
+      src="styles/bigblow/js/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="styles/bigblow/js/jquery-ui-1.10.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="styles/bigblow/js/jquery.localscroll-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="styles/bigblow/js/jquery.zclip.min.js"
+    ></script>
+    <script type="text/javascript" src="styles/bigblow/js/bigblow.js"></script>
+    <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
+    <script
+      type="text/javascript"
+      src="styles/lib/js/jquery.stickytableheaders.min.js"
+    ></script>
+    <script type="text/javascript">
+      /*
+        @licstart  The following is the entire license notice for the
+        JavaScript code in this tag.
+        
+        Copyright (C) 2012-2017 Free Software Foundation, Inc.
+        
+        The JavaScript code in this tag is free software: you can
+        redistribute it and/or modify it under the terms of the GNU
+        General Public License (GNU GPL) as published by the Free Software
+        Foundation, either version 3 of the License, or (at your option)
+        any later version.  The code is distributed WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS
+        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+        
+        As additional permission under GNU GPL version 3 section 7, you
+        may distribute non-source (e.g., minimized or compacted) forms of
+        that code without the copy of the GNU GPL normally required by
+        section 4, provided you include this license notice and a URL
+        through which recipients can access the Corresponding Source.
+        
+        
+        @licend  The above is the entire license notice
+        for the JavaScript code in this tag.
+        */
+      function CodeHighlightOn(elem, id) {
+        var target = document.getElementById(id);
+        if (null != target) {
+          elem.cacheClassElem = elem.className;
+          elem.cacheClassTarget = target.className;
+          target.className = "code-highlighted";
+          elem.className = "code-highlighted";
+        }
+      }
+      function CodeHighlightOff(elem, id) {
+        var target = document.getElementById(id);
+        if (elem.cacheClassElem) elem.className = elem.cacheClassElem;
+        if (elem.cacheClassTarget) target.className = elem.cacheClassTarget;
+      }
+      /*]]>*/ //-->
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">
+        <span class="maintitle">
+          International Workshop on Autonomous Agents and Multi-Agent Systems
+          for Space Applications<br /><a
+            href="https://mas-space.github.io/aamas2026ws/"
+            >MASSpace-26</a
+          ></span
+        >
+        <br />
+        <span class="subtitle"
+          >May 26, 2026, at
+          <a
+            href="https://cyprusconferences.org/aamas2026/"
+            style="color: white"
+            >AAMAS 2026</a
+          >, the 25th International Conference on Autonomous Agents and
+          Multi-Agent Systems, Paphos, Cyprus</span
+        >
+      </h1>
+      <div id="table-of-contents">
+        <h2>Table of Contents</h2>
+        <div id="text-table-of-contents">
+          <ul>
+            <li><a href="#scope">Descriptions</a></li>
+            <li><a href="#dates">Call for Papers</a></li>
+            <li><a href="#dates">Dates</a></li>
+            <li><a href="#instructions">Submissions</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#committees">Committees</a></li>
+            <li><a href="#acknowlegments">Acknowledgments</a></li>
+          </ul>
+        </div>
+        <br />
+      </div>
+
+      <div id="scope" class="outline-2">
+        <h2 id="header-scope">
+          <a id="id-scope"></a
+          ><span class="section-number-2">1</span>Description
+        </h2>
+        <div class="outline-text-2" id="text-short-description">
+          <p>
+            This workshop aims at disseminating and sharing recent advances in
+            the use of agent-based and multi-agent-based models and techniques
+            in the Space domain. Indeed, the use of agent-based and multi-agent
+            systems (MAS) in aerospace and space is gaining traction, as they
+            offer a promising approach for modeling and solving distributed,
+            complex and dynamic problems. Sample applications notably include
+            multiple spacecraft operations and maintenance, onboard-ground
+            coordination, mission simulation, multi-mission operation,
+            autonomous navigation, and collective robotics.
+          </p>
+          <p>
+            AAMAS-related areas such as Engineering Multiagent Systems,
+            Knowledge Representation, Reasoning, and Planning, Markets,
+            Auctions, and Non-Cooperative Game Theory or Modelling and
+            Simulation of Societies, develop relevant models and techniques to
+            address such Space-related applications.
+          </p>
+          <!--p>Some topics that will be discussed during the workshops are:
+            <ul>
+            <li>Coordination, Organisations, Institutions, Norms and Ethics, for devising organisational models of more and more complex Space system of systems;
+            <li>Engineering Multiagent Systems, for providing tools for programming agents in this context;
+            <li>Knowledge Representation, Reasoning, and Planning, for providing methods to efficiently plan spacecraft and space assets activities;
+            <li>Learning and Adaptation, for enabling assets to adapt to the high dynamic nature of the Space systems;
+            <li>Markets, Auctions, and Non-Cooperative Game Theory, for providing tools to coordinate activities in market-based Newspace;
+            <li>Modeling and Simulation of Societies, for assessing behavior and performance of systems to be deployed;
+            <li>Social Choice and Cooperative Game Theory, for coordinating resource usage in more and more shared environments.
+            </ul></p-->
+        </div>
+      </div>
+
+      <div id="cfp" class="outline-2">
+        <h2 id="header-cfp">
+          <a id="id-cfp"></a><span class="section-number-2">2</span>Call for
+          Papers
+        </h2>
+        <div class="outline-text-2" id="text-contents">
+          <div id="context" class="outline-3">
+            <h3 id="header-context"><a id="id-context"></a>Workshop Context</h3>
+            <div class="outline-text-3" id="text-context">
+              <p>
+                The workshop on Autonomous Agents and Multi-Agent Systems for
+                Space Applications (MASSpace) aims to be a multidisciplinary
+                meeting place to discuss the contributions of
+                <b
+                  >autonomous agents and multi-agent systems to the space
+                  domain</b
+                >. In deed, the Space domain is moving fast, and recent
+                evolution tends to consider more and more complex and composite
+                systems (e.g. larger constellations, multiple-mission
+                federations, multi-user systems, heterogenous robotic systems),
+                with stronger expectations, notably to perform more and more
+                accurate environmental monitoring, complex requests, or richer
+                exploration scenarios. In such context, agent-based and
+                multi-agent systems appear to provide relevant paradigms to
+                answer to these expectations.
+              </p>
+              <p>
+                In recent years, several papers applying AAMAS models and
+                techniques to Space domain have been published in AAMAS and
+                other venues which strongly advocates for organizing an event on
+                the cross-fertilization of AAMAS and Space, as (i) to provide
+                Space domain experts with the means to use these multi-agent
+                models and techniques, and (ii) to challenge multi-agents models
+                and techniques with novel problems coming from the Space domain.
+                Thus, any AAMAS attendee could find interest in participating to
+                the workshop, due to the broad scope of relevant AAMAS-related
+                topics.
+              </p>
+            </div>
+          </div>
+          <div id="topics" class="outline-3">
+            <h3 id="header-topics"><a id="id-topics"></a>Topics</h3>
+            <div class="outline-text-3" id="text-topics">
+              <p>
+                Since the early years of AAMAS, Space have been identified as a
+                very relevant and challenging application domain, and today,
+                with the ever growing size and complexity of Space missions and
+                their environment (e.g. NewSpace), all AAMAS topics and
+                techniques (see
+                <a
+                  href="https://www.aamas2024-conference.auckland.ac.nz/calls/call-for-papers/"
+                  >AAMAS call for papers</a
+                >) have becoming even more relevant to address this innovative
+                and challenging topics, such as (but not limited to):
+              </p>
+              <ul style="font-size: 100%">
+                <li>
+                  <em>Organizations and institutions</em> to model Space Systems
+                </li>
+                <li>
+                  <em
+                    >Policy, regulation, sanctions, accountability and
+                    legislation</em
+                  >
+                  for Space Systems, especially New Space Applications
+                </li>
+                <li><em>Trust and reputation</em> in Space Systems</li>
+                <li>
+                  <em>Architecture and modelling</em> for Space Applications
+                </li>
+                <li>
+                  <em>Formal verification and validation</em> of agent-based
+                  Space Systems
+                </li>
+                <li>
+                  <em>Programming models and languages</em> to develop
+                  agent-based Space Applications
+                </li>
+                <li>
+                  <em>Human-agent interaction</em> especially in Space
+                  environment and constraints
+                </li>
+                <li>
+                  <em>Distributed problem solving</em> to efficiently coordinate
+                  decisions made by space assets and actors
+                </li>
+                <li>
+                  <em>Coalition formation</em> to coordinate multiple missions
+                  and systems
+                </li>
+                <li>
+                  <em>Single-agent and multi-agent planning and scheduling</em>
+                  to determine plans to be performed by missions
+                </li>
+                <li>
+                  <em>Reasoning and learning under uncertainty</em> to devise
+                  robust plans and behaviors
+                </li>
+                <li>
+                  <em>Machine learning and deep learning</em> to adapt systems
+                  and agents behaviors
+                </li>
+                <li>
+                  <em>Auctions and Mechanism Design</em> to coordinate resource
+                  allocation in Space Systems
+                </li>
+                <li>
+                  <em>Interactive simulation</em> to assess Space Systems in
+                  realistic but simulated settings
+                </li>
+                <li>
+                  <em>Simulation of complex systems</em> such as Space Systems
+                </li>
+                <li>
+                  <em>Fair Allocation</em> of Space assets between multiple
+                  stakeholders
+                </li>
+                <li>
+                  <em>Single- and Multi-agent Reinforcement Learning</em> to
+                  learn collective behaviors
+                </li>
+                <li>
+                  <em>RL in partially observable settings</em> to handle
+                  uncontrolled environments
+                </li>
+                <li>
+                  <em>Safe, Robust, Explainable RL</em> to provide strong
+                  guarantees on learning agents
+                </li>
+                <li>
+                  <em>Multi-robot coordination and collaboration </em> for
+                  Observation and Exploration missions
+                </li>
+                <!--li><em>Coordination, Organisations, Institutions, Norms and Ethics</em>, for devising organisational models of more and more complex Space system of systems;</li>
+                        <li> <em>Engineering Multiagent Systems</em>, for providing tools for programming agents in this context;
+                        </li>
+                        <li> <em>Knowledge Representation, Reasoning, and Planning</em>, for providing methods to efficiently plan spacecraft and space assets activities;
+                        </li>
+                        <li><em>Distributed Problem Solving and Optimization</em>, to efficiently coordinate distributed decisions made by space assets and actors;</li>    
+                        <li> <em>Learning and Adaptation</em>, for enabling assets to adapt to the high dynamic nature of the Space systems;
+                        </li>
+                        <li> <em>Markets, Auctions, and Non-Cooperative Game Theory</em>, for providing tools to coordinate activities in market-based Newspace;
+                        </li>
+                        <li> <em>Modeling and Simulation of Societies</em>, for assessing behavior and performance of systems to be deployed;
+                        </li>
+                        <li><em>Social Choice and Cooperative Game Theory</em>, for coordinating resource usage in more and more shared environments.</li-->
+              </ul>
+              <p>
+                The workshop welcomes submissions addressing any such topics
+                applied to any Space-related application or used case, ranging
+                from ground operations to deep space observation and
+                exploration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dates" class="outline-2">
+        <h2 id="header-dates">
+          <a id="id-dates"></a><span class="section-number-2">3</span> Important
+          Dates
+        </h2>
+        <div class="outline-text-2" id="text-dates">
+          <ul>
+            <li>
+              Submission of contributions to workshops:
+              <span style="color: #ff0000">February 22, 2026</span>&nbsp;<s
+                >February 4, 2026</s
+              >
+            </li>
+            <li>
+              Paper acceptance notification: Mar 20, 2026
+              <!--span style="color: #ff0000">March 19, 2024</span>&nbsp;<s>March 4,
+                    2024</s-->
+            </li>
+            <li>Call for participation: Mar 20, 2026</li>
+            <li>Camera-ready version: May 1, 2026</li>
+            <li>Workshop: May 26, 2026</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="instructions" class="outline-2">
+        <h2 id="header-instructions">
+          <a id="id-instructions"></a
+          ><span class="section-number-2">4</span> Submission Instructions
+        </h2>
+        <div class="outline-text-2" id="text-instructions">
+          <p>
+            Submission URL:
+            <a href="https://cmt3.research.microsoft.com/MASSpace2026"
+              >https://cmt3.research.microsoft.com/MASSpace2026</a
+            >
+          </p>
+          <h3>Submission Types</h3>
+          <ul>
+            <li>
+              <b>Technical Papers</b>: Full-length research papers of up to 8
+              pages (excluding references and appendices) detailing high quality
+              work in progress or work that could potentially be published at a
+              major conference.
+            </li>
+            <li>
+              <b>Short Papers</b>: Position or short papers of up to 4 pages
+              (excluding references and appendices) that describe initial work
+              or the release of privacy-preserving benchmarks and datasets on
+              the topics of interest.
+            </li>
+          </ul>
+
+          <p>
+            All papers must be submitted in PDF format, using the
+            <a
+              href="https://cyprusconferences.org/aamas2026/wp-content/uploads/2025/06/AAMAS-2026-Formatting-Instructions-pre-CR.zip"
+              >AAMAS-26 author kit</a
+            >. Submissions should include the name(s), affiliations, and email
+            addresses of all authors.
+          </p>
+          <p>
+            Submissions will be refereed on the basis of technical quality,
+            novelty, significance, and clarity. Each submission will be
+            thoroughly reviewed by at least two program committee members.
+          </p>
+        </div>
+      </div>
+
+      <div id="programme" class="outline-2">
+        <h2 id="header-programme">
+          <a id="id-programme"></a
+          ><span class="section-number-2">5</span> Programme
+        </h2>
+        <div class="outline-text-2" id="text-programme"></div>
+
+        <div id="proceedings" class="outline-3">
+          <div class="outline-text-3" id="text-proceedings">
+            <h3>Proceedings</h3>
+
+            <div style="text-align: center; padding: 20px;">
+              <a href="./papers/MASSpace-2026-Proceedings.pdf"
+                ><img
+                  decoding="async"
+                  width="400px"
+                  src="./img/frontpage.png"
+                  alt="Proceedings"
+                  style="transform: rotate(0deg);
+                  filter: drop-shadow(gray 1rem 1rem 10px);"
+              /></a>
+            </div>
+
+            <p>
+              The proceedings of the workshop are available in PDF
+              <a href="./papers/MASSpace-2026-Proceedings.pdf">here</a>. Each
+              individual paper is also available in the detailed programme table
+              below.
+            </p>
+          </div>
+        </div>
+
+        <div id="invited" class="outline-3">
+          <div class="outline-text-3" id="text-speakers">
+            <h3>Invited speakers</h3>
+            <h4>Caleb A. Adams (NASA)</h4>
+            <ul>
+              <li>
+                <b>Title</b>:
+                <p>Developing Distributed Autonomous Space Systems</p>
+              </li>
+              <li>
+                <b>Abstract</b>:
+                <p>
+                  The development of distributed autonomous space systems is
+                  crucial for advancing NASA's Small Spacecraft and Distributed
+                  Systems (SSDS) program. The Distributed Spacecraft Autonomy
+                  (DSA) project at NASA's Ames Research Center aims to enable
+                  autonomous multi-agent decision-making in multi-spacecraft
+                  operations, mitigating the effects of communication
+                  constraints like latency and bandwidth. This talk will discuss
+                  recent advancements in DSA technologies and applications,
+                  including distributed resource and task management, reactive
+                  operations, and ad hoc network communications. In additional
+                  to technical implementations, we will discuss software
+                  development strategies for rapid on-orbit testing. We will
+                  also highlight successes from the Starling 1.0 mission, The
+                  Starling 1.5 mission extension, and a space traffic
+                  coordination technology demonstration that showcased
+                  autonomous satellite operations without human intervention.
+                  Our work focuses on building flight heritage and experience
+                  for low-TRL software, raising confidence in new autonomy and
+                  distributed control capabilities for next-generation space
+                  missions.
+                </p>
+              </li>
+              <li>
+                <b>Bio</b>:
+                <p>
+                  Caleb Ashmore Adams is a Project Manager and Principal
+                  Investigator at the National Aeronautics and Space
+                  Administration (NASA) Ames Research Center in Silicon Valley,
+                  California. He leads the Distributed Spacecraft Autonomy (DSA)
+                  group which demonstrates advanced swarm technologies on
+                  multi-spacecraft missions. He is also the Deputy Project
+                  Manager of the Starling mission, a 4-satellite swarm. On
+                  Starling, DSA demonstrated the first fully autonomous
+                  distributed space mission, and it continues to accomplish
+                  firsts-in-space while in operations today.
+                </p>
+                <p>
+                  Due to the success of DSA, Caleb was selected by NASA’s Space
+                  Technology Mission Directorate (STMD) to lead the preliminary
+                  design study of NASA’s Next Generation Multi-Agent Swarm. He
+                  is also the Small Business Innovative Research (SBIR) Topic
+                  Manager for Autonomous Systems under NASA’s Exploration
+                  Systems Development Mission Directorate (ESDMD) where he
+                  oversees investments into US industry that support NASA’s
+                  mission to explore our solar system.
+                </p>
+                <p>
+                  Caleb is the Project Manager and Principal Investigator for
+                  the Low-Light Universal Mapping for Extreme Environments
+                  (LUMEN) team where he works closely with researchers across
+                  industry and academia (Stanford, UC Berkeley, Nvidia, Google)
+                  to apply modern AI and computer vision techniques to the
+                  challenging environment of space.
+                </p>
+                <p>
+                  Caleb won an Early Career Achievement award from NASA’s STMD
+                  in 2024 and was awarded NASA’s STMD’s highly competitive Early
+                  Career Initiative (ECI) in 2025. Under his leadership, the DSA
+                  and Starling teams have won 3 separate group achievement
+                  awards. He holds bachelor’s and master’s degrees in computer
+                  science from the University of Georgia, was featured as one of
+                  the University of Georgia’s 40 under 40 in 2025, and a
+                  recipient of the University of Georgia’s Graduate School’s
+                  2025 Alumni of Distinction Award.
+                </p>
+              </li>
+            </ul>
+            <h4>Daniel Reynolds (MIT)</h4>
+            <ul>
+              <li>
+                <b>Title</b>:
+                <p>
+                  Priority-Sensitive Mission Continuity for Degraded Multi-Orbit
+                  Satellite Constellations
+                </p>
+              </li>
+              <li>
+                <b>Abstract</b>:
+                <p>
+                  Satellite mega-constellations are increasingly being deployed
+                  to provide resilient global service, yet the same disruptions
+                  that motivate proliferated architectures, including
+                  large-scale outages, fragmented connectivity, stale global
+                  state, and degraded coordination, also challenge the
+                  command-and-control assumptions on which those systems depend.
+                  This talk presents a hybrid game theoretic and predictive
+                  control architecture for distributed fallback autonomy in
+                  heterogeneous multi-orbit constellations operating under
+                  disruption. The central claim is operational: when centralized
+                  or ground-mediated coordination degrades, resilience depends
+                  on coupling scalable constellation-level coordination with
+                  agent-local execution feasibility. The proposed framework
+                  combines a broadcast coordination field with onboard
+                  receding-horizon task selection, enabling satellites to
+                  continue making locally executable, mission-aware decisions
+                  without centralized reassignment. We will highlight how this
+                  approach enables constellations to respond to disruption
+                  through priority-sensitive graceful degradation rather than
+                  mission collapse, preserving operational usefulness even when
+                  coordination is partial, delayed, or unavailable. More
+                  broadly, the work aims to advance resilient distributed
+                  autonomy for future space missions by demonstrating a scalable
+                  framework for mission-aware decision-making in degraded and
+                  communications-constrained environments.
+                </p>
+              </li>
+              <li>
+                <b>Bio</b>:
+                <p>
+                  Daniel Reynolds is a PhD Candidate in the Department of
+                  Aeronautics and Astronautics at the Massachusetts Institute of
+                  Technology (MIT), where he is a member of the Space
+                  Telecommunications, Astronomy, and Radiation (STAR) Laboratory
+                  under the guidance of Prof. Kerri Cahoy. His research focuses
+                  on distributed autonomy for resilient space operations, with
+                  an emphasis on scalable coordination and control frameworks
+                  for heterogeneous satellite constellations operating across
+                  multiple orbits under degraded and disrupted conditions. By
+                  combining game theory, predictive control, and autonomous
+                  decision-making methods, he is working to develop
+                  architectures that enable satellites to continue making
+                  locally executable, mission-aware decisions even when
+                  centralized coordination is limited or unavailable.
+                </p>
+                <p>
+                  Daniel has nearly a decade of experience spanning academic,
+                  nonprofit, and U.S. government-service space initiatives. He
+                  earned his bachelor’s degree in Astronautical Engineering from
+                  the United States Air Force Academy in 2017 and his master’s
+                  degree in Aeronautics and Astronautics from the Massachusetts
+                  Institute of Technology in 2019. In 2021, he completed the
+                  U.S. Air Force Test Pilot School’s Space Test Course, which
+                  provided hands-on training in flight-test fundamentals,
+                  advanced space system testing, and space operations. Taken
+                  together, his academic, operational, and cross-sector
+                  experiences inform a research approach centered on operational
+                  realism, rigorous system-level evaluation, and the design of
+                  autonomy architectures for demanding mission environments.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="detailed" class="outline-3">
+          <div class="outline-text-3" id="text-detailed">
+            <h3 id="header-detailed">Schedule - 26 May 2026</h3>
+            <table style="width: 100%; empty-cells: show; font-size: 80%">
+              <tr>
+                <td>08:45-10:15</td>
+                <td>&nbsp;</td>
+                <td><b>Session 1</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>08:45-09:35</td>
+                <td>
+                  Invited Talk:
+                  <i>Developing Distributed Autonomous Space Systems</i><br />
+                  [<a href="./papers/Adams-Invited[1].pdf">paper</a>]
+                </td>
+                <td>Caleb Adams (NASA Ames)</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>09:35-09:55</td>
+                <td>
+                  <i
+                    >Large-Scale Continual Scheduling and Execution for Dynamic
+                    Distributed Satellite Constellation Observation
+                    Allocation</i
+                  ><br />
+                  [<a href="./papers/Zilberstein.pdf">paper</a>]
+                </td>
+                <td>
+                  Itai Zilberstein (Carnegie Mellon University),<br />
+                  Steve Chien (Jet Propulsion Laboratory)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>09:55-10:15</td>
+                <td>
+                  <i
+                    >The Role of Central Nodes in Multi-Task Allocation for
+                    Distributed Space-Based Observation Systems</i
+                  ><br />
+                  [<a href="./papers/Messina.pdf">paper</a>]
+                </td>
+                <td>
+                  Vincenzo Messina (Technical University of Munich),<br />
+                  Marco Camporeale (Technical University of Munich),<br />
+                  Rob Vingerhoeds (Fédération FONISEN, Université de
+                  Toulouse),<br />
+                  Alessandro Golkar (Technical University of Munich)
+                </td>
+              </tr>
+              <tr>
+                <td>10:15-11:00</td>
+                <td>&nbsp;</td>
+                <td><b>Morning Coffee Break</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>11:00-12:20</td>
+                <td>&nbsp;</td>
+                <td><b>Session 2</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>11:00-11:20</td>
+                <td>
+                  <i
+                    >Dynamic Tool Generation for Autonomous Multi-Agent Systems
+                    in Space Missions</i
+                  ><br />
+                  [<a href="./papers/Opitz.pdf">paper</a>]
+                </td>
+                <td>
+                  Dominik Opitz (DLR)<br />
+                  Carsten Hartmann (DLR-GSOC)<br />
+                  Tobias Hecking (DLR)<br />
+                  Michael Felderer (DLR)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>11:20-11:40</td>
+                <td>
+                  <i
+                    >Autonomous Federation of Earth Observation Constellations:
+                    An End-to-End Demonstrator based on the DOMINO
+                    Architecture</i
+                  ><br />
+                  [<a href="./papers/DeLussy.pdf">paper</a>]
+                </td>
+                <td>
+                  Cyrille De Lussy (Airbus Defence and Space) <br />
+                  Stéphane Derrien (Cap Gemini) <br />
+                  Marie Devant (Cap Gemini) <br />
+                  Jean-Loup Farges (DTIS, ONERA, Université de Toulouse) <br />
+                  Jonathan Guerra (Airbus Defence and Space) <br />
+                  Philippe Pavero (Airbus Defence and Space) <br />
+                  Gauthier Picard (DTIS, ONERA, Université de Toulouse) <br />
+                  Cédric Pralet (DTIS, ONERA, Université de Toulouse) <br />
+                  Jakub Rezler (ITTI) <br />
+                  Raivis Skadiņš (Tilde)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>11:40-12:00</td>
+                <td>
+                  <i
+                    >Solving Organizational Multi-Robot Task Allocation Problems
+                    with Consensus-based Auctions</i
+                  ><br />
+                  [<a href="./papers/Guillet.pdf">paper</a>]
+                </td>
+                <td>
+                  Victor Guillet (DTIS, ONERA, Université de Toulouse) <br />
+                  Christophe Grand (DTIS, ONERA, Université de Toulouse) <br />
+                  Charles Lesire (DTIS, ONERA, Université de Toulouse) <br />
+                  Gauthier Picard (DTIS, ONERA, Université de Toulouse) <br />
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>12:00-12:20</td>
+                <td>
+                  <i
+                    >Multi-Satellite Observation Tasks Dispatching and
+                    Scheduling</i
+                  ><br />
+                  [<a href="./papers/Barrault.pdf">paper</a>]
+                </td>
+                <td>
+                  Romain Barrault (DTIS, ONERA, Université de Toulouse) <br />
+                  Cedric Pralet (DTIS, ONERA, Université de Toulouse) <br />
+                  Gauthier Picard (DTIS, ONERA, Université de Toulouse) <br />
+                  Eric Sawyer (CNES, Université de Toulouse) <br />
+                </td>
+              </tr>
+              <tr>
+                <td>12:30-14:00</td>
+                <td>&nbsp;</td>
+                <td><b>Lunch Break</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>14:00-15:30</td>
+                <td>&nbsp;</td>
+                <td><b>Session 3</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>14:00-14:50</td>
+                <td>
+                  Invited Talk:
+                  <i
+                    >A Game-Theoretic Framework for Distributed Fallback
+                    Autonomy in Satellite Mega-Constellations</i
+                  ><br />
+                  [<a href="./papers/Reynolds-Combined.pdf">paper</a>]
+                </td>
+                <td>Daniel Reynolds (MIT)</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>14:50-15:10</td>
+                <td>
+                  <i
+                    >Satellite scheduling optimization for BepiColombo STC
+                    channel target-phase</i
+                  ><br />
+                  [<a href="./papers/Avallone.pdf">paper</a>] [<a href="https://drive.google.com/file/d/1m2KJ7nSL14FbUY_DqAzx-OXcsNV6aRIE/view">presentation</a>]
+                </td>
+                <td>
+                  Alberto Avallone (University of Modena and Reggio Emilia)
+                  <br />
+                  Francesco Sala (University of Modena and Reggio Emilia) <br />
+                  Manuel Iori (University of Modena and Reggio Emilia)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>15:10-15:30</td>
+                <td>
+                  <i
+                    >Toward Automated Operational Assist in Satellite Fleet
+                    Management via Organizational MARL</i
+                  ><br />
+                  [<a href="./papers/Soule.pdf">paper</a>]
+                </td>
+                <td>Julien Soulé (University of Luxembourg)</td>
+              </tr>
+              <tr>
+                <td>15:30-16:15</td>
+                <td>&nbsp;</td>
+                <td><b>Afternoon Coffee Break</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>16:15-17:35</td>
+                <td>&nbsp;</td>
+                <td><b>Session 4</b></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>16:15-16:35</td>
+                <td>
+                  <i
+                    >Decentralized Dynamic Task Allocation under Limited
+                    Communication Range</i
+                  ><br />
+                  [<a href="./papers/Kha.pdf">paper</a>]
+                </td>
+                <td>
+                  Alexandre Kha (Thales CortAIx-Labs) <br />
+                  Mathieu Marchand (Thales CortAIx-Labs) <br />
+                  Aurélie Beynier (Lip6-CNRS) <br />
+                  Christophe Labreuche (Thales CortAIx-Labs)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>16:35-16:55</td>
+                <td>
+                  <i
+                    >A queue-based approach for fine-tuning the
+                    efficiency-fairness tradeoff in distributed satellite
+                    scheduling</i
+                  ><br />
+                  [<a href="./papers/Krigman.pdf">paper</a>]
+                </td>
+                <td>
+                  Shai Krigman (Ariel University) <br />
+                  Tal Grinshpoun (Ariel University) <br />
+                  Lihi Dery (Ariel University) <br />
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>16:55-17:15</td>
+                <td>
+                  <i
+                    >Onboard Planning and Scheduling for Autonomous Satellite
+                    Operations Towards Multi-Agent Cooperation</i
+                  ><br />
+                  [<a href="./papers/Maderna.pdf">paper</a>]
+                </td>
+                <td>
+                  Riccardo Maderna (AIKO Srl) <br />
+                  Marco Morgese (AIKO Srl)
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>17:15-17:35</td>
+                <td>
+                  <i
+                    >Effects of Lookahead and Communication Dynamics on
+                    Multi-Agent Potential-Field Rover Navigation</i
+                  ><br />
+                  [<a href="./papers/Flavin.pdf">paper</a>]
+                </td>
+                <td>
+                  Timothy Flavin (University of Tulsa)<br />
+                  Sandip Sen (University of Tulsa)<br />
+                  Joe Shymanski (University of Tulsa)
+                </td>
+              </tr>
+              <tr>
+                <td>17:35-17:45</td>
+                <td>&nbsp;</td>
+                <td><b>Closing remarks</b></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="committees" class="outline-2">
+        <h2 id="header-committees">
+          <a id="id-committees"></a
+          ><span class="section-number-2">6</span> Committees
+        </h2>
+        <div class="outline-text-2" id="text-committees"></div>
+
+        <div id="organizers" class="outline-3">
+          <h3 id="header-organizers"><a id="id-organizers"></a>Chairs</h3>
+          <div class="outline-text-3" id="text-organizers">
+            <ul>
+              <li>
+                <a href="https://ai.jpl.nasa.gov/public/people/chien/"
+                  >Steve Chien</a
+                >, NASA JPL, USA
+              </li>
+              <li>
+                <a href="https://www.gauthier-picard.info/">Gauthier Picard</a>,
+                ONERA, France
+              </li>
+              <li>
+                <a href="https://www.cs.cmu.edu/~izilbers/">Itai Zilberstein</a
+                >, CMU, USA
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="pc" class="outline-3">
+          <h3 id="header-pc"><a id="id-pc"></a>Programme Committee</h3>
+          <div class="outline-text-3" id="text-pc">
+            <ul>
+              <!--li>Alexandre Albore, ONERA</li>
+                    <li>Thibault Gateau, ISAE‑SUPAERO</li>
+                    <li>Alessandro Golkar, Technical University of Munich</li>
+                    <li>Tal Grinshpoun, Ariel University</li>
+                    <li>Jonathan Guerra, ADS</li>
+                    <li>Elsy Kaddoum, Université de Toulouse</li>
+                    <li>Cédric Pralet, ONERA</li>
+                    <li>Serge Rainjonneau, Thales Alenia Space</li>
+                    <li>Stéphanie Roussel, ONERA</li>
+                    <li>José Edilson Silva Filho, INSA Rouen</li-->
+              <li>Caleb A. Adams, NASA</li>
+              <li>Alexandre Albore, ONERA</li>
+              <li>Abigail Breitfeld, Carnegie Mellon University</li>
+              <li>Thibault Gateau, ISAE‑SUPAERO</li>
+              <li>Alessandro Golkar, Technical University of Munich</li>
+              <li>Tal Grinshpoun, Ariel University</li>
+              <li>Jonathan Guerra, Airbus Defence & Space</li>
+              <li>
+                Christopher Hays, United States Air Force Research Laboratory
+                Space Vehicles Directorate
+              </li>
+              <li>Michael J Iatauro, NASA Ames Research Center</li>
+              <li>Elsy Kaddoum, IRIT</li>
+              <li>Nicolas Longepe, ESA</li>
+              <li>Cedric Pralet, Onera</li>
+              <li>Serge Rainjonneau, Thales Alenia Space</li>
+              <li>Ananya Rao, Carnegie Mellon University</li>
+              <li>David Rijlaarsdam, Ubotica Technologies</li>
+              <li>
+                Federico Rossi, Jet Propulsion Laboratory - California Institute
+                of Technology
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="acknowledgments" class="outline-2">
+        <h2 id="header-acknowledgments">
+          <a id="id-acknowledgments"></a
+          ><span class="section-number-2">7</span> Acknowledgments
+        </h2>
+        <div class="outline-text-2" id="text-acknowledgments"></div>
+        <div id="ack" class="outline-3">
+          <h3 id="header-cmt"><a id="id-pc"></a>Microsoft CMT</h3>
+          <div class="outline-text-3" id="text-cmt">
+            <p>
+              The Microsoft CMT service was used for managing the peer-reviewing
+              process for this conference. This service was provided for free by
+              Microsoft and they bore all expenses, including costs for Azure
+              cloud services as well as for software development and support.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="postamble" class="status">
+        <p class="author">Author: Gauthier Picard</p>
+        <p class="email">
+          Email:
+          <a href="mailto:gauthier.picard@onera.fr">gauthier.picard@onera.fr</a>
+        </p>
+        <script>
+          if (Date.parse(document.lastModified) != 0)
+            document.write(
+              '<p class="date">Last modified: ' +
+                document.lastModified +
+                "</p>",
+            );
+        </script>
+        <!--p class="date">Last modified: </p-->
+      </div>
+    </div>
+  </body>
+</html>

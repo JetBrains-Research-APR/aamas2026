@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="jade" data-content_root="./">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AAMAS 2026 Competition - NS-Gym documentation</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Environment Setup" href="aamas2026_competition/setup.html" /><link rel="prev" title="AAMAS 2026 Competition Leaderboard" href="leaderboard.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"light");
+  </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=44020203" />
+    <link media="print" rel="stylesheet" type="text/css" href="_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=0d7324b5" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-heading: 'Montserrat', var(--sy-f-sys), sans-serif;
+}
+</style> -->
+
+
+
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-heading: 'Funnel Display', var(--sy-f-sys), sans-serif;
+}
+</style> -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-heading: 'Questrial', var(--sy-f-sys), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="AAMAS 2026 Competition"/>
+    <meta name="twitter:card" content="summary"/>
+  </head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="index.html">
+      
+      
+      <strong>NS-Gym</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/scope-lab-vu/ns_gym" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><p class="caption" role="heading" aria-level="3"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart_guide.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core_concepts.html">Core Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environments.html">Environments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="env_pages/classic_control/index.html">Classic Control Environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/classic_control/cartpole.html">CartPole Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/classic_control/acrobot.html">Acrobot Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/classic_control/pendulum.html">Pendulum Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/classic_control/mountaincar.html">MountainCar Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="env_pages/mujoco/index.html">Mujoco Environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/antenv.html">Ant Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/halfcheetah.html">HalfCheetah Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/hopper.html">Hopper Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/humanoid_standup.html">Humanoid Standup Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/humanoid.html">Humanoid Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/inverted_double_pendulum.html">Inverted Double Pendulum Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/inverted_pendulum.html">Inverted Pendulum Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/pusher.html">Pusher Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/reacher.html">Reacher Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/mujoco/swimmer.html">Swimmer Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="env_pages/toytext/index.html">Grid World Environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/toytext/frozenlake.html">FrozenLake Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/toytext/cliffwalking.html">CliffWalking Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/toytext/bridge.html">Non-Stationary Bridge Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="env_pages/nsgym_custom/index.html">Custom Environments for NS-Gym</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="env_pages/nsgym_custom/vehicle_tracking_env.html">Vehicle Tracking Environment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="algorithms.html">NS-Gym Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leaderboard.html">AAMAS 2026 Competition Leaderboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AAMAS 2026 Competition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aamas2026_competition/setup.html">Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aamas2026_competition/build_agents.html">Build Your Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aamas2026_competition/make_env.html">Create a Custom Non-Stationary Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aamas2026_competition/evaluation.html">Evaluating Your Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aamas2026_competition/submission.html">Submit Your Agent</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/base.html">NS-Gym Base Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/wrappers.html">NS-Gym Wrappers Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/utils.html">NS-Gym Utils Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/update_functions.html">NS-Gym Update Functions Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/schedulers.html">NS-Gym Scheduler Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/evaluate.html">NS-Gym Evaluation Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/benchmark_algs.html">NS-Gym Benchmark Algorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/context_switching.html">NS-Gym Context Switching Utilities</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#about-aamas-2026">About AAMAS 2026</a></li>
+<li><a class="reference internal" href="#important-dates">Important Dates</a></li>
+<li><a class="reference internal" href="#competition-tutorials">Competition Tutorials</a></li>
+<li><a class="reference internal" href="#office-hours">Office Hours</a></li>
+<li><a class="reference internal" href="#ns-gym-neurips-paper">NS-Gym NeurIPS Paper</a></li>
+<li><a class="reference internal" href="#ns-gym-installation">NS-Gym Installation</a></li>
+<li><a class="reference internal" href="#submission-guidelines">Submission Guidelines</a><ul>
+<li><a class="reference internal" href="#agent-interface">Agent Interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#evaluation-criteria">Evaluation Criteria</a></li>
+<li><a class="reference internal" href="#example-environments">Example Environments</a></li>
+<li><a class="reference internal" href="#contact-information">Contact Information</a></li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html"><span itemprop="name">NS-Gym</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">AAMAS 2026 Competition</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <article class="yue" role="main">
+          <table style="width:100%; border:none;">
+  <tr style="border:none;">
+    <td style="border:none; vertical-align:top;">
+      <h1 style="margin-top:0;">
+        AAMAS 2026 Competition:<br>
+        Evaluating Adaptive Decision Agents<br>
+        under Non-Stationarity
+      </h1>
+    </td>
+    <td style="border:none; width:240px; vertical-align:top; text-align:right;">
+      <img src="_static/images/AAMAS2026.jpg" alt="AAMAS 2026 logo" style="width:220px; height:auto;">
+    </td>
+  </tr>
+</table>
+<section class="tex2jax_ignore mathjax_ignore" id="aamas-2026-competition">
+<h1>AAMAS 2026 Competition<a class="headerlink" href="#aamas-2026-competition" title="Link to this heading">¶</a></h1>
+<p>Welcome to the AAMAS 2026 Non-Stationarity Challenge Page! This competition, co-located with <a class="reference external" href="https://cyprusconferences.org/aamas2026/">AAMAS 2026</a>, invites researchers and practitioners to develop and evaluate decision-making agents that can effectively adapt to non-stationary environments using the NS-Gym framework. Participants will design agents capable of detecting, adapting to, and recovering from dynamic environmental shifts. The solution method is open to any approach, including but not limited to reinforcement learning, online planning, meta-learning, and continuous learning. The competition aims to foster innovation in adaptive decision-making and provide insights into the challenges of non-stationary environments. Results will be presented at the AAMAS 2026 conference.</p>
+<p>If you are interested in participating and would like to be directly notified of updates, please fill out this <a class="reference external" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=OX9aur7js0q0UGf6gPrsrbmt9pQGce1EtA3Q_nZfuDxUQUczRDJEWkdWV0YwNUpLTk5PTkhHNzdVMS4u">interest form</a>.</p>
+<p><img alt="" src="_images/think_you_can_design_adaptive_agents.png" />
+<em>Graphic Generated by Gemini Nano Banana Pro</em></p>
+<section id="about-aamas-2026">
+<h2>About AAMAS 2026<a class="headerlink" href="#about-aamas-2026" title="Link to this heading">¶</a></h2>
+<p>The <a class="reference external" href="https://cyprusconferences.org/aamas2026/">25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</a> will be held 25–29 May 2026 in Paphos, Cyprus.</p>
+<p>AAMAS is the largest and most influential conference in the field of agents and multi-agent systems, bringing together researchers and practitioners across all areas of agent technology and providing an internationally renowned, high-profile forum for publishing and discovering the latest developments in the field. AAMAS is the flagship conference of the non-profit <a class="reference external" href="https://www.ifaamas.org/">International Foundation for Autonomous Agents and Multiagent Systems (IFAAMAS)</a>. You can view a list of past AAMAS conferences <a class="reference external" href="https://www.ifaamas.org/previousaamas.html">here</a>.</p>
+</section>
+<section id="important-dates">
+<h2>Important Dates<a class="headerlink" href="#important-dates" title="Link to this heading">¶</a></h2>
+<p>All times are AOE.</p>
+<ul class="simple">
+<li><p><strong>February 5, 2026</strong>: Baseline Competition Code Release and Submission Portal Opens</p></li>
+<li><p><strong>January - April 2026</strong>: Submission period with open leaderboard and Q&amp;A forum</p></li>
+<li><p><strong>May 10, 2026</strong>: Final Submission Deadline</p></li>
+<li><p><strong>May 25-29, 2026</strong>: AAMAS 2026 Conference (Paphos, Cyprus) and presentation of competition results</p></li>
+</ul>
+</section>
+<section id="competition-tutorials">
+<h2>Competition Tutorials<a class="headerlink" href="#competition-tutorials" title="Link to this heading">¶</a></h2>
+<p>Use these guides in order:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="aamas2026_competition/setup.html"><span class="std std-doc">Setup</span></a></p></li>
+<li><p><a class="reference internal" href="aamas2026_competition/build_agents.html"><span class="std std-doc">Build Your Agent</span></a></p></li>
+<li><p><a class="reference internal" href="aamas2026_competition/make_env.html"><span class="std std-doc">Create a Custom Environment</span></a></p></li>
+<li><p><a class="reference internal" href="aamas2026_competition/evaluation.html"><span class="std std-doc">Evaluation Criteria</span></a></p></li>
+<li><p><a class="reference internal" href="aamas2026_competition/submission.html"><span class="std std-doc">Submit Your Agent</span></a></p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="office-hours">
+<h2>Office Hours<a class="headerlink" href="#office-hours" title="Link to this heading">¶</a></h2>
+<p>We will be hosting weekly virtual office hours over Zoom on an alternating schedule to accommodate participants across different time zones:</p>
+<p><strong>Session A:</strong> 8:00 AM – 9:00 AM (CST / UTC-6)
+February 25, March 11, March 25, April 8, April 22, May 6</p>
+<p><strong>Session B:</strong> 8:00 PM – 9:00 PM (CST / UTC-6)
+March 4, March 18, April 1, April 15, April 29</p>
+<p><a class="reference external" href="https://vanderbilt.zoom.us/j/92590230100">OFFICE HOURS LINK</a></p>
+</section>
+<section id="ns-gym-neurips-paper">
+<h2>NS-Gym NeurIPS Paper<a class="headerlink" href="#ns-gym-neurips-paper" title="Link to this heading">¶</a></h2>
+<p>For more information about NS-Gym and the underlying framework for this competition, please refer to our NeurIPS 2025 paper: <a class="reference external" href="https://openreview.net/pdf?id=YOXZuRy40U">NS-Gym: A Comprehensive and Open-Source Simulation Framework for Non-Stationary Markov Decision Processes</a>.</p>
+<div class="highlight-bibtex notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="nc">@inproceedings</span><span class="p">{</span>
+</span><span data-line="2"><span class="w">    </span><span class="nl">keplinger2025nsgym</span><span class="p">,</span>
+</span><span data-line="3"><span class="w">    </span><span class="na">title</span><span class="p">=</span><span class="s">{{NS}-Gym: A Comprehensive and Open-Source Simulation Framework for Non-Stationary Markov Decision Processes}</span><span class="p">,</span>
+</span><span data-line="4"><span class="w">    </span><span class="na">author</span><span class="p">=</span><span class="s">{Nathaniel S Keplinger and Baiting Luo and Yunuo Zhang and Kyle Hollins Wray and Aron Laszka and Abhishek Dubey and Ayan Mukhopadhyay}</span><span class="p">,</span>
+</span><span data-line="5"><span class="w">    </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track}</span><span class="p">,</span>
+</span><span data-line="6"><span class="w">    </span><span class="na">year</span><span class="p">=</span><span class="s">{2025}</span><span class="p">,</span>
+</span><span data-line="7"><span class="w">    </span><span class="na">url</span><span class="p">=</span><span class="s">{https://openreview.net/forum?id=YOXZuRy40U}</span>
+</span><span data-line="8"><span class="p">}</span>
+</span></pre></div>
+</div>
+</section>
+<section id="ns-gym-installation">
+<h2>NS-Gym Installation<a class="headerlink" href="#ns-gym-installation" title="Link to this heading">¶</a></h2>
+<p>To get started with NS-Gym, please follow the instructions in the NS-Gym <a class="reference internal" href="quickstart_guide.html"><span class="std std-doc">quickstart guide</span></a> to install the package and set up your development environment. A tutorial notebook for using NS-Gym can be found <a class="reference external" href="https://github.com/scope-lab-vu/ns_gym/blob/main/tutorial.ipynb">here</a>.</p>
+</section>
+<section id="submission-guidelines">
+<h2>Submission Guidelines<a class="headerlink" href="#submission-guidelines" title="Link to this heading">¶</a></h2>
+<p>Submissions will be managed via GitHub using a private repository model to ensure fairness and prevent code leakage. To participate, follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Access the Template: Use the <a class="reference external" href="https://github.com/scope-lab-vu/ns-gym-comp-template">scope-lab-vu/ns-gym-comp-template</a> repository. It contains instructions, boilerplate code, and the standard interface for your agent.</p></li>
+<li><p>Follow the instructions in the template repository readme to create a new repository using the template and set your development environment.</p></li>
+<li><p>Implement Your Agent: Develop your solution within the provided framework.</p></li>
+<li><p>Grant Access: Once you are ready to submit, add the competition organizers, nkepling and ayanmukhopadhyay, as collaborators on your private repository.</p></li>
+<li><p>Finalize Submission: When ready to submit, <a class="reference external" href="https://github.com/scope-lab-vu/ns-gym-comp-template/issues/new">open an issue</a> in the template repository with a link to your submission repo. Alternatively, you can email nathaniel.s.keplinger [at] vanderbilt.edu, yli113 [at] wm.edu, and amukhopadhyay [at] wm.edu to notify us that your repository is ready for evaluation.</p></li>
+</ol>
+<p>The organizers will pull your code and conduct the final evaluation using a standardized Docker image. Results will be reported back.</p>
+<section id="agent-interface">
+<h3>Agent Interface<a class="headerlink" href="#agent-interface" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Model-free agents must expose a <code class="docutils literal notranslate"><span class="pre">select_action(obs)</span></code> method.</p></li>
+<li><p>Model-based agents must expose a <code class="docutils literal notranslate"><span class="pre">select_action(obs,</span> <span class="pre">planning_env)</span></code> method, where <code class="docutils literal notranslate"><span class="pre">planning_env</span></code> is a stationary snapshot of the environment provided by NS-Gym that can be used for planning.</p></li>
+</ul>
+</section>
+</section>
+<section id="evaluation-criteria">
+<h2>Evaluation Criteria<a class="headerlink" href="#evaluation-criteria" title="Link to this heading">¶</a></h2>
+<p>We evaluate agents based on how well they handle the transition from a stable environment to a changed one. The scoring is aggregated across multiple environments using normalized metrics.</p>
+<ol class="arabic simple">
+<li><p><strong>Adaptability</strong>: We measure the speed and effectiveness of adaptation after a change occurs. This includes the number of new environment interactions (timesteps) required and the total runtime before the agent is considered recovered.</p></li>
+<li><p><strong>Performance</strong>: This is calculated based on the average undiscounted episodic reward achieved under non-stationary conditions.</p></li>
+<li><p><strong>Resilience</strong>: We assess how well the agent recovers from unexpected shifts in dynamics. We specifically look at the magnitude of the performance drop between the stable pre-shift return and the post-shift episode return.</p></li>
+<li><p><strong>Efficiency</strong>: We track the computational cost of the adaptation mechanism. This includes CPU/GPU utilization per decision step and the total memory utilization across the evaluation episode.</p></li>
+</ol>
+<p>For detailed information, see <a class="reference internal" href="aamas2026_competition/evaluation.html"><span class="std std-doc">Evaluation Criteria</span></a>.</p>
+</section>
+<section id="example-environments">
+<h2>Example Environments<a class="headerlink" href="#example-environments" title="Link to this heading">¶</a></h2>
+<p>The competition will focus on environments that have parametric changes. The parametric changes involve gradual or abrupt variations in continuous parameters that affect the environment’s dynamics. Examples include changes in friction coefficients, mass distributions, or gravity. The magnitude and frequency of these changes will vary across different environments to test the robustness of the agents.</p>
+<p>We will evaluate all submitted agents on a suite of non-stationary environments using NS-Gym. For each environment in NS-Gym, we will define a holdout set of non-stationary variations for testing not available to the public. Each variation will define a set of parameters to change, frequency of changes, and the magnitude of changes. For each environment we will test agents on three levels of “notification” settings.</p>
+<ul class="simple">
+<li><p><strong>Basic Notification</strong>: The agent is only informed that a change has occurred but receives no additional context.</p></li>
+<li><p><strong>Detailed Notification</strong>: The agent is explicitly informed when a change occurs and will receive additional context about the nature of the change.</p></li>
+<li><p><strong>Uninformed</strong>: The agent is not informed of any changes.</p></li>
+</ul>
+</section>
+<section id="contact-information">
+<h2>Contact Information<a class="headerlink" href="#contact-information" title="Link to this heading">¶</a></h2>
+<p>Please feel free to reach out with any questions or concerns regarding the competition. You can contact the competition organizers at <strong>nathaniel.s.keplinger</strong> [at] <strong>vanderbilt.edu</strong>, <strong>yli113</strong> [at] <strong>wm.edu</strong> and <strong>amukhopadhyay</strong> [at] <strong>wm.edu</strong>.</p>
+<hr>
+<h2 style="text-align:center;">Competition Organizers</h2>
+<div style="
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+">
+  <!-- Organizer 1 -->
+  <div style="text-align: center; max-width: 160px;">
+    <img src="_static/images/keplinger.jpg"
+         alt="Nathaniel Keplinger"
+         style="
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 10px;
+         ">
+    <div style="font-weight: 600;">Nathaniel S. Keplinger</div>
+    <div style="font-size: 0.9em; color: #555;">Graduate Student, Vanderbilt University</div>
+    <a href="https://nkepling.github.io" target="_blank" style="font-size: 0.9em;">
+      Website
+    </a>
+  </div>
+  <!-- Organizer 2 -->
+  <div style="text-align: center; max-width: 160px;">
+    <img src="_static/images/yuanhe.jpg"
+         alt="Yuanhe Li"
+         style="
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 10px;
+         ">
+    <div style="font-weight: 600;">Yuanhe Li</div>
+    <div style="font-size: 0.9em; color: #555;">Graduate Student, College of William and Mary</div>
+    <a href="https://www.linkedin.com/in/yuanhe-li/" target="_blank" style="font-size: 0.9em;">
+      Website
+    </a>
+  </div>
+  <!-- Organizer 3 -->
+  <div style="text-align: center; max-width: 160px;">
+    <img src="_static/images/mukhopadhyay.jpg"
+         alt="Ayan Mukhopadhyay"
+         style="
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 10px;
+         ">
+    <div style="font-weight: 600;">Ayan Mukhopadhyay</div>
+    <div style="font-size: 0.9em; color: #555;">Assistant Professor, College of William and Mary</div>
+    <a href="https://www.ayanmukhopadhyay.com/" target="_blank" style="font-size: 0.9em;">
+      Website
+    </a>
+  </div>
+  <!-- Organizer 4 -->
+  <div style="text-align: center; max-width: 160px;">
+    <img src="_static/images/dubey.jpg"
+         alt="Abhishek Dubey"
+         style="
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 10px;
+         ">
+    <div style="font-weight: 600;">Abhishek Dubey</div>
+    <div style="font-size: 0.9em; color: #555;">Associate Professor, Vanderbilt University</div>
+    <a href="https://abhishekdubey.bio/" target="_blank" style="font-size: 0.9em;">
+      Website
+    </a>
+  </div>
+  <!-- Organizer 5 -->
+  <div style="text-align: center; max-width: 160px;">
+    <img src="_static/images/laszka.jpg"
+         alt="Aron Laszka"
+         style="
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-bottom: 10px;
+         ">
+    <div style="font-weight: 600;">Aron Laszka</div>
+    <div style="font-size: 0.9em; color: #555;">Assistant Professor, Pennsylvania State University</div>
+    <a href="https://aronlaszka.com/" target="_blank" style="font-size: 0.9em;">
+      Website
+    </a>
+  </div>
+</div>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="leaderboard.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">AAMAS 2026 Competition Leaderboard</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="aamas2026_competition/setup.html">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Environment Setup</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2025, Nathaniel S. Keplinger, Baiting Luo, Yunuo Zhang, Kyle Hollins Wray, Aron Laszka, Abhishek Dubey, Ayan Mukhopadhyay</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/scope-lab-vu/ns_gym" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="_static/shibuya.js?v=cac61aee"></script></body>
+</html>

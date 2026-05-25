@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AAMAS 2026 — Schedule</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-row title-row">
+      <h1>AAMAS 2026</h1>
+      <div class="counts">
+        <span id="starCount">0</span> starred ·
+        <span id="visibleCount">0</span> shown
+      </div>
+    </div>
+    <div class="topbar-row">
+      <nav class="day-tabs" id="dayTabs" aria-label="Conference days"></nav>
+    </div>
+    <div class="topbar-row controls">
+      <input id="searchBox" type="search" placeholder="Search title, author, track, chair…" autocomplete="off">
+      <label class="toggle">
+        <input type="checkbox" id="starredOnly">
+        <span>★ Starred only</span>
+      </label>
+    </div>
+  </header>
+
+  <main id="program" class="program"></main>
+
+  <div id="loadingMsg" class="loading">Loading schedule…</div>
+  <div id="errorMsg" class="error" hidden></div>
+
+  <footer class="footer">
+    Data compiled from
+    <a href="https://cyprusconferences.org/aamas2026/detailed-program/" target="_blank" rel="noopener">the official AAMAS 2026 program</a>
+    and 35 workshop/tutorial sites. Stars are saved in this browser only.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

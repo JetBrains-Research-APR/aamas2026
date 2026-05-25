@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS Workshop @ AAMAS 2026</title>
+
+    <style>
+      :root {
+          --bg-color: #ffffff;
+          --text-color: #222222;
+          --accent-color: #cc3333;
+          --font-body: "Lucida Grande", "Lucida Sans", Verdana, sans-serif;
+          --font-header: "Lucida Grande", "Lucida Sans", Verdana, sans-serif;
+          --content-width: 750px;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+          background: var(--bg-color);
+          color: var(--text-color);
+          font-family: var(--font-body);
+          font-size: 18px;
+          line-height: 1.65;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      strong, b { font-weight: 700; color: #000; }
+
+      a {
+          color: var(--text-color);
+          text-decoration: none;
+          border-bottom: 1px solid;
+          transition: all 0.2s ease;
+      }
+
+      a:hover {
+          color: var(--accent-color);
+          border-bottom: 1px solid var(--accent-color);
+      }
+
+      .container {
+          max-width: var(--content-width);
+          margin: 0 auto;
+          padding: 80px 20px 120px 20px;
+      }
+
+      header {
+          margin-bottom: 60px;
+          padding-bottom: 20px;
+          border-bottom: 2px solid #000;
+      }
+
+      .logo {
+          font-family: var(--font-header);
+          font-weight: 700;
+          font-size: 3rem;
+          letter-spacing: -1.5px;
+          line-height: 1;
+          color: #000;
+          margin-bottom: 10px;
+      }
+
+      .sub-logo {
+          font-family: var(--font-header);
+          font-weight: 400;
+          font-size: 1.2rem;
+          color: #666;
+          margin-bottom: 30px;
+          line-height: 1.3;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 25px;
+          padding: 0;
+          margin-top: 30px;
+      }
+
+      nav a {
+          font-family: var(--font-header);
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          border-bottom: none;
+          color: #888;
+      }
+
+      nav a:hover { color: var(--accent-color); }
+
+      h1 {
+          font-family: var(--font-header);
+          font-size: 2.2rem;
+          font-weight: 400;
+          line-height: 1.25;
+          margin-bottom: 1.5rem;
+          letter-spacing: -0.5px;
+      }
+
+      h2 {
+          font-family: var(--font-header);
+          font-size: 1.1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          margin-top: 4.5rem;
+          margin-bottom: 1.5rem;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #eee;
+          color: #000;
+      }
+
+      #dates h2 {
+          color: rgb(205, 205, 205);
+          border-bottom-color: rgb(205, 205, 205);
+      }
+
+      #dates .date-table td {
+          color: rgb(205, 205, 205);
+      }
+
+      #dates .date-table td:first-child {
+          color: rgb(205, 205, 205);
+      }
+
+      h3 {
+          font-family: var(--font-header);
+          font-size: 1.05rem;
+          font-weight: 700;
+          margin-top: 2rem;
+          margin-bottom: 0.8rem;
+          color: #000;
+      }
+
+      p { margin-bottom: 1.5rem; text-align: left; }
+
+      ul.content-list {
+          margin-left: 20px;
+          margin-bottom: 2rem;
+      }
+
+      ul.content-list li {
+          margin-bottom: 0.5rem;
+          padding-left: 5px;
+      }
+
+      .topic-box {
+          border-left: 2px solid var(--accent-color);
+          padding-left: 20px;
+          margin: 25px 0;
+      }
+
+      .topic-title {
+          font-family: var(--font-header);
+          font-weight: 700;
+          color: var(--accent-color);
+          display: block;
+          margin-bottom: 4px;
+      }
+
+      .date-table,
+      .schedule-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: var(--font-body);
+          font-size: 0.98rem;
+          margin-bottom: 2rem;
+      }
+
+      td {
+          padding: 12px 0;
+          border-bottom: 1px solid #eaeaea;
+          vertical-align: top;
+      }
+
+      .date-table td:first-child {
+          width: 165px;
+          font-weight: 700;
+          font-feature-settings: "tnum";
+          padding-right: 20px;
+          white-space: nowrap;
+      }
+
+      .schedule-table td {
+          padding: 10px 0;
+          border-bottom: 1px solid #ececec;
+          vertical-align: top;
+      }
+
+      .schedule-table td:first-child {
+          width: 150px;
+          padding-right: 20px;
+          white-space: nowrap;
+          font-weight: 400;
+          color: #666;
+          font-feature-settings: "tnum";
+      }
+
+      .schedule-session td {
+          padding-top: 18px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #d9d9d9;
+      }
+
+      .schedule-session td:first-child {
+          color: #444;
+          font-weight: 400;
+      }
+
+      .schedule-session-title {
+          font-family: var(--font-header);
+          font-weight: 400;
+          letter-spacing: 0.2px;
+          color: #111;
+      }
+
+      .schedule-talk-title {
+          font-weight: 400;
+          color: #111;
+          line-height: 1.35;
+      }
+
+      .schedule-authors {
+          display: block;
+          margin-top: 3px;
+          font-size: 0.9rem;
+          line-height: 1.35;
+          color: #777;
+      }
+
+      .schedule-break td {
+          color: #888;
+      }
+
+      .schedule-break td:first-child {
+          color: #888;
+          font-weight: 400;
+      }
+
+      .schedule-mini td {
+          color: #999;
+          font-size: 0.92rem;
+      }
+
+      .person-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 40px 30px;
+          margin-top: 30px;
+      }
+
+      .person {
+          font-size: 0.95rem;
+          line-height: 1.5;
+      }
+
+      .person strong {
+          font-family: var(--font-header);
+          font-size: 1rem;
+          display: block;
+          margin-bottom: 2px;
+      }
+
+      .person span {
+          color: #555;
+          display: block;
+          margin-bottom: 4px;
+      }
+
+      .person a {
+          font-size: 0.85rem;
+          color: #888;
+          border-bottom: 1px solid #ccc;
+      }
+
+      .person a:hover {
+          color: var(--accent-color);
+          border-bottom-color: var(--accent-color);
+      }
+
+      .footer-note {
+          margin-top: 100px;
+          padding-top: 20px;
+          border-top: 1px solid #eee;
+          font-size: 0.85rem;
+          color: #999;
+          font-family: var(--font-header);
+          text-align: center;
+      }
+
+      @media (max-width: 600px) {
+          .container { padding: 40px 20px; }
+          header { margin-bottom: 40px; border-bottom-width: 2px; }
+          .logo { font-size: 2.2rem; }
+          nav ul { flex-direction: column; gap: 15px; }
+          h1 { font-size: 1.8rem; }
+          .person-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">NEXUS</div>
+        <div class="sub-logo">
+          Neurosymbolic eXplainable Trustworthy Systems @
+          <a href="https://cyprusconferences.org/aamas2026/">AAMAS 2026</a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#cfp">Call for Papers</a></li>
+            <li><a href="#organization">Organization</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about">
+          <p class="lead" style="font-size: 1.08em; color: #444;">
+            For autonomous agents to be deployed safely and effectively, their decision-making must be robust and transparent for trustworthy behavior.
+          </p>
+          <p>
+            The opacity of current learning models is a major barrier to adoption where accountability is essential. NEXUS focuses on neurosymbolic reasoning as a foundation to building theory, applications, and tools for well-calibrated and trustworthy autonomy. This paradigm moves beyond a narrow focus on formal logic, concerning itself with the integration of deep and reinforcement learning algorithms with a broad spectrum of structured knowledge.
+          </p>
+        </section>
+
+        <section id="schedule">
+          <h2>Program</h2>
+
+          <table class="schedule-table">
+            <tr class="schedule-session">
+              <td>9:00–10:10</td>
+              <td><span class="schedule-session-title">Session 1</span></td>
+            </tr>
+            <tr>           
+              <td>09:00–09:15</td>
+              <td><div class="schedule-talk-title">Workshop Opening</div></td>
+            </tr>
+
+            <tr>
+              <td>09:15–09:35</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Azran.pdf">Robust Visual Planning under Partial Observability and Perceptual Uncertainty</a></div>
+                <span class="schedule-authors">Guy Azran, Michael Navat, Sarah Keren</span>
+              </td>
+            </tr>
+            <tr>
+              <td>09:35–09:55</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Rehan.pdf">Towards Neuro-symbolic Causal Rule Synthesis, Verification, and Evaluation Grounded in Legal and Safety Principles</a></div>
+                <span class="schedule-authors">Zainab Rehan, Christian Medeiros Adriano, Sona Ghahremani, Holger Giese </span>
+              </td>
+            </tr>
+            <tr>
+              <td>09:55–10:10</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Qiu.pdf">PSN Game: Game-theoretic Prediction and Planning via a Player Selection Network</a></div>
+                <span class="schedule-authors">Tianyu Qiu, Eric Ouano, Fernando Palafox, Christian Ellis, David Fridovich-Keil</span>
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>10:15–11:00</td>
+              <td>Coffee Break</td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>11:00–12:30</td>
+              <td><span class="schedule-session-title">Session 2</span></td>
+            </tr>
+            <tr>
+              <td>11:00–11:20</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Uppuluri.pdf">A Consensus-Bayesian Framework for Detecting Malicious Activity in Enterprise Directory Access Graphs</a></div>
+                <span class="schedule-authors">Prayush Uppuluri, Shilpa Noushad, Sajan Kumar</span>
+              </td>
+            </tr>
+            <tr class="schedule-mini">
+              <td>11:20–11:30</td>
+              <td>Mini-break</td>
+            </tr>
+            <tr>
+              <td>11:30–12:30</td>
+              <td><div class="schedule-talk-title">Keynote talk – Francesca Toni (Imperial College London)</div></td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>12:30–14:00</td>
+              <td>Lunch</td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>14:00–15:30</td>
+              <td><span class="schedule-session-title">Session 3</span></td>
+            </tr>
+            <tr>
+              <td>14:00–14:20</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Koumi.pdf">LLM-COGNICA: Towards Reliable Agent Decision Making</a></div>
+                <span class="schedule-authors">Adamos Koumi, Antonis Kakas</span>
+              </td>
+            </tr>
+            <tr class="schedule-mini">
+              <td>14:20–14:50</td>
+              <td>Break</td>
+            </tr>
+            <tr>
+              <td>14:50–15:10</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Suau.pdf"> Shape-Preserving Networks: Encoding Structural Knowledge through Derivative Constraints and Nested Integration</a></div>
+                <span class="schedule-authors">Miguel Suau, Alec Edwards, Alex Durkin, Ian Howell, Giuseppe Pinto, Marc Artola, Daniel Jarne, Sayam Kumar</span>
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>15:10–16:15</td>
+              <td>Coffee Break</td>
+            </tr>
+
+            <tr class="schedule-session">
+              <td>16:15–17:40</td>
+              <td><span class="schedule-session-title">Session 4</span></td>
+            </tr>
+            <tr>
+              <td>16:15–16:35</td>
+              <td>
+                <div class="schedule-talk-title"><a href="./papers/26NEXUS-Michael.pdf">From a Neural-Symbolic Means to the Inductive-Instructional End</a></div>
+                <span class="schedule-authors">Loizos Michael</span>
+              </td>
+            </tr>
+            <tr class="schedule-mini">
+              <td>16:35–16:40</td>
+              <td>Mini-break</td>
+            </tr>
+            <tr>
+              <td>16:40–17:40</td>
+              <td>
+                <div class="schedule-talk-title">Panel: Neuro-Symbolic Reasoning at the Age of Multi-Modal LLMs</div>
+                <span class="schedule-authors">C.C. (Cor) Steging, Loizos Michael, Andreas Theodorou</span>
+              </td>
+            </tr>
+
+            <tr class="schedule-break">
+              <td>19:30–…</td>
+              <td>Dinner (TBC)</td>
+            </tr>
+        </table>        </section>
+
+        <section id="dates">
+          <h2>Important dates</h2>
+          <table class="date-table">
+            <tr>
+              <td>17 Dec 2025</td>
+              <td>Call for Papers Release</td>
+            </tr>
+            <tr>
+              <td>27 Feb 2026</td>
+              <td>Submission Deadline</td>
+            </tr>
+            <tr>
+              <td>03 Apr 2026</td>
+              <td>Acceptance Notification</td>
+            </tr>
+            <tr>
+              <td>25 May 2026</td>
+              <td>Workshop</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="cfp">
+          <h2>Call for papers</h2>
+          <p>
+            NEXUS aims to make progress in neurosymbolic reasoning for agents and multi-agent systems with a focus on topics around trustworthy AI. We invite submissions addressing urgent issues of efficiency, trust, and safety through neurosymbolic approaches, including but not limited to:
+          </p>
+
+          <div class="topic-box">
+            <span class="topic-title">Causal inference</span>
+            Embedding causal graphs to enable reasoning about interventions and counterfactuals.
+          </div>
+
+          <div class="topic-box">
+            <span class="topic-title">Compositionality &amp; knowledge embedding</span>
+            Constructing complex behaviors from reusable modules and embedding symbolic knowledge.
+          </div>
+
+          <div class="topic-box">
+            <span class="topic-title">Physics-informed learning</span>
+            Injecting differential equations or physical laws as side-information.
+          </div>
+
+          <div class="topic-box">
+            <span class="topic-title">Strategic reasoning</span>
+            Game theory and mechanism design in multi-agent environments.
+          </div>
+
+          <div class="topic-box">
+            <span class="topic-title">Optimization &amp; planning</span>
+            Integrating classical optimizers, planners, or solvers within the learning loop.
+          </div>
+
+          <h3>Submission details</h3>
+          <p>
+            Submissions are handled via <a href="https://openreview.net/group?id=ifaamas.org/AAMAS/2026/Workshop/NEXUS">OpenReview</a> through a single-round, single-blind review. While the platform enforces double-blind submissions, we do not require anonymity; authors should retain their affiliation and name on the paper. We welcome full papers (≤8 pages,
+            <a href="https://cyprusconferences.org/aamas2026/submission-instructions/">AAMAS style</a>) and shorter work-in-progress papers. Early-career researchers and students are particularly encouraged to present their ongoing research.
+          </p>
+        </section>
+
+        <section id="organization">
+          <h2>Organization</h2>
+
+          <div class="person-grid">
+            <div class="person">
+              <strong>Georgios Bakirtzis</strong>
+              <span>Institut Polytechnique de Paris, France</span>
+              <a href="http://bakirtzis.net">bakirtzis.net</a>
+              <br>
+              <a href="mailto:bakirtzis@telecom-paris.fr">bakirtzis@telecom-paris.fr</a>
+            </div>
+
+            <div class="person">
+              <strong>Andreas Theodorou</strong>
+              <a href="https://scholar.google.es/citations?user=JEw-BycAAAAJ&hl=fr&oi=ao">Google Scholar</a>
+              <br>
+              <a href="mailto:a.theodorou@bath.edu">a.theodorou@bath.edu</a>
+            </div>
+
+            <div class="person">
+              <strong>David Fridovich-Keil</strong>
+              <span>UT Austin, USA</span>
+              <a href="https://dfridovi.github.io">dfridovi.github.io</a>
+              <br>
+              <a href="mailto:dfk@utexas.edu">dfk@utexas.edu</a>
+            </div>
+
+            <div class="person">
+              <strong>Jingqi Li</strong>
+              <span>UT Austin, USA</span>
+              <a href="https://sites.google.com/view/jingqi-li">https://sites.google.com/view/jingqi-li</a>
+              <br>
+              <a href="mailto:jingqi.li@austin.utexas.edu">jingqi.li@austin.utexas.edu</a>
+            </div>
+
+            <div class="person">
+              <strong>Antonis Kakas</strong>
+              <span>University of Cyprus, Cyprus</span>
+              <a href="http://www2.cs.ucy.ac.cy/~antonis">http://www2.cs.ucy.ac.cy/~antonis</a>
+              <br>
+              <a href="mailto:antonis@ucy.ac.cy">antonis@ucy.ac.cy</a>
+            </div>
+
+            <div class="person">
+              <strong>Jack McKinlay</strong>
+              <span>University of Bath, UK</span>
+              <a href="http://jmckinlay.com">jmckinlay.com</a>
+              <br>
+              <a href="mailto:jam218@bath.ac.uk">jam218@bath.ac.uk</a>
+            </div>
+          </div>
+
+          <h3 style="margin-top:40px;">Program committee</h3>
+          <p style="font-size: 0.9rem; color: #555;">
+            Georgios Bakirtzis, Andreas Theodorou, Jingqi Li, Jack McKinlay, Franck Djeumou, Cody Fleming, Fabrizio Riguzzi, Vadim Malvone, Gioele Zardini, Ivan Ruchkin, Lasse Peters, Juan Carlos Nieves, Julian Padget, George Vouros, and Beyazit Yalcinkaya.
+          </p>
+        </section>
+      </main>
+
+      <div class="footer-note">
+        Workshop held in conjunction with <strong>AAMAS 2026</strong>
+      </div>
+    </div>
+  </body>
+</html>

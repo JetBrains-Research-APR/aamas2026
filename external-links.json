@@ -1,0 +1,247 @@
+[
+  {
+    "day": "Monday, 25 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "DRP (online)",
+    "link": "https://www.drp-challenge.com/"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "MOASEI",
+    "link": "https://oasys-mas.github.io/moasei.html"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "MCTF",
+    "link": "https://www.mctf26.com/"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Multi-objective optimization and its applications for Agent Systems",
+    "link": "https://braude-research.org"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Don\u2019t Trust Your Agents, Verify Them: Strategic Verification with VITAMIN",
+    "link": "https://vitamin-organisation.github.io"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Responsible Mechanism Design",
+    "link": "https://pavelnaumov.com"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "A Concise Introduction to LLM-based Multi-agent Systems",
+    "link": "https://www.yangchen.info"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Tutorial on Optimization Techniques for Agent Coordination",
+    "link": "https://www.gauthier-picard.info"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "ALA",
+    "track": "Workshop",
+    "title": "ALA \u2013 Adaptive and Learning Agents",
+    "link": "https://alaworkshop2026.github.io/#program"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "ARMS",
+    "track": "Workshop",
+    "title": "ARMS \u2013 Autonomous Robots and Multirobot Systems",
+    "link": "https://arms2026.di.unimi.it/#program"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "ASI",
+    "track": "Workshop",
+    "title": "ASI \u2013 Agents for Societal Impact",
+    "link": "https://panosd.eu/asi2026/#programme"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "COINE",
+    "track": "Workshop",
+    "title": "COINE \u2013 Coordination, Organizations, Institutions, Norms and Ethics",
+    "link": "https://coin-workshop.github.io/coine-2026-paphos/technical_programme.html"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "EMAS",
+    "track": "Workshop",
+    "title": "EMAS \u2013 Engineering Multi-Agent Systems",
+    "link": "https://emas-workshop.github.io/2026/"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "EXTRAAMAS",
+    "track": "Workshop",
+    "title": "EXTRAAMAS \u2013 Explainable, Trustworthy & Responsible AI and MAS",
+    "link": "https://extraamas.ehealth.hevs.ch/program.html"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "NEXUS",
+    "track": "Workshop",
+    "title": "NEXUS \u2013 Neurosymbolic Explainable Trustworthy Systems",
+    "link": "https://nexus.telecom-paris.fr/#schedule"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "OptLearnMAS",
+    "track": "Workshop",
+    "title": "OptLearnMAS \u2013 Optimization and Learning in Multi-Agent Systems",
+    "link": "https://optlearnmas.github.io/#program"
+  },
+  {
+    "day": "Monday, 25 May",
+    "code": "SE",
+    "track": "Workshop",
+    "title": "SE \u2013 Strategic Engineering Workshop",
+    "link": "https://sites.google.com/view/se-aamas2026"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "NSGYM (online)",
+    "link": "https://nsgym.io/aamas2026_competition.html"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "PlanetWars-RTS",
+    "link": "https://simonlucas.github.io/planet-wars-rts/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "COMP",
+    "track": "Competition",
+    "title": "LoRR",
+    "link": "https://leagueofrobotrunners.org/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Domain Model Learning for Automated Planning",
+    "link": "https://domain-learning.github.io"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Neuro-Symbolic Decision Making for Autonomous Agents",
+    "link": "https://sites.google.com/view/nesyrl-aamas2026"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Approaches for Explainability in Autonomous Agents: From Intuitive Post-hoc Methods to Causal Understanding",
+    "link": "https://xai-aamas-2026.hpai.cloud"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "Formal Methods for Safe Reinforcement Learning",
+    "link": "https://fmailab.doc.ic.ac.uk"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "TUTORIAL",
+    "track": "Tutorial",
+    "title": "A Decade of Sparse Training: Why Do We Still Stick to Dense Training?",
+    "link": "https://sites.google.com/view/a-decade-of-sparse-training"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "AI4CNI",
+    "track": "Workshop",
+    "title": "AI4CNI \u2013 AI for Critical National Infrastructure",
+    "link": "https://sites.google.com/view/ai4cni-26/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "ALA",
+    "track": "Workshop",
+    "title": "ALA \u2013 Adaptive and Learning Agents",
+    "link": "https://alaworkshop2026.github.io/#program"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "ATT",
+    "track": "Workshop",
+    "title": "ATT \u2013 Agents in Traffic and Transportation",
+    "link": "https://sites.google.com/unimib.it/att2026/program?authuser=0"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "C-MAS",
+    "track": "Workshop",
+    "title": "C-MAS \u2013 Citizen-Centric Multi Agent Systems",
+    "link": "https://sites.google.com/view/cmas2026"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "CLaRAMAS",
+    "track": "Workshop",
+    "title": "CLaRAMAS \u2013 Causal Learning and Reasoning in Agents and MAS",
+    "link": "https://claramas-workshop.github.io/claramas2026/schedule/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "EMAS",
+    "track": "Workshop",
+    "title": "EMAS \u2013 Engineering Multi-Agent Systems",
+    "link": "https://emas-workshop.github.io/2026/program/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "GAIW",
+    "track": "Workshop",
+    "title": "GAIW \u2013 Games, Agents, and Incentives Workshop",
+    "link": "https://gtep-workshops.github.io/gaiw2026/program/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "MABS",
+    "track": "Workshop",
+    "title": "MABS \u2013 Multi-Agent-Based Simulation",
+    "link": "https://mabsworkshop.github.io/"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "MASSpace",
+    "track": "Workshop",
+    "title": "MASSpace \u2013 Autonomous Agents and MAS for Space Applications",
+    "link": "https://mas-space.github.io/aamas2026ws/#programme"
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "code": "RaD-AI",
+    "track": "Workshop",
+    "title": "RaD-AI \u2013 Rebellion and Disobedience in AI",
+    "link": "https://sites.google.com/view/rad-ai/rad-ai/cfp"
+  }
+]

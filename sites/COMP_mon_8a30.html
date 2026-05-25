@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOASEI 2026</title>
+  <style>
+    /* Basic reset and styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #0b3d91; /* Example navy color */
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0b3d91;
+      font-weight: bold;
+    }
+
+    nav a.highlight-2025 {
+      background-color: #9e3939; /* muted red */
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      margin-left: 1.5rem;
+    }
+
+    nav a.highlight-2025:hover {
+      background-color: #d32f2f; /* slightly stronger on hover */
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Example styling for timeline list */
+    .timeline ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .timeline li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Slideshow styles */
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .slides {
+      display: none;
+    }
+
+    /* Dots/bullets for slideshow */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .active, .dot:hover {
+      background-color: #0b3d91;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Methods for Open Agent Systems Evaluation Initiative (MOASEI) 2026 Competition</h1>
+    <h3>AAMAS '26</h3>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#opensystems">Open Systems</a>
+    <a href="#schedule">Conference Schedule</a>
+    <a href="#track1">Track #1</a>
+    <a href="#track2">Track #2</a>
+    <a href="#track3">Track #3</a>
+    <a href="#evaluation">Evaluation</a>
+    <a href="#registration">Registration</a>
+    <a href="#rules">Rules</a>
+    <a href="#platform">Platform</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#organizers">Organizers</a>
+    <a href="#contact">Contact</a>
+    <a href="https://oasys-mas.github.io/moasei2025.html" target="_blank" class="highlight-2025">2025 Competition</a>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- PDF Link Banner with Competition Photos Slideshow -->
+    <!--<section class="pdf-banner" style="text-align: center; padding: 15px; background-color: #e9f5ff; border-radius: 8px; margin-bottom: 2rem;">
+      <div class="banner-content" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px;">
+        Text content 
+        <div style="flex: 1; min-width: 300px;">
+          <h2 style="margin-bottom: 10px;">2026 Competition Results Now Available!</h2>
+          <p style="margin-bottom: 15px;">Complete analysis of winning strategies, performance metrics, and lessons learned from all tracks</p>
+          <a href="https://arxiv.org/abs/2507.05469" 
+             style="display: inline-block; padding: 12px 24px; background-color: #d32f2f; color: white; 
+                    text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 4px;">
+            Technical Report
+          </a>
+          <a href="https://raw.githubusercontent.com/oasys-mas/oasys-mas.github.io/main/MOASEI_2025_05_19.pdf" 
+             style="display: inline-block; padding: 12px 24px; background-color: #0b3d91; color: white; 
+                    text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 4px; margin-right: 10px;">
+            Competition Presentation
+          </a>
+        </div>-->
+        
+        <!-- Slideshow container -->
+        <!--<div class="slideshow-container" style="flex: 1; min-width: 300px; height: 250px; position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <div class="slides fade" style="display: none;">
+            <img src="https://raw.githubusercontent.com/oasys-mas/oasys-mas.github.io/refs/heads/main/assets/images/PicturesMOASEI_Selected/IMG_4691.jpg" 
+            style="width: 100%; height: 250px; object-fit: cover;">
+          </div>
+          <div class="slides fade" style="display: none;">
+            <img src="https://raw.githubusercontent.com/oasys-mas/oasys-mas.github.io/refs/heads/main/assets/images/PicturesMOASEI_Selected/IMG_4693.jpg" 
+            style="width: 100%; height: 250px; object-fit: cover;">
+          </div>
+          <div class="slides fade" style="display: none;">
+            <img src="https://raw.githubusercontent.com/oasys-mas/oasys-mas.github.io/refs/heads/main/assets/images/PicturesMOASEI_Selected/IMG_4703.jpg" 
+            style="width: 100%; height: 250px; object-fit: cover;">
+          </div>-->
+          
+          <!-- Navigation dots -->
+          <!--<div style="text-align: center; position: absolute; bottom: 10px; width: 100%;">
+            <span class="dot" style="height: 10px; width: 10px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+            <span class="dot" style="height: 10px; width: 10px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+            <span class="dot" style="height: 10px; width: 10px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+          </div>
+        </div>
+      </div>
+    </section>-->
+  
+    <section id="about">
+      <h2>About the Competition</h2>
+      <p style="background-color: #e9f5ff; padding: 10px; border-left: 4px solid #0b3d91; margin-bottom: 1rem;">
+        <strong>New to MOASEI?</strong> Check out the <a href="https://oasys-mas.github.io/moasei2025.html" target="_blank">2025 competition results and details</a> to see what previous participants accomplished.
+      </p>
+      <p>
+        Welcome to the inaugural MOASEI Competition, bringing together students, researchers, and professionals from around the world interested in addressing the challenges of Open Agent Systems (OASYS)! The first event to provide unique benchmarking to evaluate the effectiveness of Multiagent Reinforcement Learning (MARL) OASYS. What makes MOASEI unique is the focus on OASYS, which is characterized by the ability of agents and/or tasks that can join or leave the system at any time. The competition will feature a series of benchmark domains that capture the key challenges of OASYS, such as robustness and adaptability. Participants will be asked to submit their MARL checkpoints, which will be evaluated on their performance across one or more of these tracks. The competition will be held leading up to and culminating at the AAMAS conference, providing a unique opportunity for participants to showcase their work to the broader multiagent systems community. We look forward to your participation and hope to see you at the competition!
+      </p>
+      <p>
+        <strong>Learn more:</strong> <a href="https://medium.com/@tyler.j.billings/advancing-the-frontiers-of-multiagent-systems-inside-the-moasei-initiative-190d11c023c0" target="_blank">Advancing the Frontiers of Multiagent Systems: Inside the MOASEI Initiative</a>
+      </p>
+    </section>
+
+    <!-- Open Systems Background -->
+    <section id="opensystems">
+      <h2>Open Systems Background</h2>
+      <p>
+        Making correct decisions to accomplish tasks and goals is often challenging  for AI in real-world applications due to the uncertainty caused by incomplete information and nondeterministic environment behavior. For example, when the set of agents changes over time (due to agent openness), reasoning becomes more complex than in a closed environment because the agent should not only predict what actions other agents will perform, but also which of the other agents are even present to take actions at all. Likewise, when the set of tasks change dynamically over time (due to task openness), agents are less certain that their actions taken to complete existing tasks will remain optimal in the long run as new tasks are introduced or existing tasks disappear.
+      </p>
+      <p>
+        <strong>Learn more:</strong> <a href="https://oasys-mas.github.io/aamas2025.html" target="_blank">AAMAS 2025 Tutorial on Open Agent Systems</a>
+      </p>
+    </section>
+
+    <section id="schedule">
+      <h2>Conference Schedule</h2>
+      <p>
+        The MOASEI competition results will be presented during the 2026 AAMAS conference.
+        The conference schedule will be announced at a later date.<br>
+      </p>
+    </section>
+
+    <!-- Track #1 -->
+    <p style="background-color: #fff3cd; padding: 10px; border-left: 4px solid #856404; margin-bottom: 1rem;"><strong>Note:</strong> The scenarios described for each track are publicly released training configurations. Testing configurations used for evaluation are drawn from the same distribution but are not guaranteed to be identical to the training configurations. The format of observations given by the environment will remain unchanged.</p>
+    <section id="track1">
+    <h2>Track #1: <em>Cybersecurity (Agent Openness Only)</em></h2>
+    <p>
+      Two teams of multiple agents (attackers vs. defenders) compete to either infiltrate or protect a network infrastructure. Attacker agents frequently disappear to avoid detection, and defender agents (e.g. participants) can be taken offline as the equipment they use is disrupted by network infection. 
+    </p>
+
+    <h3>Cybersecurity Configurations</h3>
+      Below are the training configurations for the Cybersecurity track:<br><br>
+        <strong>Scenario: cybersecurity_0</strong><br>
+        <ul>
+          <li><strong>Network:</strong> 5 nodes, linear topology (0-1-2-3-4)</li>
+          <li><strong>Initial Attackers:</strong> 2 attackers initially present</li>
+          <li><strong>Initial Defenders:</strong> All present</li>
+        </ul>
+        <strong>Scenario: cybersecurity_1</strong><br>
+        <ul>
+          <li><strong>Network:</strong> 5 nodes, star topology (node 0 connected to all others)</li>
+          <li><strong>Initial Attackers:</strong> None present at start</li>
+          <li><strong>Initial Defenders:</strong> All present</li>
+        </ul>
+        <strong>Scenario: cybersecurity_2</strong><br>
+        <ul>
+          <li><strong>Network:</strong> 5 nodes, fully connected topology (every node connected to every other node)</li>
+          <li><strong>Initial Attackers:</strong> None present at start</li>
+          <li><strong>Initial Defenders:</strong> 2 defenders initially present</li>
+        </ul>
+
+    <!-- Track #2 -->
+    <section id="track2">
+      <h2>Track #2: <em>Rideshare (Task Openness Only)</em></h2>
+      <p>
+        Agents operating autonomous cars within a ridesharing application decide how to prioritize dynamically appearing passengers as tasks.
+      </p>
+
+      <h3>Rideshare Configurations</h3>
+        Below are the training configurations for the Rideshare track:<br><br>
+        <strong>Scenario: rideshare_0</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 15x15</li>
+          <li><strong>Agent Start Positions:</strong> (13,11), (8,3), (2,14)</li>
+          <li><strong>Passenger Schedule:</strong> 70 passengers, appearing at various times and locations with diverse destinations.</li>
+          <li><strong>Pool Limit:</strong> 4</li>
+          <li><strong>Travel:</strong> No diagonal or fast travel</li>
+        </ul>
+        <strong>Scenario: rideshare_1</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 15x15</li>
+          <li><strong>Agent Start Positions:</strong> (12,9), (4,1), (0,8)</li>
+          <li><strong>Passenger Schedule:</strong> 65 passengers, staggered arrivals and varied destinations across the grid.</li>
+          <li><strong>Pool Limit:</strong> 4</li>
+          <li><strong>Travel:</strong> No diagonal or fast travel</li>
+        </ul>
+        <strong>Scenario: rideshare_2</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 15x15</li>
+          <li><strong>Agent Start Positions:</strong> (0,0), (2,14), (7,2)</li>
+          <li><strong>Passenger Schedule:</strong> 65 passengers, requests distributed throughout the episode with a range of trip lengths.</li>
+          <li><strong>Pool Limit:</strong> 4</li>
+          <li><strong>Travel:</strong> No diagonal or fast travel</li>
+        </ul>
+    </section>
+
+    <!-- Track #3 -->
+    <section id="track3">
+      <h2>Track #3: <em>Wildfire (Both Agent and Task Openness)</em></h2>
+      <p>
+        Agents decide how to use limited suppressant resources to collaboratively put out wildfire tasks that appear both spontaneously and due to realistic fire-spread mechanics. Agents must temporarily disengage when they run out of limited suppressant to recharge before rejoining the firefighting efforts.
+      </p>
+
+      <h3>Wildfire Configurations</h3>
+        The Wildfire track features several challenging scenarios, each with unique grid layouts, fire dynamics, and agent placements. Below are the training configurations for 2026:<br><br>
+
+        <strong>Scenario: wildfire_0</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 3x3</li>
+          <li><strong>Initial Fires:</strong> Lit at (0,0), (1,0), (1,2), (2,0)</li>
+          <li><strong>Agent Positions:</strong> (0,1), (1,1), (2,2)</li>
+        </ul>
+        <strong>Scenario: wildfire_1</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 3x3</li>
+          <li><strong>Initial Fires:</strong> Lit at (1,0), (1,1), (1,2), (2,1)</li>
+          <li><strong>Agent Positions:</strong> (0,0), (2,0), (2,2)</li>
+        </ul>
+        <strong>Scenario: wildfire_2</strong><br>
+        <ul>
+          <li><strong>Grid:</strong> 3x3</li>
+          <li><strong>Initial Fires:</strong> Lit at (0,0), (0,1)</li>
+          <li><strong>Agent Positions:</strong> (0,2), (1,1), (2,2)</li>
+        </ul>
+          </section>
+        <!-- <hr style="margin: 24px 0 12px; border: none; border-top: 2px solid #ddd;"> -->
+
+
+      <section id="track3a">
+        <h2>Track #3A: <em>Wildfire Bonus (Agent, Task and Frame Openness)</em></h2>
+  <strong>Scenario: wildfire_bonus_0</strong><br>
+  <ul>
+    <li><strong>Grid:</strong> 3x3</li>
+    <li><strong>Initial Fires:</strong> Lit at (0,0), (1,0), (1,2), (2,0)</li>
+    <li><strong>Agent Positions:</strong> (0,1), (1,1), (2,2)</li>
+    <li><strong>Equipment:</strong> This scenario introduces "frame openness"—agents can transition between equipment states, which increases or decreases their maximum suppressant capacity.</li>
+  </ul>
+    </section>
+
+    <!-- Evaluation -->
+    <section id="evaluation">
+      <h2>Evaluation</h2>
+      <p>
+        For each competition track, participants must submit a single set of policies (one for each agent) that will be applied across all scenarios within that track. The sole exception is the optional bonus track (3A) in the Wildfire domain, participants may elect to submit a distinct, dedicated set of policies for this specific challenge. Performance on the bonus track will not influence the primary competition rankings and will only be utilized as a tie-breaker if necessary. Participants are encouraged to attempt the bonus track to improve the overall applicability of their solution.</br></br>
+        The scenarios described for each track represent publicly released training configurations. The testing configurations used for final evaluation are drawn from the same distribution as the training configurations but are not guaranteed to be identical to the training set. However, the format of observations provided by the environment will remain unchanged.</br></br>
+        Solutions will be evaluated based on their performance on these testing configurations. Solutions that fail to execute to completion will be evaluated with respect to the tasks successfully completed prior to failure.</br></br>
+        <strong>Domain-independent MARL Performance Measures</strong>: All solutions in all tracks will be evaluated according to the cumulative rewards earned by agents making decisions while operating in test scenarios of the domain utilizing the submitted MARL solution. By using the same performance measures across tracks/domains, we can also try to establish general trends that could generalize to other OASYS domains and characterize the solutions submitted by competitors.</br></br>
+        <strong>Domain-specific Task Performance Measures</strong>: Ultimately , the success of MAS solutions for real-world applications and our ability as researchers to convince the general public of the usefulness of AI is measured by the ability of agents to accomplish domain-specific tasks. Thus, we will also measure the performance of solutions based on task-specific measures. In the Cybersecurity Defense domain, this includes the amount of time that different resources in the network remained free from infiltration by attackers, as well as the average amount of infiltration in each resource. In the Ridesharing domain, this includes the number of passengers successfully transported to their destination, the average wait time before passengers were picked up, and the average time a passenger rode in a car before arriving at their destination. In the Wildfire Suppression domain, this includes the total number of fires extinguished vs. burned out, the average duration of each fire and the efficiency of limited suppressant usage by agents.</br></br>
+        <strong>Determining winners</strong>: The winner of each track will be determined based on a comprehensive evaluation of each of the above performance measures in each of the scenarios within the track. In particular, the highest scoring submission in each performance measure per scenario will receive points (where n ins the number of submissions to that track), the second highest scoring will receive n-1 points, etc. The points in each performance measure will be summed up, and the highest scoring team in each track will be determined to be the winner of that track.
+      </p>
+    </section>
+
+    <!-- Registration Guidelines -->
+    <section id="registration">
+      <h2>Registration Guidelines</h2>
+      <p>
+        Participants must register their teams using the following form: <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=xAPQGhOJLkyxIGKu-ItszY15dlL0OlxCgYCWuF3phIBUM1RVTFNQQjdPVk5JMjdNWkYzMlBTRU5QQy4u">Register Here</a>.</br></br>
+
+        After the registration, the MOASEI commitee will confirm your participation and provide directions for your submission. 
+      </p>
+    </section>
+
+    <!-- Rules -->
+    <section id="rules">
+      <h2>Rules</h2>
+      <p>
+        To ensure a fair and competitive environment, we have established the following rules:</br></br>
+        Both individuals and teams are allowed to register for the competition and submit solutions to one, two,  or all three tracks of their choice. Participants must register for the competition. Submitted solutions are expected to run without errors on our computing platform before the submission  deadline. Participants will have access to the simulators in advance  to thoroughly test that their solutions operate without error. </br></br>
+        We will provide a shared set of 2-3 scenarios within each track  (e.g., different configurations of attackers and defender agents in the Cybersecurity Defense track, different numbers and challenges of fires in the Wildfire Suppression track) that participants will use for developing and training their solutions. Participants will be able to randomly generate episodes for each scenario in each track using different random seeds (or repeat the same episode using the same seed).</br></br>
+        We are encouraging MARL solutions within the competition; however, solutions utilizing other decision-making paradigms (heuristics, planning, game theory) are permissible to ensure the broadest  participation and reflect the full range of decision making possible in OASYS. At the same time, our simulation environments provide information most compatible with MARL solutions, such as observations of current states and rewards after taking each action. The APIs of the simulation environments will not provide access to the models of underlying state transition, observation, and reward dynamics. Communication between agents will not be supported  nor permitted.</br></br>
+        Solution submissions will consist of both (1) the source code needed to operate an agent within the simulators of the three domains (following a provided API structure for standardization), as well as (2) any serialized data files needed to operate the solutions (e.g., serialized neural networks for deep MARL solutions). We will impose a reasonable storage size for solutions (to be determined very soon) for the sake of competition management. Trained models must be submitted; we will not have computational capacity to retrain models that require extensive computation time for training. Timing of decision making will be enforced so that agents do not have unlimited time to make each decision, allowing a reasonable amount of time per decision, reflecting real-world operations.
+      </p>
+
+      <h3>Use of LLMs</h3>
+      <p>
+        Teams are welcome to use Large Language Models (LLMs) during the training and development phase of the competition, for example, for code generation, documentation, or offline policy design. However, during official evaluation runs, agents must operate without the use of any LLMs, regardless of whether they are accessed via external APIs or run locally.
+        The inclusion of model weights, self-contained LLM inference engines, or local model files within the submission is strictly prohibited. Any LLM-derived features must be distilled into static code or standard non-LLM policy structures prior to submission, ensuring the evaluation is performed without active LLM inference.
+      </p>
+      
+    </section>
+
+    <!-- Simulation Platform -->
+    <section id="platform">
+      <h2>Simulation Platform</h2>
+      <p>
+        The competition will be conducted within the Python programming language. We will provide simulation environments for the three tracks, implemented within our <a href="https://github.com/oasys-mas/free-range-zoo/releases/tag/moasei2026v1.0">Free-Range Zoo</a> MARL testbed – an OASYS variant of the popular PettingZoo MARL testbed– with a consistent API for all environments, documentation can be found <a href="https://oasys-mas.github.io/free-range-zoo/">here</a>. Participants can use the following link to download the <a href="https://www.kaggle.com/datasets/6beda02b577bb71893856977faa065b8237da5a214a193d3b7b1f35706b4d0b6">training configurations</a>. Solutions can utilize popular frameworks for implementing reinforcement learning solutions, including the Tensorflow and PyTorch libraries for deep learning. In addition to user supplied code, we will permit any external libraries, so long as they can be downloaded through PyPI with pip using a requirements.txt document.</br></br>
+        Solutions submitted by participants will be evaluated on research  infrastructure hosted by the organizers's institutions.
+
+      </p>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="timeline">
+      <h2>Timeline</h2>
+      <ul>
+        <li><strong>Software environments available for download:</strong> January 16th, 2026</li>
+        <li><strong>Deadline to register for the competition:</strong> April 3rd, 2026</li>
+        <li><strong>Deadline for solution submission (both code and trained models):</strong> April 17th, 2026</li>
+        <li><strong>Notification of finalists:</strong> May 11th, 2026</li>
+        <li><strong>AAMAS Start Date:</strong> May 25th, 2026</li>
+      </ul>
+    </section>
+
+    <section id="organizers" class="organizers">
+      <h2>Organizers</h2>
+      <ul>
+        <li><strong>Adam Eck</strong> is the Arts & Sciences Director of AI Strategy and Innovation, the David H. and Margaret W. Barker Associate Professor of Computer Science, Data Science, & Business, and Chair of Data Science at Oberlin College, Oberlin, OH, USA where he leads the Social Intelligence Lab.  Adam’s research interests include decision making for intelligent agents and multiagent systems in complex environments, as well as interdisciplinary applications of artificial intelligence and machine learning in public health and computational social science.</li>
+        <li><strong>Leen-Kiat Soh</strong> is the Charles Bessey Professor and Senior Associate Director of the School of Computing at the University of Nebraska, Lincoln, NE, USA. Leen-Kiat's research interests include multiagent systems, modeling, and simulation, in addition to computer science education and intelligent data analytics. His research in multiagent systems has covered negotiations, decentralized planning, and open agent systems.</li>
+        <li><strong>Prashant Doshi</strong> is the Executive Director of the Institute for AI and Distinguished Professor of AI and Computer Science with the School of Computing at the University of Georgia. Prashant’s research interests lie in AI and robotics where his research has spanned two decades. In AI, his research has contributed computational algorithms and frameworks toward automated planning and learning in multiagent systems under uncertainty, with a recent emphasis on open agent systems.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        For any queries or further information, please reach out to us at:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:Tbillings4@huskers.unl.edu">Tbillings4@huskers.unl.edu</a><br>
+      </p>
+    </section>
+
+
+    <section id="acknowledgements">
+      <h2>Acknowledgements</h2>
+      <p>
+        This research was supported by a collaborative NSF Grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312657&HistoricalAwards=false">#IIS-2312657</a> (to P.D.), <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312658&HistoricalAwards=false">#IIS-2312658</a> (to L.K.S.), and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2312659&HistoricalAwards=false">#IIS-2312659</a> (to A.E.). Additionally, this work was completed utilizing the Holland Computing Center of the University of Nebraska, which receives support from the UNL Office of Research and Economic Development, and the Nebraska Research Initiative. Finally, we thank the graduate and undergraduate students who have contributed to the development and testing of MOASEI: Ceferino Patino, Daniel Redder, Alireza Saleh Abadi, and Tyler Billings.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 authors. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Slideshow script
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

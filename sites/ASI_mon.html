@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Agents for Societal Impact (ASI)</title>
+  <meta name="description" content="The 7th International Workshop on Agents for Societal Impact (ASI)"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="canonical" href="https://panosd.eu/asi2026/">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="The 7th International Workshop on Agents for Societal Impact (ASI)"/>
+  <meta property="og:description" content="The 7th International Workshop on Agents for Societal Impact (ASI) in conjunction with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026) in 25 May 2026 in Paphos, Cyprus."/>
+  <meta property="og:url" content="https://panosd.eu/asi2026/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="https://cyprusconferences.org/aamas2026/wp-content/uploads/2023/01/paphos-port-1.jpg"/>
+  <meta property="og:image:width" content="800"/>
+  <meta property="og:image:height" content="400"/>
+
+
+  <meta name="twitter:title" content="The 7th International Workshop on Agents for Societal Impact (ASI)">
+  <meta name="twitter:description" content="The 7th International Workshop on Agents for Societal Impact (ASI) in conjunction with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026) in 25 May 2026 in Paphos, Cyprus.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="https://cyprusconferences.org/aamas2026/wp-content/uploads/2023/01/paphos-port-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Agents for Societal Impact, ASI, Workshop, Autonomous Agents for Social Good, AASG, 2026, AAMAS, Social Good, Societal Impact, Societal Challenges, MAS, Multi-agent Systems, Intelligent Agents, Agentic AI, AI, ML, LLM, NGOs">
+
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a9b877a9-ccd9-4ea0-a02a-7e30d707fd16"></script>
+
+  <style>
+    :root{
+      --bg: #0b1220;
+      --panel: rgba(255,255,255,.07);
+      --panel2: rgba(255,255,255,.10);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --muted2: rgba(255,255,255,.58);
+      --border: rgba(255,255,255,.14);
+      --accent: #7dd3fc;
+      --accent2: #a78bfa;
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1040px;
+    }
+
+    *{ box-sizing: border-box; }
+    html{ scroll-behavior: smooth; }
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(167,139,250,.25), transparent 60%),
+                  radial-gradient(900px 500px at 80% 10%, rgba(125,211,252,.22), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    /*a{ color: inherit; text-decoration: none; }*/
+    a:hover{ text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Hero */
+    .hero{
+      position: relative;
+      min-height: 340px;
+      padding: 56px 20px 18px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    /* Use a photo-like background without hotlinking; swap this URL if desired */
+    .hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        linear-gradient(180deg, rgba(11,18,32,.35), rgba(11,18,32,.92)),
+        radial-gradient(1000px 500px at 30% 20%, rgba(125,211,252,.22), transparent 60%),
+        radial-gradient(900px 500px at 70% 10%, rgba(167,139,250,.22), transparent 60%),
+        url("https://cyprusconferences.org/aamas2026/wp-content/uploads/2023/01/paphos-port-1.jpg?auto=compress&cs=tinysrgb&w=1600")
+        center/cover no-repeat;
+      filter: saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .hero::after{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(90deg, rgba(11,18,32,.72), rgba(11,18,32,.20));
+      pointer-events: none;
+    }
+    .wrap{
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .title{
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 750;
+      letter-spacing: -0.03em;
+      margin: 0 0 8px;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .subtitle strong{ color: var(--text); font-weight: 650; }
+    .meta-row{
+      margin-top: 18px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 18px rgba(0,0,0,.18);
+      color: var(--muted);
+      font-weight: 550;
+      font-size: 14px;
+    }
+    .dot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(125,211,252,.12);
+    }
+
+    /* Sticky nav */
+    .nav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--border);
+      background: rgba(11,18,32,.72);
+      backdrop-filter: blur(10px);
+    }
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 10px 0;
+      gap: 14px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .logo{
+      width: 28px; height: 28px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 18px rgba(0,0,0,.22);
+    }
+    .links{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .links a{
+      padding: 8px 10px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+    .links a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+    }
+    .links a.active{
+      color: var(--text);
+      border-color: rgba(125,211,252,.35);
+      background: rgba(125,211,252,.10);
+    }
+    .cta{
+      padding: 8px 12px !important;
+      border: 1px solid rgba(125,211,252,.38) !important;
+      background: rgba(125,211,252,.10) !important;
+      color: var(--text) !important;
+    }
+    .burger{
+      display:none;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* Content */
+    main{ padding: 26px 0 64px; }
+    section{ padding: 26px 0; }
+    h2{
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+    h3{
+      margin: 22px 0 10px;
+      font-size: 18px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    p{ margin: 0 0 12px; color: var(--muted); }
+    .card{
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .col-6{ grid-column: span 6; }
+    .col-12{ grid-column: span 12; }
+
+    /* People cards */
+    .people{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .person{
+      grid-column: span 6;
+      display:flex;
+      gap: 14px;
+      align-items:flex-start;
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+    }
+    .avatar{
+      width: 72px; height: 72px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.20);
+      background: rgba(255,255,255,.10);
+      flex: 0 0 auto;
+    }
+    .person h4{
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+    .person .affil{
+      margin-top: 3px;
+      color: var(--muted2);
+      font-size: 14px;
+      font-weight: 550;
+    }
+
+    /* Footer note */
+    .foot{
+      margin-top: 16px;
+      color: rgba(255,255,255,.52);
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 860px){
+      .person{ grid-column: span 12; }
+      .burger{ display:inline-flex; align-items:center; gap:8px; }
+      .links{
+        display:none;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 6px 0 8px;
+      }
+      .links.open{ display:flex; }
+      .nav-inner{
+        flex-wrap: wrap;
+      }
+    }
+
+    #backToTop{
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(11,18,32,.75);
+      color: var(--text);
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease, transform .25s ease;
+      transform: translateY(8px);
+      z-index: 999; /* bring it clearly to the front */
+    }
+
+    #backToTop:hover{
+      background: rgba(125,211,252,.15);
+      border-color: rgba(125,211,252,.4);
+    }
+
+    #backToTop.show{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    /* NAV now has two rows: title row + menu row */
+    .nav .nav-shell{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* Title row: hidden by default, animates in when scrolled */
+    .nav-title-row{
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-6px);
+      overflow: hidden;
+      transition: max-height .35s ease, opacity .25s ease, transform .35s ease;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+
+    .nav-title{
+      padding: 10px 0;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+      color: rgba(255,255,255,.92);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Menu row positioning context for the logo */
+    .nav-inner{
+      position: relative;
+    }
+
+    /* AAMAS logo: big initially, anchored bottom-right of menu bar */
+    .aamas-logo{
+      position: absolute;
+      right: 0;
+      bottom: 10px;              /* keeps it sitting where it is now */
+      height: 88px;              /* BIGGER than menu bar */
+      width: auto;
+      transform-origin: right bottom;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.40));
+      transition: height .45s ease, transform .45s ease, opacity .35s ease;
+      opacity: .95;
+      pointer-events: none;      /* prevents blocking clicks near it */
+    }
+
+    /* When scrolled: title row appears and logo shrinks to menu height */
+    .nav.scrolled .nav-title-row{
+      max-height: 48px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav.scrolled .aamas-logo{
+      height: 34px;              /* ~menu height */
+      transform: translateY(0);
+      opacity: .9;
+    }
+
+    /* Make room on the right so the logo doesn't overlap the last nav link */
+    #navlinks{
+      padding-right: 120px;
+    }
+
+    /* When logo is big, give it more room */
+    .nav:not(.scrolled) #navlinks{
+      padding-right: 240px;
+    }
+
+    /* On small screens, keep layout sane */
+    @media (max-width: 900px){
+      .aamas-logo{
+        height: 64px;            /* still larger, but not ridiculous on mobile */
+        bottom: 8px;
+      }
+      .nav.scrolled .aamas-logo{
+        height: 28px;
+      }
+      #navlinks{ padding-right: 0; }
+      .nav:not(.scrolled) #navlinks{ padding-right: 0; }
+    }
+
+    .person{
+      transition: box-shadow .25s ease, background .25s ease;
+    }
+
+    .person.expanded{
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 16px 40px rgba(0,0,0,.45);
+    }
+
+    /* Button */
+    .more-btn{
+      margin-top: 8px;
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .more-btn:hover{
+      text-decoration: underline;
+    }
+
+    /* Hidden expandable content */
+    .more-content{
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .45s ease, opacity .35s ease;
+      margin-top: 10px;
+    }
+
+    /* Expanded state */
+    .person.expanded .more-content{
+      max-height: 2000px; /* large enough for bio + abstract */
+      opacity: 1;
+    }
+
+    .abstract, .bio{
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .abstract strong,
+    .bio strong{
+      color: var(--text);
+    }
+
+    .glance{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .glance-item{
+      grid-column: span 6;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius: 14px;
+      padding: 12px 12px;
+    }
+
+    .glance-k{
+      color: rgba(255,255,255,.62);
+      font-weight: 650;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .glance-v{
+      color: rgba(255,255,255,.88);
+      font-weight: 550;
+    }
+
+    .dates{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.72);
+    }
+    .dates li{ margin: 4px 0; }
+    .dates span{ color: rgba(255,255,255,.60); }
+
+    .cfp-cats{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+      margin: 12px 0 14px;
+    }
+
+    .cfp-cat{
+      grid-column: span 6;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius: 14px;
+      padding: 12px 12px;
+    }
+
+    .cfp-cat h4{
+      margin: 0 0 6px;
+      font-size: 15px;
+    }
+
+    .cfp-cat p{
+      margin: 0;
+      font-size: 14px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .topic-grid{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 16px;
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.72);
+    }
+
+    @media (max-width: 860px){
+      .glance-item{ grid-column: span 12; }
+      .cfp-cat{ grid-column: span 12; }
+      .topic-grid{ grid-template-columns: 1fr; }
+    }
+
+    a{
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .more-btn{
+      font-size: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Prevent anchor targets from hiding under the sticky nav */
+    section{
+      scroll-margin-top: 110px; /* tweak: 90–140 depending on nav height */
+    }
+
+  </style>
+</head>
+
+
+
+<body>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="subtitle">The 7th International Workshop on</p>
+      <h1 class="title">Agents for Societal Impact (ASI)</h1>
+      <p class="subtitle">
+        <strong>Paphos, Cyprus.</strong> &nbsp; <strong>25 May 2026</strong>.<br>In conjunction with the <strong><a href="https://cyprusconferences.org/aamas2026/" target="_blank" rel="noreferrer">25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</a></strong>
+      </p>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="wrap nav-shell">
+      <!-- Sticky title row (appears after scroll) -->
+      <div class="nav-title-row" id="navTitleRow">
+        <div class="nav-title">The 7th International Workshop on Agents for Societal Impact (ASI)</div>
+      </div>
+
+      <!-- Existing menu row -->
+      <div class="nav-inner">
+        <button class="burger" id="burger" aria-expanded="false" aria-controls="navlinks">
+          ☰ Menu
+        </button>
+
+        <div class="links" id="navlinks">
+          <a href="#about" data-spy>About</a>
+          <a href="#cfp" data-spy>Call for Papers</a>
+          <a href="#speakers" data-spy>Invited Speakers</a>
+          <a href="#programme" data-spy>Programme</a>
+          <a href="#accepted-papers" data-spy>Accepted Papers</a>
+          <a href="#organisers" data-spy>Organisers</a>
+          <a href="https://cyprusconferences.org/aamas2026/registration/" target="_blank" rel="noreferrer">Registration</a>
+          <a href="https://cyprusconferences.org/aamas2026/venue/" target="_blank" rel="noreferrer">Venue</a>
+          <!-- <a href="#ack" data-spy>Acknowledgements</a> -->
+        </div>
+
+        <!-- AAMAS logo (stays at bottom-right of the menu row) -->
+        <img
+          src="https://cyprusconferences.org/aamas2026/wp-content/uploads/2025/12/LOGO_25YEARS_AAMAS-2026.png"
+          alt="AAMAS 2026 – 25 Years"
+          class="aamas-logo"
+          id="aamasLogo"
+        />
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <div class="wrap">
+      <section id="about">
+        <h2>About</h2>
+        <div class="card">
+          <p>
+            The <span style="color:var(--text); font-weight:650;">7th International Workshop on Agents for Societal Impact (formerly Autonomous Agents for Social Good)</span> will be held in conjunction with the <a href="https://cyprusconferences.org/aamas2026/" target="_blank" rel="noreferrer">25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</a> in 25 May 2026 in Paphos, Cyprus.
+          </p>
+          <p>
+            This workshop focuses on the design, analysis, and deployment of intelligent agents that contribute positively to society. As AI agents become increasingly autonomous and embedded in real-world systems, it is critical to ensure that their behavior aligns with human values and societal goals, rather than optimizing narrowly defined technical objectives. The workshop provides a forum to discuss how agent-based technologies can be responsibly applied to real-world societal systems, including (but not limited to):</p>
+
+            <h3 style="margin-top:0;">Topics of Interest</h3>
+            <ul class="topics-list">
+              <li> Public health and healthcare </li>
+              <li> Education </li>
+              <li> Climate, sustainability, conservation  </li>
+              <li> Transportation and mobility </li>
+              <li> Public infrastructure, smart cities, smart grids </li>
+              <li> Supply chains and logistics </li>
+              <li> Emergency response and disaster management </li>
+              <li> Agriculture and food systems </li>
+              <li> Labor markets and the future of work </li>
+              <li> Housing and land-use planning </li>
+              <li> Ethics, fairness, and discrimination </li>
+              <li> Online information integrity and misinformation </li>
+              <li> Security and cybersecurity  </li>
+              <li> Governance, policy design, and decision support </li>
+            </ul>
+
+          <p>
+            Societal impact cannot be achieved through algorithmic optimization alone. Progress requires an integrated perspective that connects agent engineering (how agents are built), computational social science (how social systems are modeled and studied), and human agent interaction (how agents work with people). Therefore, we welcome researchers working on agents and society across AI, empirical social science, and public policy.
+          </p>
+          <p style="margin-bottom:0;">
+            For any questions related to the workshop, please contact Panayiotis Danassis at
+            <span style="color:var(--text); font-weight:650;">P.Danassis [at] soton.ac.uk</span>
+          </p>
+        </div>
+      </section>
+
+      <section id="cfp">
+        <h2>Call for Papers</h2>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Submission Information at a Glance</h3>
+
+          <div class="glance">
+            <div class="glance-item">
+              <div class="glance-k">Submission site</div>
+              <div class="glance-v">
+                <a href="https://easychair.org/conferences/?conf=asi2026" target="_blank" rel="noreferrer">Easychair</a>
+              </div>
+            </div>
+
+            <div class="glance-item">
+              <div class="glance-k">Format</div>
+              <div class="glance-v"><a href="https://cyprusconferences.org/aamas2026/wp-content/uploads/2025/06/AAMAS-2026-Formatting-Instructions-pre-CR.zip" target="_blank" rel="noreferrer">AAMAS</a> (single-blind)</div>
+              <div class="glance-v">6-8 pages for research papers</div>
+              <div class="glance-v">4 pages for position papers</div>
+            </div>
+
+ <!--            <div class="glance-item">
+              <div class="glance-k">Page limits</div>
+              <div class="glance-v">Research: up to 8 pages • Position: up to 4 pages (excluding references)</div>
+            </div> -->
+
+            <div class="glance-item">
+              <div class="glance-k">Key dates</div>
+              <div class="glance-v">
+                <ul class="dates">
+                  <li><span>Submission deadline:</span> <span style="color:var(--text); font-weight:650;"><s>Feb 11</s><strong style="color:red;"> Feb 18, 2026 (AoE)</strong></span></li>
+                  <li><span>Notification:</span> <span style="color:var(--text); font-weight:650;"><s>Mar 20, 2026</s><strong style="color:red;"> Mar 27, 2026</strong></span></li>
+                  <li><span><a href="https://cyprusconferences.org/aamas2026/registration/" target="_blank" rel="noreferrer">Registration</a> deadline:</span> <span style="color:var(--text); font-weight:650;">Early (up to 31 Mar 2026), Late (01 Apr – 29 May 2026)</span></li>
+                  <li><span>Workshop date:</span> <span style="color:var(--text); font-weight:650;">May 25, 2026</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+ 
+          <div style="height:14px;"></div>
+
+          <h3 style="margin-top:0;">Detailed Information</h3>
+          <p>
+            We invite papers (work-in-progress, or published works with interesting novelty) in two categories:
+          </p>
+
+          <p>
+            1. <strong>Research papers</strong> describing novel contributions using multi-agent systems in societal challenges. Both work-in-progress and recently published work will be considered. Submissions describing recently published work should clearly indicate the earlier venue and provide a link to the published paper. Papers in this category should be at most <strong>6-8 pages</strong> (in AAMAS format), with any number of additional pages containing bibliographic references only.
+          </p>
+
+          <p>
+            2. <strong>Position papers</strong> describing open problems or neglected perspectives in the field, proposing ideas for bringing MAS methods into a new application area, or summarizing the focus areas of a group working on MAS for societal challenges. Papers in this category should be at most <strong>4 pages</strong> (in AAMAS format), with any number of additional pages containing bibliographic references only.
+          </p>
+
+          <p>
+            The submitted papers will be assessed based on their novelty, technical quality, potential impact, and clarity of writing. Collaboration with NGOs and society stakeholders that have first-hand knowledge of the topic will be especially appreciated.
+          </p>
+
+          <p style="margin-bottom:0;">
+            Please note that at least one author must register for the workshop and attend in person. This workshop has no archival proceedings, and the accepted papers are allowed to be submitted to other conference venues. Accepted submissions will have the option of being posted online on the workshop website. For authors who do not wish their papers to be posted online, please inform the organizers. We also welcome papers accepted at other venues to facilitate discussion.
+          </p>
+        </div>
+      </section>
+
+
+      <section id="speakers">
+        <h2>Invited Speakers</h2>
+
+        <div class="people">
+          <article class="person">
+            <img class="avatar" src="Images/jzl.jpg" alt="Joel Z Leibo" />
+            <div class="person-content">
+              <h4>
+                <a href="https://www.jzleibo.com/" target="_blank" rel="noreferrer">
+                  Joel Z Leibo
+                </a>
+              </h4>
+              <div class="affil">Google DeepMind</div>
+
+              <button class="more-btn" aria-expanded="false">
+                More info
+              </button>
+
+              <div class="more-content">
+                <!-- <p class="abstract">
+                  <strong>Talk abstract:</strong>
+                  This talk...
+                </p> -->
+                <p class="bio">
+                  <strong>Bio:</strong>
+                  Joel is a senior staff research scientist at Google DeepMind and visiting professor at King's College London. He obtained his PhD from MIT where he studied computational neuroscience and machine learning with Tomaso Poggio. Joel is interested in reverse engineering human biological and cultural evolution to inform the development of artificial intelligence that is simultaneously human-like and human-compatible. In particular, Joel believes that theories of cooperation from fields like cultural evolution and institutional economics can be fruitfully applied to inform the development of ethical and effective artificial intelligence technology.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="person">
+            <img class="avatar" src="Images/fpsantos4.png" alt="Fernando P. Santos" />
+            <div class="person-content">
+              <h4>
+                <a href="https://fp-santos.github.io/" target="_blank" rel="noreferrer">
+                  Fernando P. Santos
+                </a>
+              </h4>
+              <div class="affil">University of Amsterdam</div>
+
+              <button class="more-btn" aria-expanded="false">
+                More info
+              </button>
+
+              <div class="more-content">
+                <!-- <p class="abstract">
+                  <strong>Talk abstract:</strong>
+                  This talk...
+                </p> -->
+                <p class="bio">
+                  <strong>Bio:</strong>
+                  Fernando is an Associate Professor at the Informatics Institute of the University of Amsterdam. He is part of the SIAS group, where he leads the Prosocial Dynamics Lab and he is a scientific lab manager of the Civic AI Lab.<br><br>
+
+                  His research lies at the interface of AI and Complex Systems: he studies behavioral dynamics in systems of adaptive learning agents and aim at designing prosocial/fair AI.<br><br>
+
+                  Previously, he was a Postdoctoral Fellow at Princeton with Simon A. Levin, supported by a James S. McDonnell Foundation Fellowship. He completed his PhD in Computer Science and Engineering (2018) at Instituto Superior Técnico with Francisco C. Santos, Jorge M. Pacheco, and Ana Paiva; his work received the Victor Lesser Dissertation Award (2018), the APPIA Best Thesis in AI (2017-2018) and the INESC-ID PhD Student award (2018). He was selected for the AAAI-23 New Faculty Highlights program.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="person">
+            <img class="avatar" src="Images/curto.jpeg" alt="Georgina Curto" />
+            <div class="person-content">
+              <h4>
+                <a href="https://georginacurto.com/" target="_blank" rel="noreferrer">
+                  Georgina Curto
+                </a>
+              </h4>
+              <div class="affil">United Nations University</div>
+
+              <button class="more-btn" aria-expanded="false">
+                More info
+              </button>
+
+              <div class="more-content">
+                <!-- <p class="abstract">
+                  <strong>Talk abstract:</strong>
+                  This talk...
+                </p> -->
+                <p class="bio">
+                  <strong>Bio:</strong>
+                  Georgina Curto is a Senior Researcher and Team Lead at the United Nations University Institute in Macau. She is the PI of international research projects on agentic AI that support inclusive economic and social development, in collaboration with the United Nations Economic and Social Commission for Western Asia (UN ESCWA). Georgina Co-Chairs the IJCAI AI and Social Good Symposia in the Global South, volunteers as a member of the organizing committee at the IndabaX Spring School on multi-agent systems, in Uganda, as well as at the pan-African Deep Learning Indaba. <br><br>
+
+                  Her research is at the interface of agentic AI and development economics. She focuses on building multi-agent systems that support policymakers with evidence for equitable and sustainable growth.  Her research was awarded  “Best AI for Good Project” at IJCAI, among other recognitions. <br><br>
+
+                  Previously, she was an Assistant Research Professor at the Lucy Family Institute for Data and Society (University of Notre Dame), a Visiting Scholar at the Kavli Center for Ethics, Science and the Public (UC Berkeley) and a Postdoc at the ND-IBM Technology Ethics Lab (University of Notre Dame).
+                </p>
+              </div>
+            </div>
+          </article>
+
+<!--           <article class="person">
+            <p style="margin-bottom:0;">More speakers to be announced soon!</p>
+          </article> -->
+        </div>
+      </section>
+
+      <section id="programme">
+  <h2>Programme</h2>
+  <div class="card">
+    <p>Times below in local time (Cyprus Time)</p>
+
+    <div style="display:grid; gap:18px; margin-top:14px;">
+
+      <div>
+        <h3 style="margin:0 0 10px;">8:45-10:15 &nbsp; Session 1 <span style="color:var(--muted2); font-weight:600;">(1.30)</span>, <span style="color:var(--muted2); font-weight:400;">Chair: Panayiotis Danassis</span></h3>
+
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:8px 18px; align-items:start;">
+          <div style="color:var(--muted2); font-weight:650;">8:45 - 8:50</div>
+          <div>Welcome</div>
+
+          <div style="color:var(--muted2); font-weight:650;">8:50 - 9:40</div>
+          <div>Keynote 1: <a href="https://www.jzleibo.com/" target="_blank" rel="noreferrer">Joel Z Leibo</a> <span style="color:var(--muted2);">(40mins + 10mins QnA)</span></div>
+
+          <div style="color:var(--muted2); font-weight:650;">9:40 - 10:16</div>
+          <div>
+            Paper Presentations <span style="color:var(--muted2);">(x3 10mins + 2mins QnA)</span>
+            <ul class="topics-list" style="margin:8px 0 0;">
+              <li>Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe. <a href="./Papers/ASI2026_paper_1.pdf" target="_blank" rel="noreferrer">Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Human-AI Alignment into Algorithmic Planning</a></li>
+              <li>Vincenzo Auletta, Diodato Ferraioli and Grazia Ferrara. <a href="./Papers/ASI2026_paper_21.pdf" target="_blank" rel="noreferrer">Influence Maximization in Unknown Social Networks: A Contextual Bandit Approach</a></li>
+              <li>Nikolaos Lazaridis and Pinar Yolum. <a href="./Papers/ASI2026_paper_11.pdf" target="_blank" rel="noreferrer">Agent-Based Auditing of Online Platforms for Algorithmic Manipulative Personalization</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin:0;">10:15-11:00 &nbsp; Coffee break <span style="color:var(--muted2); font-weight:600;">(45)</span></h3>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 10px;">11:00-12:30 &nbsp; Session 2 <span style="color:var(--muted2); font-weight:600;">(1.30)</span>, <span style="color:var(--muted2); font-weight:400;">Chair: Panayiotis Danassis</span></h3>
+
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:8px 18px; align-items:start;">
+          <div style="color:var(--muted2); font-weight:650;">11:00 - 11:50</div>
+          <div>Keynote 2: <a href="https://georginacurto.com/" target="_blank" rel="noreferrer">Georgina Curto</a> <span style="color:var(--muted2);">(40mins + 10mins QnA)</span></div>
+
+          <div style="color:var(--muted2); font-weight:650;">11:50 - 12:26</div>
+          <div>
+            Paper Presentations <span style="color:var(--muted2);">(x3 10mins + 2mins QnA)</span>
+            <ul class="topics-list" style="margin:8px 0 0;">
+              <li>Elsa Donnat. <a href="./Papers/ASI2026_paper_27.pdf" target="_blank" rel="noreferrer">Designing Governable Agent Economies: A Coupled Design Space</a></li>
+              <li>Stefan Roesch, Yali Du, Stefanos Leonardos and Odinaldo Rodrigues. <a href="./Papers/ASI2026_paper_8.pdf" target="_blank" rel="noreferrer">Emergent Cooperation via Participation-Driven Partner Choice in Low-Information Social Dilemmas</a></li>
+              <li>Guilherme Santos and Pedro Campos. <a href="./Papers/ASI2026_paper_14.pdf" target="_blank" rel="noreferrer">TERRA - Trade, Equity Resource Redistribution in Agriculture - An Agent-Based Model for Drought-Prone Areas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin:0;">12:30-14:00 &nbsp; Lunch <span style="color:var(--muted2); font-weight:600;">(1.30)</span></h3>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 10px;">14:00-15:30 &nbsp; Session 3 <span style="color:var(--muted2); font-weight:600;">(1.30)</span>, <span style="color:var(--muted2); font-weight:400;">Chair: <a href="https://dimichai.github.io/" target="_blank" rel="noreferrer">Dimitris Michailidis</a></span></h3>
+
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:8px 18px; align-items:start;">
+          <div style="color:var(--muted2); font-weight:650;">14:00 - 14:36</div>
+          <div>
+            Paper Presentations <span style="color:var(--muted2);">(x3 10mins + 2mins QnA)</span>
+            <ul class="topics-list" style="margin:8px 0 0;">
+              <li>Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł and Rafał Kucharski. <a href="./Papers/ASI2026_paper_7.pdf" target="_blank" rel="noreferrer">Autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games</a></li>
+              <li>Stefano Livella, Luca Bolis, Sabrina Patania, Matteo Papini, Kenji Morita and Dimitri Ognibene. <a href="./Papers/ASI2026_paper_24.pdf" target="_blank" rel="noreferrer">Modelling and Mitigating Problematic Social Media Use through Paired Recommender Systems with Contrasting Objectives</a></li>
+              <li>Guojun Xiong, Mauricio Tec, Haichuan Wang and Milind Tambe. <a href="./Papers/ASI2026_paper_13.pdf" target="_blank" rel="noreferrer">Rule-Bottleneck RL: Learning to Decide and Explain for Sequential Resource Allocation via LLM Agents</a></li>
+            </ul>
+          </div>
+
+          <div style="color:var(--muted2); font-weight:650;">14:36 - 15:30</div>
+          <div>Poster Session</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin:0;">15:30-16:15 &nbsp; Coffee break <span style="color:var(--muted2); font-weight:600;">(45)</span></h3>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 10px;">16:15-17:45 &nbsp; Session 4 <span style="color:var(--muted2); font-weight:600;">(1.30)</span>, <span style="color:var(--muted2); font-weight:400;">Chair: <a href="https://ageorgara.github.io/" target="_blank" rel="noreferrer">Athina Georgara</a></span></h3>
+
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:8px 18px; align-items:start;">
+          <div style="color:var(--muted2); font-weight:650;">16:15 - 17:05</div>
+          <div>Keynote 3: <a href="https://fp-santos.github.io/" target="_blank" rel="noreferrer">Fernando P. Santos</a> <span style="color:var(--muted2);">(40mins + 10mins QnA)</span></div>
+
+          <div style="color:var(--muted2); font-weight:650;">17:05 - 17:41</div>
+          <div>
+            Paper Presentations <span style="color:var(--muted2);">(x3 10mins + 2mins QnA)</span>
+            <ul class="topics-list" style="margin:8px 0 0;">
+              <li>Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues and Francisco Camara Pereira. <a href="./Papers/ASI2026_paper_9.pdf" target="_blank" rel="noreferrer">Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM</a></li>
+              <li>Federico Gabriele, Aldo Glielmo and Marco Taboga. <a href="./Papers/ASI2026_paper_17.pdf" target="_blank" rel="noreferrer">Heterogeneous RBCs via deep multi-agent reinforcement learning</a></li>
+              <li>Sabrina Guidotti, Gregor Donabauer, Davide Taibi, Giuseppe Vizzari, Udo Kruschwitz and Dimitri Ognibene. <a href="./Papers/ASI2026_paper_22.pdf" target="_blank" rel="noreferrer">Introducing a Novel Framework for Recognizing Social Media Recommenders Under Absent Recommendations and a First Graph Neural Network-Based Implementation</a></li>
+            </ul>
+          </div>
+
+          <div style="color:var(--muted2); font-weight:650;">17:41 - 17:45</div>
+          <div>Closing Remarks</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="accepted-papers">
+  <h2>Accepted Papers</h2>
+
+  <div class="card">
+    <ol class="topics-list" style="margin-bottom:0;">
+      <li>
+        <strong>Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe.</strong>
+        <a href="./Papers/ASI2026_paper_1.pdf" target="_blank" rel="noreferrer">Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Human-AI Alignment into Algorithmic Planning</a>
+      </li>
+
+<!--       <li>
+        <strong>Canyu Chen, Kangyu Zhu, Zhaorun Chen, Zhanhui Zhou, Shizhe Diao, Yiping Lu, Tian Li, Manling Li and Dawn Song.</strong>
+        <a href="./Papers/ASI2026_paper_2.pdf" target="_blank" rel="noreferrer">Federated Agent Reinforcement Learning</a>
+      </li> -->
+
+      <li>
+        <strong>Yixuan Yuan, Dedai Wei, Chudong Qian, Ziyue Lin, Yuheng Zhao and Xinwu Ye.</strong>
+        <a href="./Papers/ASI2026_paper_4.pdf" target="_blank" rel="noreferrer">Hedging the Black Box: A Feasibility Study of Financial Risk Transfer for AI Adoption via Generative Agent Simulation</a>, <a href="https://drive.google.com/file/d/1rkcUQqhmLk4yOL1B6NLR7oXi_5M-lisC/view?usp=sharing" target="_blank" rel="noreferrer"> 📄Poster</a>
+      </li>
+
+      <li>
+        <strong>Or Bachar, Or Levi, Sardhendu Mishra, Adi Levi, Manpreet Singh Minhas, Justin Miller, Omer Ben-Porat, Eilon Sheetrit and Jonathan Morra.</strong>
+        <a href="./Papers/ASI2026_paper_5.pdf" target="_blank" rel="noreferrer">LLM Performance Predictors: Learning When to Escalate in Hybrid Human-AI Moderation Systems</a>
+      </li>
+
+      <li>
+        <strong>Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł and Rafał Kucharski.</strong>
+        <a href="./Papers/ASI2026_paper_7.pdf" target="_blank" rel="noreferrer">Autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games</a>
+      </li>
+
+      <li>
+        <strong>Stefan Roesch, Yali Du, Stefanos Leonardos and Odinaldo Rodrigues.</strong>
+        <a href="./Papers/ASI2026_paper_8.pdf" target="_blank" rel="noreferrer">Emergent Cooperation via Participation-Driven Partner Choice in Low-Information Social Dilemmas</a>
+      </li>
+
+      <li>
+        <strong>Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues and Francisco Camara Pereira.</strong>
+        <a href="./Papers/ASI2026_paper_9.pdf" target="_blank" rel="noreferrer">Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM</a>
+      </li>
+
+      <li>
+        <strong>Syed Rafi Ahmed.</strong>
+        <a href="./Papers/ASI2026_paper_10.pdf" target="_blank" rel="noreferrer">Multi-Agent Systems for Economic Justice: Open Problems in Democratizing AI-Driven Decision Support for SMEs</a>
+      </li>
+
+      <li>
+        <strong>Nikolaos Lazaridis and Pinar Yolum.</strong>
+        <a href="./Papers/ASI2026_paper_11.pdf" target="_blank" rel="noreferrer">Agent-Based Auditing of Online Platforms for Algorithmic Manipulative Personalization</a>
+      </li>
+
+      <li>
+        <strong>Julio Cesar Dos Reis.</strong>
+        <a href="./Papers/ASI2026_paper_12.pdf" target="_blank" rel="noreferrer">Agentic Learning Ecosystem for Open, Negotiated, and Accountable Education</a>
+      </li>
+
+      <li>
+        <strong>Guojun Xiong, Mauricio Tec, Haichuan Wang and Milind Tambe.</strong>
+        <a href="./Papers/ASI2026_paper_13.pdf" target="_blank" rel="noreferrer">Rule-Bottleneck RL: Learning to Decide and Explain for Sequential Resource Allocation via LLM Agents</a>
+      </li>
+
+      <li>
+        <strong>Guilherme Santos and Pedro Campos.</strong>
+        <a href="./Papers/ASI2026_paper_14.pdf" target="_blank" rel="noreferrer">TERRA - Trade, Equity Resource Redistribution in Agriculture - An Agent-Based Model for Drought-Prone Areas</a>
+      </li>
+
+      <li>
+        <strong>Federico Gabriele, Aldo Glielmo and Marco Taboga.</strong>
+        <a href="./Papers/ASI2026_paper_17.pdf" target="_blank" rel="noreferrer">Heterogeneous RBCs via deep multi-agent reinforcement learning</a>
+      </li>
+
+<!--       <li>
+        <strong>Itay Segev and Sarah Keren.</strong>
+        <a href="./Papers/ASI2026_paper_18.pdf" target="_blank" rel="noreferrer">Multi Perspective Actor Critic: Adaptive Value Decomposition for Robust and Safe Reinforcement Learning</a>
+      </li> -->
+
+      <li>
+        <strong>Andrew Poile, Baharak Rastegari, Sebastian Stein and Vahid Yazdanpanah.</strong>
+        <a href="./Papers/ASI2026_paper_19.pdf" target="_blank" rel="noreferrer">A Stable and Student-Optimal School Choice Mechanism with Transportation</a>
+      </li>
+
+      <li>
+        <strong>Vincenzo Auletta, Diodato Ferraioli and Grazia Ferrara.</strong>
+        <a href="./Papers/ASI2026_paper_21.pdf" target="_blank" rel="noreferrer">Influence Maximization in Unknown Social Networks: A Contextual Bandit Approach</a>
+      </li>
+
+      <li>
+        <strong>Sabrina Guidotti, Gregor Donabauer, Davide Taibi, Giuseppe Vizzari, Udo Kruschwitz and Dimitri Ognibene.</strong>
+        <a href="./Papers/ASI2026_paper_22.pdf" target="_blank" rel="noreferrer">Introducing a Novel Framework for Recognizing Social Media Recommenders Under Absent Recommendations and a First Graph Neural Network-Based Implementation</a>
+      </li>
+
+      <li>
+        <strong>Mrishika Nair, Georgios Ioannides, Jeremy Roghair, Rohit Thekkanal, Huan Song, Hannah Marlowe and Sharlina Keshava.</strong>
+        <a href="./Papers/ASI2026_paper_23.pdf" target="_blank" rel="noreferrer">Joint Contrastive-Generative Architecture for Domain-Specific Multi-Agent Orchestration in Clinical Decision Assistance</a>, <a href="https://drive.google.com/file/d/1DYJzHrseuWxiw27sTet2dSMubtAzBdZ8/view?usp=sharing" target="_blank" rel="noreferrer"> 📄Poster</a>
+      </li>
+
+      <li>
+        <strong>Stefano Livella, Luca Bolis, Sabrina Patania, Matteo Papini, Kenji Morita and Dimitri Ognibene.</strong>
+        <a href="./Papers/ASI2026_paper_24.pdf" target="_blank" rel="noreferrer">Modelling and Mitigating Problematic Social Media Use through Paired Recommender Systems with Contrasting Objectives</a>
+      </li>
+
+      <li>
+        <strong>Ivan Puga-Gonzalez, Önder Gürcan, Vanja Falck, Christopher Frantz, F. Leron Shults, David Herbert, Larissa Lopes Lima and Markus Grendstad Rousseau.</strong>
+        <a href="./Papers/ASI2026_paper_25.pdf" target="_blank" rel="noreferrer">A Multi-Level Agent-Based Architecture for Climate Governance Integrating Cognitive and Institutional Dynamics</a>
+      </li>
+
+      <li>
+        <strong>Lokesh Singh, Athina Georgara, Jayati Deshmukh, Tan Viet Tuyen Nguyen and Sarvapali D Ramchurn.</strong>
+        <a href="./Papers/ASI2026_paper_26.pdf" target="_blank" rel="noreferrer">Decision-Level Fusion for Robust Wearable Affect Recognition</a>
+      </li>
+
+      <li>
+        <strong>Elsa Donnat.</strong>
+        <a href="./Papers/ASI2026_paper_27.pdf" target="_blank" rel="noreferrer">Designing Governable Agent Economies: A Coupled Design Space</a>
+      </li>
+
+      <li>
+        <strong>Keeheon Lee, Kunhee Ryu and Hogyun Yoo.</strong>
+        <a href="./Papers/ASI2026_paper_28.pdf" target="_blank" rel="noreferrer">Manners Maketh MAN: Moral-Profile Diversity and Cooperative Dynamics in LLM-Based Multi-Agent Simulation</a>
+      </li>
+
+      <li>
+        <strong>Mariam Afonso, Iohan Sardinha, Jadna Cruz, Thiago Sobral and Rosaldo Rossetti.</strong>
+        <a href="./Papers/ASI2026_paper_29.pdf" target="_blank" rel="noreferrer">Simulating Nudging Policies for Sustainable Urban Mobility</a>, <a href="https://drive.google.com/file/d/1A3vcvIxppQPVAnOJj-H0xGQrFdXqD9vU/view?usp=sharing" target="_blank" rel="noreferrer"> 📄Poster</a>, <a href="https://youtu.be/jBF0BdfAgbc" target="_blank" rel="noreferrer"> ▶️Video</a>
+      </li>
+
+      <li>
+        <strong>Filippo Gasco, Nicolo' Luigi Allegris, Stefano Livella, Luca Bolis, Sabrina Guidotti and Dimitri Ognibene.</strong>
+        <a href="./Papers/ASI2026_paper_30.pdf" target="_blank" rel="noreferrer">Beyond Personalization: Multi-User Recommender Dynamics and Robust Mitigation of Social Media Addiction</a>
+      </li>
+
+      <li>
+        <strong>Jari Ala-Ruona, Harko Verhagen, Claes Granmar, Joakim Hedenstedt and Outi Korhonen.</strong>
+        <a href="./Papers/ASI2026_paper_31.pdf" target="_blank" rel="noreferrer">Reconfiguring the social turn of multi-agent systems research in the age of agentic genAI</a>
+      </li>
+
+<!--       <li>
+        <strong>Vrinda Malhotra.</strong>
+        <a href="./Papers/ASI2026_paper_32.pdf" target="_blank" rel="noreferrer">Spillover-Aware Integrity for Human-AI Platform Governance: Why Single-Platform Metrics Fail and What to Measure Instead</a>
+      </li> -->
+
+      <li>
+        <strong>Zeina Elrawashdeh, Amir Sartipi, Igor Tchappi and Afshin Khadangi.</strong>
+        <a href="./Papers/ASI2026_paper_33.pdf" target="_blank" rel="noreferrer">Agentic Science: Orchestrating MAS and LLMs for Multidisciplinary to Transdisciplinary Discovery</a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+      <section id="organisers">
+        <h2>Organising Committee</h2>
+
+        <!-- <h3>Organising Committee</h3> -->
+        <div class="people">
+          <article class="person">
+            <img class="avatar" src="https://panosd.eu/files/me_2_small.jpg" alt="Panayiotis Danassis" />
+            <div>
+              <h4><a href="https://panosd.eu/" target="_blank" rel="noreferrer">Panayiotis Danassis</a></h4>
+              <div class="affil">University of Southampton, UK</div>
+              <div class="affil">P.Danassis [at] soton.ac.uk </div>
+            </div>
+          </article>
+
+          <article class="person">
+            <img class="avatar" src="https://storage.googleapis.com/gweb-research2023-media/pubtools/5477.png" alt="Aparna Taneja" />
+            <div>
+              <h4><a href="https://research.google/people/106890/" target="_blank" rel="noreferrer">Aparna Taneja</a></h4>
+              <div class="affil">Google DeepMind, India</div>
+            </div>
+          </article>
+
+          <article class="person">
+            <img class="avatar" src="https://lingkai-kong.com/assets/img/lingkai-480.webp" alt="Lingkai Kong" />
+            <div>
+              <h4><a href="https://lingkai-kong.com/" target="_blank" rel="noreferrer">Lingkai Kong</a></h4>
+              <div class="affil">Harvard University, USA</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ack">
+<!--         <h2>Acknowledgements</h2>
+        <div class="card">
+          <p style="margin-bottom:0;">
+            We are grateful to for making this workshop possible.
+          </p>
+        </div> -->
+
+        <div class="foot">
+          Webpage created with ChatGPT 5.2.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const burger = document.getElementById("burger");
+    const navlinks = document.getElementById("navlinks");
+    burger?.addEventListener("click", () => {
+      const open = navlinks.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(open));
+    });
+
+    // Scroll spy for section highlighting
+    const spyLinks = [...document.querySelectorAll("[data-spy]")];
+    const sections = spyLinks
+      .map(a => document.querySelector(a.getAttribute("href")))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      spyLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + id));
+    };
+
+    // Click -> immediately mark active
+    spyLinks.forEach(a => {
+      a.addEventListener("click", () => {
+        const target = (a.getAttribute("href") || "").slice(1);
+        if (target) setActive(target);
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      const visibles = entries.filter(e => e.isIntersecting);
+
+      // If we're above all sections → clear active state
+      if (!visibles.length) {
+        const firstSection = sections[0];
+        if (firstSection.getBoundingClientRect().top > 0) {
+          spyLinks.forEach(a => a.classList.remove("active"));
+        }
+        return;
+      }
+
+      // Pick section closest to top
+      visibles.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      setActive(visibles[0].target.id);
+    }, {
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0.01
+    });
+
+
+    sections.forEach(sec => observer.observe(sec));
+
+    // Close menu after clicking a link (mobile)
+    navlinks?.addEventListener("click", (e) => {
+      const a = e.target.closest("a");
+      if (!a) return;
+      if (navlinks.classList.contains("open")) {
+        navlinks.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+
+    const nav = document.getElementById("nav");
+    const hero = document.getElementById("top"); // your hero header has id="top"
+
+    const SCROLL_TRIGGER = () => {
+      // Trigger when you've meaningfully left the hero area:
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      return heroBottom < 80; // tweak 80 if you want earlier/later
+    };
+
+    const onScroll = () => {
+      const should = SCROLL_TRIGGER();
+      nav.classList.toggle("scrolled", should);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+
+    // document.querySelectorAll(".more-btn").forEach(btn => {
+    //   btn.addEventListener("click", () => {
+    //     const person = btn.closest(".person");
+    //     const expanded = person.classList.toggle("expanded");
+
+    //     btn.setAttribute("aria-expanded", expanded);
+    //     btn.textContent = expanded ? "Less info" : "More info";
+    //   });
+    // });
+
+    document.querySelectorAll(".more-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const person = btn.closest(".person");
+
+        // Close all others
+        document.querySelectorAll(".person.expanded").forEach(p => {
+          if (p !== person) {
+            p.classList.remove("expanded");
+            const b = p.querySelector(".more-btn");
+            if (b) {
+              b.setAttribute("aria-expanded", "false");
+              b.textContent = "More info";
+            }
+          }
+        });
+
+        // Toggle this one
+        const expanded = person.classList.toggle("expanded");
+        btn.setAttribute("aria-expanded", expanded);
+        btn.textContent = expanded ? "Less info" : "More info";
+      });
+    });
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,2754 @@
+{
+  "AI4CNI_tue": {
+    "file": "AI4CNI_tue.html",
+    "text_chars": 10888,
+    "region_chars": 10888,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "ALA_mon": {
+    "file": "ALA_mon.html",
+    "text_chars": 32644,
+    "region_chars": 18893,
+    "item_count": 36,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "08:45",
+        "end": "09:15",
+        "title": "Welcome & Opening Remarks",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:15",
+        "end": "10:15",
+        "title": "Session I Invited Talk: Reuth Mirsky",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "Accelerating Q-learning through Efficient Value-sharing across Actions",
+        "authors": "Prabhat Nagarajan, Brett Daley, Martha White, Marlos C. Machado",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "Virtual Double Oracle: Principled Reinitialisation for Incremental Nash Equilibrium Computation",
+        "authors": "Ruilan Wang, Francisco Aristi Reina, Katerina Papadaki",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "Leveraging Reward Machines for Efficient Multi-Objective Reinforcement Learning",
+        "authors": "Panos Aronis, Mehdi Dastani, Roxana Rădulescu, Giovanni Varricchione",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:30",
+        "title": "Short Talks, 5 minutes each in order ANN-CMCGS: Generalizing Continuous Monte-Carlo Graph Search with Approximate Nearest Neighbors Changxi Zhu, Mehdi Dastani, Shihan Wang Mitigating Variance Caused by Communication in Multi-agent Deep Reinforcement Learning Alexandre S. Pires, Román Chiva Gil, Fernando P. Santos",
+        "authors": "Christoph Scherer, Wolfgang Hönig",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session III & Poster Session",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:15",
+        "title": "Cultivating Divergent Multi-Objective Expertise in Multiagent Systems via Expert Ensembles",
+        "authors": "Raghav Thakar, Kagan Tumer",
+        "is_header": false
+      },
+      {
+        "time": "14:30",
+        "end": "15:30",
+        "title": "Poster Session Papers presented in today's sessions, together with additional poster-only papers: Groupoid-Based Internal State Representations for Reinforcement Learning with Local Symmetries Yuma Fujimoto, Kaito Ariu, Kenshi Abe Payoff and Revenue Inequivalence in Repeated Auction with Time-Varying Number of Bidders",
+        "authors": "Ben Opperman, Eduardo Alonso, Esther Mondragon",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:45",
+        "title": "Session IV",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:15",
+        "title": "Invited Talk: Frans Oliehoek",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:15",
+        "end": "17:45",
+        "title": "Short Talks, 5 minutes each in order Boldly Propose, Carefully Verify: LLMs in Agents Should Be Used Only For Abduction Christos Charalambous Social norm dynamics in a behavioral epidemic model Victor Gallego Discovering Agentic Safety Specifications from 1-Bit Danger Signals David Hudák, Maris F. L. Galesloot, Martin Tappler, Milan Ceska",
+        "authors": "Eneko Sabaté Iturgaiz, Victor Gimenez-Abalos, Adrián Tormos, Oriol Miro-Lopez-Feliu, Sergio Alvarez-Napagao",
+        "is_header": false
+      },
+      {
+        "time": "18:00",
+        "end": null,
+        "title": "Social Event Tuesday May 26",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:45",
+        "end": "09:00",
+        "title": "Second Day Opening",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:00",
+        "end": "10:00",
+        "title": "Session V Invited Talk: Katia Sycara",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:15",
+        "title": "Short Talks, 5 minutes each in order ConventionPlay: Capability-Limited Training for Robust Ad-Hoc Collaboration Roberto-Rafael Maura-Rivero, Chirag Nagpal, Roma Patel, Francesco Visin Utility-inspired Reward Transformations Improve Reinforcement Learning Training of Language Models",
+        "authors": "Abhishek Sriraman, Eleni Vasilaki, Robert Loftin",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session VI",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "Adversarial Curriculum Generation for World Models in Reinforcement Learning",
+        "authors": "Siyao Li, Matteo Leonetti",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "NASimJax: A GPU-Accelerated Policy Learning Framework for Penetration Testing",
+        "authors": "Raphael Simon, José Carrasquel, Wim Mees, Pieter Jules Karel Libin",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "Learning Communication Skills in Multi-task Multi-agent Deep Reinforcement Learning",
+        "authors": "Changxi Zhu, Mehdi Dastani, Shihan Wang",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:30",
+        "title": "Short Talks, 5 minutes each in order Preference Guided Iterated Pareto Referent Optimisation for Accessible Route Planning Reisa Haveri, Davide Liga Adaptive Behavioral Alignment of RAG-Based Health Coaching Agent Through Supervised Fine-Tuning Manuel Agraz Vallejo, Kagan Tumer Learning Scalable Salp-Inspired Locomotion",
+        "authors": "Paolo Speziali, Arno De Greef, Mehrdad Asadi, Willem Röpke, Ann Nowé, Diederik M. Roijers",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session VII & Poster Session",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:15",
+        "title": "Counterfactual Gradient Alignment: Optimizing Directional Expert Supervision for Data-Efficient Learning",
+        "authors": "Jonathan Matthew Erskine, Raul Santos-Rodriguez, Matt Clifford, Alexander Hepburn",
+        "is_header": false
+      },
+      {
+        "time": "14:15",
+        "end": "14:30",
+        "title": "Graphon Mean-Field Subsampling for Cooperative Heterogeneous Multi-Agent Reinforcement Learning",
+        "authors": "Emile Timothy Anand, Richard Hoffmann, Sarah Liaw, Adam Wierman",
+        "is_header": false
+      },
+      {
+        "time": "14:30",
+        "end": "15:30",
+        "title": "Poster Session Papers presented in today's sessions, together with additional poster-only papers: PLASDecoupledCVAE: A Decoupled and Adaptive CVAE Framework for Offline Reinforcement Learning Assia Belbachir, Ahmed Nabil Belbachir, Önder Gürcan HLSS: An Agent-Based Adaptive Layered Perception Framework for Hyperspectral Industrial Environments",
+        "authors": "M. Asif Hasan, André Biedenkapp, Noor Awad",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:45",
+        "title": "Session VII",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:30",
+        "title": "Short Talks, 5 minutes each in order Learning User Boredom Constraints in Sequential Recommender Systems Sofia R. Miskala-Dinć, Aviva Prins ReversedQ: Opportunities for Faster Q-Learning in Episodic Online Reinforcement Learning Harsh Rathwa, Pruthwik Mishra Embedded Safety-Aligned Intelligence for Multi-Agent Reinforcement Learning",
+        "authors": "Noam Zvi, Gal Kaminka",
+        "is_header": false
+      },
+      {
+        "time": "16:30",
+        "end": "17:30",
+        "title": "Panel Discussion",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:30",
+        "end": "17:45",
+        "title": "Awards & Closing Remarks Accepted Papers TBA. Paper # Authors Title 1 Designing ethical environments using multi-agent reinforcement learning 2 Jingjing Feng, Lucheng Wang, Alona Tenytska, Bei Peng Sample-Efficient Preference-Based Reinforcement Learning Using Diffusion Models 4 Patrick Benjamin, Alessandro Abate",
+        "authors": "Arnau Mayoral-Macau, Manel Rodriguez-Soto, Enrico Marchesini, Maite López-Sánchez, Marti Sanchez-Fibla, Alessandro Farinelli, Juan Antonio Rodriguez Aguilar",
+        "is_header": false
+      }
+    ]
+  },
+  "ALA_tue": {
+    "file": "ALA_tue.html",
+    "text_chars": 32644,
+    "region_chars": 18893,
+    "item_count": 36,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "08:45",
+        "end": "09:15",
+        "title": "Welcome & Opening Remarks",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:15",
+        "end": "10:15",
+        "title": "Session I Invited Talk: Reuth Mirsky",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "Accelerating Q-learning through Efficient Value-sharing across Actions",
+        "authors": "Prabhat Nagarajan, Brett Daley, Martha White, Marlos C. Machado",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "Virtual Double Oracle: Principled Reinitialisation for Incremental Nash Equilibrium Computation",
+        "authors": "Ruilan Wang, Francisco Aristi Reina, Katerina Papadaki",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "Leveraging Reward Machines for Efficient Multi-Objective Reinforcement Learning",
+        "authors": "Panos Aronis, Mehdi Dastani, Roxana Rădulescu, Giovanni Varricchione",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:30",
+        "title": "Short Talks, 5 minutes each in order ANN-CMCGS: Generalizing Continuous Monte-Carlo Graph Search with Approximate Nearest Neighbors Changxi Zhu, Mehdi Dastani, Shihan Wang Mitigating Variance Caused by Communication in Multi-agent Deep Reinforcement Learning Alexandre S. Pires, Román Chiva Gil, Fernando P. Santos",
+        "authors": "Christoph Scherer, Wolfgang Hönig",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session III & Poster Session",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:15",
+        "title": "Cultivating Divergent Multi-Objective Expertise in Multiagent Systems via Expert Ensembles",
+        "authors": "Raghav Thakar, Kagan Tumer",
+        "is_header": false
+      },
+      {
+        "time": "14:30",
+        "end": "15:30",
+        "title": "Poster Session Papers presented in today's sessions, together with additional poster-only papers: Groupoid-Based Internal State Representations for Reinforcement Learning with Local Symmetries Yuma Fujimoto, Kaito Ariu, Kenshi Abe Payoff and Revenue Inequivalence in Repeated Auction with Time-Varying Number of Bidders",
+        "authors": "Ben Opperman, Eduardo Alonso, Esther Mondragon",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:45",
+        "title": "Session IV",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:15",
+        "title": "Invited Talk: Frans Oliehoek",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:15",
+        "end": "17:45",
+        "title": "Short Talks, 5 minutes each in order Boldly Propose, Carefully Verify: LLMs in Agents Should Be Used Only For Abduction Christos Charalambous Social norm dynamics in a behavioral epidemic model Victor Gallego Discovering Agentic Safety Specifications from 1-Bit Danger Signals David Hudák, Maris F. L. Galesloot, Martin Tappler, Milan Ceska",
+        "authors": "Eneko Sabaté Iturgaiz, Victor Gimenez-Abalos, Adrián Tormos, Oriol Miro-Lopez-Feliu, Sergio Alvarez-Napagao",
+        "is_header": false
+      },
+      {
+        "time": "18:00",
+        "end": null,
+        "title": "Social Event Tuesday May 26",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:45",
+        "end": "09:00",
+        "title": "Second Day Opening",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:00",
+        "end": "10:00",
+        "title": "Session V Invited Talk: Katia Sycara",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:15",
+        "title": "Short Talks, 5 minutes each in order ConventionPlay: Capability-Limited Training for Robust Ad-Hoc Collaboration Roberto-Rafael Maura-Rivero, Chirag Nagpal, Roma Patel, Francesco Visin Utility-inspired Reward Transformations Improve Reinforcement Learning Training of Language Models",
+        "authors": "Abhishek Sriraman, Eleni Vasilaki, Robert Loftin",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session VI",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "Adversarial Curriculum Generation for World Models in Reinforcement Learning",
+        "authors": "Siyao Li, Matteo Leonetti",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "NASimJax: A GPU-Accelerated Policy Learning Framework for Penetration Testing",
+        "authors": "Raphael Simon, José Carrasquel, Wim Mees, Pieter Jules Karel Libin",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "Learning Communication Skills in Multi-task Multi-agent Deep Reinforcement Learning",
+        "authors": "Changxi Zhu, Mehdi Dastani, Shihan Wang",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:30",
+        "title": "Short Talks, 5 minutes each in order Preference Guided Iterated Pareto Referent Optimisation for Accessible Route Planning Reisa Haveri, Davide Liga Adaptive Behavioral Alignment of RAG-Based Health Coaching Agent Through Supervised Fine-Tuning Manuel Agraz Vallejo, Kagan Tumer Learning Scalable Salp-Inspired Locomotion",
+        "authors": "Paolo Speziali, Arno De Greef, Mehrdad Asadi, Willem Röpke, Ann Nowé, Diederik M. Roijers",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session VII & Poster Session",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:15",
+        "title": "Counterfactual Gradient Alignment: Optimizing Directional Expert Supervision for Data-Efficient Learning",
+        "authors": "Jonathan Matthew Erskine, Raul Santos-Rodriguez, Matt Clifford, Alexander Hepburn",
+        "is_header": false
+      },
+      {
+        "time": "14:15",
+        "end": "14:30",
+        "title": "Graphon Mean-Field Subsampling for Cooperative Heterogeneous Multi-Agent Reinforcement Learning",
+        "authors": "Emile Timothy Anand, Richard Hoffmann, Sarah Liaw, Adam Wierman",
+        "is_header": false
+      },
+      {
+        "time": "14:30",
+        "end": "15:30",
+        "title": "Poster Session Papers presented in today's sessions, together with additional poster-only papers: PLASDecoupledCVAE: A Decoupled and Adaptive CVAE Framework for Offline Reinforcement Learning Assia Belbachir, Ahmed Nabil Belbachir, Önder Gürcan HLSS: An Agent-Based Adaptive Layered Perception Framework for Hyperspectral Industrial Environments",
+        "authors": "M. Asif Hasan, André Biedenkapp, Noor Awad",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:45",
+        "title": "Session VII",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:30",
+        "title": "Short Talks, 5 minutes each in order Learning User Boredom Constraints in Sequential Recommender Systems Sofia R. Miskala-Dinć, Aviva Prins ReversedQ: Opportunities for Faster Q-Learning in Episodic Online Reinforcement Learning Harsh Rathwa, Pruthwik Mishra Embedded Safety-Aligned Intelligence for Multi-Agent Reinforcement Learning",
+        "authors": "Noam Zvi, Gal Kaminka",
+        "is_header": false
+      },
+      {
+        "time": "16:30",
+        "end": "17:30",
+        "title": "Panel Discussion",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:30",
+        "end": "17:45",
+        "title": "Awards & Closing Remarks Accepted Papers TBA. Paper # Authors Title 1 Designing ethical environments using multi-agent reinforcement learning 2 Jingjing Feng, Lucheng Wang, Alona Tenytska, Bei Peng Sample-Efficient Preference-Based Reinforcement Learning Using Diffusion Models 4 Patrick Benjamin, Alessandro Abate",
+        "authors": "Arnau Mayoral-Macau, Manel Rodriguez-Soto, Enrico Marchesini, Maite López-Sánchez, Marti Sanchez-Fibla, Alessandro Farinelli, Juan Antonio Rodriguez Aguilar",
+        "is_header": false
+      }
+    ]
+  },
+  "ARMS_mon": {
+    "file": "ARMS_mon.html",
+    "text_chars": 8075,
+    "region_chars": 2512,
+    "item_count": 19,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "8:45",
+        "end": "8:55",
+        "title": "Intro",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "8:55",
+        "end": "9:15",
+        "title": "Decentralized Ergodic Coverage Control in Unknown Time-Varying Environments",
+        "authors": "Maria G. Mendoza, Victoria Marie Tuck, Chinmay Maheshwari, S. Shankar Sastry",
+        "is_header": false
+      },
+      {
+        "time": "9:15",
+        "end": "9:35",
+        "title": "MonkeyBot: A Planning Domain for Adhesion-Free Multi-Limb Robotic Climbing",
+        "authors": "Evgeny Mishlyakov, Mikhail Gruntov, Alexander Shleyfman, Erez Karpas",
+        "is_header": false
+      },
+      {
+        "time": "9:35",
+        "end": "9:55",
+        "title": "Filippo Cipollone, Benedetta Flammini, Francesco Amigoni",
+        "authors": "Multi-Agent Pickup and Delivery with Velocity",
+        "is_header": false
+      },
+      {
+        "time": "9:55",
+        "end": "10:15",
+        "title": "Joint Search and Track of Hostile Drones through Multi-Agent Deep Reinforcement Learning",
+        "authors": "Zeba Mohsin Wase, Katerina Papadaki, Panayiota Valianti, Panayiotis Kolios",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:20",
+        "title": "Robust Visual Planning under Partial Observability and Perceptual Uncertainty",
+        "authors": "Guy Azran, Michael Navat, Sarah Keren",
+        "is_header": false
+      },
+      {
+        "time": "11:20",
+        "end": "11:40",
+        "title": "Intermittent Cooperation in Path Planning for Selfish Agents",
+        "authors": "Itay Shedlezki, Noa Agmon",
+        "is_header": false
+      },
+      {
+        "time": "11:40",
+        "end": "12:00",
+        "title": "Modular Reinforcement Learning For Cooperative Swarms",
+        "authors": "Erel Shtossel, Gal Kaminka",
+        "is_header": false
+      },
+      {
+        "time": "12:00",
+        "end": "12:20",
+        "title": "Seeing More by Seeing Less: The Hidden Power of Uninformed Robots",
+        "authors": "Mohammad Nomaan Husain, Mohammad Salahshour, Andreagiovanni Reina",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:20",
+        "title": "Multi-Constrained Learning Robots under Full Signal Temporal Logic Specifications",
+        "authors": "Davide Bergamasco, Alessandro Farinelli, Daniele Meli",
+        "is_header": false
+      },
+      {
+        "time": "14:20",
+        "end": "14:40",
+        "title": "Towards Verifiable Multi-Robot Missions: From Logical Specifications to Behavior Trees José-Luis Vilchis-Medina",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:40",
+        "end": "15:00",
+        "title": "More Views, More Problems? A Critical Analysis of Multi-View Aggregation for Agent Perception",
+        "authors": "Federico Tavella, Amber Drinkwater, Angelo Cangelosi",
+        "is_header": false
+      },
+      {
+        "time": "15:00",
+        "end": "15:20",
+        "title": "Beyond Kalman Filtering: A Dual Quaternion Geometric Observer for Robust 6DoF Pose Estimation Video Presentation Ilya Afanasyev",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:35",
+        "title": "Blending ontologies and language models to generate sound and natural robot explanations",
+        "authors": "Alberto Olivares-Alarcos, Muhammad Ahsan Fatwaddin Shodiq, Satrio Dwi Sanjaya, Hsien-I Lin, Guillem Alenyà",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": "16:55",
+        "title": "Trust in a Multi-Agent System: Using Natural Language Rules and a Policing Agent to Encourage Trustworthy Behavior",
+        "authors": "Cory Koster, Maria Gini",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": "17:15",
+        "title": "Exploring the Influence of Interaction with Embodied Autonomous Agents on Community Imaginaries of Robot Futures",
+        "authors": "Razanne Abu-Aisheh, Marisela Gutierrez Lopez, Laurene Cheilan, Marcela Munera, Helen Manchester, Sabine Hauert",
+        "is_header": false
+      }
+    ]
+  },
+  "ASI_mon": {
+    "file": "ASI_mon.html",
+    "text_chars": 15209,
+    "region_chars": 7828,
+    "item_count": 17,
+    "header_count": 7,
+    "items": [
+      {
+        "time": "8:45",
+        "end": "10:15",
+        "title": "Session 1 (1.30) , Chair: Panayiotis Danassis",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "8:45",
+        "end": "8:50",
+        "title": "Welcome",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "8:50",
+        "end": "9:40",
+        "title": "Keynote 1: Joel Z Leibo (40mins + 10mins QnA)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:40",
+        "end": "10:16",
+        "title": "Paper Presentations (x3 10mins + 2mins QnA) Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe. Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Human-AI Alignment into Algorithmic Planning Vincenzo Auletta, Diodato Ferraioli and Grazia Ferrara. Influence Maximization in Unknown Social Networks: A Contextual Bandit Approach",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee break (45)",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session 2 (1.30) , Chair: Panayiotis Danassis",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "11:00",
+        "end": "11:50",
+        "title": "Keynote 2: Georgina Curto (40mins + 10mins QnA)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": "12:26",
+        "title": "Paper Presentations (x3 10mins + 2mins QnA) Elsa Donnat. Designing Governable Agent Economies: A Coupled Design Space Guilherme Santos and Pedro Campos. TERRA - Trade, Equity Resource Redistribution in Agriculture - An Agent-Based Model for Drought-Prone Areas",
+        "authors": "Stefan Roesch, Yali Du, Stefanos Leonardos and Odinaldo Rodrigues. Emergent Cooperation via Participation-Driven Partner Choice in Low-Information Social Dilemmas",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch (1.30)",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session 3 (1.30) , Chair: Dimitris Michailidis",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "14:00",
+        "end": "14:36",
+        "title": "Paper Presentations (x3 10mins + 2mins QnA) Stefano Livella, Luca Bolis, Sabrina Patania, Matteo Papini, Kenji Morita and Dimitri Ognibene. Modelling and Mitigating Problematic Social Media Use through Paired Recommender Systems with Contrasting Objectives Guojun Xiong, Mauricio Tec, Haichuan Wang and Milind Tambe. Rule-Bottleneck RL: Learning to Decide and Explain for Sequential Resource Allocation via LLM Agents",
+        "authors": "Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł and Rafał Kucharski. Autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games",
+        "is_header": false
+      },
+      {
+        "time": "14:36",
+        "end": "15:30",
+        "title": "Poster Session",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee break (45)",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "16:15",
+        "end": "17:45",
+        "title": "Session 4 (1.30) , Chair: Athina Georgara",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "16:15",
+        "end": "17:05",
+        "title": "Keynote 3: Fernando P. Santos (40mins + 10mins QnA)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:05",
+        "end": "17:41",
+        "title": "Paper Presentations (x3 10mins + 2mins QnA) Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues and Francisco Camara Pereira. Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM Sabrina Guidotti, Gregor Donabauer, Davide Taibi, Giuseppe Vizzari, Udo Kruschwitz and Dimitri Ognibene. Introducing a Novel Framework for Recognizing Social Media Recommenders Under Absent Recommendations and a First Graph Neural Network-Based Implementation",
+        "authors": "Federico Gabriele, Aldo Glielmo and Marco Taboga. Heterogeneous RBCs via deep multi-agent reinforcement learning",
+        "is_header": false
+      },
+      {
+        "time": "17:41",
+        "end": "17:45",
+        "title": "Closing Remarks Accepted Papers Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Human-AI Alignment into Algorithmic Planning Canyu Chen, Kangyu Zhu, Zhaorun Chen, Zhanhui Zhou, Shizhe Diao, Yiping Lu, Tian Li, Manling Li and Dawn Song. Federated Agent Reinforcement Learning > Yixuan Yuan, Dedai Wei, Chudong Qian, Ziyue Lin, Yuheng Zhao and Xinwu Ye.",
+        "authors": "Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe.",
+        "is_header": false
+      }
+    ]
+  },
+  "ATT_tue": {
+    "file": "ATT_tue.html",
+    "text_chars": 3705,
+    "region_chars": 3314,
+    "item_count": 14,
+    "header_count": 5,
+    "items": [
+      {
+        "time": "09:00",
+        "end": "09:15",
+        "title": "Workshop Opening",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "09:15",
+        "end": "10:15",
+        "title": "Keynote Talk - Dynamic Games and Reinforcement Learning in Transportation Systems - Fernando P. Santos Abstract - Urban transportation implies a highly complex socio-technical system. Planning urban transit requires accounting for interests, often conflicting, of multiple stakeholders and citizens. Likewise, designing fair and efficient transportation systems entails complex optimization problems and calls for new methods to model citizens behaviors when facing commuting decisions. In this talk I will present applications of evolutionary game theory and multi-agent reinforcement learning to model and optimize decisions in transportation systems. I will first present an evolutionary game theoretical model to understand the dynamics underlying the public, private and civic sectors when enacting incentives for electric vehicles adoption. I will then move to public transportation and showcase the application of reinforcement learning to 1) design fairer public transportation networks and 2) model the dynamic process of users’ routing decisions. We will observe that public incentives are key to trigger EV adoption, yet public-civil synergies are essential; multi-objective RL combined with Lorenz dominance can be used to identify network extensions with equitable reward distributions; and network expansions can simultaneously increase efficiency and amplify inequality, depending on individuals’ learning dynamics.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break Session 1: Multi-Agent Coordination and Autonomous Decision-Making",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "11:00",
+        "end": "11:25",
+        "title": "Diffusion-Based Pedestrian Trajectory Prediction as Implicit Multi-Agent Coordination",
+        "authors": "Michał Szczygieł, Antoni Zięciak, Michał Pikus, Agata Kozina, Jarosław Wąs",
+        "is_header": false
+      },
+      {
+        "time": "11:25",
+        "end": "11:50",
+        "title": "GRASP: A Scalable RAG-Enhanced Multi-LLM Architecture for Intention-Aware Autonomous Vehicle Decision-Making",
+        "authors": "Sudeep Aryan Gaddameedi, Mohit Garg, Eric Gyamfi",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": "12:15",
+        "title": "Distributed Multi-Agent Routing Architecture for Reconfigurable, Task-Specific Fleets",
+        "authors": "Aitor López Sánchez, Marin Lujak, Frederic Semet, Holger Billhardt",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break Session 2: Intelligent Transport Operations and Mobility Services",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "14:00",
+        "end": "14:25",
+        "title": "RideCopilot: An Agentic, LLM-Based Conversational System for Multi-Stakeholder Taxi Operations",
+        "authors": "Rohit Aggarwal, Vimal Kumar",
+        "is_header": false
+      },
+      {
+        "time": "14:25",
+        "end": "14:50",
+        "title": "Scheduling Parcel Placement in Smart Locker Locations",
+        "authors": "Emmanouil Rigas, Georgios Chondropoulos, Nick Bassiliades",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": "15:15",
+        "title": "Spatial-Temporal Analysis of Urban Cultural Events: A Visual Analytics Framework",
+        "authors": "Blerina Spahiu, Corinna Castaldi, Giuseppe Vizzari",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break Session 3: Simulation and Modeling of Complex Mobility Systems",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "16:15",
+        "end": "16:40",
+        "title": "A Stochastic Agent-Based Approach to the Modelling of Alpine Skiing",
+        "authors": "Filip Kamiński, Janusz Miller, Jarosław Wąs",
+        "is_header": false
+      },
+      {
+        "time": "16:40",
+        "end": "17:40",
+        "title": "Discussion, Wrap-Up, and Workshop Closure",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "19:30",
+        "end": null,
+        "title": "Workshop Dinner (TBD) Banner photo based on images by: Dimitris Vetsikas ( the church on the left , the port in the center , and the rock on the right ). Report abuse Page details Page updated Report abuse This site uses cookies from Google to deliver its services and to analyze traffic. Information about your use of this site is shared with Google. By clicking \"accept\", you agree to its use of cookies. Cookie Policy",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "C-MAS_tue": {
+    "file": "C-MAS_tue.html",
+    "text_chars": 1997,
+    "region_chars": 1997,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "CLaRAMAS_tue": {
+    "file": "CLaRAMAS_tue.html",
+    "text_chars": 4722,
+    "region_chars": 3212,
+    "item_count": 21,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "8:45",
+        "end": "9:00",
+        "title": "👋 Opening Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:00",
+        "end": "9:45",
+        "title": "(45’) 👨‍🎓 Keynote (Prof. Emiliano Lorini ) Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:45",
+        "end": "10:15",
+        "title": "(30’) Short papers I Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "(45’) Posters I 🏞️ (during coffee break ☕) Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "(15’) Short papers II Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "12:30",
+        "title": "(75’) Full papers I Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "(90’) 👩🏻‍🍳 Lunch break 🤌🏻 Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:15",
+        "title": "(75’) Full papers II Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:15",
+        "end": "15:30",
+        "title": "(15’) Introduction to focus groups Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "(45’) Posters II 🏞️ (during coffe break ☕) Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:30",
+        "title": "(75’) 🧠 Focus groups ✍ Aphrodite A",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:30",
+        "end": null,
+        "title": "Closing 👋 Aphrodite A Every poster will be on display during every coffee break :) Causes and Strategies in Multiagent Systems , by Sylvia S. Kerkhove; Mehdi Dastani; Natasha Alechina Abstract Counterfactuals for Language Model Agents , by Edoardo Pona; Milad Kazemi; Yali Du; David Watson; Nicola Paoletti",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:45",
+        "end": null,
+        "title": "Paul Lo; Jing Pan; Jingxi Yu; Evelyn Wu; Erte Pan; Simon Hollands Collaborative Causal Discovery in a Synthetic Environment: Empirical Evaluation of FLODO Short papers I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": null,
+        "title": "André Meyer-Vitali; Matteo Gregorini Causal Expectations for Decentralised Coordination in Multi-Agent Systems Short papers II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": null,
+        "title": "John R. E. Mills; Peter R. Lewis Causal Learning and Reasoning in Multi-Agent Systems: Goals, Issues, and Taxonomy Full papers I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": null,
+        "title": "Stefano Mariani; Giovanni Briglia; André Meyer-Vitali; Matthias Klusch; Franco Zambonelli From Implicit to Explicit Causal Models in BDI Agents: A Proof-of-Concept with Causal Discovery and Adaptive Policy Full papers I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:40",
+        "end": null,
+        "title": "Meltem Gullusac; Baris Tekin Tezel; Moharram Challenger Evolutionary Learning of Graphical Causal Models from Behavior Full papers I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:05",
+        "end": null,
+        "title": "H. Van Dyke Parunak Value Identifiable, Credit Not: A Credit-First Identifiability Frontier for Confounded Sequential Decision-Making Full papers II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": null,
+        "title": "Teresa Zhang Reproducing and Extending Counterfactual Data Augmentation: A Study on Causal Identifiability and Stability in Reinforcement Learning Full papers II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:25",
+        "end": null,
+        "title": "Shilpa Noushad; Sajan Kumar; Pratyush uppuluri CoACT: Coordination via Aligned Centralized Training in Multi-Agent Reinforcement Learning Full papers II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": null,
+        "title": "Oussama Azizi; Frans A Oliehoek; Matthijs T. J. Spaan Tags format keynotes papers posters schedule Powered by Jekyll with Type on Strap",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "COINE_mon": {
+    "file": "COINE_mon.html",
+    "text_chars": 4155,
+    "region_chars": 3673,
+    "item_count": 29,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "8:50",
+        "end": "9:05",
+        "title": "",
+        "authors": "Welcome and Opening",
+        "is_header": false
+      },
+      {
+        "time": "9:05",
+        "end": "10:15",
+        "title": "Session 1: Organizations and Governance",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:05",
+        "end": "9:20",
+        "title": "Exploring Measures of Agentic Power for Organisational Workflow Structures [PDF]",
+        "authors": "Andrea Marino, L. Thomas van Binsbergen, Tom van Engers, Giovanni Sileno",
+        "is_header": false
+      },
+      {
+        "time": "9:20",
+        "end": "9:30",
+        "title": "Governing AI Economic Agency: A Coupled Design Space (Blue Sky) [PDF] Elsa Donnat",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:30",
+        "end": "9:45",
+        "title": "Agent Contracts: A Formal Framework for Resource-Bounded Autonomous AI Systems [PDF]",
+        "authors": "Qing Ye, Jing Tan",
+        "is_header": false
+      },
+      {
+        "time": "9:45",
+        "end": "10:00",
+        "title": "LLM-augmented Empirical Game Theoretic Simulation for Social-Ecological Systems [PDF]",
+        "authors": "Jennifer Shi, Christopher K. Frantz, Christian Kimmich, Saba Siddiki, Atrisha Sarkar",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:15",
+        "title": "Why Open Source? A Game-Theoretic Analysis of the AI Race [PDF]",
+        "authors": "Andjela Mladenovic, Aaron Courville, Gauthier Gidel",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session 2: Values, Norms, and Policies",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "CAVA: Contextual Argumentation for Value-based Assessment [PDF]",
+        "authors": "Jack Alexander McKinlay, Janina Anna Hoffmann, Andreas Theodorou, Marina De Vos",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "Large Language Models Exhibit Normative Conformity [PDF]",
+        "authors": "Mikako Bito, Keita Nishimoto, Kimitaka Asatani, Ichiro Sakata",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "Anticipatory Thinking in Normative Contexts [PDF]",
+        "authors": "Jomi Fred Hubner, Elena Yan, Luis Gustavo Nardin, Olivier Boissier",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:00",
+        "title": "Constraint-driven abductive explanations as a mechanism for reflective normative reasoning [PDF]",
+        "authors": "Nathan Lloyd, Peter R. Lewis",
+        "is_header": false
+      },
+      {
+        "time": "12:00",
+        "end": "12:15",
+        "title": "Social norm dynamics in a behavioral epidemic model [PDF] Christos Charalambous",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:15",
+        "end": "12:30",
+        "title": "Robust Policy Design in Agent-Based Simulators using Adversarial Reinforcement Learning",
+        "authors": "Akash Agrawal, Joel Dyer, Aldo Glielmo, Michael J. Wooldridge",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:45",
+        "title": "Keynote Operationalizing Responsible Autonomy in Human-AI Collaboration Pinar Yolum",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:45",
+        "end": "15:30",
+        "title": "Session 3: Responsibility and Ethics",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:45",
+        "end": "15:00",
+        "title": "Filling Causal Responsibility Gaps in Spatial Interactions using Feasible Action-Space Reduction by Groups [PDF]",
+        "authors": "Vassil Guenov, Ashwin George, Arkady Zgonnikov, David A. Abbink, Luciano Cavalcante Siebert",
+        "is_header": false
+      },
+      {
+        "time": "15:00",
+        "end": "15:10",
+        "title": "Ethical Non-Closure Under Agentication: Why Action-Level Frameworks Fail for Trajectory-Producing Systems (Blue Sky) [PDF] Matthew Stewart",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:10",
+        "end": "15:20",
+        "title": "Benchmarking Machine Ethics (Blue Sky) [PDF]",
+        "authors": "Louise A. Dennis, Marija Slavkovik, Xin Quan",
+        "is_header": false
+      },
+      {
+        "time": "15:20",
+        "end": "15:30",
+        "title": "Bayesian Game-Theoretic Modeling of Pedestrian-Autonomous Vehicle Interaction (Short Paper) [PDF]",
+        "authors": "Dae-Hyun Yoo, Marija Slavkovik",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:05",
+        "title": "Session 4: Trust, Privacy, and Explainability",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:25",
+        "title": "Theoretical and Empirical Evidence for Trust in Embodied Agents: Integrating Conscious Agent Theory and Computational Trust Models (Short Paper) [PDF]",
+        "authors": "Kevin Babashov, Maria Gini",
+        "is_header": false
+      },
+      {
+        "time": "16:25",
+        "end": "16:40",
+        "title": "Privacy for Everyone: Learning to Respect Privacy in Multi-party Content Sharing [PDF]",
+        "authors": "Hüseyin Aydın, Alper Demir, Pinar Yolum",
+        "is_header": false
+      },
+      {
+        "time": "16:40",
+        "end": "16:55",
+        "title": "Jessica Woodgate, Daniel Collins, Yining Yuan, Nirav Ajmeri",
+        "authors": "Re-Framing Transparency, Interpretability, and Explainability for Multi-Agent Systems [PDF]",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": "17:05",
+        "title": "Perspectives on the Explanation of Organizations in Multi-Agent Systems (Blue Sky) [PDF]",
+        "authors": "Elena Yan, Luis Gustavo Nardin, Alessandro Ricci, Samuele Burattini, Guillaume Muller, Jomi Fred Hubner, Jaime Simão Sichman, Olivier Boissier",
+        "is_header": false
+      },
+      {
+        "time": "17:05",
+        "end": "17:45",
+        "title": "",
+        "authors": "Reflections and Closing Session",
+        "is_header": false
+      }
+    ]
+  },
+  "COMP_mon": {
+    "file": "COMP_mon.html",
+    "text_chars": 1841,
+    "region_chars": 1841,
+    "item_count": 1,
+    "header_count": 1,
+    "items": [
+      {
+        "time": "25:11",
+        "end": null,
+        "title": "20.20 The website of the 3rd DRP Challenge is open, welcome your contribution ! Past competitions 2nd DRP Challenge @ AAMAS2025 1st DRP Challenge @ AAMAS2024 Please feel free to contact with us : drpchallenge@googlegroups.com Google Sites Report abuse Page details Page updated Google Sites Report abuse",
+        "authors": "",
+        "is_header": true
+      }
+    ]
+  },
+  "COMP_mon_8a30": {
+    "file": "COMP_mon_8a30.html",
+    "text_chars": 16116,
+    "region_chars": 16116,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "COMP_mon_b71d": {
+    "file": "COMP_mon_b71d.html",
+    "text_chars": 2758,
+    "region_chars": 2758,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "COMP_tue": {
+    "file": "COMP_tue.html",
+    "text_chars": 9306,
+    "region_chars": 9306,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "COMP_tue_2903": {
+    "file": "COMP_tue_2903.html",
+    "text_chars": 210,
+    "region_chars": 210,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "COMP_tue_8bf9": {
+    "file": "COMP_tue_8bf9.html",
+    "text_chars": 3672,
+    "region_chars": 3672,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "EMAS_mon": {
+    "file": "EMAS_mon.html",
+    "text_chars": 2406,
+    "region_chars": 2406,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "EMAS_tue": {
+    "file": "EMAS_tue.html",
+    "text_chars": 52840,
+    "region_chars": 52553,
+    "item_count": 56,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "08:45",
+        "end": "09:00",
+        "title": "Welcome & Opening",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:00",
+        "end": "10:15",
+        "title": "",
+        "authors": "Engineering Methodologies and Frameworks I",
+        "is_header": false
+      },
+      {
+        "time": "09:00",
+        "end": "09:20",
+        "title": "Reconciling Simulation and Distributed Deployment in a MAS Development Framework Regular Demo Session Andrei Olaru, Ionuț Hodoroagă In a world where agents are attracting renewed attention as a model for distributing artificial intelligence applications, the ability to test and simulate systems of agents becomes more important. However, agent-based simulation platforms and network-distributed multi-agent system deployment frameworks traditionally differ strongly in their approach to agent interaction and execution model, although each could benefit from featuring the capabilities of the other. Following in the tracks of other works that have attempted to bridge the gap for specific cases, this paper makes a primary investigation on the requirements that a framework would need to satisfy in order to support both large-scale simulations and real-life deployments with the same agent code. We present a minimal set of principles upon which features can be developed, relating to interaction support, execution control, and environment modeling. We developed a set of features that allow compatibility between an ABM application and an existing MAS framework and a proof-of-concept implementation of a classic ABM application, showing how ABM features can be built into an agent deployment framework so that the same application can run in simulation and in real-life-deployment mode, validating the claim that the same framework could be used for both scenarios.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:20",
+        "end": "09:40",
+        "title": "Evaluating the Benefits of Orpheus for Iterative and Incremental Development in MAS Regular Demo Session Matteo Baldoni, Cristina Baroglio, Roberto Micalizio Traditional agent-oriented programming languages hinder iterative and incremental development in multiagent systems (MAS) because message-centric interaction protocols intertwine coordination logic with internal agent behaviors, causing changes in interaction requirements to cascade across system components. Building on the Orpheus programming model, which uses declarative information protocols in the Blindingly Simple Protocol Language (BSPL) to decouple coordination from agent reasoning, this work analyzes how such abstractions support iterative and incremental development. By localizing change and mitigating the propagation of interaction updates, Orpheus enables more flexible, robust, and maintainable MAS implementations. Tool support that automatically generates protocol-aware interfaces further facilitates evolving communication requirements without pervasive code revisions. The evaluation demonstrates significant advantages for development agility.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:40",
+        "end": "10:00",
+        "title": "Engineering Norm-Aware BDI Agents Regular Michael Winikoff, Frank Dignum, Sebastian Rodriguez, John Thangarajah Norms are an important abstraction for multi-agent systems (MAS) because they specify flexible constraints . As constraints they help bring order to agent behaviour. However, being flexible, they can be violated, and thus do not over-constrain autonomous entities. In order to build MAS with cognitive agents that use norms we need to be able to engineer these agents to be norm-aware , i.e. being able to take norms into account in their reasoning. Such agents need the ability to decide to: (1) knowingly violate a norm, whilst understanding the consequences; (2) conform with a norm, which may require adapting its plans, e.g. adding extra steps; and (3) change their choice of plan for a given goal, due to consequences of a norm. Existing work on norm-aware agents does not cover all these cases. Additionally, to support adoption, an approach to engineering norm-aware agents should be usable with existing agent-oriented programming languages. This paper defines an approach, including a step-by-step process, to engineering norm-aware BDI (Belief-Desire-Intention) agents that handle these three cases and that can be used with off-the-shelf BDI agent languages.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:15",
+        "title": "Towards a Model-Driven Continuous Assurance Framework for Autonomous Systems Regular Dhaminda B. Abeywickrama, Michael Fisher, Frederic Wheeler, Louise A. Dennis Autonomous systems must sustain justified confidence in their correctness and safety throughout their operational lifecycle. Traditional assurance methods separate development-time assurance from runtime assurance, yielding fragmented arguments that cannot adapt to runtime changes or system updates. Towards addressing this, we propose a unified Continuous Assurance Framework integrating design-time, runtime, and evolution-time assurance within a traceable, model-driven workflow, and instantiate its design-time phase using two formal verification methods: RoboChart for functional correctness and PRISM for probabilistic risk analysis. We also propose a model-driven transformation pipeline, implemented as an Eclipse plugin, that automatically regenerates structured assurance arguments whenever formal specifications or their verification results change, ensuring traceability. We demonstrate our approach on a nuclear inspection robot scenario, and discuss alignment with regulator-endorsed best practices.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:50",
+        "title": "",
+        "authors": "Engineering Methodologies and Frameworks II",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:15",
+        "title": "A Graphical Interface for Visualising and Debugging MASPY Agents Regular Demo Session Gabriel Galvan Neres, Alexandre Lizieri Leite Mellado, Rafael C. Cardoso, André Pinz Borges, Gleifer Vaz Alves MASPY is a Python multi-agent system framework grounded in the BDI model, designed to lower the barrier to entry for developers building and experimenting with multi-agent systems. Although MASPY provides rich internal information about agent reasoning and system execution, its visualisation support is limited to a command-line interface, hindering the inspection and analysis of complex behaviours. To address this, we present MASPY-GUI, a graphical interface for visualising and debugging MASPY systems. MASPY-GUI receives execution data directly from the framework and presents it through four interactive views: a dashboard summarising system state and intentions, an agents view detailing beliefs, goals, and intention histories, an environment view visualising perceptions and their evolution over time, and a messages view showing inter-agent communication and supporting message exchange diagrams. Empirical results show that the interface scales well with increasing numbers of agents and intentions, and to a lesser extent with message volume. A user study also reports a high System Usability Scale score and positive qualitative feedback.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:30",
+        "title": "OptiMA: A Transaction-Based Framework with Schedule Optimization for Very Complex Multi-Agent Systems Regular Umut Çalıkyılmaz, Nitin Nayak, Jinghua Groppe, Sven Groppe In recent years, multi-agent system (MAS) research has increasingly focused on complex systems composed of collaborating agents based on large language models (LLMs) to accomplish sophisticated tasks. These systems rely on dynamic and heterogeneous sets of agents, concurrent access to multiple external tools, and cascading operations that span multiple agents. Existing work on the coordination of MAS mostly adopts semantic approaches for model design such as agent architectures, interaction protocols, and hierarchical structures. However, we argue that greater attention to the execution layer is required to coordinate modern MAS models. To address this gap, we propose OptiMA, a framework that encapsulates atomic agent actions as transactions and uses lock-based concurrency control to provide a high level of consistency and isolation. It gives system designers explicit control over the execution process by incorporating transaction templates into the design process. To reduce potential performance drawbacks of this approach, OptiMA employs a transaction scheduling mechanism. In this paper, we also present the theoretical results on the transaction scheduling problem (TxnSP) and introduce a metaheuristic approach for schedule optimization, which is used within the OptiMA framework. Experimental results show that transaction scheduling can improve performance up to 45% for the tested model configurations, indicating that high system consistency can be achieved while minimizing performance cost.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:50",
+        "title": "MAMS-Deploy: A Hypermedia-Driven Multi-Agent System for Autonomous Microservice Deployment Regular Demo Session Maximilian Scholl, Rem W. Collier This paper presents a novel Multi-Agent MicroServices (MAMS) framework, centered on a formal deployment ontology. This ontology models the environment as a dynamic knowledge graph, separating deployment intent from runtime reality. We demonstrate how Belief-Desire-Intention (BDI) agents autonomously reason over this graph to assemble, deploy, and manage containerized systems. Agents explore the environment via a hypermedia-driven API following Hypermedia as the Engine of Application State (HATEOAS) principles, react to system-wide events using WebSub notifications, and coordinate tasks through direct messaging. This approach enables agents to translate high-level goals into low-level Docker API commands, providing a practical blueprint for bridging the gap between declarative agent reasoning and the imperative nature of modern cloud infrastructure.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": "12:30",
+        "title": "Interaction & Coordination I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": "12:05",
+        "title": "Integrating Agentic Web Standards in Multi-Agent Systems Using Hypermedia Regular Jérémy Lemée The development of language agents is leading to the creation of new standards for multi-agent systems. Many such standards, including the Model Context Protocol (MCP), the Agent2Agent (A2A) Protocol, and the Universal Tool Calling Protocol (UTCP), enable agents to interact with Web-based systems, resulting in the creation of an Agentic Web. Hypermedia is a core feature of the Web that enables users to discover information at run time, and has been used to allow agents to interact with Web services and physical devices in open Web environments through hypermedia standards, such as the Web of Things (WoT) Thing Description. However, MCP and A2A do not natively define hypermedia controls, which introduces coupling between agents and their environments, limiting their independent evolution in open environments. Building on prior work about hypermedia multi-agent systems, we develop a uniform hypermedia interface applicable to different Agentic Web standards. This interface enables agents to discover and interact with entities of different types. This interface relies on signifiers, which are hypermedia descriptions of affordances. We provide automatic generation of signifiers for MCP tools, A2A agents, UTCP tools, and WoT Things. We propose a natural language-based selection method for such signifiers so that agents perceive only contextually relevant signifiers. We expose each signifier perceived by an agent as an MCP tool that performs the action described by the signifier. Finally, we demonstrate and evaluate these concepts in a robotic lab environment.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:05",
+        "end": "12:15",
+        "title": "From Task Allocation to Risk Clearing: A Unifying Interface for Mixed Human-Agent Societies Short Vassilis Vassiliades As humans, robots, and software agents increasingly share safety-critical environments, coordination must move from static task allocation to managing uncertain commitments. Existing frameworks fall short: they either assume rigid, static teams or learn opaque joint policies that are hard to adapt and difficult to integrate with human decision-makers. To overcome these limitations, we propose Risk-Aware Option Clearing (ROC), a unifying coordination mechanism in which agents expose options (temporally extended skills) paired with risk summaries that predict outcome distributions. A central clearinghouse then assigns tasks by optimizing risk-adjusted mission utility under deadlines and safety constraints. ROC is a family of mechanisms, ranging from deployments where the clearinghouse learns outcome models from data to ones that consume full distributional predictions from agents. By treating risk-aware options as the basic coordination unit, ROC sketches a scalable, transparent infrastructure for integrating heterogeneous agents into future mixed human-agent societies and outlines a research agenda for such risk-aware clearing layers.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:15",
+        "end": "12:30",
+        "title": "Towards Collaborative BDI Agents for Human-AI Teamwork Regular Demo Session Margarita H. Radeva, Rafael C. Cardoso This paper presents the development of Belief-Desire-Intention (BDI) agents for human-AI teamwork in the Overcooked AI environment, and investigates their effectiveness and transparency as collaborative partners. The proposed agent architecture explicitly models beliefs, goals, and plans, enabling dynamic adaptation of strategies in response to human actions and evolving environmental conditions. Results from a controlled user study demonstrate that the BDI agent achieves superior collaboration and greater transparency compared with state-of-the-art Deep Reinforcement Learning agents. Participants perceived the agent's behaviour as more predictable and its intentions as more readily interpretable, thereby supporting enhanced mutual understanding in collaborative tasks.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:15",
+        "title": "Interaction & Coordination II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:20",
+        "title": "Strabo: Declarative Specification and Implementation of Agentic Interaction Protocols Regular Demo Session Samuel H. Christie V, Munindar P. Singh, Amit K. Chopra The last few years have witnessed major advances in the modeling and implementation of multiagent systems based on declarative interaction protocols. Our contribution, Strabo, establishes the relevance of these advances to ongoing industry efforts in Agentic AI. Specifically, we consider UCP, the Universal Commerce Protocol, a recent Google-led effort to standardize e-commerce interactions for AI agents. Our exercise is in two parts. One, we model the part of UCP dealing with checkouts as a declarative Langshaw protocol and implement agents using Peach, a programming model for Langshaw. This part of the exercise brings out the advantages of formal, declarative specifications. Two, we show that Peach agents can interoperate with UCP agents implemented by Google, thereby establishing the fidelity of our approach with respect to UCP. Such interoperation enables the incremental introduction of declarative protocols and agents into a conventional setting, indicating a pathway by which EMAS ideas could influence practice without demanding a wholesale update.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:20",
+        "end": "14:40",
+        "title": "Castor and Pollux: A First Demonstration of a BSPL Protocol Discovery Tool Regular Demo Session Matteo Baldoni, Cristina Baroglio, Roberto Micalizio Specifying interaction protocols for Multi-Agent Systems remains a challenging task, especially when adopting information-centric approaches such as BSPL, which require designers to anticipate message structures, parameter roles, and acceptable interleavings. To address this challenge, we propose a novel framework for discovering BSPL protocols rather than specifying them directly. Our approach is based on the intuition that a protocol can be derived from the combination of domain information and distribution control. We introduce Castor, a declarative language that enables designers to model elementary pieces of information, their potential sources and recipients, and their aggregation into business-meaningful information chunks. On top of Castor, we present Pollux, an automated synthesis component that transforms Castor models into BSPL protocols. Pollux formulates protocol generation as a planning problem, where candidate messages are treated as actions and BSPL semantic constraints are enforced during the search. Ambiguities arising from alternative information sources are resolved through configurable heuristics, allowing the exploration of multiple safe and consistent protocol variants. Together, Castor and Pollux support incremental, tool-assisted discovery of BSPL interaction protocols.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:40",
+        "end": "15:00",
+        "title": "SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing Regular Indraveni Chebolu, Arnab Mallick, Harmesh Rana We present SPEAR, a multi-agent coordination framework for smart contract auditing that applies established MAS patterns in a realistic security analysis workflow. SPEAR models auditing as a coordinated mission carried out by specialized agents: a Planning Agent prioritizes contracts using risk-aware heuristics, an Execution Agent allocates tasks via the Contract Net protocol, and a Repair Agent autonomously recovers from brittle generated artifacts using a programmatic-first repair policy. Agents maintain local beliefs updated through AGM-compliant revision, coordinate via negotiation and auction protocols, and revise plans as new information becomes available. An empirical study compares the multi-agent design with centralized and pipeline-based alternatives under controlled failure scenarios, focusing on coordination, recovery behavior, and resource use.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:00",
+        "end": "15:15",
+        "title": "Reasoning with Untruthful Announcements Regular Loc Pham, Tran Cao Son, Enrico Pontelli Untruthful announcement is a significant part of multi-agent communications. Providing a formal account of such announcements is important for representing and reasoning about effects of actions and epistemic planning in multi-agent domains. This paper attacks the problem of dealing with lying and misleading announcements by defining update models for them. It also shows that these update models yield intuitive results when applying on a pointed Kripke structure for reasoning about the beliefs of agents.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:15",
+        "end": "15:25",
+        "title": "Demo Session I — Lightning Talks Reconciling Simulation and Distributed Deployment in a MAS Development Framework Regular Evaluating the Benefits of Orpheus for Iterative and Incremental Development in MAS Regular Matteo Baldoni, Cristina Baroglio, Roberto Micalizio Castor and Pollux: A First Demonstration of a BSPL Protocol Discovery Tool Regular",
+        "authors": "Andrei Olaru, Ionuț Hodoroagă",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Demo Session I + Afternoon Coffee — live demonstrations (same papers as above)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:35",
+        "title": "",
+        "authors": "Governance, Trust & Explainability",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:30",
+        "title": "Metanormative Theory for RL-Based Moral Agents Regular Aleks Knoks, Marija Slavkovik The overlapping disciplines of machine ethics and AI alignment are concerned with designing artificial agents that are aligned with human values and act in ethically acceptable ways. A recent trend is to use reinforcement learning (RL) in the design of such agents while abstracting away from work in moral philosophy. This paper explores the following question: What does it mean for an RL agent to act morally, or to act in ways that are ethically acceptable? We address this question by pursuing two (related) goals. The first is to draw out some ideas from the recent philosophical work in metanormative theory that can guide our thinking about artificial moral agency. The second goal is to examine the architectures of RL agents through the lens of these ideas. This should allow us to identify the RL-based approaches that hold the greatest promise in the context of machine ethics and AI alignment.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:30",
+        "end": "16:45",
+        "title": "The Alignment Flywheel: A Governance-Centric Hybrid MAS for Architecture-Agnostic Safety Regular Demo Session Elias Malomgré, Pieter Simoens Multi-agent systems provide mature methodologies for role decomposition, coordination, and normative governance, capabilities that remain essential as increasingly powerful autonomous decision components are embedded within agent-based systems. While learned and generative models substantially expand system capability, their safety behavior is often entangled with training, making it opaque, difficult to audit, and costly to update after deployment. This paper formalizes the Alignment Flywheel as a governance-centric hybrid MAS architecture that decouples decision generation from safety governance. A Proposer, representing any autonomous decision component, generates candidate trajectories, while a Safety Oracle returns raw safety signals through a stable interface. An enforcement layer applies explicit risk policy at runtime, and a governance MAS supervises the Oracle through auditing, uncertainty-driven verification, and versioned refinement. The central engineering principle is patch locality: many newly observed safety failures can be mitigated by updating the governed oracle artifact and its release pipeline rather than retracting or retraining the underlying decision component. The architecture is implementation-agnostic with respect to both the Proposer and the Safety Oracle, and specifies the roles, artifacts, protocols, and release semantics needed for runtime gating, audit intake, signed patching, and staged rollout across distributed deployments. The result is a hybrid MAS engineering framework for integrating highly capable but fallible autonomous systems under explicit, version-controlled, and auditable oversight.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:45",
+        "end": "16:55",
+        "title": "Brokering as a Decision Loop: Trust-Aware Multi-Agent Architectures for Data Marketplaces Short Imane Hocine, Abdelaziz Kella, Asma Abboura, Maria Hanini, Oscar J. Castro-Lopez, Grégoire Danoy, Jedrzej Musial Earth-observation data marketplaces increasingly depend on repeated service commitments made under uncertainty about provider behavior and delivery risk. Existing brokering workflows treat each request separately. Evidence from prior transactions is retained locally within bilateral relationships and is not used to inform subsequent decisions. This paper makes the case that brokering should be treated as a data management problem. Allocation, pricing, and trust assessment can be expressed as queries over accumulated marketplace knowledge rather than as ad hoc negotiations. We outline SPECTRAM, a multi-agent brokering architecture in which a logical orchestrator coordinates specialized agents over a shared knowledge graph. Agents do not invoke one another, and all interactions are mediated by the orchestrator's state and the shared graph. Service commitments rely on trust and service performance from prior transactions, while transaction outcomes are recorded and used for subsequent decisions. We emphasize agent roles, read/write separation, and orchestration as key design choices for trust-aware brokering. This short paper outlines a research direction for next-generation earth-observation marketplaces and identifies open challenges for MAS and data marketplaces. The proposed framing applies to service marketplaces where transaction history informs future commitments.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": "17:15",
+        "title": "Ex-Plan: Explaining BDI Agent Behaviour Through Contrastive Plan Analysis Regular Demo Session Curtis Davies, Babak Esfandiari Belief-Desire-Intention (BDI) agents can make decisions that are difficult to interpret from observed behaviour alone. We present Ex-Plan, a trace-based methodology for generating contrastive explanations of AgentSpeak agent behaviour, answering queries of the form \"Why did the agent do X rather than Y?\". Given an explanandum event and a foil literal, Ex-Plan reconstructs the relevant decision context through AgentSpeak plan structure (triggers and context guards) together and a linear execution trace, and returns a minimal set of trace events that witness where the foil became infeasible. We evaluate the approach on three AgentSpeak scenarios using structured execution logs, demonstrating how discriminating plan conditions can be grounded to specific divergence points in the trace.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:15",
+        "end": "17:35",
+        "title": "AgentSpeaX: Explain, Actually Regular Michael Winikoff, Zahra Daoui, Andrea Gatti, Viviana Mascardi, Angelo Ferrando Explainability is a key requirement for autonomous agents operating in interactive and human-facing environments. In Belief-Desire-Intention (BDI) agent architectures, the explicit representation of beliefs, goals, and plans suggests that explanations can be grounded in an agent's actual execution. In this paper, we present AgentSpeaX, a conceptual framework for execution-level explainability in AgentSpeak(L) agents, along with a working prototype. AgentSpeaX defines a formal explanation model based on instantiated plan executions, ensuring that explanations are faithful to what the agent actually did rather than to abstract plan schemas. The framework supports contrastive explanations and explanation exchange through dedicated communicative acts. We instantiate the formalism for the Jason language and provide a Prolog-based explainer as a reference realization that generates explanations based on Jason agent execution.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:45",
+        "end": "09:40",
+        "title": "Neural & Symbolic Agents",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:45",
+        "end": "08:55",
+        "title": "LLM-Symbolic Systems: Why and How Short Michael Winikoff There is considerable interest in using Large Language Models (LLMs) to control agents. However, the known weaknesses of LLMs raise concerns about whether their performance would be adequate. This paper provides empirical evidence that LLMs do not provide adequate performance, thus motivating the incorporation of symbolic components in an agentic system (the \"why\" part of the title). It also provides guidance on how to develop such systems.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:55",
+        "end": "09:15",
+        "title": "VEsNA Goes Very Fast: Event-Based BDI Control in Formula One Racing Regular Demo Session Jacopo Nazzaro, Andrea Gatti, Angelo Ferrando Symbolic BDI agents are often perceived as ill-suited for high-speed, continuous, and adversarial domains due to the computational demands of deliberation and the challenges of interfacing with low-level control. This paper presents an engineering study showing that unmodified Jason/AgentSpeak(L) agents, embodied through VEsNA in a Godot-based Formula One simulation, can achieve competitive multi-car racing behaviour at speed using an event-driven symbolic perception-action loop. Our focus is not end-to-end low-level vehicle control: the environment handles continuous vehicle dynamics, low-level actuation, and last-resort collision avoidance, while agents deliberate over compact add/remove percepts (e.g., curves and proximity-based interaction) to select tactical behaviours such as braking/acceleration, racing-line switching, overtaking, and defensive manoeuvres. We describe the architecture, the symbolic plan library, and an empirical evaluation based on telemetry logs, providing evidence that symbolic BDI tactical control can remain responsive in high-frequency continuous domains without modifications to the Jason/AgentSpeak(L) reasoning cycle. We further show that propensities can be integrated by annotating plans with temperaments (e.g., aggressive/calm) to bias plan selection and induce heterogeneous driving styles without modifying the BDI reasoning cycle.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:15",
+        "end": "09:30",
+        "title": "An Extended BDI Case Study Toward Campus Mail Delivery Regular Demo Session Bardia Parmoun, Babak Esfandiari This paper presents a complex robotic case study for using BDI to program a mobile robot to navigate a tunnel environment. The objective is to travel through the tunnel network of Carleton University and deliver mail between buildings. The proposed solution uses an iRobot CREATE robot programmed in Jason, supported by LiDAR sensing and a network of Bluetooth beacons for localization. Building on prior work that limited the robot to line-following behaviour in a simplified environment, this approach extended to full navigation of the university tunnels. Additionally, a realistic simulation environment has been presented to support testing and iterative development. This work demonstrates the feasibility of applying Jason to a real-world robotic task and provides insights into its performance and practical challenges.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:30",
+        "end": "09:40",
+        "title": "Towards Operationalizing Accountability for Self-Improving Multi-Agent Systems Short Demo Session Andrei Ciortea, Stephen Cranefield Accountability mechanisms can help agents improve their behavior by learning from substandard outcomes. When a substandard situation arises, an accountee requests accountors to render accounts, evaluates them to derive remedies, and provides feedback that accountors use to update their procedural knowledge. We present ongoing work on designing such mechanisms for self-improving multi-agent systems. Our current focus is on agents equipped with skills created by developers, where the objective is to enable agents to improve these skills over time. Accountors render accounts in natural language, and we use LLMs to evaluate accounts, provide feedback, and update skills based on this feedback. We present a JaCaMo-based implementation for a home heating scenario where an agent wastes energy heating a room with a tilted window. Preliminary experiments with Claude Opus 4.5 show promising results: the agent learns preventive behaviors (checking and closing the window before heating) in 90% of cases and corrective behaviors (closing the window during heating) in 90% of cases. We extend our experiments to include a human accountor who intentionally left the window open for a bird to fly out. In this scenario, the agent learns to respect the human's intention (stopping or delaying the heating without closing the window) in 80% of prescriptive and 40% of corrective cases. The agent also learns to resume heating once the human closes the window in 40% of cases. These results show that using accountability for self-improvement transcends debugging, enabling collaborative behaviors that respect human intentions.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:40",
+        "end": "10:10",
+        "title": "",
+        "authors": "Neuro-Symbolic & Hybrid Agents and MAS I",
+        "is_header": false
+      },
+      {
+        "time": "09:40",
+        "end": "09:55",
+        "title": "The Secret Life of Traces: A MAS Engineering Perspective Regular Davide Ancona, Zahra Daoui, Angelo Ferrando, Andrea Gatti, Viviana Mascardi, Michael Winikoff In this paper we explore the secret life of systems' execution traces: we propose a unified theoretical architecture based on our experience with traces in the runtime verification, explainability and learning domains. A proof of con- cept of how to exploit traces for the three problems above is presented, rooting in our recent work on VEsNA, an integration of the Jason interpreter for the AgentS- peak(L) language, the Godot game engine, and natural language interfaces",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:55",
+        "end": "10:10",
+        "title": "A Dual-System Neuro-Symbolic Framework with Accident Prediction for Autonomous Driving Regular Jianming Wang, Leonardo Rosa Amado, Rafael C. Cardoso Machine learning models demonstrate strong perception and pattern recognition capabilities in complex traffic scenarios, while symbolic decision-making mechanisms retain significant advantages in interpretability and rule constraints. This paper proposes MLAPM-MAS, a dual system Neuro-Symbolic accident prediction framework based on the ML-MAS architecture, designed to enable collaboration between machine learning accident prediction models and BDI reasoning. System 1 models dynamic vehicle interactions using a Temporal Graph Attention Network constructed from interpretable interaction features, enabling continuous estimation of collision risk in complex traffic scenarios. The resulting accident prediction assessments are mapped onto symbolic beliefs and decision constraints, which are then supplied to System 2, a BDI agent, to guide subsequent planning and execution. Experimental results on the CARLA simulation benchmark show that incorporating accident-prediction constraints improves safety-related metrics and reduces certain traffic violations.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:25",
+        "title": "",
+        "authors": "Neuro-Symbolic & Hybrid Agents and MAS II",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:10",
+        "title": "Mahirul Islam, Fulong Yao, Wanqing Zhao, Rafael C. Cardoso, Mengwei Xu The Pump Scheduling Problem is a highly challenging real-world control task in Water Distribution Networks (WDNs) that aims to minimise operational costs while meeting safety requirements (e.g., minimum and maximum allowable tank levels). Latest Deep Reinforcement Learning (DRL) techniques are effective for cost optimisation but can still violate safety constraints at deployment despite explicit safety considerations during training. Furthermore, evolving safety requirements (e.g., due to seasonal considerations) make retraining for minor safety specification changes disproportionately expensive. To address these challenges, we present a neuro-symbolic framework that pairs a pre-trained DRL agent with a symbolic Belief-Desire-Intention (BDI) agent for WDN safety supervision. Our implementation and preliminary empirical results demonstrate improved safety compliance over a DRL-only baseline while maintaining comparable cost performance.",
+        "authors": "Neuro-Symbolic Pump Scheduling for Safe and Cost-Efficient Water Distribution Networks Short",
+        "is_header": false
+      },
+      {
+        "time": "11:10",
+        "end": "11:30",
+        "title": "A Hybrid Neuro-Symbolic BDI Multi-Agent Architecture for LLM-Based Unit Test Generation Regular Minel Üstgel, Esi Aşkın, Baris Tekin Tezel, Moharram Challenger Automating unit test generation with Large Language Models (LLMs) has shown great potential, yet standard generative approaches often struggle with systematic path exploration and the effective integration of deterministic execution feedback. This paper introduces a hybrid neuro-symbolic multi-agent architecture, developed within the JaCaMo framework, where agents follow a Belief-Desire-Intention (BDI) deliberation cycle to perform goal-directed test generation, that re-frames unit test generation as a goal-directed, agentic search process. By combining the creative reasoning of LLMs with the formal precision of symbolic analysis, the architecture utilizes a society of role-specialized agents and artifacts to transform coverage gaps into symbolic \"Logic Hints\". This creates an iterative neuro-symbolic feedback loop capable of resolving complex branch conditions and navigating deep logic paths that typically stagnate one-shot prompting methods. Evaluation across seven benchmarks shows that our architecture achieves a 100% success rate in reaching the targeted coverage threshold, consistently outperforming all baselines. Statistical tests (Friedman, Wilcoxon) confirm superior reliability and search efficiency with large effect sizes (A12 > 0.8), proving that structured agentic autonomy effectively bridges the gap between LLM reasoning and formal software testing requirements.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:50",
+        "title": "AmI HMAS: Hybrid Agents with Individual and Collective Experience-Aware Code-Based Planning for Smart Environments Regular Demo Session Vlad-Alexandru Florea, Alexandru Sorici, Vlad Matei Drăghici, Andrei-Cătălin Barbu, Andrei Olaru Ad-hoc, goal-driven interactions in smart environments (homes, offices, hotels) have been a long lasting objective in Ambient Intelligence (AmI). Advances in Large Language Models (LLM) for reasoning and use of hypermedia environments for multi-agent systems are bringing this objective closer to achievement. We describe the functionality and implementation of AmI HMAS, a framework for agent-based, goal-driven, LLM-supported inter- actions with smart environments. AmI HMAS maps existing HomeAssistant deployments into semantically represented, navigable Hypermedia Environments, enabling discovery of real-world smart devices. The framework combines classic agency with LLM reasoning to perform environment exploration, request interpretation, community-based exchange of experience, and action planning. AmI HMAS leverages an engine that enables storage and reuse of past interaction experiences during reasoning, distinguishing between environment state requests, explicit commands and implicit / ambiguous requests. The planning approach is designed to produce BehaviorTree code-based procedural plans, that enable plan life cycle management and reuse. Plan components can be exchanged in a community of agents that manage different smart environments, leveraging the power of the community to improve solving requests. We evaluate the system quantitatively across two distinct setups (simulated homes in the HomeBench benchmark and cross-environment transfer in a smart research lab simulation), measuring planning success rates, signifier fast-path hit rates, LLM call reduction, and planning latency across different request types (explicit, ambiguous, single or multi-command, achievable or impossible) and experience reuse settings.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": "12:05",
+        "title": "Ahoy: LLMs Enacting Multiagent Interaction Protocols Regular Demo Session Omkar Jayant Joshi, Munindar P. Singh, Amit K. Chopra An interaction protocol formalizes how the agents in a multiagent system interact, which facilitates implementing agents. Existing approaches yield agent implementations specific to the selected protocols. How can we engineer intelligent agents that can enact protocols but are programming-free? Our contribution, Ahoy, addresses this question by creating LLM agents that dynamically select and enact declarative protocols to achieve user goals. We demonstrate that an Ahoy agent can correctly and intelligently enact multiple protocols—concurrently if appropriate to the user goal—without specialized training. Ahoy's significance lies in that it brings together declarative protocols and LLMs, both approaches that promise improved knowledge engineering for agents.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:05",
+        "end": "12:25",
+        "title": "Exploiting the MAOP Approach for Multi-Level Explainability of Multi-Agent Systems Regular Elena Yan, Samuele Burattini, Luis Gustavo Nardin, Jomi Fred Hubner, Olivier Boissier, Jaime Simão Sichman, Alessandro Ricci Explainability is increasingly becoming an essential non functional requirement for supporting stakeholders to understand complex systems. In multi-agent systems (MAS), we have previously introduced a multi-level explainability framework to explain the behavior of individual agents. In that framework, explainability is investigated from a software engineering perspective and supports stakeholders playing different roles in the software development life cycle (i.e., developer, designer, and end-user). In this paper, we extend that view by moving from an individual agent to a multi-agent system perspective. In particular, we enhance the multi-level explainability framework for MAS by exploiting the benefits of the Multi-Agent Oriented Programming (MAOP) approach. In this view, additional first-class abstractions concerning organization, environment, and interactions introduce a clear separation of concerns in engineering the system and explaining the behavior of MAS.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:10",
+        "title": "Cognitive Architectures for Language Agents I",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:20",
+        "title": "S-ORA: Situated Reasoning and Asynchronous Tool Use for Language Agents Regular Demo Session Luca Tonelli, Alessandro Ricci, Andrei Ciortea The ability to use tools is an essential feature of language agents. In the current tool use paradigm, however, tools are local or remote procedures invoked synchronously with respect to the agent's reasoning process—blocking further progress until a result is returned. This becomes problematic for long-running operations or concurrent tool use. Furthermore, language agents typically operate tools based on minimal descriptions that lack procedural guidance and safety constraints. In this paper, we introduce a fundamentally different tool use paradigm inspired by the Agents \\& Artifacts (A\\&A) metamodel: we model tools as domain objects with their own lifecycle and state, and whose usage interface is inherently asynchronous. To support this paradigm, we introduce tool manuals—operational knowledge that complements existing tool descriptions with detailed functional specifications, procedural knowledge, and safety constraints. We also present S-ORA (Situate-Observe-Reason-Act), an architecture that operationalizes the CoALA framework and extends the ReAct cycle with two phases: Situate (learning from manuals and focusing attention on relevant tools) and Observe (perceiving environmental changes asynchronously). We demonstrate our approach through two scenarios: managing a simulated nuclear reactor with critical safety constraints and enabling tool-mediated coordination among agents. Results show that S-ORA agents equipped with tool manuals can successfully manage concurrent long-running operations, follow usage protocols and safety constraints, and coordinate through shared tools—capabilities not achievable with the current tool use paradigm.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:20",
+        "end": "14:40",
+        "title": "Bridging Reflective and Semantic Memory for Lifelong Learning in LLM-Based Agents Regular Aissa Hadj Mohamed, Julio Cesar Dos Reis, Frances Santos, Rodrigo Gonçalves Flexa, Leandro Aparecido Villas Large Language Model (LLM) agents increasingly rely on external memory to support long-term reasoning, adaptation, and generalization. While prior work has explored reflective memory for self-evaluation and semantic memory for storing abstract knowledge, the interaction between them remains underexplored. This article introduces a unified memory architecture in which reflection and semantic memory co-evolve to support lifelong learning. Reflection is used to evaluate and refine semantic memory through selective strengthening, stabilization, refinement, and forgetting, while semantic memory enriches the reflection process by grounding self-critique in accumulated knowledge. This bidirectional coupling enables more effective use of past experience and improves downstream decision-making. Experiments on the ARC Challenge dataset with the Phi-2 model show consistent improvements over baselines using isolated or loosely coupled memory mechanisms. Overall, our proposed approach advances the design of adaptive LLM-based agents capable of robust, long-horizon reasoning through tightly integrated, heterogeneous memory systems.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:40",
+        "end": "14:55",
+        "title": "QUEST: A RAG-Based Planning Memory to Augment Task Solving of LLM-Based Cognitive Agents Regular Eryck Silva, Gabriel Lopes de Barros, Alejandro Núñez Arroyo, Mateus Edival Rodrigues da Silveira, Pedro Henrique Thompson Furtado, Julio Cesar Dos Reis Agents based on Large Language Models (LLMs) are increasingly used as autonomous entities across various domains, but they still face persistent planning challenges, such as hallucinations and the generation of infeasible plans when relying solely on LLMs' pre-trained data for domain-specific tasks. This study proposes QUEST, a novel framework that leverages Retrieval-Augmented Generation (RAG) to integrate memory-augmented techniques into agent planning. QUEST operates in two phases: an offline construction phase that indexes knowledge bases using LLM-generated questions and summarized descriptions, and an online phase that employs a structured two-step retrieval process via agentic tools. We evaluate QUEST in a fictional text-based proof-of-concept scenario through an ablation study. Using an LLM-as-a-Judge paradigm with a dual-metric evaluation, Rule-Level Compliance and Holistic Safety, we assess the generated plans against baseline and standard RAG setups. The results suggest that QUEST can improve aspects of plan generation in this setting, showing higher levels of constraint adherence and relatively stable evaluator behavior compared to the baselines. These findings provide preliminary evidence that integrating structured knowledge representations may support more reliable agent planning, highlighting directions for further investigation in more complex and diverse environments.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:55",
+        "end": "15:10",
+        "title": "A Hybrid Role-Based Reference Architecture for LLM-Enhanced Multi-Agent Systems Regular Tansu Zafer Asici, Önder Gürcan, Geylani Kardas Large language models (LLMs) are transforming how we build multi-agent systems (MAS); yet, many LLM-centric frameworks still lack the engineering rigour that agent-oriented software engineer- ing (AOSE) provides, resulting in systems that are powerful but difficult to maintain and scale. In our previous work, we critically examined the \"role\" concept across definition, specification, and implementation, and proposed a preliminary hybrid role-based architecture where roles are treated as first-class run-time entities that support four different action implementation types. However, that earlier work remained at a concep- tual level: it identified the need for typed actions and runtime roles but did not provide a formal meta-model specifying how these constructs re- late to one another, nor did it offer a concrete realization or validation. Building on that foundation, this paper closes this gap by defining a role meta-model for LLM-enhanced agents that specifies the core role con- structs, their interfaces, constraints, and interaction relationships, with clear variation points for design-time and run-time implementation. We realize this meta-model as a framework-agnostic Java annotation set: any Java-based agent framework can adopt the annotations to expose roles, actions, and interaction points declaratively in code and validate them at run-time. We demonstrate the applicability of our approach by implementing a hotel reservation scenario in the SCOP framework, where each agent type is realized through dedicated role specifications and role implementations combining hybrid action types. Finally, we discuss practical design considerations—deliberation-execution separa- tion, action-type boundary decisions, and observability and debugging— offering guidance toward production-grade LLM-enhanced MAS.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:15",
+        "end": "15:25",
+        "title": "Demo Session II — Lightning Talks ValidAgent – An Open Repository of Validated Generative Agents for Behavioral Simulations and Multi-Agent Systems Tools VEsNA Goes Very Fast: Event-Based BDI Control in Formula One Racing Regular Jacopo Nazzaro, Andrea Gatti, Angelo Ferrando An Extended BDI Case Study Toward Campus Mail Delivery Regular",
+        "authors": "Anika Bittner, Timo Heinrich, Leon Lührs, Matthias Meyer, Christian Stindt von Dohm",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Demo Session II + Afternoon Coffee — live demonstrations (same papers as above)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:45",
+        "title": "Cognitive Architectures for Language Agents II",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:35",
+        "title": "ARARA: A LLM-Based Multi-Agent Development Framework for Conversational Recommender Systems Regular Fillipe Santos Silva, Juliano Leonardo Soares, Sildolfo F G Neto, Julio Cesar Dos Reis, Marcelo S Reis Large Language Models (LLMs) have accelerated the development of Conversational Recommender Systems (CRSs), enabling flexible language understanding and tool-augmented reasoning. However, most LLM-based CRS implementations embed architectural decisions—such as role specialization, memory access, and coordination logic—implicitly within prompts or tightly coupled pipelines. This conflation of reasoning structure with model capacity limits transparency, hinders systematic analysis, and makes architectural extensions ad hoc. We introduce ARARA, a modular, provider-agnostic framework that models CRS as a multi-agent orchestration problem. ARARA defines explicit abstractions for agents, users, modules, orchestration strategies, memory, and reusable skills, establishing governed execution semantics in which conversational behavior emerges from structured role specialization and controlled coordination. To evaluate structural effects, we instantiate ARARA on RecBench+ conversational recommendation benchmarks in the Movie and Book domains, comparing single-LLM baselines with matched multi-agent configurations under identical memory settings. Results show that architectural decomposition and governed routing systematically improve robustness, accuracy, and user satisfaction as reasoning complexity increases, particularly under implicit inference and deceptive inputs. Our findings demonstrate that CRS effectiveness is not solely a function of model capacity, but critically shaped by architectural design. By elevating coordination, memory, and specialization to first-class architectural primitives, ARARA reframes CRS development as an inspectable and extensible engineering discipline grounded in structured multi-agent orchestration.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": "16:45",
+        "title": "The Role of Cognitive Architectures for Generative AI Agents: An Exploration Based on AutoGen and CoALA Student Demo Session Bruno Esposito, Alessandro Ricci, Samuele Burattini, Rem W. Collier Advances in generative AI have led to the emergence of several practical frameworks for developing agents based on generative models. On the one hand, these frameworks are effective enabling technologies, allowing for flexibly exploiting Large Language Models (LLMs). On the other hand, they typically do not provide any specific high-level architectural blueprint for designing agents, as those found instead in research contexts. To this purpose, in this paper we present a prototype framework called Cognitive AutoGen (CoAG), that enriches AutoGen - which is a well-known and widely adopted practical framework for developing LLM-based autonomous agents - with a cognitive layer, inspired by the CoALA (Cognitive Architectures for Language Agents) cognitive architecture proposal. Besides the framework, we describe the assessment framework that we used to compare regular AutoGen agents against the ones implemented with CoAG, along with a first case study and results.",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:45",
+        "end": "17:45",
+        "title": "Panel Discussion What can the Agentic community learn from the EMAS community (or vice versa)? Moderator: Andrei Ciortea Panelists: Rafael C. Cardoso Amit Chopra Louise Dennis Julio Cesar dos Reis Michael Winikoff About the logo The logo was conceived and designed by Matteo Baldoni , then refined to its final form with the help of generative AI.",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "EXTRAAMAS_mon": {
+    "file": "EXTRAAMAS_mon.html",
+    "text_chars": 177,
+    "region_chars": 177,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "GAIW_tue": {
+    "file": "GAIW_tue.html",
+    "text_chars": 7921,
+    "region_chars": 5153,
+    "item_count": 41,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "8:45",
+        "end": "9:30",
+        "title": "Invited Talk - Piotr Faliszewski Algorithms for Generating (Interesting) Elections Session 1: ML, RL, LLMs, Agent-Based Modeling",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:30",
+        "end": "9:45",
+        "title": "From Competition to Collaboration: Designing Sustainable Mechanisms Between LLMs and Online Forums PDF",
+        "authors": "Yftah Ziser, Omer Ben-Porat, Niv Fono",
+        "is_header": false
+      },
+      {
+        "time": "9:45",
+        "end": "9:50",
+        "title": "Deep Incentive Design with Differentiable Equilibrium Blocks PDF",
+        "authors": "Luke Marris, Georgios Piliouras, Vinzenz Thoma",
+        "is_header": false
+      },
+      {
+        "time": "9:50",
+        "end": "9:55",
+        "title": "Reinforcement Learning for Automated Negotiation Yasser Mohammad PDF",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:55",
+        "end": "10:00",
+        "title": "Strategic Content Creation with GenAI: To Share or Not to Share? PDF",
+        "authors": "Omer Ben-Porat, Gur Keinan",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:05",
+        "title": "Identifying Latent Intentions via Inverse Reinforcement Learning in Repeated Linear Public Good Games",
+        "authors": "Christoph Engel, Marcel Schubert, Carina I Hausladen",
+        "is_header": false
+      },
+      {
+        "time": "10:05",
+        "end": "10:10",
+        "title": "Extrapolating Volition with Recursive Information Markets PDF",
+        "authors": "Long Tran-Thanh, Abhimanyu Pallavi Sudhir",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break + Poster Session Session 2: Game Theory",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:05",
+        "title": "Individual Rationality in Constrained Hedonic Games: Anonymous and Diversity Preferences",
+        "authors": "Šimon Schierreich, Nikolaos Melissinos, Harmender Gahlawat, Foivos Fioravantes",
+        "is_header": false
+      },
+      {
+        "time": "11:05",
+        "end": "11:10",
+        "title": "The Power of Matching for Online Fractional Hedonic Games PDF",
+        "authors": "Alexander Schlenga, René Romen, Martin Bullinger",
+        "is_header": false
+      },
+      {
+        "time": "11:10",
+        "end": "11:15",
+        "title": "Shapley Value-based Approach for Redistributing Revenue of Matchmaking of Private Transactions in Blockchains PDF",
+        "authors": "Sujit Gujar, Yash Chaurasia, Parth Desai, Rasheed M",
+        "is_header": false
+      },
+      {
+        "time": "11:15",
+        "end": "11:20",
+        "title": "Equilibria of the Colonel Blotto Games with Costs Stanisław Kaźmierowski PDF",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:20",
+        "end": "11:25",
+        "title": "Expanding and Evaluating the Applicability of Safe Pareto Improvements PDF Session 3: Voting",
+        "authors": "Caspar Oesterheld, Nathaniel Sauerberg",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "11:45",
+        "title": "On Nash Equilibria in Participatory Budgeting with Donations and Beyond PDF",
+        "authors": "Krzysztof Rogowski, Grzegorz Pierczyński, Georgios Papasotiropoulos, Grzegorz Lisowski",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:00",
+        "title": "Prospect-Theoretic Voting: Strategic Implications and Computational Limits PDF",
+        "authors": "Maria Polukarov, Bart De Keijzer, Colin Cleveland",
+        "is_header": false
+      },
+      {
+        "time": "12:00",
+        "end": "12:05",
+        "title": "Simple Budgeting Games PDF",
+        "authors": "Maria Polukarov, Svetlana Obraztsova, Bart De Keijzer, Alexander Konev, Benjamin Yu",
+        "is_header": false
+      },
+      {
+        "time": "12:05",
+        "end": "12:10",
+        "title": "How Many Votes Is a Lie Worth? Measuring Strategyproofness through Resource Augmentation PDF",
+        "authors": "Caspar Oesterheld, Jiayuan Liu, Eden Hartman, Vincent Conitzer, Ratip Emin Berker",
+        "is_header": false
+      },
+      {
+        "time": "12:10",
+        "end": "12:15",
+        "title": "Costly Voting in the Hotelling-Downs Model PDF",
+        "authors": "Reshef Meir, Guy Wolf",
+        "is_header": false
+      },
+      {
+        "time": "12:15",
+        "end": "12:30",
+        "title": "Strategic Merging of Project Proposals in Participatory Budgeting PDF",
+        "authors": "Zein Pishbin, Grzegorz Pierczyński, Grzegorz Lisowski, Łukasz Janeczko, Piotr Faliszewski",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Session 4: Allocations",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:15",
+        "title": "Fair Allocation of Improvements: When Old Endowments Shape New Assignments PDF",
+        "authors": "Erel Segal-Halevi, Rica Gonen, Noga Klein Elmalem",
+        "is_header": false
+      },
+      {
+        "time": "14:15",
+        "end": "14:20",
+        "title": "On the Fairness of Additive Welfarist Rules PDF",
+        "authors": "Sheung Man Yuen, Warut Suksompong, Karen Frilya Celine",
+        "is_header": false
+      },
+      {
+        "time": "14:20",
+        "end": "14:25",
+        "title": "Online EFX Allocations with Predictions PDF",
+        "authors": "Nicos Protopapas, Themistoklis Melissourgos",
+        "is_header": false
+      },
+      {
+        "time": "14:25",
+        "end": "14:30",
+        "title": "Almost Equitable Allocations of Indivisible Goods under Externalities PDF Online Session",
+        "authors": "Aditi Sethia, Manisha Padala, Neeldhara Misra",
+        "is_header": false
+      },
+      {
+        "time": "14:45",
+        "end": "14:50",
+        "title": "Reforming an Unfair Allocation by Exchanging Goods PDF",
+        "authors": "Warut Suksompong, Naoyuki Kamiyama, Ayumi Igarashi, Sheung Man Yuen",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": "14:55",
+        "title": "Non-Monotonicity in Fair Division of Graphs PDF",
+        "authors": "Yu Zhou, Shraddha Pathak, Hadi Hosseini",
+        "is_header": false
+      },
+      {
+        "time": "14:55",
+        "end": "15:00",
+        "title": "How Preference Structure Affects Manipulability in Matching Markets",
+        "authors": "Shraddha Pathak, Anna Kasehagen, Hadi Hosseini",
+        "is_header": false
+      },
+      {
+        "time": "15:00",
+        "end": "15:05",
+        "title": "Credit Fairness: Online Fairness In Shared Resource Pools",
+        "authors": "Rupert Freeman, Seyed Majid Zahedi",
+        "is_header": false
+      },
+      {
+        "time": "15:05",
+        "end": "15:10",
+        "title": "Social Welfare in Budget Aggregation",
+        "authors": "Markus Utke, Ulrike Schmidt-Kraepelin, Rupert Freeman, Javier Cembrano",
+        "is_header": false
+      },
+      {
+        "time": "15:10",
+        "end": "15:15",
+        "title": "Weighted Soft Condorcet Optimization Santeri Koivula PDF",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:15",
+        "end": "15:20",
+        "title": "PeerBTS: Incentivizing Effort in Strategyproof Peer Selection PDF",
+        "authors": "Nicholas Mattei, Omer Lev, Harper Lyon",
+        "is_header": false
+      },
+      {
+        "time": "15:20",
+        "end": "15:25",
+        "title": "Analyzing the Effects of Two-Stage Peer Evaluation PDF",
+        "authors": "Kobi Gal, Nicholas Mattei, Omer Lev, Oshri Damty, Harper Lyon, Roy Fairstein",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Coffee Break + Poster Session Session 5: Voting",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:30",
+        "title": "Representation in Peer Selection: A Liquid Democracy Perspective PDF",
+        "authors": "Georgios Papasotiropoulos, Grzegorz Lisowski, Davide Grossi",
+        "is_header": false
+      },
+      {
+        "time": "16:30",
+        "end": "16:35",
+        "title": "Alan Tsang, Zinovi Rabinovich, Maria Polukarov, Svetlana Obraztsova, Edith Elkind PDF",
+        "authors": "Bucklin and Condorcet Consistency of Dynamic Voting",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": "16:40",
+        "title": "Is Four Enough? Automated Reasoning Approaches and Dual Bounds for Condorcet Dimensions of Elections PDF",
+        "authors": "Ruben Martins, George Zhaoqi Li, Ratip Emin Berker, Itai Zilberstein",
+        "is_header": false
+      },
+      {
+        "time": "16:40",
+        "end": "16:45",
+        "title": "Algorithms for Structured Elections under Thiele Voting Rules",
+        "authors": "Krzysztof Sornat, Alexandra Anna Lassota",
+        "is_header": false
+      },
+      {
+        "time": "16:45",
+        "end": "16:50",
+        "title": "What Are People’s Actual Utility Functions in Budget Aggregation? PDF",
+        "authors": "Erel Segal-Halevi, Rica Gonen, Lioz Akirav, Ayelet Amster",
+        "is_header": false
+      },
+      {
+        "time": "16:50",
+        "end": "16:55",
+        "title": "Aggregating Rankings from Heterogeneous Voters",
+        "authors": "Reshef Meir, Doron Kabla",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": "17:00",
+        "title": "Optimized Distortion in Linear Social Choice PDF",
+        "authors": "Yevgeniy Vorobeychik, Luise Ge, Gregory Kehne",
+        "is_header": false
+      },
+      {
+        "time": "17:00",
+        "end": "17:45",
+        "title": "Poster Session GAIW 2026 Team &bull; 2026 &bull; https://gtep-workshops.github.io/gaiw2026/ Theme by beautiful-jekyll",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "MABS_tue": {
+    "file": "MABS_tue.html",
+    "text_chars": 2046,
+    "region_chars": 2046,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "MASSpace_tue": {
+    "file": "MASSpace_tue.html",
+    "text_chars": 19219,
+    "region_chars": 3794,
+    "item_count": 22,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "08:45",
+        "end": "10:15",
+        "title": "Session 1",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "08:45",
+        "end": "09:35",
+        "title": "Invited Talk: Developing Distributed Autonomous Space Systems [ paper ] Caleb Adams (NASA Ames)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:35",
+        "end": "09:55",
+        "title": "Distributed Satellite Constellation Observation Allocation [ paper ] Itai Zilberstein (Carnegie Mellon University), Steve Chien (Jet Propulsion Laboratory)",
+        "authors": "Large-Scale Continual Scheduling and Execution for Dynamic",
+        "is_header": false
+      },
+      {
+        "time": "09:55",
+        "end": "10:15",
+        "title": "The Role of Central Nodes in Multi-Task Allocation for Distributed Space-Based Observation Systems [ paper ] Vincenzo Messina (Technical University of Munich), Marco Camporeale (Technical University of Munich), Toulouse), Alessandro Golkar (Technical University of Munich)",
+        "authors": "Rob Vingerhoeds (Fédération FONISEN, Université de",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Morning Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:20",
+        "title": "Session 2",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:20",
+        "title": "Dynamic Tool Generation for Autonomous Multi-Agent Systems in Space Missions [ paper ] Dominik Opitz (DLR) Carsten Hartmann (DLR-GSOC) Tobias Hecking (DLR) Michael Felderer (DLR)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:20",
+        "end": "11:40",
+        "title": "Autonomous Federation of Earth Observation Constellations: An End-to-End Demonstrator based on the DOMINO Architecture [ paper ] Stéphane Derrien (Cap Gemini) Marie Devant (Cap Gemini) Jean-Loup Farges (DTIS, ONERA, Université de Toulouse) Jonathan Guerra (Airbus Defence and Space) Philippe Pavero (Airbus Defence and Space)",
+        "authors": "Cyrille De Lussy (Airbus Defence and Space)",
+        "is_header": false
+      },
+      {
+        "time": "11:40",
+        "end": "12:00",
+        "title": "Solving Organizational Multi-Robot Task Allocation Problems with Consensus-based Auctions [ paper ] Christophe Grand (DTIS, ONERA, Université de Toulouse) Charles Lesire (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse)",
+        "authors": "Victor Guillet (DTIS, ONERA, Université de Toulouse)",
+        "is_header": false
+      },
+      {
+        "time": "12:00",
+        "end": "12:20",
+        "title": "Multi-Satellite Observation Tasks Dispatching and Scheduling [ paper ] Cedric Pralet (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse) Eric Sawyer (CNES, Université de Toulouse)",
+        "authors": "Romain Barrault (DTIS, ONERA, Université de Toulouse)",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session 3",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:50",
+        "title": "Invited Talk: A Game-Theoretic Framework for Distributed Fallback Autonomy in Satellite Mega-Constellations [ paper ] Daniel Reynolds (MIT)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": "15:10",
+        "title": "Satellite scheduling optimization for BepiColombo STC channel target-phase [ paper ] [ presentation ] Alberto Avallone (University of Modena and Reggio Emilia) Francesco Sala (University of Modena and Reggio Emilia) Manuel Iori (University of Modena and Reggio Emilia)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:10",
+        "end": "15:30",
+        "title": "Toward Automated Operational Assist in Satellite Fleet Management via Organizational MARL [ paper ] Julien Soulé (University of Luxembourg)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": "16:15",
+        "title": "Afternoon Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:35",
+        "title": "Session 4",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:35",
+        "title": "Decentralized Dynamic Task Allocation under Limited Communication Range [ paper ] Alexandre Kha (Thales CortAIx-Labs) Mathieu Marchand (Thales CortAIx-Labs) Aurélie Beynier (Lip6-CNRS) Christophe Labreuche (Thales CortAIx-Labs)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": "16:55",
+        "title": "A queue-based approach for fine-tuning the efficiency-fairness tradeoff in distributed satellite scheduling [ paper ] Shai Krigman (Ariel University) Tal Grinshpoun (Ariel University) Lihi Dery (Ariel University)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": "17:15",
+        "title": "Operations Towards Multi-Agent Cooperation [ paper ] Riccardo Maderna (AIKO Srl) Marco Morgese (AIKO Srl)",
+        "authors": "Onboard Planning and Scheduling for Autonomous Satellite",
+        "is_header": false
+      },
+      {
+        "time": "17:15",
+        "end": "17:35",
+        "title": "Multi-Agent Potential-Field Rover Navigation [ paper ] Timothy Flavin (University of Tulsa) Sandip Sen (University of Tulsa) Joe Shymanski (University of Tulsa)",
+        "authors": "Effects of Lookahead and Communication Dynamics on",
+        "is_header": false
+      },
+      {
+        "time": "17:35",
+        "end": "17:45",
+        "title": "Closing remarks 6 Committees Chairs Gauthier Picard , ONERA, France Itai Zilberstein , CMU, USA",
+        "authors": "Steve Chien , NASA JPL, USA",
+        "is_header": false
+      }
+    ]
+  },
+  "NEXUS_mon": {
+    "file": "NEXUS_mon.html",
+    "text_chars": 4468,
+    "region_chars": 1546,
+    "item_count": 21,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "9:00",
+        "end": "10:10",
+        "title": "Session 1",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:00",
+        "end": "09:15",
+        "title": "Workshop Opening",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:15",
+        "end": "09:35",
+        "title": "Robust Visual Planning under Partial Observability and Perceptual Uncertainty",
+        "authors": "Guy Azran, Michael Navat, Sarah Keren",
+        "is_header": false
+      },
+      {
+        "time": "09:35",
+        "end": "09:55",
+        "title": "Zainab Rehan, Christian Medeiros Adriano, Sona Ghahremani, Holger Giese",
+        "authors": "Towards Neuro-symbolic Causal Rule Synthesis, Verification, and Evaluation Grounded in Legal and Safety Principles",
+        "is_header": false
+      },
+      {
+        "time": "09:55",
+        "end": "10:10",
+        "title": "PSN Game: Game-theoretic Prediction and Planning via a Player Selection Network",
+        "authors": "Tianyu Qiu, Eric Ouano, Fernando Palafox, Christian Ellis, David Fridovich-Keil",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": "11:00",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "12:30",
+        "title": "Session 2",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:20",
+        "title": "A Consensus-Bayesian Framework for Detecting Malicious Activity in Enterprise Directory Access Graphs",
+        "authors": "Prayush Uppuluri, Shilpa Noushad, Sajan Kumar",
+        "is_header": false
+      },
+      {
+        "time": "11:20",
+        "end": "11:30",
+        "title": "Mini-break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:30",
+        "end": "12:30",
+        "title": "Keynote talk – Francesca Toni (Imperial College London)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": "14:00",
+        "title": "Lunch",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "15:30",
+        "title": "Session 3",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": "14:20",
+        "title": "LLM-COGNICA: Towards Reliable Agent Decision Making",
+        "authors": "Adamos Koumi, Antonis Kakas",
+        "is_header": false
+      },
+      {
+        "time": "14:20",
+        "end": "14:50",
+        "title": "Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": "15:10",
+        "title": "Shape-Preserving Networks: Encoding Structural Knowledge through Derivative Constraints and Nested Integration",
+        "authors": "Miguel Suau, Alec Edwards, Alex Durkin, Ian Howell, Giuseppe Pinto, Marc Artola, Daniel Jarne, Sayam Kumar",
+        "is_header": false
+      },
+      {
+        "time": "15:10",
+        "end": "16:15",
+        "title": "Coffee Break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "17:40",
+        "title": "Session 4",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": "16:35",
+        "title": "From a Neural-Symbolic Means to the Inductive-Instructional End Loizos Michael",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": "16:40",
+        "title": "Mini-break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:40",
+        "end": "17:40",
+        "title": "Panel: Neuro-Symbolic Reasoning at the Age of Multi-Modal LLMs",
+        "authors": "C.C. (Cor) Steging, Loizos Michael, Andreas Theodorou",
+        "is_header": false
+      },
+      {
+        "time": "19:30",
+        "end": null,
+        "title": "… Dinner (TBC)",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "OptLearnMAS_mon": {
+    "file": "OptLearnMAS_mon.html",
+    "text_chars": 12435,
+    "region_chars": 6953,
+    "item_count": 19,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "8:45",
+        "end": null,
+        "title": "Introductory remarks",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "8:55",
+        "end": null,
+        "title": "Contributed talk : GreenLine: A Delay-Tolerant Mechanism Design for Grid Capacity Allocation",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:15",
+        "end": null,
+        "title": "Contributed talk : Decentralized Learning of Belief-Dependent Generalized Nash Equilibria under Partial Observability (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:35",
+        "end": null,
+        "title": "Contributed talk : Welfare Optimization over Semi-Algebraic Equilibrium Sets (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:55",
+        "end": null,
+        "title": "Contributed talk : DuoFed: A Game-Theoretic Approach for Multi-Modal Federated Learning with Partial Data Overlap",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:15",
+        "end": null,
+        "title": "Coffee break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": null,
+        "title": "Invited Talk : Towards Safe and Explainable Multi-Robot Learning by Daniele Meli",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:50",
+        "end": null,
+        "title": "Contributed talk : Divide-and-Coordinate Methods for Multi-Modal Urban Transportation (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:10",
+        "end": null,
+        "title": "Contributed talk : Equilibrium-Based Optimization for Multi-Leader Multi-Follower Resource Allocation",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:30",
+        "end": null,
+        "title": "Lunch break Afternoon session (chair: Roger Lera Leri)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:00",
+        "end": null,
+        "title": "Invited Talk : Explainable Planning and Decision Making by William Yeoh",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:50",
+        "end": null,
+        "title": "Contributed talk : Scope Selection for Incomplete Distributed Constraint Optimization",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:10",
+        "end": null,
+        "title": "Contributed talk : Explainable Distributed Constraint Optimization Problems",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:30",
+        "end": null,
+        "title": "Coffee break",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:15",
+        "end": null,
+        "title": "Contributed talk : A Multi-Agent System for Multi-Objective Constrained Optimization",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:35",
+        "end": null,
+        "title": "Contributed talk : Graphon Mean-Field Subsampling for Cooperative Heterogeneous Multi-Agent Reinforcement Learning (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "16:55",
+        "end": null,
+        "title": "Contributed talk : An Adaptive Multichain Blockchain: A Multiobjective Optimization Approach (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:15",
+        "end": null,
+        "title": "Contributed talk : Monotone Near-Zero-Sum Games: A Generalization of Convex-Concave Minimax (remote)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:35",
+        "end": null,
+        "title": "Closing remarks Accepted Papers Scope Selection for Incomplete Distributed Constraint Optimization Explainable Distributed Constraint Optimization Problems Ben Rachmut, Nimrod Weinstein, Stylianos Vasileiou, Roie Zivan, William Yeoh Monotone Near-Zero-Sum Games: A Generalization of Convex-Concave Minimax",
+        "authors": "Yair Vaknin, Roie Zivan, Amnon Meisels, Tehila Caspi",
+        "is_header": false
+      }
+    ]
+  },
+  "RaD-AI_tue": {
+    "file": "RaD-AI_tue.html",
+    "text_chars": 2802,
+    "region_chars": 2802,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "SE_mon": {
+    "file": "SE_mon.html",
+    "text_chars": 8877,
+    "region_chars": 1035,
+    "item_count": 12,
+    "header_count": 5,
+    "items": [
+      {
+        "time": "8:45",
+        "end": null,
+        "title": "Opening Remarks",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "9:00",
+        "end": null,
+        "title": "Invited talk: Amy Greenwald (Prof @ Brown)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "9:45",
+        "end": null,
+        "title": "Lightning Talks",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:05",
+        "end": null,
+        "title": "Poster Session / Demos + Coffee break",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "11:35",
+        "end": null,
+        "title": "🏆 Best Paper Award by Zun Li (RE @ GDM) “ Discovering Multiagent Learning Algorithms with Large Language Models ”",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "12:00",
+        "end": null,
+        "title": "Lunch break Afternoon",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "14:00",
+        "end": null,
+        "title": "Invited talk: Sarit Kraus (Prof @ Bar Ilan)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "14:45",
+        "end": null,
+        "title": "Lightning Talks",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "15:05",
+        "end": null,
+        "title": "Poster Session / Demos + Coffee break",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "16:35",
+        "end": null,
+        "title": "Invited talk: Constantinos Daskalakis (Prof @ MIT)",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "17:20",
+        "end": null,
+        "title": "Discussion (Hybrid) panel on \"LLMs + Game Theory\" Rahul Savani (Prof @ U of Liverpool) Long Tran-Thanh (Prof @ U of Warwick)",
+        "authors": "",
+        "is_header": true
+      },
+      {
+        "time": "17:40",
+        "end": null,
+        "title": "Concluding remarks and workshop end Contact us at se-aamas2026@googlegroups.com . Google Sites Report abuse Page details Page updated Google Sites Report abuse This site uses cookies from Google to deliver its services and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "TUTORIAL_mon": {
+    "file": "TUTORIAL_mon.html",
+    "text_chars": 1013,
+    "region_chars": 1013,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_mon_065b": {
+    "file": "TUTORIAL_mon_065b.html",
+    "text_chars": 521,
+    "region_chars": 521,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_mon_8093": {
+    "file": "TUTORIAL_mon_8093.html",
+    "text_chars": 11619,
+    "region_chars": 11619,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_mon_ae39": {
+    "file": "TUTORIAL_mon_ae39.html",
+    "text_chars": 263,
+    "region_chars": 263,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_mon_c614": {
+    "file": "TUTORIAL_mon_c614.html",
+    "text_chars": 3141,
+    "region_chars": 3141,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_tue": {
+    "file": "TUTORIAL_tue.html",
+    "text_chars": 4865,
+    "region_chars": 2227,
+    "item_count": 7,
+    "header_count": 0,
+    "items": [
+      {
+        "time": "08:30",
+        "end": null,
+        "title": "am - 12:30pm, May 26 th , 2026 Rate This Tutorial About the Tutorial Planning is a long-standing challenge for Artificial Intelligence, and the state-of-the-art approach to address it requires formal domain models that capture key aspects of the environment. Obtaining such models is usually done by a human expert, and is often a bottleneck and inhibitor to real-world deployment of planning technology.",
+        "authors": "Room Sophia , Coral Beach Hotel, Paphos, Cyprus.",
+        "is_header": false
+      },
+      {
+        "time": "08:30",
+        "end": "09:15",
+        "title": "Introduction & Domain Learning Basics Roni Stern TBA",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "09:15",
+        "end": "10:00",
+        "title": "Offline Learning Action Models Argaman Mordoch TBA",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:00",
+        "end": "10:30",
+        "title": "Coffee Break ☕",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "10:30",
+        "end": "11:00",
+        "title": "Learning State Abstractions Roni Stern TBA",
+        "authors": "",
+        "is_header": false
+      },
+      {
+        "time": "11:00",
+        "end": "11:45",
+        "title": "Roni Stern & Argaman Mordoch TBA",
+        "authors": "Active Learning and Open Challenges",
+        "is_header": false
+      },
+      {
+        "time": "11:45",
+        "end": "12:30",
+        "title": "Hands-on Session Leonardo Lamanna TBA",
+        "authors": "",
+        "is_header": false
+      }
+    ]
+  },
+  "TUTORIAL_tue_0d47": {
+    "file": "TUTORIAL_tue_0d47.html",
+    "text_chars": 1040,
+    "region_chars": 1040,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_tue_1d40": {
+    "file": "TUTORIAL_tue_1d40.html",
+    "text_chars": 2915,
+    "region_chars": 2915,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_tue_639c": {
+    "file": "TUTORIAL_tue_639c.html",
+    "text_chars": 5218,
+    "region_chars": 5218,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  },
+  "TUTORIAL_tue_bfbe": {
+    "file": "TUTORIAL_tue_bfbe.html",
+    "text_chars": 1040,
+    "region_chars": 1040,
+    "item_count": 0,
+    "header_count": 0,
+    "items": []
+  }
+}

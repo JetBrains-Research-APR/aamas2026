@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gauthier Picard
+        research
+        artifical intelligence
+        multi-agent systems
+        self-organization
+        distributed optimization
+	coordination
+        teaching
+	PhD
+	HDR
+        ONERA
+        Mines Saint-Etienne
+        IRIT ">
+    <meta name="author" content="">
+
+    <title>Gauthier Picard's Homepage (about Artificial Intelligence, Distributed Optimization and More)</title>
+    <link rel="icon" type="image/png" href="images/portrait.png" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+    <!-- Custom Fonts -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="css/gauth.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/myScripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/parseRSS.js"></script>
+    <script>
+        $(function () {
+            $('[id$="-include"]').each(function (e) {
+                $(this).load("pages/" + $(this).attr("id").replace("-include", "") + ".html");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#pubs").load("publications/publications_years.html");
+        });
+    </script>
+    <!--script type="text/javascript">
+    $(document).ready(function(){
+        //running custom RSS functions
+        parseRSS('./rss/flux.xml', '#picardrss');
+    }); 
+    </script-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Gauthier</span> Picard
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <!--li>
+                        <a class="page-scroll" href="#news">News</a>
+                    </li-->
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+					<!--li>
+                        <a class="page-scroll" href="#supervision">Supervision</a>
+				</li-->
+					<li>
+                        <a class="page-scroll" href="#committees">Duties</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cv">CV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"><!--"col-md-8 col-md-offset-2"-->
+                        <img class="portrait" alt="portrait" src="images/portrait.png" />
+                        <h2 class="brand-heading"><span class="light">Gauthier</span> <span
+                                style="text-transform: uppercase;">Picard</span></h2>
+                        <p class="intro-text"></p>
+                        <div id="intro-include"></div>
+                        <p class="intro-text"> </p>
+                        <a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section-->
+    <!--section id="news" class="news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>News <a href="rss/flux.xml"><img src="images/rss.png" alt="xml" /></a></h2>
+                    <div id="picardrss" class="feedcontainer"></div>
+                    <!--?php require_once("rss/feedparser.php");
+                    $currentUrl = './rss/flux.xml';
+                    echo FeedParser($currentUrl, 10);
+                    ?-->
+
+    </div>
+    </div>
+    </div>
+    </section-->
+
+	<!-- Bio Section -->
+    <section id="bio" class="bio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--h2>Bio</h2-->
+                    <div id="bio-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Research</h2>
+                    <div id="research-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Supervision Section -->
+    <!--section id="supervision" class="supervision-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Supervision</h2>
+                    <div id="supervision-include"></div>
+                </div>
+            </div>
+        </div>
+</section-->
+
+	<!-- Committees Section -->
+    <section id="committees" class="committees-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Duties</h2>
+                    <div id="committees-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Publications</h2>
+                    <div id="publications-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Teaching</h2>
+                    <div id="teaching-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Curriculum Vitæ</h2>
+                    <div id="cv-include"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>How to contact me</h2>
+
+                <p><a href="https://www.onera.fr/en" target="_blank" class="liensPage">ONERA Toulouse</a><br />
+                    2 avenue Edouard Belin, FR-31055 TOULOUSE CEDEX 4<br />
+                    Ph: +33 (0)5 62 25 26 54<br />
+                    <a class="liensPage" href="#"
+                        onmouseover="javascript:printMail(this, 'gzzazzuzztzzhzzizzezzrzz.zzpzzizzczzazzrzzdzz#zzozznzzezzrzzazz.zzfzzrzz', 3)">
+                        e-mail</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!--div id="map"></div-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center" style="padding-top: -200px;">
+            <p id="copyright" class="copyright">Copyright &copy; Gauthier Picard
+                <script>
+                    var d = new Date().toUTCString();//.toISOString();//.format('m-d-Y h:i:s');
+                    $('#copyright').append(d);
+                </script>
+            </p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script-->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/gauth.js"></script>
+
+</body>
+
+</html>

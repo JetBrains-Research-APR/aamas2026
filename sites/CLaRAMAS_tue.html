@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.13
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  
+  <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5"> <!-- Theme Mode--> <script> const darkBtn = "Dark"; const lightBtn = "Light"; const isAutoTheme = true; const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; if (isAutoTheme) { document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme') ?? preferredTheme); } else { document.documentElement.setAttribute('data-theme', "auto"); } </script> <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)--> <script defer src="/claramas2026/assets/js/main.min.js"></script> <!-- CSS --> <link rel="stylesheet" href="/claramas2026/assets/css/main.css"> <!--Favicon--> <link rel="shortcut icon" href="/claramas2026/assets/CLaRAMAS-icon.svg" type="image/x-icon"> <!-- Preconnect to Cusdis for faster loading when comments become visible --> <!-- KaTeX 0.16.25 --> <script defer src="/claramas2026/assets/js/vendor/katex.min.js"></script> <script defer src="/claramas2026/assets/js/vendor/katex.auto-render.min.js" onload="renderMathInElement(document.body);"></script> <!-- Mermaid 11.12.0 --> <script defer src="/claramas2026/assets/js/vendor/mermaid.min.js"></script> <!-- Simple Jekyll Search 1.10.0 --> <script src="/claramas2026/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script> <!-- Google Analytics / Cookie Consent --> <script> const cookieName = 'cookie-notice-dismissed-https://CLaRAMAS-workshop.github.io'; const isCookieConsent = 'true'; const analyticsName = ''; const analyticsNameGA4 = ''; </script> <span id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website. </span><a id="cookie-notice-accept" class="button">Approve</a> </span> <!-- seo tags --> <meta property="og:image" content="https://claramas-workshop.github.io/claramas2026/assets/img/header/Paphos-Cyprus.jpg"> <meta property="og:type" content="website" /> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>Schedule | CLaRAMAS Workshop 2026</title> <meta name="generator" content="Jekyll v3.10.0" /> <meta property="og:title" content="Schedule" /> <meta property="og:locale" content="en_US" /> <meta name="description" content="Workshop on Causal Learning and Reasoning in Agents and MultiAgent Systems" /> <meta property="og:description" content="Workshop on Causal Learning and Reasoning in Agents and MultiAgent Systems" /> <link rel="canonical" href="https://claramas-workshop.github.io/claramas2026/schedule/" /> <meta property="og:url" content="https://claramas-workshop.github.io/claramas2026/schedule/" /> <meta property="og:site_name" content="CLaRAMAS Workshop 2026" /> <meta property="og:type" content="website" /> <meta name="twitter:card" content="summary" /> <meta property="twitter:title" content="Schedule" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","description":"Workshop on Causal Learning and Reasoning in Agents and MultiAgent Systems","headline":"Schedule","url":"https://claramas-workshop.github.io/claramas2026/schedule/"}</script> <!-- End Jekyll SEO tag --> <!-- RSS --> <link rel="alternate" type="application/atom+xml" title="CLaRAMAS Workshop 2026" href="https://claramas-workshop.github.io/claramas2026/feed.xml"/> <link type="application/atom+xml" rel="alternate" href="https://claramas-workshop.github.io/claramas2026/feed.xml" title="CLaRAMAS Workshop 2026" /> <!-- Twitter Cards --> <meta name="twitter:title" content="Schedule"> <meta name="twitter:description" content="#### FormatCLaRAMAS is a **1-day workshop** hosted by [AAMAS'26](https://cyprusconferences.org/aamas2026/) taking place on **May 26th** at the [Coral Beach H..."> <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="https://claramas-workshop.github.io/claramas2026/assets/img/header/Paphos-Cyprus.jpg"> <meta name="twitter:image:alt" content="Schedule"> </head>
+  <body>
+    
+    <header class="site-header"> <!-- Logo and title --> <div class="branding"> <a href="/claramas2026/"> <img alt="logo img" class="avatar" src="/claramas2026/assets/img/CLaRAMAS-symbol.svg" loading="lazy"/> </a> <a class="site-title" aria-label="CLaRAMAS Workshop 2026" href="/claramas2026/"> CLaRAMAS Workshop 2026 </a> </div> <!-- Toggle menu --> <nav class="clear"> <a aria-label="pull" id="pull" class="toggle" href="#"> <i class="fas fa-bars fa-lg"></i> </a> <!-- Menu --> <ul class="hide"> <li class="separator"> | </li> <li> <a class="clear" aria-label="Call for Papers" title="Call for Papers" href="/claramas2026/cfp/"> <span class="navbar-label ">Call for Papers</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Committees" title="Committees" href="/claramas2026/committees/"> <span class="navbar-label ">Committees</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Important dates" title="Important dates" href="/claramas2026/dates/"> <span class="navbar-label ">Important dates</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Description" title="Description" href="/claramas2026/description/"> <span class="navbar-label ">Description</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Schedule" title="Schedule" href="/claramas2026/schedule/"> <span class="navbar-label ">Schedule</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Submission" title="Submission" href="/claramas2026/submission/"> <span class="navbar-label ">Submission</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Search" title="Search" href="/claramas2026/search/"> <i class="navbar-icon fas fa-search" aria-hidden="true"></i> <span class="navbar-label navbar-label-with-icon">Search</span> </a> </li> <li class="separator"> | </li> <li> <a class="clear" aria-label="Tags" title="Tags" href="/claramas2026/tags/"> <i class="navbar-icon fas fa-tags" aria-hidden="true"></i> <span class="navbar-label navbar-label-with-icon">Tags</span> </a> </li> <li class="separator"> | </li> <li><a id="theme-toggle" title="Schedule " aria-label="Schedule" onclick="themeToggle()"></a></li> </ul> </nav> </header>
+    <main class="content">
+      <article class="feature-image">
+    <header id="main" style="background-image: url('/claramas2026/assets/img/header/Paphos-Cyprus.jpg')">
+        <div class="title-padder">
+            
+                <h1 id="Schedule" class="title"> Schedule</h1>
+                
+            
+        </div>
+    </header>
+    <section class="post-content">
+    
+            <h4 id="format">Format</h4>
+
+<p>CLaRAMAS is a <strong>1-day workshop</strong> hosted by <a href="https://cyprusconferences.org/aamas2026/">AAMAS’26</a> taking place on <strong>May 26th</strong> at the <a href="https://coral.com.cy/">Coral Beach Hotel &amp; Resort</a> in the wonderful city of <a href="https://www.visitpafos.org.cy/">Paphos, Cyprus</a>. 
+Travel information is available from the <a href="https://cyprusconferences.org/aamas2026/travel-information/">dedicated AAMAS’26 page</a>.</p>
+
+<p>The workshop features the following activities:</p>
+<ul>
+  <li><strong>1 invited talk</strong> by Prof. <a href="https://www.irit.fr/~Emiliano.Lorini/">Emiliano Lorini</a>, leading expert in causal reasoning and engineering of agent systems 
+(morning)</li>
+  <li><strong>oral presentations</strong> for all the accepted full and short papers 
+split into topic-based sessions spanning both the morning and the afternoon, 
+and each followed by a Q&amp;A window</li>
+  <li><strong>2 poster sessions</strong> for papers accepted as extended abstracts (see the <a href="/claramas2026/submission">submission</a> page), 
+planned during the coffee breaks</li>
+  <li>a working activity with <strong>focus groups</strong> assembled during the day, depending on participants’ interests
+(scheduled dynamically, but most probably at the end of the afternoon session)</li>
+</ul>
+
+<p>The focus groups have separate, “hands-on” brainstorming sessions 
+meant to pinpoint the most promising research directions to be pursued within the AAMAS community, 
+the most pressing challenges to be dealt with, 
+and the open issues still needing clarification, 
+with the aim of <strong>collaboratively drafting a white paper on causal learning and reasoning in agents and MAS</strong>.</p>
+
+<h4 id="schedule">Schedule</h4>
+
+<p><strong>The workshop takes place in room APHRODITE A.</strong></p>
+
+<p>The table below reports the bird’s-eye view schedule of the workshop, 
+indicating the time slots during which the different activities will happen.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>When</th>
+      <th>Duration</th>
+      <th>What</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:45-9:00</td>
+      <td> </td>
+      <td>👋 Opening</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td><strong>9:00-9:45</strong></td>
+      <td>(45’)</td>
+      <td><strong>👨‍🎓 <a href="/claramas2026/blog/2026/05/23/prof_lorini_talk.html">Keynote</a></strong> (Prof. <a href="https://www.irit.fr/~Emiliano.Lorini/">Emiliano Lorini</a>)</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>9:45-10:15</td>
+      <td>(30’)</td>
+      <td>Short papers I</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td><em>10:15-11:00</em></td>
+      <td>(45’)</td>
+      <td>Posters I 🏞️ (during <em>coffee break</em> ☕)</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>11:00-11:15</td>
+      <td>(15’)</td>
+      <td>Short papers II</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>11:15-12:30</td>
+      <td>(75’)</td>
+      <td>Full papers I</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td><em>12:30-14:00</em></td>
+      <td>(90’)</td>
+      <td>👩🏻‍🍳 <em>Lunch break</em> 🤌🏻</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>14:00-15:15</td>
+      <td>(75’)</td>
+      <td>Full papers II</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>15:15-15:30</td>
+      <td>(15’)</td>
+      <td>Introduction to focus groups</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td><em>15:30-16:15</em></td>
+      <td>(45’)</td>
+      <td>Posters II 🏞️ (during <em>coffe break</em> ☕)</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td><strong>16:15-17:30</strong></td>
+      <td>(75’)</td>
+      <td>🧠 <strong>Focus groups</strong> ✍</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+    <tr>
+      <td>17:30</td>
+      <td> </td>
+      <td>Closing 👋</td>
+      <td><a href="https://us06web.zoom.us/j/82978019991?pwd=8taCmGHoJLOFQTad8incSfgr8VzIVT.1">Aphrodite A</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Every poster will be on display during every coffee break :)</p>
+
+<ul>
+  <li><em><a href="https://openreview.net/pdf?id=vYoxn7C7Hh">Causes and Strategies in Multiagent Systems</a></em>, by Sylvia S. Kerkhove; Mehdi Dastani; Natasha Alechina</li>
+  <li><em><a href="https://openreview.net/pdf?id=3AhNmbr2X0">Abstract Counterfactuals for Language Model Agents</a></em>, by Edoardo Pona; Milad Kazemi; Yali Du; David Watson; Nicola Paoletti</li>
+  <li><em>Risk Perspectives in Multi-agents AI Systems for High-Risk Processes in Complex Environments</em>, by André Meyer-Vitali; Rodica Mihai</li>
+  <li><em><a href="https://openreview.net/pdf?id=LWREpLm59w">Causal Expectations for Decentralised Coordination in Multi-Agent Systems</a></em>, by John R. E. Mills; Peter R. Lewis</li>
+</ul>
+
+<p>The table below further details which paper is allocated to which slot.</p>
+
+<blockquote>
+  <p>⚠️ Although PDFs of accepted papers and posters are already available
+on <a href="https://openreview.net/group?id=ifaamas.org/AAMAS/2026/Workshop/CLaRAMAS">OpenReview</a>,
+they will be linked here as soon as they are updated with author details. ⚠️</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paper title</th>
+      <th>Session</th>
+      <th>Starting at</th>
+      <th>Paper authors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=K8dMIy7Yye">Multi-Agent Causal Reasoning Framework: Optimizing Advertising Incrementality via Daily Budget Allocation Under a Fixed Lifetime Budget</a></td>
+      <td>Short papers I</td>
+      <td>9:45</td>
+      <td>Paul Lo; Jing Pan; Jingxi Yu; Evelyn Wu; Erte Pan; Simon Hollands</td>
+    </tr>
+    <tr>
+      <td>Collaborative Causal Discovery in a Synthetic Environment: Empirical Evaluation of FLODO</td>
+      <td>Short papers I</td>
+      <td>10:00</td>
+      <td>André Meyer-Vitali; Matteo Gregorini</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=LWREpLm59w">Causal Expectations for Decentralised Coordination in Multi-Agent Systems</a></td>
+      <td>Short papers II</td>
+      <td>11:00</td>
+      <td>John R. E. Mills; Peter R. Lewis</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=FCr9YFHvwO">Causal Learning and Reasoning in Multi-Agent Systems: Goals, Issues, and Taxonomy</a></td>
+      <td>Full papers I</td>
+      <td>11:15</td>
+      <td>Stefano Mariani; Giovanni Briglia; André Meyer-Vitali; Matthias Klusch; Franco Zambonelli</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=mH7MpNMQbb">From Implicit to Explicit Causal Models in BDI Agents: A Proof-of-Concept with Causal Discovery and Adaptive Policy</a></td>
+      <td>Full papers I</td>
+      <td>11:40</td>
+      <td>Meltem Gullusac; Baris Tekin Tezel; Moharram Challenger</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=vqSEiqOIal">Evolutionary Learning of Graphical Causal Models from Behavior</a></td>
+      <td>Full papers I</td>
+      <td>12:05</td>
+      <td>H. Van Dyke Parunak</td>
+    </tr>
+    <tr>
+      <td>Value Identifiable, Credit Not: A Credit-First Identifiability Frontier for Confounded Sequential Decision-Making</td>
+      <td>Full papers II</td>
+      <td>14:00</td>
+      <td>Teresa Zhang</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=kHAnYGD1Sq">Reproducing and Extending Counterfactual Data Augmentation: A Study on Causal Identifiability and Stability in Reinforcement Learning</a></td>
+      <td>Full papers II</td>
+      <td>14:25</td>
+      <td>Shilpa Noushad; Sajan Kumar; Pratyush uppuluri</td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=Oc0QipuIV0">CoACT: Coordination via Aligned Centralized Training in Multi-Agent Reinforcement Learning</a></td>
+      <td>Full papers II</td>
+      <td>14:50</td>
+      <td>Oussama Azizi; Frans A Oliehoek; Matthijs T. J. Spaan</td>
+    </tr>
+  </tbody>
+</table>
+
+
+            
+    </section>
+    <!-- Category and Tag list -->
+    <div class="tag-category-container">
+        <!-- Category list -->
+        
+        
+
+
+  <div class="category-list"></div>
+
+
+
+
+        <!-- Tag list for portfolio -->
+        
+        
+
+
+  <div class="tag-list" data-testid="tag-list">
+    <ul>
+      
+        <li class="meta">Tags</li>
+      
+
+      
+        <li><a class="button" data-testid="tag-link" href="/claramas2026/tags#format">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> format</p>
+        </a></li>
+      
+        <li><a class="button" data-testid="tag-link" href="/claramas2026/tags#keynotes">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> keynotes</p>
+        </a></li>
+      
+        <li><a class="button" data-testid="tag-link" href="/claramas2026/tags#papers">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> papers</p>
+        </a></li>
+      
+        <li><a class="button" data-testid="tag-link" href="/claramas2026/tags#posters">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> posters</p>
+        </a></li>
+      
+        <li><a class="button" data-testid="tag-link" href="/claramas2026/tags#schedule">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> schedule</p>
+        </a></li>
+      
+    </ul>
+  </div>
+
+
+    </div>
+</article>
+
+    </main>
+    
+    <footer class="site-footer"> <p class="text"> Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> </p> <div class="footer-icons"> <ul> <!-- Social icons from Font Awesome, if enabled --> <li> <a href="https://github.com/CLaRAMAS-workshop/claramas2026" title="Follow on Github" target="_blank" rel="noopener"> <span class="fa-stack fa-lg"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-github fa-stack-1x fa-inverse"></i> </span> </a> </li> </ul> </div> <script type="module"> mermaid.initialize({ startOnLoad: false, theme: "default" }); mermaid.run({ nodes: [...document.querySelectorAll('.language-mermaid'), ...document.querySelectorAll('.mermaid')] }); </script> </footer>
+  </body>
+</html>

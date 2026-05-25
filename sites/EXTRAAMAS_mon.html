@@ -1,0 +1,283 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68521239-4"></script>
+
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-68521239-4');
+	</script>
+
+	<title>EXTRAAMAS2026 | Program </title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="EXTRAAMAS" content="explainable, transparent, agent, multi-agent systems" />
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<!-- css files -->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+	<link href="css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
+	<link href="css/program.css?v=2" rel="stylesheet" type="text/css" /><!-- program css -->
+	<!-- //css files -->
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&amp;subset=devanagari,latin-ext"
+		rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+		rel="stylesheet">
+	<!-- //google fonts -->
+
+</head>
+
+<body>
+
+	<!-- header -->
+	<header class="bg-white py-1">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<h1>
+					<a class="navbar-brand" href="index.html"><img src="images/extraamas_logo.svg"
+							class="logo-menu"></img> EXTRAAMAS</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-lg-4 mr-auto">
+						<!-- Menu items will be added here dynamically -->
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- banner -->
+	<section class="banner">
+		<div class="container">
+			<div class="row container topics-banner-grids">
+
+				<div class="row col-lg-12 col-md-12 text-center pt-3">
+					<h4 class="col-md-12">EXTRAAMAS 2026 Program</h4>
+				</div>
+				<p class="clearfix"></p>
+				<div class="clock-bar">
+					<i class="fas fa-clock"></i>
+					<span class="clock-item"><span class="clock-label">Your time</span> <span id="date"></span>&ensp;<span id="time"></span></span>
+					<span class="clock-sep">|</span>
+					<span class="clock-item"><span class="clock-label">Cyprus</span> <span id="dateDetroit"></span>&ensp;<span id="timeDetroit"></span></span>
+				</div>
+				<div class="pdf-header">
+					<img src="images/extraamas_logo.svg" alt="EXTRAAMAS logo" class="pdf-header-logo">
+					<img src="images/current_location/cyprus.png" alt="Venue" class="pdf-header-venue">
+					<div class="pdf-header-chairs" id="pdf-chairs"></div>
+				</div>
+
+				<div id="program" class="col-lg-12 banner-info">
+					<!-- Program will be dynamically loaded here -->
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- //banner -->
+
+	<!-- footer and copyright -->
+	<section class="copy-right bg-light py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-9">
+					<p class="">© <span id="year"></span> Davide Calvaresi for
+						<a href="https://www.hevs.ch/en/" target="_blank">HES-SO</a>,
+						<a href="https://www.umu.se/en/" target="_blank">UMEA</a>,
+						<a href="https://www.uni.lu/" target="_blank">UNI.LU</a>,
+						<a href="https://www.list.lu/" target="_blank">LIST</a>, and
+						<a href="https://www.unibo.it/" target="_blank">UNIBO</a>
+						| Design by
+						<a href="http://w3layouts.com"> W3layouts.</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer and copyright -->
+
+	<!-- js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/moment-timezone.js"></script>
+	<script src="js/clocks.js"></script>
+	<!-- //js -->
+
+	<!-- dropdown nav -->
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+
+	<!-- Load the menu items from the JSON file-->
+	<script src="./js/menuDataLoader.js"></script>
+
+	<!-- Load the program from the JSON file-->
+	<script>
+		fetch('./data/program.json')
+			.then(response => response.json())
+			.then(data => {
+				var scheduleDiv = document.getElementById("program");
+
+				// Info block
+				scheduleDiv.innerHTML = `
+					<div class="program-info">
+						<span><i class="fas fa-map-marker-alt"></i> <strong>Room:</strong> <span class="room">${data.event.room}</span></span>
+						<span class="info-sep">|</span>
+						<a href="${data.event.weblink}" target="_blank" class="weblink"><i class="fas fa-external-link-alt"></i> Web Link</a>
+						<span class="info-sep no-print">|</span>
+						<a href="#" class="download-link no-print" onclick="window.print(); return false;"><i class="fas fa-file-pdf"></i> Download the Program</a>
+					</div>
+				`;
+
+				let currentSession = null;
+				let currentPapersDiv = null;
+
+				function closeSession() {
+					if (currentSession) {
+						scheduleDiv.appendChild(currentSession);
+						currentSession = null;
+						currentPapersDiv = null;
+					}
+				}
+
+				data.event.schedule.forEach(item => {
+
+					if (item.type === 'session') {
+						closeSession();
+						currentSession = document.createElement('div');
+						currentSession.className = 'session-block';
+						const sessionNumHtml = item.number
+							? `<span class="session-number">Session ${item.number}</span>`
+							: '';
+						const chairHtml = item.chair
+							? `<div class="session-chair"><i class="fas fa-user-tie"></i> Chair: ${item.chair}</div>`
+							: '';
+						currentSession.innerHTML = `
+							<div class="session-header">
+								${sessionNumHtml}
+								<span class="session-title">${item.title}</span>
+								<span class="session-time"><i class="fas fa-clock"></i> ${item.time}</span>
+								${chairHtml}
+							</div>
+						`;
+						currentPapersDiv = document.createElement('div');
+						currentPapersDiv.className = 'session-papers';
+						currentSession.appendChild(currentPapersDiv);
+
+					} else if (item.type === 'break') {
+						closeSession();
+						const isLunch = /lunch/i.test(item.label);
+						const icon = isLunch ? 'fa-utensils' : 'fa-mug-hot';
+						const cls = isLunch ? 'lunch' : 'coffee';
+						const el = document.createElement('div');
+						el.className = `break-banner ${cls}`;
+						el.innerHTML = `<i class="fas ${icon}"></i> ${item.label} <span class="break-time">${item.time}</span>`;
+						scheduleDiv.appendChild(el);
+
+					} else if (item.type === 'keynote') {
+						if (!currentPapersDiv) return;
+						const row = document.createElement('div');
+						row.className = 'paper-row keynote-row';
+						row.innerHTML = `
+							<span class="paper-time">${item.time}</span>
+							<div class="paper-content">
+								<div class="paper-title"><span class="paper-badge keynote">Keynote</span>${item.title || 'TBC'}</div>
+								${item.speaker ? `<div class="paper-authors"><i class="fas fa-microphone"></i> ${item.speaker}</div>` : ''}
+							</div>
+						`;
+						currentPapersDiv.appendChild(row);
+
+					} else if (item.type === 'paper') {
+						if (!currentPapersDiv) return;
+						const kindLabels = { full: 'Full Paper', short: 'Short Paper', demo: 'Demo' };
+						const badge = item.kind && kindLabels[item.kind]
+							? `<span class="paper-badge ${item.kind}">${kindLabels[item.kind]}</span>`
+							: '';
+						const row = document.createElement('div');
+						row.className = 'paper-row';
+						row.innerHTML = `
+							<span class="paper-time">${item.time}</span>
+							<div class="paper-content">
+								<div class="paper-title">${badge}${item.title}</div>
+								${item.authors ? `<div class="paper-authors">${item.authors}</div>` : ''}
+							</div>
+						`;
+						currentPapersDiv.appendChild(row);
+					}
+				});
+
+				closeSession(); // close any remaining open session
+			})
+			.catch(err => console.error('program.json load error:', err));
+
+		// Populate PDF header chairs
+		fetch('./data/organization.json')
+			.then(r => r.json())
+			.then(orgData => {
+				const group = orgData.organization.find(g => g.title === 'Program Chairs');
+				if (!group) return;
+				const el = document.getElementById('pdf-chairs');
+				if (!el) return;
+				el.innerHTML = `
+					<p class="pdf-chairs-title">Program Chairs</p>
+					${group.people.map(p => `<p class="pdf-chair-name">${p.name}</p>`).join('')}
+				`;
+			})
+			.catch(err => console.error('organization.json load error:', err));
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const yearEl = document.getElementById('year');
+			if (yearEl) yearEl.textContent = new Date().getFullYear();
+		});
+	</script>
+
+</body>
+
+</html>

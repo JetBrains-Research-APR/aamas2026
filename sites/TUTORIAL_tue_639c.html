@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Tutorial: Approaches for Explainability in Autonomous Agents &middot; Approaches for Explainability in Autonomous Agents
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/poole.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/hyde.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Approaches for Explainability in Autonomous Agents" href="/feed.xml">
+</head>
+
+
+  <body class="theme-base-0c">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Approaches for Explainability in Autonomous Agents
+        </a>
+      </h1>
+      
+        <p class="lead">Tutorial @ AAMAS, Paphos, Cyprus, Tuesday May 26th 2026</p>
+      
+    </div>
+
+    
+      <nav class="sidebar-nav">
+        
+          <a class="sidebar-nav-item active" href="/">
+            Tutorial
+          </a>
+        
+      </nav>
+    
+
+    
+      <nav class="sidebar-section-nav" aria-label="Page sections">
+        
+          <a class="sidebar-section-link" href="/#overview">
+            Overview
+          </a>
+        
+          <a class="sidebar-section-link" href="/#presenters">
+            Presenters
+          </a>
+        
+          <a class="sidebar-section-link" href="/#audience">
+            Audience
+          </a>
+        
+          <a class="sidebar-section-link" href="/#tutorial-outline">
+            Outline
+          </a>
+        
+          <a class="sidebar-section-link" href="/#materials-contact">
+            Materials and contact
+          </a>
+        
+          <a class="sidebar-section-link" href="https://cyprusconferences.org/aamas2026/tutorials/">
+            AAMAS 2026 Tutorials
+          </a>
+        
+      </nav>
+    
+
+    <div style="margin-top: 2rem;">
+      <a href="https://www.upc.edu/" style="display: block; margin-bottom: 0.75rem;" aria-label="Universitat Politecnica de Catalunya">
+        <img
+          src="/assets/images/upc-logo.png"
+          alt="Universitat Politecnica de Catalunya"
+          style="display: block; width: 100%; max-width: 220px; height: auto;"
+        >
+      </a>
+      <a href="https://www.bsc.es/" style="display: block;" aria-label="Barcelona Supercomputing Center">
+        <img
+          src="/assets/images/bsc-logo.svg"
+          alt="Barcelona Supercomputing Center"
+          style="display: block; width: 100%; max-width: 220px; height: auto;"
+        >
+      </a>
+    </div>
+
+    <!-- <p>&copy; 2026 AAMAS 2026 Tutorial Team.</p> -->
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Tutorial: Approaches for Explainability in Autonomous Agents</h1>
+  <div class="message">
+  <strong>AAMAS 2026 Tutorial</strong><br />
+  Paphos, Cyprus · Half-day tutorial · Tuesday 26/05/2026 AM · 3.5 hours
+</div>
+
+<h2 id="overview">Overview</h2>
+
+<p>As autonomous agents increasingly rely on complex decision-making mechanisms, their behaviour becomes harder to interpret, validate, and trust. This tutorial provides a structured, agent-centric introduction to explainability, covering intuitive post-hoc techniques, their limitations, and the move toward causal and intention-oriented explanations.</p>
+
+<p>The tutorial combines conceptual foundations with practical examples. Participants will see how explanation methods such as SHAP and LIME are commonly used in agent settings, why they are attractive in practice, and where they fall short when the goal is to explain behaviour rather than merely correlate features with outputs. From there, the tutorial introduces causal, contrastive, counterfactual, and higher-level behavioural explanations for autonomous agents.</p>
+
+<p>We will discuss:</p>
+
+<ul>
+  <li>the difference between <strong>ante-hoc</strong> and <strong>post-hoc</strong> explanation in agent settings;</li>
+  <li>how feature-based methods such as <strong>SHAP</strong> and <strong>LIME</strong> can be used on agent behaviour;</li>
+  <li>why post-hoc methods often fail to provide <strong>causal insight</strong>;</li>
+  <li>how <strong>contrastive</strong> and <strong>counterfactual</strong> explanations change the explanatory picture;</li>
+  <li>how explanation scope shifts from <strong>local action-level explanations</strong> to <strong>goal-driven and behavioural explanations</strong>;</li>
+  <li>how different explainability approaches relate to the needs of different explainees.</li>
+</ul>
+
+<p>Rather than promoting a single framework, the tutorial presents a structured view of the explanation landscape for autonomous agents and clarifies the assumptions, trade-offs, and explanatory scope of each family of methods.</p>
+
+<hr />
+
+<h2 id="presenters">Presenters</h2>
+
+<h3 id="sergio-alvarez-napagao">Sergio Alvarez-Napagao</h3>
+<p><strong>Universitat Politècnica de Catalunya-BarcelonaTech (UPC)</strong>, <strong>Barcelona Supercomputing Center (BSC)</strong><br />
+<strong>Lecturer at UPC</strong> and <strong>Associate Researcher at the AI Institute of BSC</strong>, where he leads the <strong>Single- and Multi-Agent Research Team (SMART)</strong>. His research focuses on agents and multi-agent systems, including normative systems, large-scale agent simulation, agent reliability, and explainability.</p>
+
+<h3 id="sara-montese">Sara Montese</h3>
+<p><strong>Barcelona Supercomputing Center (BSC)</strong>, <strong>Universitat Politècnica de Catalunya-BarcelonaTech (UPC)</strong><br />
+<strong>Researcher at BSC</strong> in the <strong>Single- and Multi-Agent Research Team (SMART)</strong>, and <strong>PhD student and assistant lecturer at UPC</strong>. Her research interests include agents, explainability, learning, and improvement.</p>
+
+<h3 id="victor-gimenez-abalos">Victor Gimenez-Abalos</h3>
+<p><strong>Barcelona Supercomputing Center (BSC)</strong>, <strong>Universitat Politècnica de Catalunya-BarcelonaTech (UPC)</strong><br />
+<strong>Researcher at BSC</strong> in the <strong>Single- and Multi-Agent Research Team (SMART)</strong>, and <strong>PhD student and assistant lecturer at UPC</strong>. His research focuses on agents, learning, and explainability, especially the interplay between these areas and the role of intentions as behavioural insight.</p>
+
+<hr />
+
+<h2 id="audience">Audience</h2>
+
+<p>This tutorial is intended for a broad AAMAS audience, especially:</p>
+
+<ul>
+  <li>researchers and PhD students working on autonomous agents and multi-agent systems;</li>
+  <li>researchers interested in explainable AI in agent settings;</li>
+  <li>practitioners developing or deploying agent-based systems who need interpretable behaviour for debugging, validation, or human interaction.</li>
+</ul>
+
+<p>The tutorial is accessible to non-specialists in explainability. Basic familiarity with agents and decision-making systems is helpful, but no prior background in causal modelling or explainable AI is required. Familiarity with Python is recommended for the hands-on parts.</p>
+
+<hr />
+
+<h2 id="tutorial-outline">Tutorial outline</h2>
+
+<div class="agenda">
+  <div class="agenda-item">
+    <div class="agenda-kicker">1 · 15 min</div>
+    <h3>Introduction</h3>
+    <p>Motivation for explainability in autonomous agents and overview of the session.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">2 · 30 min</div>
+    <h3>Ante-hoc vs post-hoc explanations</h3>
+    <p>Core definitions, perspectives for explaining agent behaviour, and why post-hoc methods are widely adopted.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">3 · 30 min</div>
+    <h3>Hands-on: post-hoc methods</h3>
+    <p>Guided use of SHAP and LIME, with interpretation of example results.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">4 · 30 min</div>
+    <h3>Limits of post-hoc explanation</h3>
+    <p>Instability, correlation vs responsibility, and why causal reasoning matters for agent behaviour.</p>
+  </div>
+
+  <div class="agenda-break">Break · 30 min</div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">5 · 30 min</div>
+    <h3>Explanation methods with causal structure</h3>
+    <p>Intervention, causality, contrastive and counterfactual explanations, and their core assumptions.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">6 · 30 min</div>
+    <h3>Hands-on: contrastive and counterfactual explanations</h3>
+    <p>Guided walkthrough of concrete causal and counterfactual examples.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">7 · 30 min</div>
+    <h3>What different methods actually explain</h3>
+    <p>Comparing explanatory scope, from local action explanations to higher-level behavioural and goal-driven accounts.</p>
+  </div>
+
+  <div class="agenda-item">
+    <div class="agenda-kicker">8 · 15 min</div>
+    <h3>Discussion and conclusion</h3>
+    <p>Summary of key insights, practical recommendations, and open challenges.</p>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="materials-contact">Materials and contact</h2>
+
+<p>Materials will be added here when available.</p>
+
+<ul>
+  <li>Slides: <em>TBA</em></li>
+  <li>Tutorial resources: <em>TBA</em></li>
+</ul>
+
+<p>For questions about the tutorial, please contact:</p>
+
+<ul>
+  <li><strong>Sergio Alvarez-Napagao</strong> — <code class="language-plaintext highlighter-rouge">sergio.alvarez-napagao@upc.edu</code></li>
+  <li><strong>Sara Montese</strong> — <code class="language-plaintext highlighter-rouge">sara.montese@bsc.es</code></li>
+  <li><strong>Victor Gimenez-Abalos</strong> — <code class="language-plaintext highlighter-rouge">victor.gimenez@bsc.es</code></li>
+</ul>
+
+<hr />
+
+</div>
+
+    </div>
+
+  </body>
+</html>

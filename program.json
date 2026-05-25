@@ -1,0 +1,3687 @@
+[
+  {
+    "day": "Monday, 25 May",
+    "slots": [
+      {
+        "slot": "Doctoral Consortium · Room:  Akamas B · 08:45–17:45",
+        "sessions": [
+          {
+            "key": "Doctoral Consortium Full Program",
+            "display": "Doctoral Consortium · Room: Akamas B ",
+            "code": "DC",
+            "track": "Doctoral Consortium",
+            "description": "Monday, 25 May · Full Doctoral Consortium program, including keynote, poster sessions, student pitches, career panel, and closing.",
+            "room": "Akamas B",
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "8:45-9:15",
+                "title": "Opening",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "9:15-10:15",
+                "title": "Keynote by Prof. Munindar P. Singh",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "10:15-11:00",
+                "title": "Poster Session 1 (17 posters) and Coffee Break",
+                "authors": "Posters of Papers presented in Presentation Session 1"
+              },
+              {
+                "is_heading": true,
+                "time": "",
+                "title": "11:00-12:30 Presentation Session 1: 17 student pitches (5 minutes per student)",
+                "authors": ""
+              },
+              {
+                "paper_id": "1",
+                "title": "From Fault Diagnosis to Agency: A Framework for Industrial Autonomy",
+                "authors": "Dhiraj Neupane",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "2",
+                "title": "VEsNA: challenges and achievements of growing BDI embodied agents",
+                "authors": "Andrea Gatt",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "3",
+                "title": "Learning Preferences and Resolving Conflicts in Multi-User Personalisation in Human-Robot Interaction",
+                "authors": "Aniol Civit",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "4",
+                "title": "Non-Bipartite Stable Matching and Beyond",
+                "authors": "Frederik Glitzner",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "5",
+                "title": "Cooperative Multi-Agent Alignment via Boolean Task Algebras and Team Morality Chains",
+                "authors": "Simon Rosen",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "6",
+                "title": "Socio-Normative Trustworthiness of LLM Agents: Evaluating Autonomy Support and Representational Fairness Across Languages and Identities",
+                "authors": "Saba Haez",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "7",
+                "title": "Application of artificial intelligence for the retrieval, processing and generation of knowledge from clinical data",
+                "authors": "Leire Martínez",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "8",
+                "title": "Complexity and Behaviour in Strategic Models of Elections",
+                "authors": "Colin Cleveland",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "9",
+                "title": "Auditable Institutional Coordination with Episodic Memory for Robust Evacuation under Multi-Source Disruption",
+                "authors": "Roman Sultimov",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "10",
+                "title": "Learning to control reconfigurable multiagent systems",
+                "authors": "Manuel Vallejo",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "11",
+                "title": "Positional Properties in Temporal Logic",
+                "authors": "Jessica Newman",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "12",
+                "title": "Towards Multiagent Coordination Under Multiple Objectives and Sparse Rewards",
+                "authors": "Raghav Thakar",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "13",
+                "title": "Quantum-Enhanced Learning and Control for Multi-agent Systems",
+                "authors": "Meet Gandhi",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "14",
+                "title": "Multi-Agent Modeling of Food and Water Security Crises: From Historical Causation to Robust Policy Design",
+                "authors": "Daria Taniushkina",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "15",
+                "title": "Scalable Uncertainty-Aware Decision Frameworks for Energy-Mobility Cyber-Physical Systems",
+                "authors": "Rishav Sen",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "16",
+                "title": "Scalable Coalition Formation for Extremely Large Collectives",
+                "authors": "Neha Pusalkar",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "17",
+                "title": "Grounded Communication Policies in Heterogeneous Agent Reinforcement Learning",
+                "authors": "Aju Justus",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "is_heading": true,
+                "time": "12:30-14:00",
+                "title": "Lunch",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "14:00-15:30",
+                "title": "Presentation Session 2: 17 student pitches (5 minutes per student)",
+                "authors": ""
+              },
+              {
+                "paper_id": "18",
+                "title": "Towards Fairness in Collective Decision Making: Constraints and Approximations",
+                "authors": "Yuhang Guo",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "19",
+                "title": "Optimizing Urban Route Choice for Autonomous Vehicles using Multi-Agent Reinforcement Learning",
+                "authors": "Anastasia Psarou",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "20",
+                "title": "Towards Socially-Beneficial Multi-Agent Systems: Information, Mechanisms and Dynamics",
+                "authors": "Omer Madmon",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "21",
+                "title": "Explaining Agent Intentions",
+                "authors": "Sara Montese",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "22",
+                "title": "Scalable Strategies for Cooperative and Competitive Multi-Agent Systems",
+                "authors": "Grant Douglas",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "23",
+                "title": "Collaborative Decision-Making in Ad Hoc Teams",
+                "authors": "Rupal Nigam",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "24",
+                "title": "Causal Learning and Reasoning in Multi-Agent Reinforcement Learning",
+                "authors": "Giovanni Briglia",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "25",
+                "title": "Reputation As a New Route to Cooperation in Multi-Agent Reinforcement Learning",
+                "authors": "Román Gil",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "26",
+                "title": "Accelerated Adaptive Decision Making for Autonomous Agents: Optimization and Coverage",
+                "authors": "Zakaria Siam",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "27",
+                "title": "Learning-Based Policy Design for Resource Planning and Pricing in Heterogeneous Multi-Leader–Multi-Follower Systems",
+                "authors": "Niloofar Aminikalibar",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "28",
+                "title": "Toward High-Fidelity Multi-Agent Recommendation: An Agentic Design Framework Integrating RecoWorld and LLMs",
+                "authors": "Ionut-Dragos Neremzoiu",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "29",
+                "title": "Cost-Aware Model Selection and Adaptive Reasoning in Large Language Models via Online Learning",
+                "authors": "Sarvesh Gharat",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "30",
+                "title": "Faithful Language-Based Explanations for Decision-Making Agents",
+                "authors": "Sahar Admoni",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "31",
+                "title": "Neuro-Symbolic Decision Making for Autonomous Agents",
+                "authors": "Celeste Veronese",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "32",
+                "title": "Neurosymbolic Framework for building Robust, Efficient, and Explainable Multi-Agent Enterprise Systems",
+                "authors": "Ritvik Garimella",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "33",
+                "title": "An Algebraic Structuring of Epistemic States for BDI Agents in Uncertain Environments",
+                "authors": "Charles Costa",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "paper_id": "34",
+                "title": "Towards Detecting, Mitigating and Explaining Biased and Fallacious Reasoning in Large Language Models",
+                "authors": "Ana Gutiérrez-Mandingorra",
+                "session": "Doctoral Consortium",
+                "track": "Doctoral Consortium"
+              },
+              {
+                "is_heading": true,
+                "time": "15:30-16:15",
+                "title": "Poster Session 2 (17 posters) and Coffee Break",
+                "authors": "Posters of Papers presented in Presentation Session 2"
+              },
+              {
+                "is_heading": true,
+                "time": "16:15-17:15",
+                "title": "Career panel",
+                "authors": "Panel to be finalized"
+              },
+              {
+                "is_heading": true,
+                "time": "17:15-17:45",
+                "title": "Closing",
+                "authors": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "Competitions · Room: Plato",
+        "sessions": [
+          {
+            "key": "Competition DRP",
+            "display": "DRP (online)",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "25 May · 8:45–10:15",
+            "room": "Plato",
+            "link": "https://www.drp-challenge.com/",
+            "papers": []
+          },
+          {
+            "key": "Competition MOASEI",
+            "display": "MOASEI",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "25 May · 11:00–12:30",
+            "room": "Plato",
+            "link": "https://oasys-mas.github.io/moasei.html",
+            "papers": []
+          },
+          {
+            "key": "Competition MCTF",
+            "display": "MCTF",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "25 May · 14:00–15:30",
+            "room": "Plato",
+            "link": "https://www.mctf26.com/",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Tutorials",
+        "sessions": [
+          {
+            "key": "Tutorial Multi-objective optimization",
+            "display": "Multi-objective optimization and its applications for Agent Systems",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Monday, A.M.",
+            "link": "https://braude-research.org",
+            "papers": [],
+            "room": "Sophia"
+          },
+          {
+            "key": "Tutorial VITAMIN",
+            "display": "Don’t Trust Your Agents, Verify Them: Strategic Verification with VITAMIN",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Monday, A.M.",
+            "link": "https://vitamin-organisation.github.io",
+            "papers": [],
+            "room": "Adonis"
+          },
+          {
+            "key": "Tutorial Responsible Mechanism Design",
+            "display": "Responsible Mechanism Design",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Monday, P.M.",
+            "link": "https://pavelnaumov.com",
+            "papers": [],
+            "room": "Sophia"
+          },
+          {
+            "key": "Tutorial LLM-based Multi-agent Systems",
+            "display": "A Concise Introduction to LLM-based Multi-agent Systems",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Monday, P.M.",
+            "link": "https://www.yangchen.info",
+            "papers": [],
+            "room": "Adonis"
+          },
+          {
+            "key": "Tutorial Optimization Techniques Agent Coordination",
+            "display": "Tutorial on Optimization Techniques for Agent Coordination",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Monday, P.M.",
+            "link": "https://www.gauthier-picard.info",
+            "papers": [],
+            "room": "Corallino"
+          }
+        ]
+      },
+      {
+        "slot": "Workshops",
+        "sessions": [
+          {
+            "key": "ALA Workshop",
+            "display": "ALA – Adaptive and Learning Agents",
+            "code": "ALA",
+            "track": "Workshop",
+            "description": "Two-day workshop · May 25–26, 2026",
+            "link": "https://alaworkshop2026.github.io/#program",
+            "papers": [],
+            "room": "Akamas A"
+          },
+          {
+            "key": "ARMS Workshop",
+            "display": "ARMS – Autonomous Robots and Multirobot Systems",
+            "code": "ARMS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://arms2026.di.unimi.it/#program",
+            "papers": [],
+            "room": "Leda"
+          },
+          {
+            "key": "ASI Workshop",
+            "display": "ASI – Agents for Societal Impact",
+            "code": "ASI",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://panosd.eu/asi2026/#programme",
+            "papers": [],
+            "room": "Akamas C"
+          },
+          {
+            "key": "COINE Workshop",
+            "display": "COINE – Coordination, Organizations, Institutions, Norms and Ethics",
+            "code": "COINE",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://coin-workshop.github.io/coine-2026-paphos/technical_programme.html",
+            "papers": [],
+            "room": "Athena"
+          },
+          {
+            "key": "EMAS Workshop",
+            "display": "EMAS – Engineering Multi-Agent Systems",
+            "code": "EMAS",
+            "track": "Workshop",
+            "description": "Two-day workshop · May 25–26, 2026",
+            "link": "https://emas-workshop.github.io/2026/",
+            "papers": [],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "EXTRAAMAS Workshop",
+            "display": "EXTRAAMAS – Explainable, Trustworthy & Responsible AI and MAS",
+            "code": "EXTRAAMAS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://extraamas.ehealth.hevs.ch/program.html",
+            "papers": [],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "NEXUS Workshop",
+            "display": "NEXUS – Neurosymbolic Explainable Trustworthy Systems",
+            "code": "NEXUS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://nexus.telecom-paris.fr/#schedule",
+            "papers": [],
+            "room": "Hermes"
+          },
+          {
+            "key": "OptLearnMAS Workshop",
+            "display": "OptLearnMAS – Optimization and Learning in Multi-Agent Systems",
+            "code": "OptLearnMAS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://optlearnmas.github.io/#program",
+            "papers": [],
+            "room": "Zeus"
+          },
+          {
+            "key": "SE Workshop",
+            "display": "SE – Strategic Engineering Workshop",
+            "code": "SE",
+            "track": "Workshop",
+            "description": "One-day workshop · May 25, 2026",
+            "link": "https://sites.google.com/view/se-aamas2026",
+            "papers": [],
+            "room": "Aphrodite A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Tuesday, 26 May",
+    "slots": [
+      {
+        "slot": "Competitions · Room: Plato",
+        "sessions": [
+          {
+            "key": "Competition NSGYM",
+            "display": "NSGYM (online)",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "26 May · 8:45–10:15",
+            "room": "Plato",
+            "link": "https://nsgym.io/aamas2026_competition.html",
+            "papers": []
+          },
+          {
+            "key": "Competition PlanetWar-RTS",
+            "display": "PlanetWars-RTS",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "26 May · 11:00–12:30",
+            "room": "Plato",
+            "link": "https://simonlucas.github.io/planet-wars-rts/",
+            "papers": []
+          },
+          {
+            "key": "Competition LoRR 26",
+            "display": "LoRR",
+            "code": "COMP",
+            "track": "Competition",
+            "description": "26 May · 14:00–15:30",
+            "room": "Plato",
+            "link": "https://leagueofrobotrunners.org/",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Tutorials",
+        "sessions": [
+          {
+            "key": "Tutorial Domain Model Learning",
+            "display": "Domain Model Learning for Automated Planning",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Tuesday, A.M.",
+            "link": "https://domain-learning.github.io",
+            "papers": [],
+            "room": "Sophia"
+          },
+          {
+            "key": "Tutorial Neuro-Symbolic Decision Making",
+            "display": "Neuro-Symbolic Decision Making for Autonomous Agents",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Tuesday, A.M.",
+            "link": "https://sites.google.com/view/nesyrl-aamas2026",
+            "papers": [],
+            "room": "Adonis"
+          },
+          {
+            "key": "Tutorial Explainability Autonomous Agents",
+            "display": "Approaches for Explainability in Autonomous Agents: From Intuitive Post-hoc Methods to Causal Understanding",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Tuesday, A.M.",
+            "link": "https://xai-aamas-2026.hpai.cloud",
+            "papers": [],
+            "room": "Corallino"
+          },
+          {
+            "key": "Tutorial Formal Methods Safe Reinforcement Learning",
+            "display": "Formal Methods for Safe Reinforcement Learning",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Tuesday, P.M.",
+            "link": "https://fmailab.doc.ic.ac.uk",
+            "papers": [],
+            "room": "Sophia"
+          },
+          {
+            "key": "Tutorial Sparse Training",
+            "display": "A Decade of Sparse Training: Why Do We Still Stick to Dense Training?",
+            "code": "TUTORIAL",
+            "track": "Tutorial",
+            "description": "Tuesday, P.M.",
+            "link": "https://sites.google.com/view/a-decade-of-sparse-training",
+            "papers": [],
+            "room": "Adonis"
+          }
+        ]
+      },
+      {
+        "slot": "Workshops",
+        "sessions": [
+          {
+            "key": "AI4CNI Workshop",
+            "display": "AI4CNI – AI for Critical National Infrastructure",
+            "code": "AI4CNI",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://sites.google.com/view/ai4cni-26/",
+            "papers": [],
+            "room": "Akamas C"
+          },
+          {
+            "key": "ALA Workshop",
+            "display": "ALA – Adaptive and Learning Agents",
+            "code": "ALA",
+            "track": "Workshop",
+            "description": "Two-day workshop · May 25–26, 2026",
+            "link": "https://alaworkshop2026.github.io/#program",
+            "papers": [],
+            "room": "Akamas A"
+          },
+          {
+            "key": "ATT Workshop",
+            "display": "ATT – Agents in Traffic and Transportation",
+            "code": "ATT",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://sites.google.com/unimib.it/att2026/program?authuser=0",
+            "papers": [],
+            "room": "Hermes"
+          },
+          {
+            "key": "C-MAS Workshop",
+            "display": "C-MAS – Citizen-Centric Multi Agent Systems",
+            "code": "C-MAS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://sites.google.com/view/cmas2026",
+            "papers": [],
+            "room": "Athena"
+          },
+          {
+            "key": "CLaRAMAS Workshop",
+            "display": "CLaRAMAS – Causal Learning and Reasoning in Agents and MAS",
+            "code": "CLaRAMAS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://claramas-workshop.github.io/claramas2026/schedule/",
+            "papers": [],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "EMAS Workshop",
+            "display": "EMAS – Engineering Multi-Agent Systems",
+            "code": "EMAS",
+            "track": "Workshop",
+            "description": "Two-day workshop · May 25–26, 2026",
+            "link": "https://emas-workshop.github.io/2026/program/",
+            "papers": [],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "GAIW Workshop",
+            "display": "GAIW – Games, Agents, and Incentives Workshop",
+            "code": "GAIW",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://gtep-workshops.github.io/gaiw2026/program/",
+            "papers": [],
+            "room": "Akamas B"
+          },
+          {
+            "key": "MABS Workshop",
+            "display": "MABS – Multi-Agent-Based Simulation",
+            "code": "MABS",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://mabsworkshop.github.io/",
+            "papers": [],
+            "room": "Leda"
+          },
+          {
+            "key": "MASSpace Workshop",
+            "display": "MASSpace – Autonomous Agents and MAS for Space Applications",
+            "code": "MASSpace",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://mas-space.github.io/aamas2026ws/#programme",
+            "papers": [],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "RaD-AI Workshop",
+            "display": "RaD-AI – Rebellion and Disobedience in AI",
+            "code": "RaD-AI",
+            "track": "Workshop",
+            "description": "One-day workshop · May 26, 2026",
+            "link": "https://sites.google.com/view/rad-ai/rad-ai/cfp",
+            "papers": [],
+            "room": "Zeus"
+          }
+        ]
+      },
+      {
+        "slot": "Social Event · 19:00–20:30",
+        "sessions": [
+          {
+            "key": "Welcome Reception",
+            "display": "Welcome Reception",
+            "code": "SOCIAL",
+            "track": "Social Event",
+            "description": "Tuesday, 26 May · 19:00–20:30",
+            "papers": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Wednesday, 27 May",
+    "slots": [
+      {
+        "slot": "Morning · 10:45–12:30",
+        "sessions": [
+          {
+            "key": "Blue Sky: 1",
+            "display": "Blue Sky: 1",
+            "code": "Blue Sky 1",
+            "track": "Blue Sky",
+            "chair": "Rafael C. Cardoso",
+            "papers": [
+              {
+                "paper_id": "91",
+                "title": "Foundation World Models for Agents that Learn, Verify, and Adapt Reliably Beyond Static Environments",
+                "authors": "Florent Delgrange",
+                "session": "Blue Sky: 1",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "13",
+                "title": "Beyond Mimicry: Toward Lifelong Adaptability in Imitation Learning",
+                "authors": "Nathan Gavenski, Felipe Meneguzzi, Odinaldo Rodrigues",
+                "session": "Blue Sky: 1",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "27",
+                "title": "Diagnosing Faults in Deep Reinforcement Learning based Systems: Settings and Benchmarks",
+                "authors": "Avraham Natan, Roni Stern, Meir Kalech",
+                "session": "Blue Sky: 1",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "63",
+                "title": "Contextual Intelligence: The Next Leap for Reinforcement Learning",
+                "authors": "André Biedenkapp",
+                "session": "Blue Sky: 1",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "3",
+                "title": "Macro-Programming Multi-Agent Systems: A Framework for Artificial Collective Intelligence",
+                "authors": "Roberto Casadei",
+                "session": "Blue Sky: 1",
+                "track": "Blue Sky"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "GTEP 5 - Social Choice",
+            "display": "GTEP 5 – Social Choice",
+            "code": "GTEP 5",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Noam Hazon",
+            "papers": [
+              {
+                "paper_id": "201",
+                "title": "Online Fair Division With Subsidy: When Do Envy-Free Allocations Exist, and at What Cost?",
+                "authors": "Pooja Ravi Kulkarni, Ruta Mehta, Vishnu V. Narayan, Tomasz Ponitka",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "492",
+                "title": "Control in Hedonic Games",
+                "authors": "Jiehua Chen, Jakob Guttmann, Merisa Mustajbašić, Sofia Simola",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "898",
+                "title": "Generating Fair Consensus Statements with Social Choice on Token-Level MDPs",
+                "authors": "Carter Blair, Kate Larson",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "476",
+                "title": "Majoritarian Assignment Rules",
+                "authors": "Felix Brandt, Haoyuan Chen, Chris Dong, Patrick Lederer, Alexander Schlenga",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "390",
+                "title": "Relationships and Connections between Definitions of Metric Proportional Representation",
+                "authors": "Yusuf Hakan Kalayci, David Kempe",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "401",
+                "title": "Temporal Panel Selection in Ongoing Citizens’ Assemblies",
+                "authors": "Yusuf Hakan Kalayci, Evi Micha",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "277",
+                "title": "The Impossibility of Strategyproof Rank Aggregation",
+                "authors": "Manuel Eberl, Patrick Lederer",
+                "session": "GTEP 5 - Social Choice",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "GTEP 9 - Participatory Budgeting and Elections",
+            "display": "GTEP 9 – Participatory Budgeting and Elections",
+            "code": "GTEP 9",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Svetlana Obraztsova",
+            "papers": [
+              {
+                "paper_id": "921",
+                "title": "Feature-based Uncertainty Model for School Choice",
+                "authors": "Yao Zhang, Makoto Yokoo",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1240",
+                "title": "Clone-Robust Weights in Metric Spaces: Handling Redundancy Bias in Benchmark Aggregation",
+                "authors": "Damien Berriaud, Roger Wattenhofer",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "95",
+                "title": "Large Language Models for Designing Participatory Budgeting Rules",
+                "authors": "Nguyen T Thach, Xingchen Sha, Hau Chan",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1061",
+                "title": "Maximizing Index Diversity in Committee Elections",
+                "authors": "Paula Böhm, Robert Bredereck, Till Fluschnik",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "473",
+                "title": "Necessary President in Elections with Parties",
+                "authors": "Katarína Cechlárová, Ildikó Schlotter",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1147",
+                "title": "Outer Diversity of Structured Domains",
+                "authors": "Piotr Faliszewski, Krzysztof Sornat, Stanisław Szufa, Tomasz Wąs",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "649",
+                "title": "Project Submission Games in Participatory Budgeting",
+                "authors": "Piotr Faliszewski, Łukasz Janeczko, Andrzej Kaczmarczyk, Grzegorz Lisowski, Grzegorz Pierczyński",
+                "session": "GTEP 9 - Participatory Budgeting and Elections",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Adonis"
+          },
+          {
+            "key": "HAI 1 - Human-Agent Interaction",
+            "display": "HAI 1 – Human-Agent Interaction",
+            "code": "HAI 1",
+            "track": "Human-Agent Interaction (HAI)",
+            "chair": "Nirav Ajmeri",
+            "papers": [
+              {
+                "paper_id": "1023",
+                "title": "Developing Guidelines for Human-LLM Agent Teams: A Multi-Stakeholder Lens",
+                "authors": "Mireia Yurrita, Davide DellAnna, Pradeep K. Murukannaiah, Catholijn M Jonker, Pinar Yolum",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "1586",
+                "title": "Enhancing Goal Inference via Correction Timing",
+                "authors": "Anjiabei Wang, Shuangge Wang, Tesca Fitzgerald",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "370",
+                "title": "From Actions to Words: Towards Abstractive-Textual Policy Summarization in RL",
+                "authors": "Sahar Admoni, Assaf Hallak, Yftah Ziser, Omer Ben-Porat, Ofra Amir",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "1486",
+                "title": "Hierarchical Reward Design from Language: Enhancing Alignment of Agent Behavior with Human Specifications",
+                "authors": "Zhiqin Qian, Ryan Diaz, Sangwon Seo, Vaibhav Unhelkar",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "1080",
+                "title": "Human-Inspired Context-Selective Multimodal Memory for Social Robots",
+                "authors": "Hangyeol Kang, Slava Voloshynovskiy, Nadia Thalmann",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "841",
+                "title": "Planning Ahead with RSA: Efficient Signalling in Dynamic Environments by Projecting User Awareness across Future Timesteps",
+                "authors": "Anwesha Das, John Duff, Jörg Hoffmann, Vera Demberg",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              },
+              {
+                "paper_id": "1501",
+                "title": "Timing the Message: Language-Based Notifications for Time-Critical Assistive Settings",
+                "authors": "Ya-Chuan Hsu, Jonathan DeCastro, Andrew Silva, Guy Rosman",
+                "session": "HAI 1 - Human-Agent Interaction",
+                "track": "Human-Agent Interaction (HAI)"
+              }
+            ],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "LEARN 1 - Offline MARL",
+            "display": "LEARN 1 – Offline MARL",
+            "code": "LEARN 1",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Roxana Radulescu",
+            "papers": [
+              {
+                "paper_id": "919",
+                "title": "B3C: A Minimalist Approach to Offline Multi-Agent Reinforcement Learning",
+                "authors": "Woojun Kim, Katia P. Sycara",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "574",
+                "title": "Boosting Offline MARL under Imbalanced Datasets via Compositional Diffusion Models",
+                "authors": "Lihe Li, Shenghe Hu, Bingxuan Lan, Yuqi Bian, Huan ZHang, ZhaoMing, Chongjie Zhang, Lei Yuan, Yang Yu",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1512",
+                "title": "Graph-Conditioned Diffusion for Offline Multi-Agent Reinforcement Learning",
+                "authors": "Luis Manuel Pimentel, Minwoo Cho, Sean Charles Ye, James E. G. Pagan, Matthew Craig Gombolay",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1494",
+                "title": "Multi-Agent Decision S4: Leveraging State Space Models for Offline Multi-Agent Reinforcement Learning",
+                "authors": "Ashmita Bhattacharya, Malyaban Bal",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1055",
+                "title": "Offline Multi-Agent Reinforcement Learning with Global Moderate Generalization",
+                "authors": "Yuanrui Duan, Wengang Zhou, Yufeng Shi, xiancheng gao, Lin Liu, Houqiang Li",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "442",
+                "title": "PIQL: Projective Implicit Q-Learning with Support Constraint for Offline Reinforcement Learning",
+                "authors": "Xinchen Han, Hossam Afifi, Michel Marot",
+                "session": "LEARN 1 - Offline MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "",
+                "title": "OM²P: Offline Multi-Agent Mean-Flow Policy",
+                "authors": "Zhuoran Li, Xun Wang, Hai Zhong, Qingxin Xia, Lihua Zhang, Longbo Huang",
+                "session": "LEARN 1 - Offline MARL",
+                "track": ""
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+            "display": "LEARN 7 – Social, Evolutionary and Swarm Learning",
+            "code": "LEARN 7",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Leandro Marcolino",
+            "papers": [
+              {
+                "paper_id": "592",
+                "title": "Robust Sequential Learning in Random Order Networks",
+                "authors": "William Guo, Edward Xiong, Jie Gao",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "282",
+                "title": "Networked Communication for Mean-Field Games with Function Approximation and Empirical Mean-Field Estimation",
+                "authors": "Patrick Benjamin, Alessandro Abate",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1200",
+                "title": "SESiL: Social, Evolutionary Supported Learning",
+                "authors": "Tianshu Zhao, Zinovi Rabinovich",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "74",
+                "title": "SIGMAS: Second-Order Interaction-based Grouping for Overlapping Multi-Agent Swarms",
+                "authors": "Minah Lee, Saibal Mukhopadhyay",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1569",
+                "title": "Surrogate-Augmented Deception in Reinforcement Learning (SAD-RL)",
+                "authors": "Joe Shymanski, Scott Nivison, Sandip Sen",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1262",
+                "title": "VGC-Bench: Towards Mastering Diverse Team Strategies in Competitive Pokémon",
+                "authors": "Cameron L. Angliss, Jiaxun Cui, Jiaheng Hu, Arrasy Rahman, Peter Stone",
+                "session": "LEARN 7 - Social, Evolutionary and Swarm Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "ROBOT 1 - VLA and Robot Perception",
+            "display": "ROBOT 1 – VLA and Robot Perception",
+            "code": "ROBOT 1",
+            "track": "Robotics and Control (ROBOT)",
+            "chair": "Nicola Basilico",
+            "papers": [
+              {
+                "paper_id": "1757",
+                "title": "Issues with measuring task complexity via random policies in robotic tasks",
+                "authors": "Reabetswe M. Nkhumise, Mohamed S. Talamali, Aditya Gilra",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1076",
+                "title": "Assessing VLM-Driven Semantic-Affordance Inference for Non-Humanoid Robot Morphologies",
+                "authors": "Jess Jones, Sabine Hauert, Raul Santos-Rodriguez",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "115",
+                "title": "Conformal Reachability for Safe Control in Unknown Environments",
+                "authors": "Xinhang Ma, Junlin Wu, Yiannis Kantaros, Yevgeniy Vorobeychik",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "960",
+                "title": "Don’t Blind Your VLA: Aligning Visual Representations for OOD Generalization",
+                "authors": "Nikita Kachaev, Mikhail Kolosov, Daniil Zelezetsky, Alexey Kovalev, Aleksandr Panov",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "1598",
+                "title": "QDepth-VLA: Quantized Depth Prediction as Auxiliary Supervision for Vision–Language–Action Models",
+                "authors": "Yixuan Li, YUHUI CHEN, mingcai.zhou, Haoran Li",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "1648",
+                "title": "RoboGPT-R1: Enhancing Robot Task Planning with Reinforcement Learning",
+                "authors": "Jinrui Liu, Bingyan Nie, Boyu Li, Yaran Chen, Yuze Wang, Shunsen He, Haoran Li",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "690",
+                "title": "TriBand-BEV: Real-Time LiDAR-Only 3D Pedestrian Detection via Height-Aware BEV and High-Resolution Feature Fusion",
+                "authors": "Mohammad Khoshkdahan, Alexey Vinel",
+                "session": "ROBOT 1 - VLA and Robot Perception",
+                "track": "Robotics and Control (ROBOT)"
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "RR3 - Logic",
+            "display": "RR 3 – Logic",
+            "code": "RR 3",
+            "track": "Representation and Reasoning (RR)",
+            "chair": "Jerome Euzenat",
+            "papers": [
+              {
+                "paper_id": "1330",
+                "title": "Alternating-Time Temporal Logic with Dependent Strategies",
+                "authors": "Jessica L. Newman, Enrico H. Gerding, Enrico Marchioni, Baharak Rastegari",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "821",
+                "title": "An Algebraic Structuring of Epistemic States for BDI Agents in Uncertain Environments",
+                "authors": "Charles A. N. Costa, Marlo Souza, Célia Ghedini Ralha",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "181",
+                "title": "Epistemic Modal Logic Meets Algebraic Model Counting",
+                "authors": "Daxin Liu, Vaishak Belle",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1682",
+                "title": "Guiding Neuro-Symbolic Scenario Generation with Spatio-Temporal Logic",
+                "authors": "Lorenzo Bonin, Francesco Giacomarra, Luca Bortolussi, Jyotirmoy V. Deshmukh, Francesca Cairoli",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1231",
+                "title": "Reasoning About Responsibility for Taking Risks",
+                "authors": "Maksim Gladyshev, Natasha Alechina, Mehdi Dastani, Dragan Doder",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1203",
+                "title": "Solving Qualitative Multi-Objective Stochastic Games",
+                "authors": "Moritz Graf, Anthony Widjaja Lin, R Majumdar",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1020",
+                "title": "Synthesis of Safety Specifications for Probabilistic Systems",
+                "authors": "Gaspard Ohlmann, Edwin Hamel-de le Court, Francesco Belardinelli",
+                "session": "RR3 - Logic",
+                "track": "Representation and Reasoning (RR)"
+              }
+            ],
+            "room": "Zeus"
+          },
+          {
+            "key": "SOPS 5 - Real-World Optimization and Scheduling",
+            "display": "SOPS 5 – Real-World Optimization and Scheduling",
+            "code": "SOPS 5",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Neil Yorke-Smith",
+            "papers": [
+              {
+                "paper_id": "178",
+                "title": "ReGMS: Retrieval‑Grounded Multi‑Agent Scenario Analysis for Climate Risk",
+                "authors": "Yun Wing Kiang, King Hang LAM",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "262",
+                "title": "End-to-End Decision-Focused Prediction in Dynamic Bike-Sharing Rebalancing",
+                "authors": "Pengbo Fu, Chongyang Wan, Yuan Luo",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1424",
+                "title": "Imperfect-Information Games on Quantum Computers: A Case Study in Skat",
+                "authors": "Ulrich Armbrüster, Stefan Edelkamp, Gabriel Maresch, Erik Schulze",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1534",
+                "title": "Kidney Exchange: Faster Parameterized Algorithms and Tighter Lower Bounds",
+                "authors": "Palash Dey, Aritra Banik, Abhishek Sahu, Sujoy Bhore",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1510",
+                "title": "Multi-Objective Coverage via Constraint Active Search",
+                "authors": "Zakaria Shams Siam, Xuefeng Liu, Chong Liu",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1405",
+                "title": "Real-time Cohorting of Nursing Care into Bubbles",
+                "authors": "Jeffrey Keithley, Tinh Tran, Lucas Zach-Ryan, D M Hasibul Hasan, Brodie McCuen, Sriram Pemmaraju, Bijaya Adhikari",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "141",
+                "title": "Stigmergic Swarming Agents for Fast Subgraph Isomorphism",
+                "authors": "H. Van Dyke Parunak",
+                "session": "SOPS 5 - Real-World Optimization and Scheduling",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Leda"
+          }
+        ]
+      },
+      {
+        "slot": "Afternoon · 14:00–15:45",
+        "sessions": [
+          {
+            "key": "GAAI 3 - RAG, Retrieval and Evaluation",
+            "display": "GAAI 3 – RAG, Retrieval and Evaluation",
+            "code": "GAAI 3",
+            "track": "Generative and Agentic AI (GAAI)",
+            "chair": "Sebastian Stein",
+            "papers": [
+              {
+                "paper_id": "837",
+                "title": "Advancing Multi-Agent RAG system with Minimalist Reinforcement Learning",
+                "authors": "Yihong Wu, Liheng Ma, Muzhi Li, Jiaming Zhou, Lei Ding, Jianye HAO, Ho-fung Leung, Irwin King, Yingxue Zhang, Jian-Yun Nie",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "449",
+                "title": "Automatically Benchmarking LLM Code Agents through Agent-driven Annotation and Evaluation",
+                "authors": "Lingyue Fu, Bolun Zhang, Hao Guan, Yaoming Zhu, Lin Qiu, Weiwen Liu, Xuezhi Cao, Xunliang Cai, Weinan Zhang, Yong Yu",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "216",
+                "title": "Can Vibe Coding Beat Graduate CS Students? An LLM vs. Human Coding Tournament on Market-driven Strategic Planning",
+                "authors": "Panayiotis Danassis, Naman Goel",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "941",
+                "title": "EG-RAG: Retrieval-Augmented Generation with Evidence Graph for Reliable Multi-Document Reasoning",
+                "authors": "Seunggwan Hong, Junhyung Moon, Eunkyeong Lee, Jaehyoung Park, Hyunseung Choo",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "802",
+                "title": "Exploring Cognitive Bias Impact, Detection and Mitigation in Large Language Models",
+                "authors": "Ana Gutiérrez, Stella Heras, Javier Palanca, Vicent Botti",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1784",
+                "title": "GLEAR: A Graph Logic-Enhanced RAG Framework for Legal QA",
+                "authors": "Jingyun Sun, Jiaming Tian, Jie Shi, Yixin Zhang, Wenxi Sheng, Yang Li",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "676",
+                "title": "RocqStar: Leveraging Similarity-driven Retrieval and Agentic Systems for Rocq generation",
+                "authors": "Andrei Kozyrev, Nikita Khramov, Gleb Solovev, Anton Podkopaev",
+                "session": "GAAI 3 - RAG, Retrieval and Evaluation",
+                "track": "Generative and Agentic AI (GAAI)"
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "GTEP 3 - Fair Division",
+            "display": "GTEP 3 – Fair Division",
+            "code": "GTEP 3",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Pascal Lenzner",
+            "papers": [
+              {
+                "paper_id": "1328",
+                "title": "EFX Allocations Exist on Triangle-Free Multi-Graphs",
+                "authors": "Mahyar Afshinmehr, Arash Ashuri, Pouria Mahmoudkhan, Kurt Mehlhorn",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1197",
+                "title": "Exploring Relations among Fairness Notions in Discrete Fair Division",
+                "authors": "Jugal Garg, Eklavya Sharma",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "320",
+                "title": "Maximin Shares with Lower Quotas",
+                "authors": "Hirota Kinoshita, Ayumi Igarashi",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1208",
+                "title": "Proportional and Pareto-Optimal Allocation of Chores with Subsidy",
+                "authors": "Jugal Garg, Eklavya Sharma, Xiaowei Wu",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1085",
+                "title": "The Landscape of Almost Equitable Allocations",
+                "authors": "Hadi Hosseini, Vishwa Prakash HV, Aditi Sethia, Jatin Yadav",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "533",
+                "title": "Adjusted Winner: from Splitting to Selling",
+                "authors": "Robert Bredereck, Eyal Briman, Bin Sun, Nimrod Talmon",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1133",
+                "title": "Existence and Computation of Fair Allocations under Constraints",
+                "authors": "Siddharth Barman, Ioannis Caragiannis, Sudarshan Shyam",
+                "session": "GTEP 3 - Fair Division",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "GTEP 7 - Mechanism Design",
+            "display": "GTEP 7 – Mechanism Design",
+            "code": "GTEP 7",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Michael Wellman",
+            "papers": [
+              {
+                "paper_id": "1373",
+                "title": "Learning Bayesian Game Families, with Application to Mechanism Design",
+                "authors": "Madelyn Gatchel, Michael P. Wellman",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1647",
+                "title": "Mechanism Design for Efficient Task Allocation",
+                "authors": "Zifan Gong, Minming Li, Houyu Zhou",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "249",
+                "title": "Participation Incentives in Online Cooperative Games",
+                "authors": "Haris Aziz, Yuhang Guo, Zhaohong Sun",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "622",
+                "title": "Robust Information Design for Multi-Agent Systems with Complementarities: Smallest-Equilibrium Threshold Policies",
+                "authors": "Farzaneh Farhadi, Maria Chli",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "363",
+                "title": "The Facility Location Problem with Aleatory Agents",
+                "authors": "Gennaro Auricchio, Jie Zhang",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "251",
+                "title": "The Power of Information for Intermediate States in Contract Design",
+                "authors": "YiRui Zhang, Zhixuan Fang",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "366",
+                "title": "Truthful Reporting of Competence with Minimal Verification",
+                "authors": "Reshef Meir, Jonathan Wagner, Omer Ben-Porat",
+                "session": "GTEP 7 - Mechanism Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "IA1 - LLM Applications",
+            "display": "IA 1 – LLM Applications",
+            "code": "IA 1",
+            "track": "Generative and Agentic AI (GAAI)",
+            "chair": "Yang Chen",
+            "papers": [
+              {
+                "paper_id": "1706",
+                "title": "AutoMETA: A Multi-Agent LLM System for Autonomous Meta-Analysis",
+                "authors": "Keeheon Lee, Kunhee Ryu",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "576",
+                "title": "EmoDebt: Bayesian-Optimized Emotional Intelligence for Strategic Agent-to-Agent Debt Recovery",
+                "authors": "Yunbo Long, Yuhan Liu, Liming Xu, Alexandra Brintrup",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "1237",
+                "title": "Enabling User Agency in Scalable Content Recommendations with Large Language Models",
+                "authors": "Yucheng Li, Gerrit J.J. Van den Burg, Wei Liu, Zhunxuan Wang, Abhishek Tripathi, Murat Sensoy",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "494",
+                "title": "Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Expert Knowledge into Algorithmic Planning",
+                "authors": "Yohai Trabelsi, GUOJUN XIONG, Fentabil Getnet, Stéphane Verguet, Milind Tambe",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "936",
+                "title": "Learning Hierarchical Procedural Memory for LLM Agents through Bayesian Selection and Contrastive Refinement",
+                "authors": "Saman Forouzandeh, Wei Peng, Parham Moradi, Xinghuo Yu, Mahdi Jalili",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "1456",
+                "title": "Retrieval- and Argumentation-Enhanced Multi-Agent LLMs for Judgmental Forecasting",
+                "authors": "Deniz Gorur, Antonio Rago, Francesca Toni",
+                "session": "IA1 - LLM Applications",
+                "track": "Innovative Applications (IA)"
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "LEARN 2 - Cooperative MARL",
+            "display": "LEARN 2 – Cooperative MARL",
+            "code": "LEARN 2",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Maria Gini",
+            "papers": [
+              {
+                "paper_id": "348",
+                "title": "Bandwidth-constrained Variational Message Encoding for Cooperative Multi-agent Reinforcement Learning",
+                "authors": "Wei Duan, Jie Lu, En Yu, Junyu Xuan",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1302",
+                "title": "Fluid-Agent Reinforcement Learning",
+                "authors": "Shishir Sharma, Doina Precup, Theodore Perkins",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1670",
+                "title": "Generalized Per-Agent Advantage Estimation for Multi-Agent Policy Optimization",
+                "authors": "Seongmin Kim, Giseung Park, Woojun Kim, Jeewon Jeon, Seungyul Han, Youngchul Sung",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1592",
+                "title": "Heterogeneity in Multi-Agent Reinforcement Learning",
+                "authors": "Tianyi Hu, Zhiqiang Pu, Yuan Wang, Tenghai Qiu, Min Chen, Xin Yu",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1235",
+                "title": "Probing Dec-POMDP Reasoning in Cooperative MARL",
+                "authors": "Kale-ab Tessera, Leonard Hinckeldey, Riccardo Zamboni, David Abel, Amos Storkey",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1320",
+                "title": "Sample-Efficient Policy Space Response Oracles with Joint Experience Best Response",
+                "authors": "Ariyan Bighashdel, Thiago D. Simão, Frans A Oliehoek",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "933",
+                "title": "Zero-Shot Coordination in Ad Hoc Teams with Generalized Policy Improvement and Difference Rewards",
+                "authors": "Rupal Nigam, Niket Parikh, Hamid Osooli, Mikihisa Yuasa, Jacob Heglund, Huy T Tran",
+                "session": "LEARN 2 - Cooperative MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "RR1 - Verification",
+            "display": "RR 1 – Verification",
+            "code": "RR 1",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Yevgeniy Vorobeychik",
+            "papers": [
+              {
+                "paper_id": "228",
+                "title": "Wallet ATL: Towards Reliable Smart Contract Verification",
+                "authors": "Angelo Ferrando, Blondelle Kana Zanlefack, Vadim Malvone",
+                "session": "RR1 - Verification",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "",
+                "title": "Verification of Robust Multi-Agent Systems",
+                "authors": "Raphaël Berthon, Joost-Pieter Katoen, Munyque Mittelmann, Aniello Murano",
+                "session": "RR1 - Verification",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "1252",
+                "title": "A Verification Framework for Obstruction, Probability, and Time",
+                "authors": "Wissal DAHANI, Jean Leneutre, Vadim Malvone, James Ortiz, Axel Oscar",
+                "session": "RR1 - Verification",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "543",
+                "title": "ATL*AS: An Automata-Theoretic Approach and Tool for the Verification of Strategic Abilities in Multi-Agent Systems",
+                "authors": "Sofia Garcia de Blas Garcia-Alcaide, Francesco Belardinelli",
+                "session": "RR1 - Verification",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "713",
+                "title": "On Angels and Demons: Strategic (De)Construction of Dynamic Models",
+                "authors": "davide catta, Rustam Galimullin, Munyque Mittelmann",
+                "session": "RR1 - Verification",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "168",
+                "title": "Reasoning about Bias in Multi-Agent Systems Verification",
+                "authors": "Vadim Malvone, Chunyan Mu",
+                "session": "RR1 - Verification",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "623",
+                "title": "Finite-State Controllers for (Hidden-Model) POMDPs using Deep Reinforcement Learning",
+                "authors": "David Hudák, Maris F. L. Galesloot, Martin Tappler, Martin Kurečka, Nils Jansen, Milan Ceska",
+                "session": "RR1 - Verification",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Adonis"
+          },
+          {
+            "key": "SIM3",
+            "display": "SIM 3",
+            "code": "SIM 3",
+            "track": "Modelling and Simluation of Societies (SIM)",
+            "chair": "Fernando P. Santos",
+            "papers": [
+              {
+                "paper_id": "746",
+                "title": "Adaptive Agents in Spatial Double-Auction Markets: Modeling the Emergence of Industrial Symbiosis",
+                "authors": "Matthieu Mastio, Benoit Gaudou, Paul Saves, Nicolas Verstaevel",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1610",
+                "title": "DEpiABS: Differentiable Epidemic Agent-Based Simulator",
+                "authors": "Zhijian Gao, Shuxin Li, Bo An",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "685",
+                "title": "Heterogeneous RBCs via deep multi-agent reinforcement learning",
+                "authors": "Federico Gabriele, Aldo Glielmo, Marco Taboga",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1239",
+                "title": "Identifying Essential Rule Sets in Agent-Based Models Through Systematic Ablation: A Tumor Evolution Case Study",
+                "authors": "Nhung Duong, Đoàn Minh Lượng, Anh Do, Anh Truong, Ngoc Do, Nguyen Tran Nam Tien, Tuan Do",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "854",
+                "title": "LLM-augmented empirical game theoretic simulation for socio-ecological systems",
+                "authors": "Jennifer Shi, Christopher K. Frantz, Christian Kimmich, Saba Siddiki, Atrisha Sarkar",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1206",
+                "title": "Population size effects on strategic classification dynamics",
+                "authors": "Marta C. Couto, Flavia Barsotti, Fernando P. Santos",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1384",
+                "title": "Wisdom of the Machines: Exploring Collective Intelligence in LLM Crowds",
+                "authors": "Yashar Talebirad, Ali Parsaee, Vishwajeet Ohal, Amirhossein Nadiri, Csongor Szepesvari, Yash Mouje, Eden Redman",
+                "session": "SIM3",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "SOPS2 - Planning and Learning",
+            "display": "SOPS 2 – Planning and Learning",
+            "code": "SOPS 2",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Felipe Meneguzzi",
+            "papers": [
+              {
+                "paper_id": "1016",
+                "title": "Constrained Multi-Agent Reinforcement Learning with MAF-Net for Safe Trajectory Planning",
+                "authors": "Bizhao Pang, Mingcheng Zhang, Xinting Hu, Thinh Pham, sameer alam, Guglielmo Lulli",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1664",
+                "title": "MA-SafeDiffuser: Safe Multi-Agent Planning with Diffusion Probabilistic Models",
+                "authors": "Kiran Ravish, Ankita Kushwaha, Preeti, Pawan Kumar",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "815",
+                "title": "Online Learning of Numeric Action Models for Planning",
+                "authors": "Argaman Mordoch, Yarin Benyamin, Shahaf S. Shperberg, Brendan Juba, Roni Stern",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "58",
+                "title": "Scaling Multi-Agent Epistemic Planning through GNN-Derived Heuristics",
+                "authors": "Giovanni Briglia, Francesco Fabiano, Stefano Mariani",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1273",
+                "title": "STO-RL: OFFLINE RL UNDER SPARSE REWARDS VIA LLM-GUIDED SUBGOAL TEMPORAL ORDER",
+                "authors": "Chengyang GU, Yuxin Pan, Hui Xiong, Yize Chen",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "851",
+                "title": "Think Fast! Learning to Control Online Reasoning in Stochastic Environments",
+                "authors": "Matthew Budd, Bruno Lacerda, Nick Hawes",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1491",
+                "title": "UNCAP: Uncertainty-Guided Neurosymbolic Planning Using Natural Language Communication for Cooperative Autonomous Vehicles",
+                "authors": "Neel P. Bhatt, Po-han Li, Kushagra Gupta, Rohan Siva, Daniel Milan, Alexander Todd Hogue, Sandeep P. Chinchali, David Fridovich-Keil, Zhangyang Wang, ufuk topcu",
+                "session": "SOPS2 - Planning and Learning",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Leda"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Thursday, 28 May",
+    "slots": [
+      {
+        "slot": "Morning · 10:45–12:30",
+        "sessions": [
+          {
+            "key": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+            "display": "Blue Sky 2 – Formal Reasoning, Argumentation & Social Systems",
+            "code": "Blue Sky 2",
+            "track": "Blue Sky",
+            "chair": "Roie Zivan",
+            "papers": [
+              {
+                "paper_id": "4",
+                "title": "Agentic LLMs and Distributed Constraint Reasoning: A Symbiotic Perspective for Neurosymbolic Multi-Agent Systems",
+                "authors": "Gauthier Picard, William Yeoh, Roie Zivan",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "32",
+                "title": "Argumentative Human-AI Decision-Making: Toward AI Agents That Reason With Us, Not For Us",
+                "authors": "Stylianos Loukas Vasileiou, Antonio Rago, Francesca Toni, William Yeoh",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "88",
+                "title": "No future for LLM-based agents without Formal Dialogue Verification",
+                "authors": "Juan Carlos Nieves, Andreas Brännström, Esteban Guerrero",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "27",
+                "title": "The Dynamic Turn in Strategy Logics",
+                "authors": "Rustam Galimullin, Maksim Gladyshev, Munyque Mittelmann, Nima Motamed",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "96",
+                "title": "Frankenmandering: The Confluence and Symbiosis of Opinion Dynamics and Gerrymandering",
+                "authors": "Sahil Agarwal, Svetlana Obraztsova, Zinovi Rabinovich, Alan Tsang",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "97",
+                "title": "Computational Social Choice: Research & Development",
+                "authors": "Dorothea Baumeister, Ratip Emin Berker, Niclas Boehmer, Sylvain Bouveret, Andreas Darmann, Piotr Faliszewski, Martin Lackner, Jerome Lang, Nicholas Mattei, Arianna Novaro",
+                "session": "Blue Sky 2 - Formal Reasoning, Argumentation & Social Systems",
+                "track": "Blue Sky"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "GAAI 2 - Multi-Agent LLM Coordination",
+            "display": "GAAI 2 – Multi-Agent LLM Coordination",
+            "code": "GAAI 2",
+            "track": "Generative and Agentic AI (GAAI)",
+            "chair": "Yali Du",
+            "papers": [
+              {
+                "paper_id": "920",
+                "title": "CRAwDAD: Causal Reasoning Augmentation with Dual-Agent Debate",
+                "authors": "Finn G. Vamosi, Nils Forkert",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1830",
+                "title": "D³MAS: Decompose, Deduce, and Distribute for Enhanced Knowledge Sharing in Multi-Agent Systems",
+                "authors": "Heng Zhang, Yuling Shi, Xiaodong Gu, Haochen You, Zijian Zhang, Lubin Gan, Yilei Yuan, Jin Huang",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "891",
+                "title": "Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us",
+                "authors": "Maria Milkowski, Tim Weninger",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "386",
+                "title": "Everyone Contributes! Incentivizing Strategic Cooperation in Multi-LLM Systems via Sequential Public Goods Games",
+                "authors": "Yunhao Liang, Yuan Qu, Jingyuan Yang, Shaochong Lin, Zuo-Jun Shen",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1818",
+                "title": "HyperAgent: Leveraging Hypergraphs for Topology Optimization in Multi-Agent Communication",
+                "authors": "Heng Zhang, Yuling Shi, Xiaodong Gu, Zijian Zhang, Haochen You, Lubin Gan, Yilei Yuan, Jin Huang",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "200",
+                "title": "SAT: Sequential Agent Tuning for Coordinator‑Free Plug‑and‑Play Multi‑LLM Training with Monotonic Improvement Guarantees",
+                "authors": "Yi Xie, Yangyang Xu, Yi Fan, Bo Liu",
+                "session": "GAAI 2 - Multi-Agent LLM Coordination",
+                "track": "Generative and Agentic AI (GAAI)"
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "GTEP 2 - Fairness",
+            "display": "GTEP 2 – Fairness",
+            "code": "GTEP 2",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Paolo Turrini",
+            "papers": [
+              {
+                "paper_id": "516",
+                "title": "Average Unfairness in Routing Games",
+                "authors": "Pan-Yang Su, Arwa Alanqary, Bryce Ferguson, Manxi Wu, Alexandre M Bayen, S. Shankar Sastry",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "860",
+                "title": "Equitable Core Imputations for Max-Flow, MST and $b$-Matching Games",
+                "authors": "Rohith Reddy Gangam, Naveen Garg, Parnian Shahkar, Vijay Vazirani",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "338",
+                "title": "Fair Allocation of Improvements: When Old Endowments Shape New Assignments",
+                "authors": "Noga Klein Elmalem, Rica Gonen, Erel Segal-Halevi",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "238",
+                "title": "Fair Coordination in Strategic Scheduling",
+                "authors": "Wei-Chen Lee, Martin Bullinger, Alessandro Abate, Michael J. Wooldridge",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1013",
+                "title": "Fair Division under Laminar Matroid Constraints for Three Agents",
+                "authors": "Sarfaraz Equbal",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "435",
+                "title": "On the Fair Allocation to Asymmetric Agents with Binary XOS Valuations",
+                "authors": "Ziheng Chen, Bo Li, Zihan Luo, Jialin Zhang",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "47",
+                "title": "Comparing the Fairness of Recursively Balanced Picking Sequences",
+                "authors": "Karen Frilya Celine, Warut Suksompong, Sheung Man Yuen",
+                "session": "GTEP 2 - Fairness",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "GTEP 8 - Coalition Formation",
+            "display": "GTEP 8 – Coalition Formation",
+            "code": "GTEP 8",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Enrico Gerding",
+            "papers": [
+              {
+                "paper_id": "1663",
+                "title": "Individual Rationality in Constrained Hedonic Games: Additively Separable and Fractional Preferences",
+                "authors": "Foivos Fioravantes, Harmender Gahlawat, Nikolaos Melissinos, Šimon Schierreich",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1679",
+                "title": "Maximizing the Egalitarian Welfare in Friends and Enemies Games",
+                "authors": "Edith Elkind, Michele Flammini, Giovanna Varricchio",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1228",
+                "title": "Metric Hedonic Games on the Line",
+                "authors": "Merlin de la Haye, Pascal Lenzner, Farehe Soheil, Marcus Wunderlich",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "15",
+                "title": "The Multi-Agent Off-Switch Game",
+                "authors": "Akash Agrawal, Soroush Ebadian, Lewis Hammond",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Offline Learning of Nash Stable Coalition Structures with Possibly Overlapping Coalitions",
+                "authors": "Saar Cohen",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Distributed Course Allocation with Asymmetric Friendships",
+                "authors": "Lihi Dery, Tal Grinshpoun, Ilya Khakhiashvili",
+                "session": "GTEP 8 - Coalition Formation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "GTEP 11",
+            "display": "GTEP 11",
+            "code": "GTEP 11",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Reshef Meir",
+            "papers": [
+              {
+                "paper_id": "459",
+                "title": "Stability in Online Assignment Games",
+                "authors": "Emile Martinez, Felipe Garrido-Lucero, Umberto Grandi",
+                "session": "GTEP 11",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "240",
+                "title": "Agents of Diffusion: Enhancing Diffusion Language Models with Multi-Agent Reinforcement Learning for Structured Data Generation",
+                "authors": "Aja Khanal, Kaushik Tushar Ranade, Rishabh Agrawal, Kalyan Shankar Basu, Apurva Narayan",
+                "session": "GTEP 11 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "743",
+                "title": "The Triad of Identity, Trust and Responsibility in Multi-Agent Systems",
+                "authors": "Jayati Deshmukh, Vahid Yazdanpanah, Sebastian Stein, Sarvapali D Ramchurn",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "693",
+                "title": "Efficiently Computing Equilibria in Budget-Aggregation Games",
+                "authors": "Patrick Becker, Alexander Fries, Matthias Greger, Erel Segal-Halevi",
+                "session": "GTEP 11",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "973",
+                "title": "MAStitch: Unifying Local and Global Perspectives for Anomaly Detection in Multi-Agent Systems",
+                "authors": "Lior Waknin, Yarin Yerushalmi Levi, Ron Solomon, Jaidip Kotak, Amit Giloni, Chiara Picardi, Roman Vainshtein, Yuval Elovici, Asaf Shabtai",
+                "session": "GTEP 11",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Maximin Share Guarantees via Limited Cost-Sensitive Sharing",
+                "authors": "Hana Salavcova, Martin Černý, Arpita Biswas",
+                "session": "GTEP 11",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Sophia"
+          },
+          {
+            "key": "LEARN 4 - Multi-Objective and Fairness in MARL",
+            "display": "LEARN 4 – Multi-Objective and Fairness in MARL",
+            "code": "LEARN 4",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Nirav Ajmeri",
+            "papers": [
+              {
+                "paper_id": "1701",
+                "title": "Altruism and Fair Objective in Mixed-Motive Markov games",
+                "authors": "Yao-hua Franck XU, Tayeb LEMLOUMA, Arnaud Braud, Jean-Marie Bonnin",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1434",
+                "title": "Fairness in Cooperative Multi-objective Multi-agent Reinforcement Learning using Expected Utility",
+                "authors": "Fares Chouaki, Aurélie Beynier, Nicolas Maudet, Paolo Viappiani",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "23",
+                "title": "Fairness over Equality: Correcting Social Incentives in Asymmetric Sequential Social Dilemmas",
+                "authors": "Alper Demir, Hüseyin Aydın, Kale-ab Tessera, David Abel, Stefano V. Albrecht",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "855",
+                "title": "Multi-Objective Categorical Deep Q-Networks",
+                "authors": "Fares Chouaki, Aurélie Beynier, Nicolas Maudet, Paolo Viappiani",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "732",
+                "title": "Reducing Overestimation by Measuring Critic Disagreement in Multi-Critics Architectures",
+                "authors": "Nitsan Soffair, Gilad Katz",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1177",
+                "title": "Utility-based soft masking for continual multi-objective reinforcement learning",
+                "authors": "Timon Deschamps, Rémy Chaput, Mathieu Guillermin, Laetitia Matignon",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "",
+                "title": "Strategic Communication under Threat: Learning Information Trade-offs in Pursuit-Evasion Games",
+                "authors": "Valerio La Gatta, Dolev Mutzari, Sarit Kraus, V.S. Subrahmanian",
+                "session": "LEARN 4 - Multi-Objective and Fairness in MARL",
+                "track": ""
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+            "display": "LEARN 6 – Bandits, Online Learning and Mechanism Learning",
+            "code": "LEARN 6",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Ian Gemp",
+            "papers": [
+              {
+                "paper_id": "1736",
+                "title": "Dynamically Increasing Agents Set-Size in Bayesian Multi-agent Multi-armed Bandits Framework",
+                "authors": "Mohammad ESSA Alsomali, Leandro Soriano Marcolino, Barry Porter, Roberto Rodrigues-Filho",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1675",
+                "title": "Functional Multi-armed Bandit and the Best Function Identification Problems",
+                "authors": "Yuriy Dorn, Aleksandr Katrutsa, Ilgam Latypov, Anastasiia Soboleva",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1725",
+                "title": "Learning to Price: Interpretable Attribute-Level Models for Dynamic Markets",
+                "authors": "Srividhya Sethuraman, Chandra Shekar Lakshminarayanan",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "344",
+                "title": "Learning Truthful Mechanisms without Discretization",
+                "authors": "Yunxuan Ma, Steven Wang, Zhijian Duan, Yukun Cheng, Xiaotie Deng",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1043",
+                "title": "On-line Learning in Tree MDPs by Treating Policies as Bandit Arms",
+                "authors": "Anvay Shah, Ramsundar Anandanarayanan, Sharayu Moharir, Shivaram Kalyanakrishnan",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "735",
+                "title": "Robust autobidding for noisy conversion prediction models",
+                "authors": "Andrey Pudovikov, Khirianova Alexandra, Ekaterina Solodneva, Gleb Molodtsov, Aleksandr Katrutsa, Yuriy Dorn, Egor Samosvat",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "307",
+                "title": "Truthful Reverse Auctions for Adaptive Selection via Contextual Multi-Armed Bandits",
+                "authors": "Pronoy Patra, Sankarshan Damle, Manisha Padala, Sujit Gujar",
+                "session": "LEARN 6 - Bandits, Online Learning and Mechanism Learning",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Leda"
+          },
+          {
+            "key": "ROBOT 2 - Multi-Robot Systems and Coordination",
+            "display": "ROBOT 2 – Multi-Robot Systems and Coordination",
+            "code": "ROBOT 2",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Tesca Fitzgerald",
+            "papers": [
+              {
+                "paper_id": "1283",
+                "title": "Extremely Large Collective Coalition Formation: Scalability",
+                "authors": "Neha G. Pusalkar, Julie A. Adams",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "1318",
+                "title": "Federated Gaussian Process Learning via Pseudo-Representations for Large-Scale Multi-Robot Systems",
+                "authors": "Sanket A Salunkhe, George P. Kontoudis",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "30",
+                "title": "MeCo: Enhancing LLM-Empowered Multi-Robot Collaboration via Similar Task Memoization",
+                "authors": "Baiqing Wang, Helei Cui, Bo Zhang, Xiaolong Zheng, Bin Guo, Zhiwen Yu",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "917",
+                "title": "Modeling and Optimizing the Provisioning of Exhaustible Capabilities for Simultaneous Task Allocation and Scheduling",
+                "authors": "Jinwoo Park, Harish Ravichandar, Seth Hutchinson",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "1294",
+                "title": "Multi-Agent Pickup and Delivery with Heterogeneous Agents",
+                "authors": "Benedetta Flammini, Francesco Amigoni, Bruno Lacerda",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Robotics and Control (ROBOT)"
+              },
+              {
+                "paper_id": "1533",
+                "title": "A Hierarchical Approach with Crisis Mitigation for Multi-Robot Spatio-Temporal Restoration",
+                "authors": "Amel Nestor Docena, Alberto Quattrini Li",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "391",
+                "title": "DiffVAS: Diffusion-Guided Visual Active Search in Partially Observable Environments",
+                "authors": "Anindya Sarkar, Srikumar Sastry, Aleksis Pirinen, Nathan Jacobs, Yevgeniy Vorobeychik",
+                "session": "ROBOT 2 - Multi-Robot Systems and Coordination",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Adonis"
+          },
+          {
+            "key": "SIM2 - Networks and Social Media",
+            "display": "SIM 2 – Networks and Social Media",
+            "code": "SIM 2",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Pradeep Murukannaiah",
+            "papers": [
+              {
+                "paper_id": "849",
+                "title": "Identifying the Source of Information Spread in Networks via Markov Chains",
+                "authors": "Yael Sabato, Amos Azaria, Noam Hazon",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "913",
+                "title": "Coherent belief and opinion propagation produces more echo chambers",
+                "authors": "Hiro Kataoka, Jérôme Euzenat, Koji Hasebe",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "219",
+                "title": "LLMEvalRec: An Agentic Framework for Simulating Users to Evaluate News Recommendation Systems",
+                "authors": "Yao Ma, Abhishek Tripathi, Samuel Louvan, Wei Liu, Murat Sensoy",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "545",
+                "title": "Modeling Human Behavior in a Strategic Network Game With Complex Group Dynamics",
+                "authors": "Jonathan Berry Skaggs, Jacob Crandall",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1746",
+                "title": "Risk-aware Flow Tuning for Collective Emotion in Social Media via Multi-agent RL",
+                "authors": "Ruyi Wang, R L Hill, J. Michael Herrmann",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1550",
+                "title": "Reconstructing Network Outbreaks under Group Surveillance",
+                "authors": "Ritwick Mishra, Abhijin Adiga, Anil Vullikanti",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1747",
+                "title": "Online Sensor Grouping via Multi-Agent Learning Automata: An Ising Model Perspective",
+                "authors": "Anis Yazidi, Marco Antonio Pinto-Orellana, Youcef Djenouri",
+                "session": "SIM2 - Networks and Social Media",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Zeus"
+          },
+          {
+            "key": "SOPS1 - Multi-Agent Path Finding",
+            "display": "SOPS 1 – Multi-Agent Path Finding",
+            "code": "SOPS 1",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Noa Agmon",
+            "papers": [
+              {
+                "paper_id": "615",
+                "title": "Conflict-Based Search for Multi Agent Path Finding with Asynchronous Actions",
+                "authors": "Xuemian Wu, Shizhe Zhao, Zhongqiang Ren",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "575",
+                "title": "Flexibility-Based Traffic Flow Optimisation in Lifelong Multi-Agent Path Finding",
+                "authors": "Peiqian Lin, Zhe Chen, David L. Dowe, Daniel Harabor",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "885",
+                "title": "Flow-Based Task Assignment for Large-Scale Online Multi-Agent Pickup and Delivery",
+                "authors": "Yue Zhang, Zhe Chen, Daniel Harabor, Pierre Le Bodic, Peter J. Stuckey",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "49",
+                "title": "Multi UAVs Preflight Planning in a Shared and Dynamic Airspace",
+                "authors": "Amath SOW, Mauricio Rodriguez Cesen, Fabíola Martins Campos de Oliveira, Mariusz Wzorek, Daniel de Leng, Mattias Tiger, Fredrik Heintz, Christian Esteve Rothenberg",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1698",
+                "title": "Multi-Agent Cooperative Transportation: Optimal and Efficient Task Allocation and Path Finding",
+                "authors": "Ning Zhou, Nikolai W.F. Bode, Edmund R Hunt",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "608",
+                "title": "The Reachability Objective in Multi-Agent Path Finding",
+                "authors": "Noy Gabay, Jonathan Morag, Ariel Felner, Roni Stern",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "",
+                "title": "Modelling Multi-Agent Pathfinding Problems by Integrating Connectivity and No-Collision Constraints",
+                "authors": "Jiří Švancara, Roman Barták, Ian Miguel, Joan Espasa Arxer",
+                "session": "SOPS1 - Multi-Agent Path Finding",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Aphrodite B"
+          }
+        ]
+      },
+      {
+        "slot": "Afternoon · 13:30–15:15",
+        "sessions": [
+          {
+            "key": "COINE 2 - AI Alignment, Fairness and Ethics",
+            "display": "COINE 2 – AI Alignment, Fairness and Ethics",
+            "code": "COINE 2",
+            "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)",
+            "chair": "Roni Stern",
+            "papers": [
+              {
+                "paper_id": "1390",
+                "title": "Beyond Vibe Decision Theory: Asymmetric Manipulation Vulnerabilities in LLM Multi-Agent Coordination",
+                "authors": "Sukanya Krishna, Tobin South",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "1181",
+                "title": "Decentralized Value Systems Agreements",
+                "authors": "Arturo Hernandez-Sanchez, Natalia Criado, Stella Heras, Miguel Rebollo, Jose Such",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "1370",
+                "title": "Disobedience in normative multi-agent systems",
+                "authors": "Marija Slavkovik, Liuwen Yu, Leon Van der Torre, Réka Markovich, Beishui Liao",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "607",
+                "title": "Grassroots Federation: Fair Democratic Governance at Scale",
+                "authors": "Nimrod Talmon, Ehud Shapiro",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "245",
+                "title": "Learning the Value Systems of Societies with Preference-based Multi-objective Reinforcement Learning",
+                "authors": "Andrés Holgado-Sánchez, Peter Vamplew, Richard Dazeley, Sascha Ossowski, Holger Billhardt",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "357",
+                "title": "Utility Aware Adaptive Privacy Budget Allocation for Streaming Multi-Agent Systems",
+                "authors": "Puspanjali Ghoshal, Ashok Singh Sairam",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "",
+                "title": "Fair Orientations: Proportionality and Equitability",
+                "authors": "Ankang Sun, Ruijie Wang, Bo Li",
+                "session": "COINE 2 - AI Alignment, Fairness and Ethics",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "EMAS 3",
+            "display": "EMAS 3",
+            "code": "EMAS 3",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Alessandro Ricci",
+            "papers": [
+              {
+                "paper_id": "310",
+                "title": "A Three-Layer Reinforcement Learning-based Approach for Dynamic Task Allocation Under Multiple Task Resource Constraints",
+                "authors": "Shuo Wang, Yuzhen Zhang, Hao Su, Yazhou Hu, Pei Lv",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "1468",
+                "title": "Decisions.jl: Representing and Transforming Decision Problem Classes in Julia",
+                "authors": "Mel Krusniak, Ofer Dagan, Himanshu Gupta, Benjamin Kraske, Kyle Hollins Wray, Zachary N Sunberg",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "126",
+                "title": "Heartbeat Synchronization in Large Multi-Agent Systems Using One-Way Communication",
+                "authors": "Federico Bergenti, Simone Dallospedale, Stefania Monica",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "313",
+                "title": "Pareto-guided Pipeline for Distilling Featherweight AI Agents in Mobile MOBA Games",
+                "authors": "Xionghui Yang, Bozhou Chen, Yunlong Lu, Yongyi Wang, Lingfeng Li, Lanxiao Huang, Lin Liu, Wenjun Wang, Meng Meng, Xia Lin, Wenxin Li",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "1389",
+                "title": "Team of Rivals: Hierarchical Deep Reinforcement Learning and Behavior Cloning for Multiplayer Poker",
+                "authors": "Avishag Shapira, Ido Rom, Asaf Shabtai, Gilad Katz",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "52",
+                "title": "UAM-MARL: Uncertainty-Aware Modality-Enhanced Multi-Agent Reinforcement Learning with LLM-Guided Graph Policies",
+                "authors": "Zichen Song, Weijia Li",
+                "session": "EMAS 3",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "236",
+                "title": "Cleaner Adversarial CAPTCHAs: Intelligent Targets and Precise Noise for Usable Security",
+                "authors": "Meir Litman, Chen Hajaj",
+                "session": "EMAS 3",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Adonis"
+          },
+          {
+            "key": "GTEP 4 - Voting",
+            "display": "GTEP 4 – Voting",
+            "code": "GTEP 4",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Piotr Faliszewski",
+            "papers": [
+              {
+                "paper_id": "887",
+                "title": "Metric Distortion in Peer Selection",
+                "authors": "Javier Cembrano, Golnoosh Shahkarami",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "427",
+                "title": "On Minimal Achievable Quotas in Multiwinner Voting",
+                "authors": "Patrick Becker, Fabian Frank",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "136",
+                "title": "Single-Winner Voting on Matchings",
+                "authors": "Niclas Boehmer, Jessica Dierking",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "82",
+                "title": "Social Welfare Maximization in Approval-Based Committee Voting under Uncertainty",
+                "authors": "Haris Aziz, Yuhang Guo, venkateswara Rao Kagita, Baharak Rastegari, Mashbat Suzuki",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1019",
+                "title": "The Complexity of Strategic Behavior in Primary Elections",
+                "authors": "Colin Cleveland, Bart De Keijzer, Maria Polukarov",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Strengthening Proportionality in Temporal Voting",
+                "authors": "Bradley Phillips, Edith Elkind, Nicholas Teh, Tomasz Wąs",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Diverse Committees with Incomplete or Inaccurate Approval Ballots",
+                "authors": "Feline Lindeboom, Martijn Brehm, Davide Grossi, Pradeep Murukannaiah",
+                "session": "GTEP 4 - Voting",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "IA2",
+            "display": "IA 2",
+            "code": "IA 2",
+            "track": "Human-Agent Interaction (HAI)",
+            "chair": "Gauthier Picard",
+            "papers": [
+              {
+                "paper_id": "164",
+                "title": "A Survey Of Reinforcement Learning For Autonomous Air Combat: Current Progresses And Limitations",
+                "authors": "Alex Pierron, Thibault Lahire",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "889",
+                "title": "Building Large-Scale Drone Defenses from Small-Team Strategies",
+                "authors": "Grant Douglas, Stephen Franklin, Claudia Szabo, Mingyu Guo",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "199",
+                "title": "Diverse Mini-Batch Selection in Reinforcement Learning for Efficient Chemical Exploration in de novo Drug Design",
+                "authors": "Hampus Gummesson Svensson, Ola Engkvist, Jon Paul Janet, Christian Tyrchan, Morteza Haghir Chehreghani",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "925",
+                "title": "Modelling Customer Trajectories with Reinforcement Learning for Practical Retail Insights",
+                "authors": "Ken Ming Lee, Paul Barde, Maxime C. Cohen, Derek Nowrouzezahrai",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "631",
+                "title": "MORL4Water: A Modular Multi-Objective Reinforcement Learning Toolkit for Water Resource Management",
+                "authors": "Zuzanna Osika, Roxana Rădulescu, Jazmin Zatarain Salazar, Frans A Oliehoek, Pradeep K. Murukannaiah",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "1172",
+                "title": "Sim2Sea: Sim-to-Real Policy Transfer for Maritime Vessel Navigation in Congested Waters",
+                "authors": "Xinyu Cui, Xuanfa Jin, Xue Yan, Yongcheng Zeng, Luoyang Sun, Wei Siying, Ruizhi Zhang, Jian Zhao, Haifeng Zhang, Jun Wang",
+                "session": "IA2",
+                "track": "Innovative Applications (IA)"
+              },
+              {
+                "paper_id": "675",
+                "title": "CentaurMD: Confidence-Aware Human–AI Decision Fusion for Multi-Label Disease Diagnosis via Label-Specific MoE",
+                "authors": "Youcheng Zhang, Hui Wang, Jiaqi Liu, Yao Zhang, Zhiwen Yu, Bin Guo",
+                "session": "IA2",
+                "track": "Human-Agent Interaction (HAI)"
+              }
+            ],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "LEARN 8 - Model-Based RL and World Models",
+            "display": "LEARN 8 – Model-Based RL and World Models",
+            "code": "LEARN 8",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Yali Du",
+            "papers": [
+              {
+                "paper_id": "835",
+                "title": "Distributed Quantum Gaussian Processes for Multi-Agent Systems",
+                "authors": "Meet Gandhi, George P. Kontoudis",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "94",
+                "title": "General Dynamic Goal Recognition using Goal-Conditioned and Meta Reinforcement Learning",
+                "authors": "Osher Elhadad, Owen Morrissey, Reuth Mirsky",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "314",
+                "title": "Inference of Altruism and Intrinsic Rewards in Multi-Agent Systems",
+                "authors": "Victor Villin, Christos Dimitrakakis",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "367",
+                "title": "IPD: Boosting Sequential Policy with Imaginary Planning Distillation in Offline Reinforcement Learning",
+                "authors": "Yihao Qin, Yuanfei Wang, Hang Zhou, Peiran Liu, Hao Dong, Yiding Ji",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "385",
+                "title": "Learning Robust Policy for Multi-UAV Collision Avoidance via Compact Causal Feature",
+                "authors": "Zhun Fan, Gaofei Han, Che Lin, Wenji Li, jie xu, Jiafan Zhuang",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1116",
+                "title": "Translating Latent State World Model Representations into Natural Language",
+                "authors": "Matthew Barker, Matteo Leonetti",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "151",
+                "title": "Unifying Model-Free Efficiency and Model-Based Representations via Latent Dynamics",
+                "authors": "Jashaswimalya Acharjee, Balaraman Ravindran",
+                "session": "LEARN 8 - Model-Based RL and World Models",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "RR4",
+            "display": "RR 4",
+            "code": "RR 4",
+            "track": "Representation and Reasoning (RR)",
+            "chair": "Antonio Rago",
+            "papers": [
+              {
+                "paper_id": "701",
+                "title": "Computational Aspects of Plan-Dependent Model Equivalence: The Case of Knowing-How Bisimulations",
+                "authors": "Carlos Areces, Raul Fervari, Antonio Mondejar",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1201",
+                "title": "Eliminating Inconsistencies among CP-Theory Qualitative Preferences",
+                "authors": "Erik Rauer, Samik Basu, Vasant G. Honavar, Jia Tao",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "501",
+                "title": "Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour",
+                "authors": "Balint Gyevnar, Christopher G. Lucas, Stefano V. Albrecht, Shay B Cohen",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1680",
+                "title": "Learning Robust Markov Models for Safe Runtime Monitoring",
+                "authors": "Antonina Skurka, Luko van der Maas, Sebastian Junges, Hazem Torfah",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1652",
+                "title": "MEASE: Multi-agent Episodic Action Sequence Explanation",
+                "authors": "Khaing Phyo Wai, Minghong Geng, Shubham Pateria, Budhitama Subagdja, Ah-Hwee Tan",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "830",
+                "title": "Robust Counterfactual Inference in Markov Decision Processes",
+                "authors": "Jessica Lally, Milad Kazemi, Nicola Paoletti",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1756",
+                "title": "The Agency Circuit: A Neuro-Symbolic Solution for Mitigating Policy Collapse in Reinforcement Learning",
+                "authors": "Mahnoor Shahid",
+                "session": "RR4",
+                "track": "Representation and Reasoning (RR)"
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "SIM1 - Social Simulation",
+            "display": "SIM 1 – Social Simulation",
+            "code": "SIM 1",
+            "track": "Modelling and Simluation of Societies (SIM)",
+            "chair": "Alan Tsang",
+            "papers": [
+              {
+                "paper_id": "423",
+                "title": "BeWater: Effective Protesters Navigate Watersheds in Street Networks",
+                "authors": "Guillaume Moinard, Matthieu Latapy",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "268",
+                "title": "Beyond Neighbor Influence: A Behavior-Driven Agent-Based Model of Silence",
+                "authors": "Ziqian Shi, Rosa M Benito",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1720",
+                "title": "Beyond Self-Interest: Modeling Social-Oriented Motivation for Human-like Multi-Agent Interactions",
+                "authors": "Jingzhe Lin, Ceyao Zhang, Yaodong Yang, Yizhou Wang, Song-Chun Zhu, Fangwei Zhong",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "829",
+                "title": "Influencing LLM Multi-Agent Dialogue via Policy-Parameterized Prompts",
+                "authors": "Hongbo Bo, Jingyu Hu, Weiru Liu",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "1118",
+                "title": "Population synthesis with geographic coordinates",
+                "authors": "Jacopo Lenti, Lorenzo Costantini, Ariadna Fosch, Anna Monticelli, David Scala, Marco Pangallo",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "517",
+                "title": "Transparent and Accessible ABMs with FODD: Automatic Code from Formal ODD",
+                "authors": "Themis Dimitra Xanthopoulou, Andreas Prinz, Haakon Bøthun Lunde, Ivan Puga-Gonzalez, F. LeRon Shults",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              },
+              {
+                "paper_id": "632",
+                "title": "Bons-AI: An Agent-Based Model to evaluate the behavior of bonsai grower according to different levels of communication and experience",
+                "authors": "Sara Saori Satake, Guilherme Henrique de Souza Nakahata, Claus Aranha",
+                "session": "SIM1 - Social Simulation",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "SOPS4 - Optimization",
+            "display": "SOPS 4 – Optimization",
+            "code": "SOPS 4",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Enrico Gerding",
+            "papers": [
+              {
+                "paper_id": "1153",
+                "title": "A Generic Framework for Fair Consensus Clustering in Streams",
+                "authors": "Diptarka Chakraborty, Kushagra Chatterjee, Debarati Das, Tien-Long Nguyen",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "619",
+                "title": "Byzantine Fault Tolerance in Distributed Constraint Optimization Problems",
+                "authors": "Koji Noshiro, Koji Hasebe",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1525",
+                "title": "CONSENT: A Negotiation Framework for Leveraging User Flexibility in Vehicle-to-Building Charging under Uncertainty",
+                "authors": "Rishav Sen, Fangqi Liu, Jose Paolo Talusan, Ava Pettet, Yoshinori Suzue, Mark Bailey, Ayan Mukhopadhyay, Abhishek Dubey",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1634",
+                "title": "DRAGON: LLM-Driven Decomposition and Reconstruction Agents for Large-Scale Combinatorial Optimization",
+                "authors": "Chen Shengkai, Zhiguang Cao, Jianan Zhou, Yaoxin Wu, Senthilnath Jayavelu, Zhuoyi Lin, Xiaoli Li, Shili Xiang",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1669",
+                "title": "Multiagent System for Dynamic Multicriteria Traffic Routing in Urban Environments",
+                "authors": "Temirlan Kurbanov, Adéla Kubíková, Jiri Vokrinek, Franziska Klügl",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "557",
+                "title": "Optimizing Pool Testing for Epidemic Surveillance",
+                "authors": "Jack Heavey, Abhijin Adiga, Anil Vullikanti",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1613",
+                "title": "PyVRP+: LLM-Driven Metacognitive Heuristic Evolution for Hybrid Genetic Search in Vehicle Routing Problems",
+                "authors": "Manuj Malik, Jianan Zhou, Shashank Reddy Chirra, Zhiguang Cao",
+                "session": "SOPS4 - Optimization",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Leda"
+          }
+        ]
+      },
+      {
+        "slot": "Social Event · 17:15–23:00",
+        "sessions": [
+          {
+            "key": "Tour & Conference Dinner",
+            "display": "Tour & Conference Dinner",
+            "code": "SOCIAL",
+            "track": "Social Event",
+            "description": "Thursday, 28 May · 17:15–23:00",
+            "papers": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "day": "Friday, 29 May",
+    "slots": [
+      {
+        "slot": "Morning · 10:45–12:30",
+        "sessions": [
+          {
+            "key": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+            "display": "Blue Sky 3 – Alignment, Safety & Human-AI Teaming",
+            "code": "Blue Sky 3",
+            "track": "Blue Sky",
+            "chair": "Michael Winikoff (remote)",
+            "papers": [
+              {
+                "paper_id": "24",
+                "title": "Guiding Sociotechnical Systems toward Value-Norm Equilibrium",
+                "authors": "Nirav Ajmeri, Marina De Vos, Davide Dell'Anna, Pradeep K. Murukannaiah, Vivek Nallur, Luis Gustavo Nardin, Munindar P. Singh",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "33",
+                "title": "Incentive-Aware AI Safety via Strategic Resource Allocation: A Stackelberg Security Games Perspective",
+                "authors": "Cheol Woo Kim, Davin Choo, Tzeh Yuan Neoh, Milind Tambe",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "84",
+                "title": "Coadaptive Value Alignment",
+                "authors": "Nathan Tsoi, Eric Hsiung, Masayuki Yamazaki, Swarat Chaudhuri, Peter Stone, Joydeep Biswas",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "122",
+                "title": "Interactionless Inverse Reinforcement Learning: A Data-Centric Framework for Durable Alignment",
+                "authors": "Elias Malomgré, Pieter Simoens",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "61",
+                "title": "Towards AI-Sympathy using agents",
+                "authors": "Sebastian Rodriguez, Brian Logan, John Thangarajah",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              },
+              {
+                "paper_id": "58",
+                "title": "MACC: Multi-Agent Collaborative Competition for Scientific Exploration",
+                "authors": "Satoshi Oyama, Yuko Sakurai, Hisashi Kashima",
+                "session": "Blue Sky 3 - Alignment, Safety & Human-AI Teaming",
+                "track": "Blue Sky"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "EMAS 2 - MARL",
+            "display": "EMAS 2 – MARL",
+            "code": "EMAS 2",
+            "track": "Engineering and Analysis of Multiagent Systems (EMAS)",
+            "chair": "Ann Nowe",
+            "papers": [
+              {
+                "paper_id": "907",
+                "title": "BusEnv: A Multi-agent Reinforcement Learning Environment and Benchmark for Urban Public Transportation",
+                "authors": "WESLEY DA SILVA E SILVA, RICARDO RIOS, RAFAEL DA COSTA FONSECA, Sabarikirishwaran Ponnambalam, Léa Cassé, Marcos Vinícius dos Santos Ferreira, Albert Bifet, Tatiane Nogueira Rios",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "46",
+                "title": "HLSMAC: A New StarCraft Multi-Agent Challenge for High-Level Strategic Decision-Making",
+                "authors": "Xingxing Hong, Yungong Wang, Dexin Jin, Ye Yuan, Ximing Huang, Zijian Wu, Yirui Rao, Wenxin Li",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "1291",
+                "title": "Interpretable Failure Analysis in Multi-Agent Reinforcement Learning Systems",
+                "authors": "Risal Shahriar Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "745",
+                "title": "KAN-Enhanced Graph Learning for Active Voltage Control in Dynamic Power Systems",
+                "authors": "Sun Liqian, Hang Xiao, Shuhan Qi, Huale Li, Jiajia Zhang, Xuan Wang",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "429",
+                "title": "Puzzle it Out: Local-to-Global World Model for Offline Multi-Agent Reinforcement Learning",
+                "authors": "Sijia Li, Xinran Li, Shibo Chen, Jun Zhang",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "358",
+                "title": "Quality-Diversity for Multi-Agent Reinforcement Learning",
+                "authors": "Hao Chen, Pengyi Li, Bin Zhang, Hu Fu, Zhiwei Xu, Ce Zhang, Xinyue Lu, Guoliang Fan",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "684",
+                "title": "Why and Whom to Communicate? A Dual-Objective, Cost–Benefit Framework for Multi-Agent Communication",
+                "authors": "Yi-Yu Lin, Jiahao Zhang, Xiao-Jun Zeng",
+                "session": "EMAS 2 - MARL",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              }
+            ],
+            "room": "Leda"
+          },
+          {
+            "key": "GAAI 1 - LLM Agent Architectures and Planning",
+            "display": "GAAI 1 – LLM Agent Architectures and Planning",
+            "code": "GAAI 1",
+            "track": "Generative and Agentic AI (GAAI)",
+            "chair": "Louise Dennis",
+            "papers": [
+              {
+                "paper_id": "895",
+                "title": "MENSA: Leveraging Mental Simulation for In-Context Policy Improvement in LLM Agents",
+                "authors": "Chung-Che Chang, Erick Chandra, Jane Yung-jen Hsu, Yen-Ling Kuo",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "90",
+                "title": "Parallelized Planning-Acting for Multi-Agent LLM Systems in Minecraft",
+                "authors": "Yaoru Li, Shunyu Liu, Tongya Zheng, Li Sun, Mingli Song",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "765",
+                "title": "Procedural Knowledge Improves Agentic LLM Workflows",
+                "authors": "Vincent Hsiao, Mak Roberts, Leslie N. Smith",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "190",
+                "title": "ReAcTree: Hierarchical LLM Agent Trees with Control Flow for Long-Horizon Task Planning",
+                "authors": "Jae-Woo Choi, Hyungmin Kim, Hyobin Ong, Youngwoo Yoon, Minsu Jang, DohyungKim, Jaehong Kim",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1053",
+                "title": "SocraticAgent: An Autonomous Agent for Unlocking Latent Knowledge in LLMs",
+                "authors": "Yang Yan, Yu Lu, Renjun Xu, Zhenzhong Lan",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1826",
+                "title": "Teaching LLMs Naturally: Pedagogical Strategies for Interactive Knowledge Acquisition",
+                "authors": "Sabrina Patania, Luca Annese, Cansu Koyuturk, Dimitri Ognibene",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "",
+                "title": "Structured Agent Distillation for Large Language Model Agents",
+                "authors": "Jun Liu, Zhenglun Kong, Peiyan Dong, Changdi Yang, Tianqin Li, Yanyue Xie, Yifan Gong, Xuan Shen, Pu Zhao, Hao Tang, Geng Yuan, Wei Niu, Wenbin Zhang, Xue Lin, Dong Huang, Yanzhi Wang",
+                "session": "GAAI 1 - LLM Agent Architectures and Planning",
+                "track": ""
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "GTEP 1 - Stable Matching and Stable Marriage",
+            "display": "GTEP 1 – Stable Matching and Stable Marriage",
+            "code": "GTEP 1",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Pascal Lenzner",
+            "papers": [
+              {
+                "paper_id": "1444",
+                "title": "First-Order and Second-Order Model Counting Meet Stable Marriages, Stable Roommates, and Stable Diners",
+                "authors": "Václav Kůla, Jan Tóth, Yuanhong Wang, Yuyi Wang, Ondrej Kuzelka",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "1426",
+                "title": "Minimax and Preferential Almost-Stable Matchings",
+                "authors": "Frederik Glitzner, David Manlove",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "814",
+                "title": "Modifying Preferences and Capacities for Stability in Flow Networks: Algorithms and Complexity",
+                "authors": "Gergely Csáji, Kitti Varga",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "809",
+                "title": "Robustness of Stable Matchings When Attributes and Salience Determine Preferences",
+                "authors": "Amit Ronen, S. S. Ravi, Sarit Kraus",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1004",
+                "title": "Stable Marriage on Networks",
+                "authors": "Miao Li, Xinwei Song, Dengji Zhao",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "852",
+                "title": "Stable Matching: Dealing with Changes in Preferences",
+                "authors": "Rohith Reddy Gangam, Tung Mai, Nitya Raju, Vijay Vazirani",
+                "session": "GTEP 1 - Stable Matching and Stable Marriage",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "GTEP 6 - Equilibrium Computation",
+            "display": "GTEP 6 – Equilibrium Computation",
+            "code": "GTEP 6",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Ian Gemp",
+            "papers": [
+              {
+                "paper_id": "1452",
+                "title": "Complexity of (Non-)Convergence in Iterative Voting",
+                "authors": "Paul W. Goldberg, Marios Mavronicolas, Tomasz Wąs",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "779",
+                "title": "Algorithmic Collusion at Test Time: A Meta-game Design and Evaluation",
+                "authors": "Yuhong Luo, Daniel Schoepflin, Xintong Wang",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1310",
+                "title": "Approximating Nash Equilibria in General-Sum Games via Meta-Learning",
+                "authors": "David Sychrovský, Christopher Solinas, Revan MacQueen, Kevin A. Wang, James R. Wright, Nathan R. Sturtevant, Michael Bowling",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1665",
+                "title": "Beyond Outcome-Based Imperfect-Recall: Higher-Resolution Abstractions for Imperfect-Information Games",
+                "authors": "Yanchang Fu, Qiyue Yin, Shengda Liu, Pei Xu, Kaiqi Huang",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "937",
+                "title": "Computing Perfect Bayesian Equilibria, with Application to Empirical Game-Theoretic Analysis",
+                "authors": "Christine Konicki, Mithun Chakraborty, Michael P. Wellman",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "496",
+                "title": "Efficiently Computing Approximate Nash Equilibria in Multi-Adversarial Team Games",
+                "authors": "Prasanna Maddila, Régis Sabbadin, Meritxell Vinyals",
+                "session": "GTEP 6 - Equilibrium Computation",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Adonis"
+          },
+          {
+            "key": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+            "display": "LEARN 5 – Exploration, Stability and Single-Agent RL",
+            "code": "LEARN 5",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Chris Amato",
+            "papers": [
+              {
+                "paper_id": "715",
+                "title": "Token-level Advantage Policy Optimization from Negative Feedback in Multi-Turn Agents",
+                "authors": "Xufeng Zhou, Linjing Li, Daniel Dajun Zeng",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "187",
+                "title": "A Novel Framework for Uncertainty-Driven Adaptive Exploration",
+                "authors": "Leonidas Bakopoulos, Georgios Chalkiadakis",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1524",
+                "title": "AltNet: Addressing the Plasticity-Stability Dilemma in Reinforcement Learning",
+                "authors": "Mansi Maheshwari, John C. Raisbeck, Bruno Castro da Silva",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "234",
+                "title": "Bi-Level Policy Optimization with Nyström Hypergradients",
+                "authors": "Arjun Prakash, Naicheng He, Denizalp Goktas, Amy Greenwald",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "222",
+                "title": "Confounding Robust Continuous Control via Automatic Reward Shaping",
+                "authors": "Mateo Juliani, Mingxuan Li, Elias Bareinboim",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "326",
+                "title": "DR2: Revisiting Visual Reinforcement Learning from the Dimensional Analysis Perspective",
+                "authors": "Chuxiong Sun, Jinli Chen, Zehua Zang, Jiangmeng Li, Rui Wang, Changwen Zheng",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "242",
+                "title": "Learning from Delay Distributions: A New Representation for Delay-Aware Reinforcement Learning",
+                "authors": "Zhuoru Yu, Chenchen Fu, Hengkai Zhong, Wanyuan Wang, Weiwei Wu, Chun Jason Xue",
+                "session": "LEARN 5 - Exploration, Stability and Single-Agent RL",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "LEARN 9 - Agent Modeling, Imitation and Applications",
+            "display": "LEARN 9 – Agent Modeling, Imitation and Applications",
+            "code": "LEARN 9",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Viviana Mascardi",
+            "papers": [
+              {
+                "paper_id": "1488",
+                "title": "IntentCUA: Learning Intent-level Representations for Skill Abstraction and Multi-Agent Planning in Computer-Use Agents",
+                "authors": "Seoyoung Lee, Seobin Yoon, Seongbeen Lee, Yoojung Chun, Dayoung Park, Doyeon Kim, Joo Yong Sim",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1241",
+                "title": "LLM Performance Predictors: Learning When to Escalate in Hybrid Human-AI Moderation Systems",
+                "authors": "Or Bachar, Or Levi, Sardhendu Mishra, Adi Levi, Manpreet Singh Minhas, Justin Miller, Omer Ben-Porat, Eilon Sheetrit, Jonathan Morra",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "1279",
+                "title": "Teaching an Old Dynamics New Tricks: Regularization-free Last-iterate Convergence in Zero-sum Games via BNN Dynamics",
+                "authors": "Tuo Zhang, Leonardo Stella",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "294",
+                "title": "Towards Generalisable Imitation Learning Through Conditioned Transition Estimation and Online Behaviour Alignment",
+                "authors": "Nathan Gavenski, Matteo Leonetti, Odinaldo Rodrigues",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "",
+                "title": "MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning",
+                "authors": "Maria Nesterova, Mikhail Kolosov, Anton Andreychuk, Egor Cherepanov, Oleg Bulichev, Alexey Kovalev, Konstantin Yakovlev, Aleksandr I. Panov, Alexey Skrynnik",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "",
+                "title": "GRAIL: Goal Recognition Alignment through Imitation Learning",
+                "authors": "Osher Elhadad, Felipe Meneguzzi, Reuth Mirsky",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": ""
+              },
+              {
+                "paper_id": "",
+                "title": "Conservative Equilibrium Discovery in Offline Game-Theoretic Multiagent Reinforcement Learning",
+                "authors": "Austin Nguyen, Michael Wellman",
+                "session": "LEARN 9 - Agent Modeling, Imitation and Applications",
+                "track": ""
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "RR2 - Argumentation",
+            "display": "RR 2 – Argumentation",
+            "code": "RR 2",
+            "track": "Representation and Reasoning (RR)",
+            "chair": "Nadin Kokciyan",
+            "papers": [
+              {
+                "paper_id": "487",
+                "title": "R-Debater: Retrieval-Augmented Debate Generation through Argumentative Memory",
+                "authors": "Maoyuan Li, Zhongsheng Wang, Haoyuan Li, Jiamou Liu",
+                "session": "RR2 - Argumentation",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1668",
+                "title": "Balancing for Agent Decision Making through Argumentation",
+                "authors": "Liuwen Yu, Chenyang Cai, Leon Van der Torre, Réka Markovich",
+                "session": "RR2 - Argumentation",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1772",
+                "title": "Constrained Assumption-Based Argumentation Frameworks",
+                "authors": "Emanuele De Angelis, Fabio Fioravanti, Maria Chiara Meo, Alberto Pettorossi, Maurizio Proietti, Francesca Toni",
+                "session": "RR2 - Argumentation",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1070",
+                "title": "From User Preferences to Base Score Extraction Functions in Gradual Argumentation",
+                "authors": "Aniol Civit, Antonio Rago, Antonio Andriella, Guillem Alenyà, Francesca Toni",
+                "session": "RR2 - Argumentation",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1135",
+                "title": "Rejecting Arguments Based on Doubt in Structured Bipolar Argumentation",
+                "authors": "Michael A. Müller, Srdjan Vesic, Bruno Yun",
+                "session": "RR2 - Argumentation",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "762",
+                "title": "Strength Change Explanations in Quantitative Argumentation",
+                "authors": "Timotheus Kampik, Xiang Yin, Nico Potyka, Francesca Toni",
+                "session": "RR2 - Argumentation",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "",
+                "title": "Multi-Agent Trust Region Policy Optimisation: A Joint Constraint Approach",
+                "authors": "Chak Lam Shek, Guangyao Shi, Pratap Tokekar",
+                "session": "RR2 - Argumentation",
+                "track": ""
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "SOPS 6 - Algorithms and Combinatorics",
+            "display": "SOPS 6 – Algorithms and Combinatorics",
+            "code": "SOPS 6",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Reshef Meir",
+            "papers": [
+              {
+                "paper_id": "947",
+                "title": "A Radius-Sensitive Approximation Algorithm for Connected Submodular Maximization",
+                "authors": "Philip Cervenjak, Junhao Gan, Naonori Kakimura, Seeun William Umboh, Anthony Wirth",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "65",
+                "title": "Smooth Routing in Decaying Trees",
+                "authors": "Till Fluschnik, Amela Pucic, Malte Renken",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "567",
+                "title": "Delayed Assignments in Online Non-Centroid Clustering with Stochastic Arrivals",
+                "authors": "Saar Cohen",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "",
+                "title": "Stability in Distance Preservation Games on Graphs",
+                "authors": "Argyrios Deligkas, Eduard Eiben, Tiger-Lily Goldsmith, Dušan Knop, Šimon Schierreich",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "678",
+                "title": "Global Convergence to Nash Equilibrium in Nonconvex General-Sum Games under the $n$-Sided PL Condition",
+                "authors": "Yutong Chao, Jalal Etesami",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "515",
+                "title": "Scalable Knothe--Rosenblatt-like Heuristic Transportation Plans for Imaging Problems",
+                "authors": "Gennaro Auricchio, Min Lin, Lingxuan Zhou, Zhaori Guo, zhongqi cai",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "441",
+                "title": "Towards Failure-Resilient Lifelong Learning Agents through Scene Graph-Guided Proactive Replanning",
+                "authors": "Che Rin Yu, Daewon Chae, Dabin Seo, Sangwon Lee, Hyeongwoo IM, Jinkyu Kim",
+                "session": "SOPS 6 - Algorithms and Combinatorics",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Zeus"
+          }
+        ]
+      },
+      {
+        "slot": "Afternoon · 14:00–15:45",
+        "sessions": [
+          {
+            "key": "COINE 1 - Coordination and Cooperatoin",
+            "display": "COINE 1 – Coordination and Cooperation",
+            "code": "COINE 1",
+            "track": "Modelling and Simluation of Societies (SIM)",
+            "chair": "Tim Baarslag",
+            "papers": [
+              {
+                "paper_id": "1098",
+                "title": "Beyond Scalar Welfare: Enforcing Identity-Aware Equity in Multi-Agent Reinforcement Learning",
+                "authors": "Nhat-Hoang P. Nguyen, Thinh Pham, Trung-Hoang Le, sameer alam, Vu N. Duong",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "1460",
+                "title": "Fairness Dynamics in Digital Economy Platforms with Biased Ratings",
+                "authors": "Martin Smit, Fernando P. Santos",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "162",
+                "title": "Reputation as a Solution to Cooperation Collapse in LLM-based MASs",
+                "authors": "Siyue Ren, Wanli Fu, Xinkun Zou, Chen Shen, Yi Cai, Chu chen, Zhen Wang, Shuyue Hu",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "668",
+                "title": "The Role of Social Learning and Collective Norm Formation in Fostering Cooperation in LLM Multi-Agent Systems",
+                "authors": "Prateek Gupta, Qiankun Zhong, Hiromu Yakura, Thomas F. Eisenmann, Iyad Rahwan",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "935",
+                "title": "Theory of Mind Guided Strategy Adaptation for Zero-Shot Coordination",
+                "authors": "Andrew Ni, Simon Stepputtis, Stefanos Nikolaidis, Michael Lewis, Katia P. Sycara, Woojun Kim",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Coordination, Organisations, Institutions, Norms and Ethics (COINE)"
+              },
+              {
+                "paper_id": "167",
+                "title": "Defection at First Sight: Learning Partner Selection in Optional Social Dilemmas without Prior Information",
+                "authors": "Benedict Russell, Chin-wing Leung, Paolo Turrini",
+                "session": "COINE 1 - Coordination and Cooperatoin",
+                "track": "Modelling and Simluation of Societies (SIM)"
+              }
+            ],
+            "room": "Aphrodite A"
+          },
+          {
+            "key": "EMAS 1 - BDI and Agent Programming",
+            "display": "EMAS 1 – BDI and Agent Programming",
+            "code": "EMAS 1",
+            "track": "Engineering and Analysis of Multiagent Systems (EMAS)",
+            "chair": "Jaime Sichman",
+            "papers": [
+              {
+                "paper_id": "39",
+                "title": "μACP: A Formal Calculus for Expressive, Resource-Constrained Agent Communication",
+                "authors": "Arnab, Indraveni",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "237",
+                "title": "A Multi-Robot Architecture for Continuous Planning and Execution using BDI Agents",
+                "authors": "Carlos Joel Tavares da Silva, Rafael Melo Santos, Rafael C. Cardoso, Célia Ghedini Ralha",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "24",
+                "title": "Contrastive explanations of BDI agents",
+                "authors": "Michael Winikoff",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "400",
+                "title": "My Body, My Perceptions: A Shift from Computationalism to Embodied Cognition in BDI-agent-based Embedded Systems",
+                "authors": "Nilson Lazarin, Carlos Eduardo Pantoja, Jose Viterbo",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "537",
+                "title": "Peach: Program Each Agent and Communicate Howsoever",
+                "authors": "Amit K. Chopra, Samuel H. Christie V, Munindar P. Singh",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "503",
+                "title": "VEsNA-Pro: Exploiting BDI Agents with Propensities for Emergent Narrative",
+                "authors": "Andrea Gatti, Fabio Casale, Viviana Mascardi, Andrea Stucchi, Angelo Ferrando",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              },
+              {
+                "paper_id": "",
+                "title": "A multi-level explainability framework for engineering and understanding BDI Agents",
+                "authors": "Elena Yan, Samuele Burattini, Jomi Fred Hübner, Alessandro Ricci",
+                "session": "EMAS 1 - BDI and Agent Programming",
+                "track": "Engineering and Analysis of Multiagent Systems (EMAS)"
+              }
+            ],
+            "room": "Hermes"
+          },
+          {
+            "key": "GAAI 4 - Generative Agents: Training and Applications",
+            "display": "GAAI 4 – Generative Agents: Training and Applications",
+            "code": "GAAI 4",
+            "track": "Generative and Agentic AI (GAAI)",
+            "chair": "Viviana Mascardi",
+            "papers": [
+              {
+                "paper_id": "378",
+                "title": "Active Evaluation of General Agents: Problem Definition and Comparison of Baseline Algorithms",
+                "authors": "Marc Lanctot, Kate Larson, Ian Gemp, Michael Kaisers",
+                "session": "GAAI 4 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "560",
+                "title": "Output-Feedback Security Tracking for Robotic Systems against DoS Attacks Using Finite-Time Observers",
+                "authors": "jingwen Fan, Xiaozheng Jin, Jia Fu",
+                "area": ""
+              },
+              {
+                "paper_id": "374",
+                "title": "CoopReflect: Towards Natural Language Communication for Cooperative Autonomous Driving via Multi-Agent Learning",
+                "authors": "Jiaxun Cui, Chen Tang, Jarrett Holtz, Janice Nguyen, Alessandro G Allievi, Hang Qiu, Peter Stone",
+                "session": "GAAI 4 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1238",
+                "title": "Enhancing Vision-Language Model Training with Reinforcement Learning in Synthetic Worlds for Real-World Success",
+                "authors": "George Bredis, Stanislav Dereka, Viacheslav Sinii, Ruslan Rakhimov, Daniil Gavrilov",
+                "session": "GAAI 4 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "1673",
+                "title": "Multigranular Alignment via Linguistic Decomposition and Reward Optimization for Text to Image Diffusion",
+                "authors": "Hengrui Liu, Luming Jin, Meng-Fen Chiang",
+                "session": "GAAI 4 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              },
+              {
+                "paper_id": "727",
+                "title": "VLM-ReG : Vision-Language Models Enhanced via Reward-Refined GRPO in Remote Sensing Reasoning",
+                "authors": "Chao Wang, Biaoxin Li, Wanpeng Zhang, Zhangling Wang, Yanzhong Zhou",
+                "session": "GAAI 4 - Generative Agents: Training and Applications",
+                "track": "Generative and Agentic AI (GAAI)"
+              }
+            ],
+            "room": "Akamas"
+          },
+          {
+            "key": "GTEP 10 - Strategic Interaction and Information Design",
+            "display": "GTEP 10 – Strategic Interaction and Information Design",
+            "code": "GTEP 10",
+            "track": "Game Theory and Economic Paradigms (GTEP)",
+            "chair": "Makoto Yokoo",
+            "papers": [
+              {
+                "paper_id": "1716",
+                "title": "Follow the STARs: Dynamic ω-Regular Shielding of Learned Probabilistic Policies",
+                "authors": "Ashwani Anand, Satya Prakash Nayak, Ritam Raha, Anne-Kathrin Schmuck",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1128",
+                "title": "Greedy Routing Reachability Games",
+                "authors": "Pascal Lenzner, Paraskevi Machaira",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1543",
+                "title": "Interactive Bayesian Deception under Strategic Timing",
+                "authors": "Amitalok J. Budkuley, Arya Choudhuri",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1138",
+                "title": "Interbank Lending Games",
+                "authors": "Jinyun Tong, Bart De Keijzer, Haoxiang Wang, Carmine Ventre",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "239",
+                "title": "Practical approach to 2-Euclidean Preferences",
+                "authors": "Michal Dvořák, Jan Pokorný, Dušan Knop, Martin Slávik",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "1327",
+                "title": "Robust Value Maximization in Challenge the Champ Tournaments with Probabilistic Outcomes",
+                "authors": "Umang Bhaskar, Juhi Chaudhary, Sushmita Gupta, Pallavi Jain, Sanjay Seetharaman",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              },
+              {
+                "paper_id": "232",
+                "title": "Scalable and Safe Multi-Agent Coordination with Reconstructed Level-k Monte Carlo Tree Search",
+                "authors": "Zhihao Lin, Lin Wu, Ernie Tian, Alessio Lomuscio, Jianglin Lan",
+                "session": "GTEP 10 - Strategic Interaction and Information Design",
+                "track": "Game Theory and Economic Paradigms (GTEP)"
+              }
+            ],
+            "room": "Aphrodite B"
+          },
+          {
+            "key": "LEARN 3 - Safe and Constrained RL",
+            "display": "LEARN 3 – Safe and Constrained RL",
+            "code": "LEARN 3",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Ann Nowe",
+            "papers": [
+              {
+                "paper_id": "35",
+                "title": "Feasible Constraint Policy Optimization for Safe Reinforcement Learning",
+                "authors": "Luoyang Sun, Jiwen Jiang, Ning Yang, Rasul Tutunov, Haifeng Zhang, Jun Wang",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "990",
+                "title": "Learning to maintain safety through expert demonstrations in settings with unknown constraints: A Q-learning perspective.",
+                "authors": "George Papadopoulos, George Vouros",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "803",
+                "title": "MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents",
+                "authors": "Simon Rosen, Siddarth Singh, Ebenezer Gelo, Helen Sarah Robertson, Ibrahim Suder, Victoria Williams, Benjamin Rosman, Geraud Nangue Tasse, Steven James",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "843",
+                "title": "Neuro-symbolic Action Masking for Deep Reinforcement Learning",
+                "authors": "Shuai Han, Mehdi Dastani, Shihan Wang",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "103",
+                "title": "OSIL: Learning Offline Safe Imitation Policies with Safety Inferred from Non-preferred Trajectories",
+                "authors": "Returaj Burnwal, Nirav Pravinbhai Bhatt, Balaraman Ravindran",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "525",
+                "title": "PREFINE: Preference-based Implicit Reward and Cost Fine-tuning for Safety Alignment",
+                "authors": "Richa Verma, Bavish Kulur, Sanjay Chawla, Balaraman Ravindran",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "281",
+                "title": "Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models",
+                "authors": "Alex Goodall, Francesco Belardinelli",
+                "session": "LEARN 3 - Safe and Constrained RL",
+                "track": "Learning and Adaptation (LEARN)"
+              }
+            ],
+            "room": "Christian Barnard"
+          },
+          {
+            "key": "RR 5 - Representation, Reasoning, Observability and Optimization",
+            "display": "RR 5 – Representation, Reasoning, Observability and Optimization",
+            "code": "RR 5",
+            "track": "Learning and Adaptation (LEARN)",
+            "chair": "Neil Yorke-Smith",
+            "papers": [
+              {
+                "paper_id": "176",
+                "title": "Axiomatic Foundations of Counterfactual Explanations",
+                "authors": "Leila Amgoud, Martin C. Cooper",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "1513",
+                "title": "Characterizing Consensuses in Belief Flow Networks",
+                "authors": "Nicolas Schwind, Gauvain Bourgne, Katsumi Inoue",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": "Representation and Reasoning (RR)"
+              },
+              {
+                "paper_id": "881",
+                "title": "IntRec: Intent-based Retrieval with Contrastive Refinement",
+                "authors": "Pourya Shamsolmoali, Masoumeh Zareapoor, Eric Granger, Yue Lu",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": "Learning and Adaptation (LEARN)"
+              },
+              {
+                "paper_id": "",
+                "title": "LumiMAS: A Comprehensive Framework for Real-Time Monitoring and Enhanced Observability in Multi-Agent Systems",
+                "authors": "Ron Solomon, Yarin Yerushalmi Levi, Lior Waknin, Eran Aizikovich, Amit Baras, Etai Ohana, Amit Giloni, Shamik Bose, Chiara Picardi, Yuval Elovici, Asaf Shabtai",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": ""
+              },
+              {
+                "paper_id": "",
+                "title": "Resilient Strategies for Stochastic Systems: How Much Does it Take to Break a Winning Strategy?",
+                "authors": "Kush Grover, Markel Zubia, Debraj Chakraborty, Muqsit Azeem, Nils Jansen, Jan Kretinsky",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": ""
+              },
+              {
+                "paper_id": "",
+                "title": "The Observer–Situation Lattice: A Unified Formal Basis for Perspective-Aware Cognition",
+                "authors": "Saad Alqithami",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": ""
+              },
+              {
+                "paper_id": "",
+                "title": "Hypertension and total-order forward decomposition optimizations",
+                "authors": "Maurício Cecílio Magnaguagno, Felipe Meneguzzi, Lavindra de Silva",
+                "session": "RR 5 - Representation, Reasoning, Observability and Optimization",
+                "track": ""
+              }
+            ],
+            "room": "Athena"
+          },
+          {
+            "key": "SOPS3 - Graphs and MDPs",
+            "display": "SOPS 3 – Graphs and MDPs",
+            "code": "SOPS 3",
+            "track": "Search, Optimization, Planning, and Scheduling (SOPS)",
+            "chair": "Leandro Marcolino",
+            "papers": [
+              {
+                "paper_id": "929",
+                "title": "A Semi-Decentralized Approach to Multiagent Control",
+                "authors": "Mahdi Al-Husseini, Mykel Kochenderfer, Kyle Hollins Wray",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "265",
+                "title": "Catch Me If You Can: Finding the Source of Infections in Temporal Networks",
+                "authors": "Ben Bals, Michelle Döring, Nicolas Klodt, George Skretas",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1402",
+                "title": "IMASx²: Joint Agent Selection and Information-Theoretic Coordinated Perception In Dec-POMDPs",
+                "authors": "Chongyang Shi, Wesley A. Suttle, Michael Dorothy, Jie Fu",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "699",
+                "title": "Lifted Forward Planning in Relational Factored Markov Decision Processes with Concurrent Actions",
+                "authors": "Florian Andreas Marwitz, Tanya Braun, Ralf Möller, Marcel Gehrke",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "1770",
+                "title": "Perception-Based Beliefs for POMDPs with Visual Observations",
+                "authors": "Miriam Ackermann, Merlijn Krale, Thiago D. Simão, Nils Jansen, Maximilian Weininger",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "497",
+                "title": "Universal Solvability for Robot Motion Planning on Graphs",
+                "authors": "Anubhav Dhar, Pranav Nyati, Tanishq Prasad, Ashlesha Hota, Sudeshna Kolay",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              },
+              {
+                "paper_id": "822",
+                "title": "Placing Green Bridges Optimally, with Close-Range Habitats in Sparse Graphs",
+                "authors": "Christian Wallisch, Till Fluschnik, Leon Kellerhals",
+                "session": "SOPS3 - Graphs and MDPs",
+                "track": "Search, Optimization, Planning, and Scheduling (SOPS)"
+              }
+            ],
+            "room": "Leda"
+          }
+        ]
+      }
+    ]
+  }
+]
