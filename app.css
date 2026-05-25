@@ -379,6 +379,28 @@ a.tt-col-name:hover .ext-icon {
 /* Smaller star for papers */
 .paper .star { font-size: 15px; padding: 0 2px; }
 
+/* ----- "Boring" button (parallel to .star) -----
+   Emoji glyphs ignore CSS `color`, so we differentiate states via filter:
+   grayscale+dimmed at rest, full-color when marked or on hover. */
+.boring {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 4px;
+  flex: 0 0 auto;
+  filter: grayscale(1) opacity(0.45);
+  transition: filter 0.1s ease, transform 0.08s ease;
+}
+
+.boring:hover { filter: grayscale(0) opacity(0.95); }
+.boring.on { filter: none; }
+.boring:active { transform: scale(1.15); }
+
+.paper .boring { font-size: 12px; padding: 0 2px; }
+
 /* ----- Misc ----- */
 .loading, .error, .empty {
   padding: 24px;
@@ -484,7 +506,7 @@ a.tt-col-name:hover .ext-icon {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 4px 22px 4px 6px;  /* right padding leaves room for the star */
+  padding: 4px 40px 4px 6px;  /* right padding fits the star + boring buttons */
   font-size: 12px;
   line-height: 1.3;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -500,20 +522,22 @@ a.tt-col-name:hover .ext-icon {
   border-color: var(--accent-dim);
 }
 
-.tt-card .star {
+.tt-card .star,
+.tt-card .boring {
   position: absolute;
   top: 2px;
-  right: 4px;
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 14px;
-  color: var(--text-faint);
   padding: 0;
   line-height: 1;
 }
 
+.tt-card .star { right: 22px; font-size: 14px; color: var(--text-faint); }
 .tt-card .star.on { color: var(--accent); }
+.tt-card .boring { right: 4px; font-size: 11px; filter: grayscale(1) opacity(0.45); }
+.tt-card .boring:hover { filter: grayscale(0) opacity(0.95); }
+.tt-card .boring.on { filter: none; }
 
 .tt-card-time {
   font-size: 10px;
@@ -570,7 +594,7 @@ a.tt-col-name:hover .ext-icon {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 3px;
-  padding: 4px 22px 4px 6px;
+  padding: 4px 40px 4px 6px;
   font-size: 11px;
   font-style: normal;
 }
@@ -592,20 +616,22 @@ a.tt-col-name:hover .ext-icon {
   margin-top: 2px;
 }
 
-.tt-group-item .star {
+.tt-group-item .star,
+.tt-group-item .boring {
   position: absolute;
   top: 2px;
-  right: 4px;
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 13px;
-  color: var(--text-faint);
   padding: 0;
   line-height: 1;
 }
 
+.tt-group-item .star { right: 22px; font-size: 13px; color: var(--text-faint); }
 .tt-group-item .star.on { color: var(--accent); }
+.tt-group-item .boring { right: 4px; font-size: 10px; filter: grayscale(1) opacity(0.45); }
+.tt-group-item .boring:hover { filter: grayscale(0) opacity(0.95); }
+.tt-group-item .boring.on { filter: none; }
 
 .tt-empty {
   padding: 16px;

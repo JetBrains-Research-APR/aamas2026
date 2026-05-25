@@ -2,8 +2,9 @@
 
 // ---------------- Constants ----------------
 const STAR_KEY = 'aamas2026:starred';
+const BORING_KEY = 'aamas2026:boring';
 const PREFS_KEY = 'aamas2026:prefs';
-const PREF_FIELDS = ['starredOnly', 'hidePast', 'nextWindow', 'timetable'];
+const PREF_FIELDS = ['starredOnly', 'hidePast', 'nextWindow', 'timetable', 'hideBoring'];
 const DATA_URL = 'program-merged.json';
 
 // Map full day strings -> short tab labels and date keys.
@@ -19,12 +20,14 @@ const DAY_LABELS = {
 const state = {
   data: [],            // augmented PROGRAM_DATA with stable IDs
   starred: new Set(),  // string IDs
+  boring: new Set(),   // string IDs marked "not interested"
   activeDay: 'All',    // 'All' or one of the day strings
   search: '',
   starredOnly: false,
   hidePast: false,
   nextWindow: false,
   timetable: false,
+  hideBoring: false,
 };
 
 const NEXT_WINDOW_MIN = 120;
@@ -182,6 +185,28 @@ function toggleStar(id) {
   saveStars();
 }
 
+// ---------------- "Boring" mark persistence ----------------
+function loadBoring() {
+  try {
+    const raw = localStorage.getItem(BORING_KEY);
+    if (!raw) return new Set();
+    const arr = JSON.parse(raw);
+    return new Set(Array.isArray(arr) ? arr : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveBoring() {
+  localStorage.setItem(BORING_KEY, JSON.stringify([...state.boring]));
+}
+
+function toggleBoring(id) {
+  if (state.boring.has(id)) state.boring.delete(id);
+  else state.boring.add(id);
+  saveBoring();
+}
+
 // ---------------- Toggle persistence ----------------
 function loadPrefs() {
   try {
@@ -217,6 +242,7 @@ function sessionMatchesSearch(s, q) {
 function isSessionVisible(s) {
   const q = state.search;
   if (!sessionMatchesSearch(s, q)) return false;
+  if (state.hideBoring && state.boring.has(s._id)) return false;
   if (state.starredOnly) {
     const sessionStarred = state.starred.has(s._id);
     const anyPaperStarred = (s.papers || []).some(
@@ -238,6 +264,12 @@ function starButton(id, isHeading = false) {
   return `<button class="star ${on ? 'on' : ''}" data-star-id="${esc(id)}" aria-label="${on ? 'Unstar' : 'Star'}">${on ? '★' : '☆'}</button>`;
 }
 
+function boringButton(id, isHeading = false) {
+  if (isHeading) return '';
+  const on = state.boring.has(id);
+  return `<button class="boring ${on ? 'on' : ''}" data-boring-id="${esc(id)}" aria-label="${on ? 'Unmark boring' : 'Mark boring'}" title="${on ? 'Unmark as boring' : 'Mark as boring (hide when filter is on)'}">👎</button>`;
+}
+
 function paperHTML(p) {
   if (p.is_heading) {
     return `<div class="paper heading">
@@ -256,6 +288,7 @@ function paperHTML(p) {
       ${p.authors ? `<div class="paper-authors">${esc(p.authors)}</div>` : ''}
     </div>
     ${starButton(p._id)}
+    ${boringButton(p._id)}
   </div>`;
 }
 
@@ -279,7 +312,8 @@ function sessionHTML(s, dayDate, slotRange, tf) {
 
   const visiblePapers = (s.papers || [])
     .filter((p) => p.is_heading || paperMatchesSearch(p, state.search))
-    .filter((p) => paperPasses(p, dayDate, slotRange, tf));
+    .filter((p) => paperPasses(p, dayDate, slotRange, tf))
+    .filter((p) => p.is_heading || !state.hideBoring || !state.boring.has(p._id));
   const papersHTML = visiblePapers.map(paperHTML).join('');
 
   // Collapsible body. Default-collapsed for very-long sessions (DC). When
@@ -301,6 +335,7 @@ function sessionHTML(s, dayDate, slotRange, tf) {
     <div class="session-head">
       <div class="session-title">${titleHTML}</div>
       ${starButton(s._id)}
+      ${boringButton(s._id)}
     </div>
     <div class="session-meta">${badges.join('')}</div>
     ${chair}
@@ -327,6 +362,7 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     for (const p of s.papers || []) {
       if (!(p.is_heading || paperMatchesSearch(p, state.search))) continue;
       if (!paperPasses(p, dayDate, slotRange, tf)) continue;
+      if (!p.is_heading && state.hideBoring && state.boring.has(p._id)) continue;
       const r = parseTimeRange(p.time);
       if (!r) continue;
       items.push({ p, range: r });
@@ -369,6 +405,7 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
       <div class="tt-col-title">
         ${nameHTML}
         ${starButton(s._id)}
+        ${boringButton(s._id)}
       </div>
       ${room}
     </div>`;
@@ -397,6 +434,7 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
       <div class="tt-card-title">${esc(p.title)}</div>
       ${p.authors ? `<div class="tt-card-authors">${esc(p.authors)}</div>` : ''}
       ${starButton(p._id)}
+      ${boringButton(p._id)}
     </div>`;
   };
 
@@ -413,6 +451,7 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
         <div class="tt-group-item-title">${esc(p.title)}</div>
         ${p.authors ? `<div class="tt-group-item-authors">${esc(p.authors)}</div>` : ''}
         ${starButton(p._id)}
+        ${boringButton(p._id)}
       </div>`).join('');
     const noun = g.papers.length === 1 ? 'item' : 'items';
     return `<div class="tt-card heading">
@@ -553,25 +592,37 @@ function wireEvents() {
   bindToggle('hidePast', 'hidePast');
   bindToggle('nextWindow', 'nextWindow');
   bindToggle('timetable', 'timetable');
+  bindToggle('hideBoring', 'hideBoring');
 
-  // Star button clicks (event delegation on the document)
+  // Star + boring button clicks (event delegation on the program root).
   $('#program').addEventListener('click', (e) => {
-    const btn = e.target.closest('.star');
-    if (!btn) return;
-    const id = btn.dataset.starId;
-    if (!id) return;
-    toggleStar(id);
-    // Update the button immediately, then re-render counters / starred filter
-    const on = state.starred.has(id);
-    btn.classList.toggle('on', on);
-    btn.textContent = on ? '★' : '☆';
-    btn.setAttribute('aria-label', on ? 'Unstar' : 'Star');
-    // Also toggle the .starred class on the enclosing card/row
-    const card = btn.closest('.session, .paper, .tt-card, .tt-col-header, .tt-group-item');
-    if (card) card.classList.toggle('starred', on);
-    // Update counts; only re-render fully if starred-only is on
-    $('#starCount').textContent = String(state.starred.size);
-    if (state.starredOnly) render();
+    const starBtn = e.target.closest('.star');
+    if (starBtn) {
+      const id = starBtn.dataset.starId;
+      if (!id) return;
+      toggleStar(id);
+      const on = state.starred.has(id);
+      starBtn.classList.toggle('on', on);
+      starBtn.textContent = on ? '★' : '☆';
+      starBtn.setAttribute('aria-label', on ? 'Unstar' : 'Star');
+      const card = starBtn.closest('.session, .paper, .tt-card, .tt-col-header, .tt-group-item');
+      if (card) card.classList.toggle('starred', on);
+      $('#starCount').textContent = String(state.starred.size);
+      if (state.starredOnly) render();
+      return;
+    }
+    const boringBtn = e.target.closest('.boring');
+    if (boringBtn) {
+      const id = boringBtn.dataset.boringId;
+      if (!id) return;
+      toggleBoring(id);
+      const on = state.boring.has(id);
+      boringBtn.classList.toggle('on', on);
+      boringBtn.setAttribute('aria-label', on ? 'Unmark boring' : 'Mark boring');
+      // When the hide filter is active, the just-marked item should disappear
+      // from view; the cheapest correct option is a full re-render.
+      if (state.hideBoring) render();
+    }
   });
 }
 
@@ -579,6 +630,7 @@ function wireEvents() {
 async function main() {
   try {
     state.starred = loadStars();
+    state.boring = loadBoring();
     loadPrefs();
     state.data = await loadData();
 
