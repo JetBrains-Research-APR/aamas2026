@@ -289,12 +289,15 @@ function sessionHTML(s, dayDate, slotRange, tf) {
   </article>`;
 }
 
-// Time-aligned columns for the workshops slot. Each surviving workshop becomes
-// a column; papers are absolutely positioned by their parsed [start, end] over
-// a shared time rail. Workshops with zero usable papers drop out (e.g. the
-// "schedule not yet published" ones — those still appear in the card view).
-const TT_PX_PER_MIN = 2;
-const TT_TICK_MIN = 30;
+// Time-banded columns for the workshops slot. Each surviving workshop becomes
+// a column; the day is divided into TT_BAND_MIN-minute bands and papers are
+// grouped into the band their start time falls in. Each row's height grows to
+// fit the densest column in that band — so cards stay readable even when many
+// short talks land in the same window. Strict pixel-perfect time alignment is
+// traded away for legibility; columns still align at band boundaries, and the
+// card itself shows the precise start/end time. Workshops with zero usable
+// papers (e.g. "schedule not yet published") drop out but remain in card view.
+const TT_BAND_MIN = 30;
 
 function timetableHTML(sessions, dayDate, slotRange, tf) {
   const cols = [];
@@ -318,16 +321,20 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     if (range.start < lo) lo = range.start;
     if (range.end > hi) hi = range.end;
   }
-  lo = Math.floor(lo / TT_TICK_MIN) * TT_TICK_MIN;
-  hi = Math.ceil(hi / TT_TICK_MIN) * TT_TICK_MIN;
-  const totalH = (hi - lo) * TT_PX_PER_MIN;
-  const yOf = (m) => (m - lo) * TT_PX_PER_MIN;
+  lo = Math.floor(lo / TT_BAND_MIN) * TT_BAND_MIN;
+  hi = Math.ceil(hi / TT_BAND_MIN) * TT_BAND_MIN;
+  const bandCount = (hi - lo) / TT_BAND_MIN;
   const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
 
-  const ticks = [];
-  for (let t = lo; t <= hi; t += TT_TICK_MIN) ticks.push(t);
-  const tickHTML = ticks.map((t) => `<div class="tt-tick" style="top: ${yOf(t)}px">${fmt(t)}</div>`).join('');
-  const gridHTML = ticks.map((t) => `<div class="tt-gridline" style="top: ${yOf(t)}px"></div>`).join('');
+  // For each column, bucket its items by band index of the start time.
+  const buckets = cols.map(() => Array.from({ length: bandCount }, () => []));
+  cols.forEach((c, ci) => {
+    for (const item of c.items) {
+      const bi = Math.min(bandCount - 1, Math.max(0, Math.floor((item.range.start - lo) / TT_BAND_MIN)));
+      buckets[ci][bi].push(item);
+    }
+    buckets[ci].forEach((arr) => arr.sort((a, b) => a.range.start - b.range.start));
+  });
 
   const headers = cols.map((c) => {
     const s = c.session;
@@ -342,32 +349,77 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     </div>`;
   }).join('');
 
-  const bodies = cols.map((c) => {
-    const cards = c.items.map(({ p, range }) => {
-      const top = yOf(range.start);
-      const h = Math.max(24, (range.end - range.start) * TT_PX_PER_MIN - 2);
-      const cls = ['tt-card'];
-      if (p.is_heading) cls.push('heading');
-      else if (state.starred.has(p._id)) cls.push('starred');
-      const star = p.is_heading ? '' : starButton(p._id);
-      return `<div class="${cls.join(' ')}" style="top: ${top}px; height: ${h}px;">
-        <div class="tt-card-time">${esc(p.time || '')}</div>
-        <div class="tt-card-title">${esc(p.title)}</div>
-        ${p.authors ? `<div class="tt-card-authors">${esc(p.authors)}</div>` : ''}
-        ${star}
-      </div>`;
-    }).join('');
-    return `<div class="tt-col" style="height: ${totalH}px">${gridHTML}${cards}</div>`;
-  }).join('');
+  // Within a band cell, group items that share an identical parsed time range.
+  // This collapses things like "Poster Session" + 8 posters all marked 14:30–
+  // 15:30 into one heading card with a <details> list, so a dense block doesn't
+  // blow the row's height out.
+  const groupItems = (items) => {
+    const map = new Map();
+    for (const it of items) {
+      const key = `${it.range.start}-${it.range.end}`;
+      let g = map.get(key);
+      if (!g) { g = { heading: null, papers: [], time: it.p.time, range: it.range }; map.set(key, g); }
+      if (it.p.is_heading && !g.heading) g.heading = it.p;
+      else g.papers.push(it.p);
+    }
+    return [...map.values()].sort((a, b) => a.range.start - b.range.start);
+  };
+
+  const paperCard = (p) => {
+    const cls = state.starred.has(p._id) ? 'tt-card starred' : 'tt-card';
+    return `<div class="${cls}">
+      <div class="tt-card-time">${esc(p.time || '')}</div>
+      <div class="tt-card-title">${esc(p.title)}</div>
+      ${p.authors ? `<div class="tt-card-authors">${esc(p.authors)}</div>` : ''}
+      ${starButton(p._id)}
+    </div>`;
+  };
+
+  const headingCard = (h) => `<div class="tt-card heading">
+    <div class="tt-card-time">${esc(h.time || '')}</div>
+    <div class="tt-card-title">${esc(h.title)}</div>
+  </div>`;
+
+  const groupCard = (g) => {
+    const time = g.heading?.time || g.time || '';
+    const title = g.heading?.title || `${g.papers.length} talks at ${time}`;
+    const items = g.papers.map((p) => `
+      <div class="tt-group-item${state.starred.has(p._id) ? ' starred' : ''}">
+        <div class="tt-group-item-title">${esc(p.title)}</div>
+        ${p.authors ? `<div class="tt-group-item-authors">${esc(p.authors)}</div>` : ''}
+        ${starButton(p._id)}
+      </div>`).join('');
+    const noun = g.papers.length === 1 ? 'item' : 'items';
+    return `<div class="tt-card heading">
+      <div class="tt-card-time">${esc(time)}</div>
+      <div class="tt-card-title">${esc(title)}</div>
+      <details class="tt-group">
+        <summary class="tt-group-summary">${g.papers.length} ${noun}</summary>
+        <div class="tt-group-list">${items}</div>
+      </details>
+    </div>`;
+  };
+
+  const groupHTML = (g) => {
+    if (!g.heading && g.papers.length === 1) return paperCard(g.papers[0]);
+    if (g.heading && g.papers.length === 0) return headingCard(g.heading);
+    return groupCard(g);
+  };
+
+  let rows = '';
+  for (let bi = 0; bi < bandCount; bi++) {
+    rows += `<div class="tt-band-label">${fmt(lo + bi * TT_BAND_MIN)}</div>`;
+    for (let ci = 0; ci < cols.length; ci++) {
+      const groups = groupItems(buckets[ci][bi]);
+      rows += `<div class="tt-cell">${groups.map(groupHTML).join('')}</div>`;
+    }
+  }
 
   return `<div class="timetable" style="--col-count: ${cols.length}">
-    <div class="tt-headers">
+    <div class="tt-grid">
       <div class="tt-rail-header"></div>
       ${headers}
-    </div>
-    <div class="tt-body">
-      <div class="tt-rail" style="height: ${totalH}px">${tickHTML}</div>
-      ${bodies}
+      ${rows}
     </div>
   </div>`;
 }
@@ -498,7 +550,7 @@ function wireEvents() {
     btn.textContent = on ? '★' : '☆';
     btn.setAttribute('aria-label', on ? 'Unstar' : 'Star');
     // Also toggle the .starred class on the enclosing card/row
-    const card = btn.closest('.session, .paper, .tt-card, .tt-col-header');
+    const card = btn.closest('.session, .paper, .tt-card, .tt-col-header, .tt-group-item');
     if (card) card.classList.toggle('starred', on);
     // Update counts; only re-render fully if starred-only is on
     $('#starCount').textContent = String(state.starred.size);
