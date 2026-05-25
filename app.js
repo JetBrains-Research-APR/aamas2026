@@ -281,10 +281,13 @@ function paperHTML(p) {
     </div>`;
   }
   const starred = state.starred.has(p._id);
+  const linkHTML = p.paper_link
+    ? ` <a class="paper-link" href="${esc(p.paper_link)}" target="_blank" rel="noopener" title="Open paper">📄</a>`
+    : '';
   return `<div class="paper ${starred ? 'starred' : ''}">
     <div class="paper-time">${esc(p.time || '')}</div>
     <div class="paper-body">
-      <div class="paper-title">${p.paper_id ? `<span class="paper-id">#${esc(p.paper_id)}</span>` : ''}${esc(p.title)}</div>
+      <div class="paper-title">${p.paper_id ? `<span class="paper-id">#${esc(p.paper_id)}</span>` : ''}${esc(p.title)}${linkHTML}</div>
       ${p.authors ? `<div class="paper-authors">${esc(p.authors)}</div>` : ''}
     </div>
     ${starButton(p._id)}

@@ -1068,19 +1068,22 @@
                 "is_heading": false,
                 "time": "9:40–10:16",
                 "title": "Health Facility Location in Ethiopia: Leveraging LLMs to Integrate Human-AI Alignment into Algorithmic Planning",
-                "authors": "Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe"
+                "authors": "Yohai Trabelsi, Guojun Xiong, Fentabil Getnet, Stéphane Verguet and Milind Tambe",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_1.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:40–10:16",
                 "title": "Influence Maximization in Unknown Social Networks: A Contextual Bandit Approach",
-                "authors": "Vincenzo Auletta, Diodato Ferraioli and Grazia Ferrara"
+                "authors": "Vincenzo Auletta, Diodato Ferraioli and Grazia Ferrara",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_21.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:40–10:16",
                 "title": "Agent-Based Auditing of Online Platforms for Algorithmic Manipulative Personalization",
-                "authors": "Nikolaos Lazaridis and Pinar Yolum"
+                "authors": "Nikolaos Lazaridis and Pinar Yolum",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_11.pdf"
               },
               {
                 "is_heading": false,
@@ -1098,19 +1101,22 @@
                 "is_heading": false,
                 "time": "11:50–12:26",
                 "title": "Designing Governable Agent Economies: A Coupled Design Space",
-                "authors": "Elsa Donnat"
+                "authors": "Elsa Donnat",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_27.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:50–12:26",
                 "title": "Emergent Cooperation via Participation-Driven Partner Choice in Low-Information Social Dilemmas",
-                "authors": "Stefan Roesch, Yali Du, Stefanos Leonardos and Odinaldo Rodrigues"
+                "authors": "Stefan Roesch, Yali Du, Stefanos Leonardos and Odinaldo Rodrigues",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_8.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:50–12:26",
                 "title": "TERRA - Trade, Equity Resource Redistribution in Agriculture - An Agent-Based Model for Drought-Prone Areas",
-                "authors": "Guilherme Santos and Pedro Campos"
+                "authors": "Guilherme Santos and Pedro Campos",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_14.pdf"
               },
               {
                 "is_heading": true,
@@ -1122,19 +1128,22 @@
                 "is_heading": false,
                 "time": "14:00–14:36",
                 "title": "Autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games",
-                "authors": "Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł and Rafał Kucharski"
+                "authors": "Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł and Rafał Kucharski",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_7.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:00–14:36",
                 "title": "Modelling and Mitigating Problematic Social Media Use through Paired Recommender Systems with Contrasting Objectives",
-                "authors": "Stefano Livella, Luca Bolis, Sabrina Patania, Matteo Papini, Kenji Morita and Dimitri Ognibene"
+                "authors": "Stefano Livella, Luca Bolis, Sabrina Patania, Matteo Papini, Kenji Morita and Dimitri Ognibene",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_24.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:00–14:36",
                 "title": "Rule-Bottleneck RL: Learning to Decide and Explain for Sequential Resource Allocation via LLM Agents",
-                "authors": "Guojun Xiong, Mauricio Tec, Haichuan Wang and Milind Tambe"
+                "authors": "Guojun Xiong, Mauricio Tec, Haichuan Wang and Milind Tambe",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_13.pdf"
               },
               {
                 "is_heading": true,
@@ -1158,19 +1167,22 @@
                 "is_heading": false,
                 "time": "17:05–17:41",
                 "title": "Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM",
-                "authors": "Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues and Francisco Camara Pereira"
+                "authors": "Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues and Francisco Camara Pereira",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_9.pdf"
               },
               {
                 "is_heading": false,
                 "time": "17:05–17:41",
                 "title": "Heterogeneous RBCs via deep multi-agent reinforcement learning",
-                "authors": "Federico Gabriele, Aldo Glielmo and Marco Taboga"
+                "authors": "Federico Gabriele, Aldo Glielmo and Marco Taboga",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_17.pdf"
               },
               {
                 "is_heading": false,
                 "time": "17:05–17:41",
                 "title": "Introducing a Novel Framework for Recognizing Social Media Recommenders Under Absent Recommendations and a First Graph Neural Network-Based Implementation",
-                "authors": "Sabrina Guidotti, Gregor Donabauer, Davide Taibi, Giuseppe Vizzari, Udo Kruschwitz and Dimitri Ognibene"
+                "authors": "Sabrina Guidotti, Gregor Donabauer, Davide Taibi, Giuseppe Vizzari, Udo Kruschwitz and Dimitri Ognibene",
+                "paper_link": "https://panosd.eu/asi2026/Papers/ASI2026_paper_22.pdf"
               },
               {
                 "is_heading": true,
@@ -1206,31 +1218,36 @@
                 "is_heading": false,
                 "time": "9:05–9:20",
                 "title": "Exploring Measures of Agentic Power for Organisational Workflow Structures [PDF]",
-                "authors": "Andrea Marino, L. Thomas van Binsbergen, Tom van Engers, Giovanni Sileno"
+                "authors": "Andrea Marino, L. Thomas van Binsbergen, Tom van Engers, Giovanni Sileno",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_14.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:20–9:30",
                 "title": "Governing AI Economic Agency: A Coupled Design Space (Blue Sky) [PDF] Elsa Donnat",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_13.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:30–9:45",
                 "title": "Agent Contracts: A Formal Framework for Resource-Bounded Autonomous AI Systems [PDF]",
-                "authors": "Qing Ye, Jing Tan"
+                "authors": "Qing Ye, Jing Tan",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_1.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:45–10:00",
                 "title": "LLM-augmented Empirical Game Theoretic Simulation for Social-Ecological Systems [PDF]",
-                "authors": "Jennifer Shi, Christopher K. Frantz, Christian Kimmich, Saba Siddiki, Atrisha Sarkar"
+                "authors": "Jennifer Shi, Christopher K. Frantz, Christian Kimmich, Saba Siddiki, Atrisha Sarkar",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_10.pdf"
               },
               {
                 "is_heading": false,
                 "time": "10:00–10:15",
                 "title": "Why Open Source? A Game-Theoretic Analysis of the AI Race [PDF]",
-                "authors": "Andjela Mladenovic, Aaron Courville, Gauthier Gidel"
+                "authors": "Andjela Mladenovic, Aaron Courville, Gauthier Gidel",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_24.pdf"
               },
               {
                 "is_heading": false,
@@ -1248,31 +1265,36 @@
                 "is_heading": false,
                 "time": "11:00–11:15",
                 "title": "CAVA: Contextual Argumentation for Value-based Assessment [PDF]",
-                "authors": "Jack Alexander McKinlay, Janina Anna Hoffmann, Andreas Theodorou, Marina De Vos"
+                "authors": "Jack Alexander McKinlay, Janina Anna Hoffmann, Andreas Theodorou, Marina De Vos",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_17.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:15–11:30",
                 "title": "Large Language Models Exhibit Normative Conformity [PDF]",
-                "authors": "Mikako Bito, Keita Nishimoto, Kimitaka Asatani, Ichiro Sakata"
+                "authors": "Mikako Bito, Keita Nishimoto, Kimitaka Asatani, Ichiro Sakata",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_15.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:30–11:45",
                 "title": "Anticipatory Thinking in Normative Contexts [PDF]",
-                "authors": "Jomi Fred Hubner, Elena Yan, Luis Gustavo Nardin, Olivier Boissier"
+                "authors": "Jomi Fred Hubner, Elena Yan, Luis Gustavo Nardin, Olivier Boissier",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_3.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:45–12:00",
                 "title": "Constraint-driven abductive explanations as a mechanism for reflective normative reasoning [PDF]",
-                "authors": "Nathan Lloyd, Peter R. Lewis"
+                "authors": "Nathan Lloyd, Peter R. Lewis",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_18.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:00–12:15",
                 "title": "Social norm dynamics in a behavioral epidemic model [PDF] Christos Charalambous",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_5.pdf"
               },
               {
                 "is_heading": false,
@@ -1302,25 +1324,29 @@
                 "is_heading": false,
                 "time": "14:45–15:00",
                 "title": "Filling Causal Responsibility Gaps in Spatial Interactions using Feasible Action-Space Reduction by Groups [PDF]",
-                "authors": "Vassil Guenov, Ashwin George, Arkady Zgonnikov, David A. Abbink, Luciano Cavalcante Siebert"
+                "authors": "Vassil Guenov, Ashwin George, Arkady Zgonnikov, David A. Abbink, Luciano Cavalcante Siebert",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_23.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:00–15:10",
                 "title": "Ethical Non-Closure Under Agentication: Why Action-Level Frameworks Fail for Trajectory-Producing Systems (Blue Sky) [PDF] Matthew Stewart",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_2.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:10–15:20",
                 "title": "Benchmarking Machine Ethics (Blue Sky) [PDF]",
-                "authors": "Louise A. Dennis, Marija Slavkovik, Xin Quan"
+                "authors": "Louise A. Dennis, Marija Slavkovik, Xin Quan",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_11.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:20–15:30",
                 "title": "Bayesian Game-Theoretic Modeling of Pedestrian-Autonomous Vehicle Interaction (Short Paper) [PDF]",
-                "authors": "Dae-Hyun Yoo, Marija Slavkovik"
+                "authors": "Dae-Hyun Yoo, Marija Slavkovik",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_12.pdf"
               },
               {
                 "is_heading": false,
@@ -1338,13 +1364,15 @@
                 "is_heading": false,
                 "time": "16:15–16:25",
                 "title": "Theoretical and Empirical Evidence for Trust in Embodied Agents: Integrating Conscious Agent Theory and Computational Trust Models (Short Paper) [PDF]",
-                "authors": "Kevin Babashov, Maria Gini"
+                "authors": "Kevin Babashov, Maria Gini",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_19.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:25–16:40",
                 "title": "Privacy for Everyone: Learning to Respect Privacy in Multi-party Content Sharing [PDF]",
-                "authors": "Hüseyin Aydın, Alper Demir, Pinar Yolum"
+                "authors": "Hüseyin Aydın, Alper Demir, Pinar Yolum",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_8.pdf"
               },
               {
                 "is_heading": false,
@@ -1356,7 +1384,8 @@
                 "is_heading": false,
                 "time": "16:55–17:05",
                 "title": "Perspectives on the Explanation of Organizations in Multi-Agent Systems (Blue Sky) [PDF]",
-                "authors": "Elena Yan, Luis Gustavo Nardin, Alessandro Ricci, Samuele Burattini, Guillaume Muller, Jomi Fred Hubner, Jaime Simão Sichman, Olivier Boissier"
+                "authors": "Elena Yan, Luis Gustavo Nardin, Alessandro Ricci, Samuele Burattini, Guillaume Muller, Jomi Fred Hubner, Jaime Simão Sichman, Olivier Boissier",
+                "paper_link": "https://coin-workshop.github.io/coine-2026-paphos/papers/paper_16.pdf"
               },
               {
                 "is_heading": false,
@@ -1392,25 +1421,29 @@
                 "is_heading": false,
                 "time": "09:00–09:20",
                 "title": "Reconciling Simulation and Distributed Deployment in a MAS Development Framework",
-                "authors": "Andrei Olaru, Ionuț Hodoroagă"
+                "authors": "Andrei Olaru, Ionuț Hodoroagă",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/037_Reconciling_Simulation_and_Distributed_Deployment_in_a_MAS_D.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:20–09:40",
                 "title": "Evaluating the Benefits of Orpheus for Iterative and Incremental Development in MAS",
-                "authors": "Matteo Baldoni, Cristina Baroglio, Roberto Micalizio"
+                "authors": "Matteo Baldoni, Cristina Baroglio, Roberto Micalizio",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/023_Evaluating_the_Benefits_of_Orpheus_for_Iterative_and_Increme.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:40–10:00",
                 "title": "Engineering Norm-Aware BDI Agents",
-                "authors": "Michael Winikoff, Frank Dignum, Sebastian Rodriguez, John Thangarajah"
+                "authors": "Michael Winikoff, Frank Dignum, Sebastian Rodriguez, John Thangarajah",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/004_Engineering_norm-aware_BDI_agents.pdf"
               },
               {
                 "is_heading": false,
                 "time": "10:00–10:15",
                 "title": "Towards a Model-Driven Continuous Assurance Framework for Autonomous Systems",
-                "authors": "Dhaminda B. Abeywickrama, Michael Fisher, Frederic Wheeler, Louise A. Dennis"
+                "authors": "Dhaminda B. Abeywickrama, Michael Fisher, Frederic Wheeler, Louise A. Dennis",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/042_Towards_a_Model-Driven_Continuous_Assurance_Framework_for_Au.pdf"
               },
               {
                 "is_heading": true,
@@ -1428,19 +1461,22 @@
                 "is_heading": false,
                 "time": "11:00–11:15",
                 "title": "A Graphical Interface for Visualising and Debugging MASPY Agents",
-                "authors": "Gabriel Galvan Neres, Alexandre Lizieri Leite Mellado, Rafael C. Cardoso, André Pinz Borges, Gleifer Vaz Alves"
+                "authors": "Gabriel Galvan Neres, Alexandre Lizieri Leite Mellado, Rafael C. Cardoso, André Pinz Borges, Gleifer Vaz Alves",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/017_A_Graphical_Interface_for_Visualising_and_Debugging_MASPY_Ag.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:15–11:30",
                 "title": "OptiMA: A Transaction-Based Framework with Schedule Optimization for Very Complex Multi-Agent Systems",
-                "authors": "Umut Çalıkyılmaz, Nitin Nayak, Jinghua Groppe, Sven Groppe"
+                "authors": "Umut Çalıkyılmaz, Nitin Nayak, Jinghua Groppe, Sven Groppe",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/010_OptiMA_A_Transaction-Based_Framework_with_Schedule_Optimizat.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:30–11:50",
                 "title": "MAMS-Deploy: A Hypermedia-Driven Multi-Agent System for Autonomous Microservice Deployment",
-                "authors": "Maximilian Scholl, Rem W. Collier"
+                "authors": "Maximilian Scholl, Rem W. Collier",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/029_MAMS-Deploy_A_Hypermedia-Driven_Multi-Agent_System_for_Auton.pdf"
               },
               {
                 "is_heading": true,
@@ -1452,19 +1488,22 @@
                 "is_heading": false,
                 "time": "11:50–12:05",
                 "title": "Integrating Agentic Web Standards in Multi-Agent Systems Using Hypermedia",
-                "authors": "Jérémy Lemée"
+                "authors": "Jérémy Lemée",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/043_Integrating_Agentic_Web_Standards_in_Multi-Agent_Systems_Usi.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:05–12:15",
                 "title": "From Task Allocation to Risk Clearing: A Unifying Interface for Mixed Human-Agent Societies",
-                "authors": "Vassilis Vassiliades"
+                "authors": "Vassilis Vassiliades",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/002_From_Task_Allocation_to_Risk_Clearing_A_Unifying_Interface_f.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:15–12:30",
                 "title": "Towards Collaborative BDI Agents for Human-AI Teamwork",
-                "authors": "Margarita H. Radeva, Rafael C. Cardoso"
+                "authors": "Margarita H. Radeva, Rafael C. Cardoso",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/012_Towards_Collaborative_BDI_Agents_for_Human-AI_Teamwork.pdf"
               },
               {
                 "is_heading": true,
@@ -1482,31 +1521,36 @@
                 "is_heading": false,
                 "time": "14:00–14:20",
                 "title": "Strabo: Declarative Specification and Implementation of Agentic Interaction Protocols",
-                "authors": "Samuel H. Christie V, Munindar P. Singh, Amit K. Chopra"
+                "authors": "Samuel H. Christie V, Munindar P. Singh, Amit K. Chopra",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/034_Strabo_Declarative_Specification_and_Implementation_of_Agent.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:20–14:40",
                 "title": "Castor and Pollux: A First Demonstration of a BSPL Protocol Discovery Tool",
-                "authors": "Matteo Baldoni, Cristina Baroglio, Roberto Micalizio"
+                "authors": "Matteo Baldoni, Cristina Baroglio, Roberto Micalizio",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/020_Castor_and_Pollux_A_First_Demonstration_of_a_BSPL_Protocol_D.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:40–15:00",
                 "title": "SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing",
-                "authors": "Indraveni Chebolu, Arnab Mallick, Harmesh Rana"
+                "authors": "Indraveni Chebolu, Arnab Mallick, Harmesh Rana",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/009_SPEAR_An_Engineering_Case_Study_of_Multi-Agent_Coordination_.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:00–15:15",
                 "title": "Reasoning with Untruthful Announcements",
-                "authors": "Loc Pham, Tran Cao Son, Enrico Pontelli"
+                "authors": "Loc Pham, Tran Cao Son, Enrico Pontelli",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/030_Reasoning_with_Untruthful_Announcements.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:15–15:25",
                 "title": "Reconciling Simulation and Distributed Deployment in a MAS Development Framework",
-                "authors": "Andrei Olaru, Ionuț Hodoroagă"
+                "authors": "Andrei Olaru, Ionuț Hodoroagă",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/037_Reconciling_Simulation_and_Distributed_Deployment_in_a_MAS_D.pdf"
               },
               {
                 "is_heading": true,
@@ -1524,31 +1568,36 @@
                 "is_heading": false,
                 "time": "16:15–16:30",
                 "title": "Metanormative Theory for RL-Based Moral Agents",
-                "authors": "Aleks Knoks, Marija Slavkovik"
+                "authors": "Aleks Knoks, Marija Slavkovik",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/053_Metanormative_Theory_for_RL-Based_Moral_Agents.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:30–16:45",
                 "title": "The Alignment Flywheel: A Governance-Centric Hybrid MAS for Architecture-Agnostic Safety",
-                "authors": "Elias Malomgré, Pieter Simoens"
+                "authors": "Elias Malomgré, Pieter Simoens",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/055_The_Alignment_Flywheel_A_Governance-Centric_Hybrid_MAS_for_A.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:45–16:55",
                 "title": "Brokering as a Decision Loop: Trust-Aware Multi-Agent Architectures for Data Marketplaces",
-                "authors": "Imane Hocine, Abdelaziz Kella, Asma Abboura, Maria Hanini, Oscar J. Castro-Lopez, Grégoire Danoy, Jedrzej Musial"
+                "authors": "Imane Hocine, Abdelaziz Kella, Asma Abboura, Maria Hanini, Oscar J. Castro-Lopez, Grégoire Danoy, Jedrzej Musial",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/036_Brokering_as_a_Decision_Loop_Trust-Aware_Multi-Agent_Archite.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:55–17:15",
                 "title": "Ex-Plan: Explaining BDI Agent Behaviour Through Contrastive Plan Analysis",
-                "authors": "Curtis Davies, Babak Esfandiari"
+                "authors": "Curtis Davies, Babak Esfandiari",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/015_Ex-Plan_Explaining_BDI_Agent_Behaviour_Through_Contrastive_P.pdf"
               },
               {
                 "is_heading": false,
                 "time": "17:15–17:35",
                 "title": "AgentSpeaX: Explain, Actually",
-                "authors": "Michael Winikoff, Zahra Daoui, Andrea Gatti, Viviana Mascardi, Angelo Ferrando"
+                "authors": "Michael Winikoff, Zahra Daoui, Andrea Gatti, Viviana Mascardi, Angelo Ferrando",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/006_AgentSpeaX_Explain_Actually.pdf"
               }
             ],
             "room": "Christian Barnard",
@@ -1589,7 +1638,8 @@
                 "is_heading": false,
                 "time": "09:15–09:35",
                 "title": "Robust Visual Planning under Partial Observability and Perceptual Uncertainty",
-                "authors": "Guy Azran, Michael Navat, Sarah Keren"
+                "authors": "Guy Azran, Michael Navat, Sarah Keren",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Azran.pdf"
               },
               {
                 "is_heading": false,
@@ -1601,7 +1651,8 @@
                 "is_heading": false,
                 "time": "09:55–10:10",
                 "title": "PSN Game: Game-theoretic Prediction and Planning via a Player Selection Network",
-                "authors": "Tianyu Qiu, Eric Ouano, Fernando Palafox, Christian Ellis, David Fridovich-Keil"
+                "authors": "Tianyu Qiu, Eric Ouano, Fernando Palafox, Christian Ellis, David Fridovich-Keil",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Qiu.pdf"
               },
               {
                 "is_heading": false,
@@ -1619,7 +1670,8 @@
                 "is_heading": false,
                 "time": "11:00–11:20",
                 "title": "A Consensus-Bayesian Framework for Detecting Malicious Activity in Enterprise Directory Access Graphs",
-                "authors": "Prayush Uppuluri, Shilpa Noushad, Sajan Kumar"
+                "authors": "Prayush Uppuluri, Shilpa Noushad, Sajan Kumar",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Uppuluri.pdf"
               },
               {
                 "is_heading": false,
@@ -1649,7 +1701,8 @@
                 "is_heading": false,
                 "time": "14:00–14:20",
                 "title": "LLM-COGNICA: Towards Reliable Agent Decision Making",
-                "authors": "Adamos Koumi, Antonis Kakas"
+                "authors": "Adamos Koumi, Antonis Kakas",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Koumi.pdf"
               },
               {
                 "is_heading": false,
@@ -1661,7 +1714,8 @@
                 "is_heading": false,
                 "time": "14:50–15:10",
                 "title": "Shape-Preserving Networks: Encoding Structural Knowledge through Derivative Constraints and Nested Integration",
-                "authors": "Miguel Suau, Alec Edwards, Alex Durkin, Ian Howell, Giuseppe Pinto, Marc Artola, Daniel Jarne, Sayam Kumar"
+                "authors": "Miguel Suau, Alec Edwards, Alex Durkin, Ian Howell, Giuseppe Pinto, Marc Artola, Daniel Jarne, Sayam Kumar",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Suau.pdf"
               },
               {
                 "is_heading": false,
@@ -1679,7 +1733,8 @@
                 "is_heading": false,
                 "time": "16:15–16:35",
                 "title": "From a Neural-Symbolic Means to the Inductive-Instructional End Loizos Michael",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://nexus.telecom-paris.fr/papers/26NEXUS-Michael.pdf"
               },
               {
                 "is_heading": false,
@@ -1727,7 +1782,8 @@
                 "is_heading": false,
                 "time": "9:15",
                 "title": "Contributed talk : Decentralized Learning of Belief-Dependent Generalized Nash Equilibria under Partial Observability (remote)",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://optlearnmas.github.io/files/sp12.pdf"
               },
               {
                 "is_heading": false,
@@ -1799,7 +1855,8 @@
                 "is_heading": false,
                 "time": "16:15",
                 "title": "Contributed talk : A Multi-Agent System for Multi-Objective Constrained Optimization",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://optlearnmas.github.io/files/sp8.pdf"
               },
               {
                 "is_heading": false,
@@ -2623,7 +2680,8 @@
                 "is_heading": false,
                 "time": "9:45",
                 "title": "Multi-Agent Causal Reasoning Framework: Optimizing Advertising Incrementality via Daily Budget Allocation Under a Fixed Lifetime Budget",
-                "authors": "Paul Lo; Jing Pan; Jingxi Yu; Evelyn Wu; Erte Pan; Simon Hollands"
+                "authors": "Paul Lo; Jing Pan; Jingxi Yu; Evelyn Wu; Erte Pan; Simon Hollands",
+                "paper_link": "https://openreview.net/pdf?id=K8dMIy7Yye"
               },
               {
                 "is_heading": false,
@@ -2635,25 +2693,29 @@
                 "is_heading": false,
                 "time": "11:00",
                 "title": "Causal Expectations for Decentralised Coordination in Multi-Agent Systems",
-                "authors": "John R. E. Mills; Peter R. Lewis"
+                "authors": "John R. E. Mills; Peter R. Lewis",
+                "paper_link": "https://openreview.net/pdf?id=LWREpLm59w"
               },
               {
                 "is_heading": false,
                 "time": "11:15",
                 "title": "Causal Learning and Reasoning in Multi-Agent Systems: Goals, Issues, and Taxonomy",
-                "authors": "Stefano Mariani; Giovanni Briglia; André Meyer-Vitali; Matthias Klusch; Franco Zambonelli"
+                "authors": "Stefano Mariani; Giovanni Briglia; André Meyer-Vitali; Matthias Klusch; Franco Zambonelli",
+                "paper_link": "https://openreview.net/pdf?id=FCr9YFHvwO"
               },
               {
                 "is_heading": false,
                 "time": "11:40",
                 "title": "From Implicit to Explicit Causal Models in BDI Agents: A Proof-of-Concept with Causal Discovery and Adaptive Policy",
-                "authors": "Meltem Gullusac; Baris Tekin Tezel; Moharram Challenger"
+                "authors": "Meltem Gullusac; Baris Tekin Tezel; Moharram Challenger",
+                "paper_link": "https://openreview.net/pdf?id=mH7MpNMQbb"
               },
               {
                 "is_heading": false,
                 "time": "12:05",
                 "title": "Evolutionary Learning of Graphical Causal Models from Behavior",
-                "authors": "H. Van Dyke Parunak"
+                "authors": "H. Van Dyke Parunak",
+                "paper_link": "https://openreview.net/pdf?id=vqSEiqOIal"
               },
               {
                 "is_heading": false,
@@ -2665,13 +2727,15 @@
                 "is_heading": false,
                 "time": "14:25",
                 "title": "Reproducing and Extending Counterfactual Data Augmentation: A Study on Causal Identifiability and Stability in Reinforcement Learning",
-                "authors": "Shilpa Noushad; Sajan Kumar; Pratyush uppuluri"
+                "authors": "Shilpa Noushad; Sajan Kumar; Pratyush uppuluri",
+                "paper_link": "https://openreview.net/pdf?id=kHAnYGD1Sq"
               },
               {
                 "is_heading": false,
                 "time": "14:50",
                 "title": "CoACT: Coordination via Aligned Centralized Training in Multi-Agent Reinforcement Learning",
-                "authors": "Oussama Azizi; Frans A Oliehoek; Matthijs T. J. Spaan"
+                "authors": "Oussama Azizi; Frans A Oliehoek; Matthijs T. J. Spaan",
+                "paper_link": "https://openreview.net/pdf?id=Oc0QipuIV0"
               }
             ],
             "room": "Aphrodite A",
@@ -2695,25 +2759,29 @@
                 "is_heading": false,
                 "time": "08:45–08:55",
                 "title": "LLM-Symbolic Systems: Why and How",
-                "authors": "Michael Winikoff"
+                "authors": "Michael Winikoff",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/003_LLM-Symbolic_Systems_Why_and_How.pdf"
               },
               {
                 "is_heading": false,
                 "time": "08:55–09:15",
                 "title": "VEsNA Goes Very Fast: Event-Based BDI Control in Formula One Racing",
-                "authors": "Jacopo Nazzaro, Andrea Gatti, Angelo Ferrando"
+                "authors": "Jacopo Nazzaro, Andrea Gatti, Angelo Ferrando",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/013_VEsNA_Goes_Very_Fast_Event-Based_BDI_Control_in_Formula_One_.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:15–09:30",
                 "title": "An Extended BDI Case Study Toward Campus Mail Delivery",
-                "authors": "Bardia Parmoun, Babak Esfandiari"
+                "authors": "Bardia Parmoun, Babak Esfandiari",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/008_An_Extended_BDI_Case_Study_Toward_Campus_Mail_Delivery.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:30–09:40",
                 "title": "Towards Operationalizing Accountability for Self-Improving Multi-Agent Systems",
-                "authors": "Andrei Ciortea, Stephen Cranefield"
+                "authors": "Andrei Ciortea, Stephen Cranefield",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/052_Towards_Operationalizing_Accountability_for_Self-Improving_M.pdf"
               },
               {
                 "is_heading": true,
@@ -2725,13 +2793,15 @@
                 "is_heading": false,
                 "time": "09:40–09:55",
                 "title": "The Secret Life of Traces: A MAS Engineering Perspective",
-                "authors": "Davide Ancona, Zahra Daoui, Angelo Ferrando, Andrea Gatti, Viviana Mascardi, Michael Winikoff"
+                "authors": "Davide Ancona, Zahra Daoui, Angelo Ferrando, Andrea Gatti, Viviana Mascardi, Michael Winikoff",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/005_The_Secret_Life_of_Traces_a_MAS_Engineering_Perspective.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:55–10:10",
                 "title": "A Dual-System Neuro-Symbolic Framework with Accident Prediction for Autonomous Driving",
-                "authors": "Jianming Wang, Leonardo Rosa Amado, Rafael C. Cardoso"
+                "authors": "Jianming Wang, Leonardo Rosa Amado, Rafael C. Cardoso",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/014_A_Dual-System_Neuro-Symbolic_Framework_with_Accident_Predict.pdf"
               },
               {
                 "is_heading": true,
@@ -2749,31 +2819,36 @@
                 "is_heading": false,
                 "time": "11:00–11:10",
                 "title": "Neuro-Symbolic Pump Scheduling for Safe and Cost-Efficient Water Distribution Networks",
-                "authors": "Mahirul Islam, Fulong Yao, Wanqing Zhao, Rafael C. Cardoso, Mengwei Xu"
+                "authors": "Mahirul Islam, Fulong Yao, Wanqing Zhao, Rafael C. Cardoso, Mengwei Xu",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/019_Neuro-Symbolic_Pump_Scheduling_for_Safe_and_Cost-efficient_W.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:10–11:30",
                 "title": "A Hybrid Neuro-Symbolic BDI Multi-Agent Architecture for LLM-Based Unit Test Generation",
-                "authors": "Minel Üstgel, Esi Aşkın, Baris Tekin Tezel, Moharram Challenger"
+                "authors": "Minel Üstgel, Esi Aşkın, Baris Tekin Tezel, Moharram Challenger",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/056_A_Hybrid_Neuro-Symbolic_BDI_Multi-Agent_Architecture_for_LLM.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:30–11:50",
                 "title": "AmI HMAS: Hybrid Agents with Individual and Collective Experience-Aware Code-Based Planning for Smart Environments",
-                "authors": "Vlad-Alexandru Florea, Alexandru Sorici, Vlad Matei Drăghici, Andrei-Cătălin Barbu, Andrei Olaru"
+                "authors": "Vlad-Alexandru Florea, Alexandru Sorici, Vlad Matei Drăghici, Andrei-Cătălin Barbu, Andrei Olaru",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/039_AmI_HMAS_Hybrid_Agents_with_Individual_and_Collective_Experi.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:50–12:05",
                 "title": "Ahoy: LLMs Enacting Multiagent Interaction Protocols",
-                "authors": "Omkar Jayant Joshi, Munindar P. Singh, Amit K. Chopra"
+                "authors": "Omkar Jayant Joshi, Munindar P. Singh, Amit K. Chopra",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/024_Ahoy_LLMs_Enacting_Multiagent_Interaction_Protocols.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:05–12:25",
                 "title": "Exploiting the MAOP Approach for Multi-Level Explainability of Multi-Agent Systems",
-                "authors": "Elena Yan, Samuele Burattini, Luis Gustavo Nardin, Jomi Fred Hubner, Olivier Boissier, Jaime Simão Sichman, Alessandro Ricci"
+                "authors": "Elena Yan, Samuele Burattini, Luis Gustavo Nardin, Jomi Fred Hubner, Olivier Boissier, Jaime Simão Sichman, Alessandro Ricci",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/032_Exploiting_the_MAOP_Approach_for_Multi-Level_Explainability_.pdf"
               },
               {
                 "is_heading": true,
@@ -2791,31 +2866,36 @@
                 "is_heading": false,
                 "time": "14:00–14:20",
                 "title": "S-ORA: Situated Reasoning and Asynchronous Tool Use for Language Agents",
-                "authors": "Luca Tonelli, Alessandro Ricci, Andrei Ciortea"
+                "authors": "Luca Tonelli, Alessandro Ricci, Andrei Ciortea",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/050_S-ORA_Situated_Reasoning_and_Asynchronous_Tool_Use_for_Langu.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:20–14:40",
                 "title": "Bridging Reflective and Semantic Memory for Lifelong Learning in LLM-Based Agents",
-                "authors": "Aissa Hadj Mohamed, Julio Cesar Dos Reis, Frances Santos, Rodrigo Gonçalves Flexa, Leandro Aparecido Villas"
+                "authors": "Aissa Hadj Mohamed, Julio Cesar Dos Reis, Frances Santos, Rodrigo Gonçalves Flexa, Leandro Aparecido Villas",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/028_Bridging_Reflective_and_Semantic_Memory_for_Lifelong_Learnin.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:40–14:55",
                 "title": "QUEST: A RAG-Based Planning Memory to Augment Task Solving of LLM-Based Cognitive Agents",
-                "authors": "Eryck Silva, Gabriel Lopes de Barros, Alejandro Núñez Arroyo, Mateus Edival Rodrigues da Silveira, Pedro Henrique Thompson Furtado, Julio Cesar Dos Reis"
+                "authors": "Eryck Silva, Gabriel Lopes de Barros, Alejandro Núñez Arroyo, Mateus Edival Rodrigues da Silveira, Pedro Henrique Thompson Furtado, Julio Cesar Dos Reis",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/046_QUEST_A_RAG-based_Planning_Memory_to_Augment_Task_Solving_of.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:55–15:10",
                 "title": "A Hybrid Role-Based Reference Architecture for LLM-Enhanced Multi-Agent Systems",
-                "authors": "Tansu Zafer Asici, Önder Gürcan, Geylani Kardas"
+                "authors": "Tansu Zafer Asici, Önder Gürcan, Geylani Kardas",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/035_A_Hybrid_Role-Based_Reference_Architecture_for_LLM-Enhanced_.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:15–15:25",
                 "title": "ValidAgent – An Open Repository of Validated Generative Agents for Behavioral Simulations and Multi-Agent Systems",
-                "authors": "Anika Bittner, Timo Heinrich, Leon Lührs, Matthias Meyer, Christian Stindt von Dohm"
+                "authors": "Anika Bittner, Timo Heinrich, Leon Lührs, Matthias Meyer, Christian Stindt von Dohm",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/025_ValidAgent_An_Open_Repository_of_Validated_Generative_Agents.pdf"
               },
               {
                 "is_heading": true,
@@ -2833,13 +2913,15 @@
                 "is_heading": false,
                 "time": "16:15–16:35",
                 "title": "ARARA: A LLM-Based Multi-Agent Development Framework for Conversational Recommender Systems",
-                "authors": "Fillipe Santos Silva, Juliano Leonardo Soares, Sildolfo F G Neto, Julio Cesar Dos Reis, Marcelo S Reis"
+                "authors": "Fillipe Santos Silva, Juliano Leonardo Soares, Sildolfo F G Neto, Julio Cesar Dos Reis, Marcelo S Reis",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/041_ARARA_A_LLM-based_Multi-Agent_Development_Framework_for_Conv.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:35–16:45",
                 "title": "The Role of Cognitive Architectures for Generative AI Agents: An Exploration Based on AutoGen and CoALA",
-                "authors": "Bruno Esposito, Alessandro Ricci, Samuele Burattini, Rem W. Collier"
+                "authors": "Bruno Esposito, Alessandro Ricci, Samuele Burattini, Rem W. Collier",
+                "paper_link": "https://emas-workshop.github.io/2026/papers/038_The_Role_of_Cognitive_Architectures_for_Generative_AI_Agents.pdf"
               },
               {
                 "is_heading": true,
@@ -2869,37 +2951,43 @@
                 "is_heading": false,
                 "time": "9:30–9:45",
                 "title": "From Competition to Collaboration: Designing Sustainable Mechanisms Between LLMs and Online Forums PDF",
-                "authors": "Yftah Ziser, Omer Ben-Porat, Niv Fono"
+                "authors": "Yftah Ziser, Omer Ben-Porat, Niv Fono",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/13.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:45–9:50",
                 "title": "Deep Incentive Design with Differentiable Equilibrium Blocks PDF",
-                "authors": "Luke Marris, Georgios Piliouras, Vinzenz Thoma"
+                "authors": "Luke Marris, Georgios Piliouras, Vinzenz Thoma",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/5.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:50–9:55",
                 "title": "Reinforcement Learning for Automated Negotiation Yasser Mohammad PDF",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/7.pdf"
               },
               {
                 "is_heading": false,
                 "time": "9:55–10:00",
                 "title": "Strategic Content Creation with GenAI: To Share or Not to Share? PDF",
-                "authors": "Omer Ben-Porat, Gur Keinan"
+                "authors": "Omer Ben-Porat, Gur Keinan",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/8.pdf"
               },
               {
                 "is_heading": false,
                 "time": "10:00–10:05",
                 "title": "Identifying Latent Intentions via Inverse Reinforcement Learning in Repeated Linear Public Good Games",
-                "authors": "Christoph Engel, Marcel Schubert, Carina I Hausladen"
+                "authors": "Christoph Engel, Marcel Schubert, Carina I Hausladen",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/7.pdf"
               },
               {
                 "is_heading": false,
                 "time": "10:05–10:10",
                 "title": "Extrapolating Volition with Recursive Information Markets PDF",
-                "authors": "Long Tran-Thanh, Abhimanyu Pallavi Sudhir"
+                "authors": "Long Tran-Thanh, Abhimanyu Pallavi Sudhir",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/40.pdf"
               },
               {
                 "is_heading": false,
@@ -2917,61 +3005,71 @@
                 "is_heading": false,
                 "time": "11:05–11:10",
                 "title": "The Power of Matching for Online Fractional Hedonic Games PDF",
-                "authors": "Alexander Schlenga, René Romen, Martin Bullinger"
+                "authors": "Alexander Schlenga, René Romen, Martin Bullinger",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/30.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:10–11:15",
                 "title": "Shapley Value-based Approach for Redistributing Revenue of Matchmaking of Private Transactions in Blockchains PDF",
-                "authors": "Sujit Gujar, Yash Chaurasia, Parth Desai, Rasheed M"
+                "authors": "Sujit Gujar, Yash Chaurasia, Parth Desai, Rasheed M",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/50.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:15–11:20",
                 "title": "Equilibria of the Colonel Blotto Games with Costs Stanisław Kaźmierowski PDF",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/2.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:20–11:25",
                 "title": "Expanding and Evaluating the Applicability of Safe Pareto Improvements PDF",
-                "authors": "Caspar Oesterheld, Nathaniel Sauerberg"
+                "authors": "Caspar Oesterheld, Nathaniel Sauerberg",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/48.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:30–11:45",
                 "title": "On Nash Equilibria in Participatory Budgeting with Donations and Beyond PDF",
-                "authors": "Krzysztof Rogowski, Grzegorz Pierczyński, Georgios Papasotiropoulos, Grzegorz Lisowski"
+                "authors": "Krzysztof Rogowski, Grzegorz Pierczyński, Georgios Papasotiropoulos, Grzegorz Lisowski",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/43.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:45–12:00",
                 "title": "Prospect-Theoretic Voting: Strategic Implications and Computational Limits PDF",
-                "authors": "Maria Polukarov, Bart De Keijzer, Colin Cleveland"
+                "authors": "Maria Polukarov, Bart De Keijzer, Colin Cleveland",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/38.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:00–12:05",
                 "title": "Simple Budgeting Games PDF",
-                "authors": "Maria Polukarov, Svetlana Obraztsova, Bart De Keijzer, Alexander Konev, Benjamin Yu"
+                "authors": "Maria Polukarov, Svetlana Obraztsova, Bart De Keijzer, Alexander Konev, Benjamin Yu",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/19.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:05–12:10",
                 "title": "How Many Votes Is a Lie Worth? Measuring Strategyproofness through Resource Augmentation PDF",
-                "authors": "Caspar Oesterheld, Jiayuan Liu, Eden Hartman, Vincent Conitzer, Ratip Emin Berker"
+                "authors": "Caspar Oesterheld, Jiayuan Liu, Eden Hartman, Vincent Conitzer, Ratip Emin Berker",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/51.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:10–12:15",
                 "title": "Costly Voting in the Hotelling-Downs Model PDF",
-                "authors": "Reshef Meir, Guy Wolf"
+                "authors": "Reshef Meir, Guy Wolf",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/54.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:15–12:30",
                 "title": "Strategic Merging of Project Proposals in Participatory Budgeting PDF",
-                "authors": "Zein Pishbin, Grzegorz Pierczyński, Grzegorz Lisowski, Łukasz Janeczko, Piotr Faliszewski"
+                "authors": "Zein Pishbin, Grzegorz Pierczyński, Grzegorz Lisowski, Łukasz Janeczko, Piotr Faliszewski",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/52.pdf"
               },
               {
                 "is_heading": false,
@@ -2983,37 +3081,43 @@
                 "is_heading": false,
                 "time": "14:00–14:15",
                 "title": "Fair Allocation of Improvements: When Old Endowments Shape New Assignments PDF",
-                "authors": "Erel Segal-Halevi, Rica Gonen, Noga Klein Elmalem"
+                "authors": "Erel Segal-Halevi, Rica Gonen, Noga Klein Elmalem",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/47.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:15–14:20",
                 "title": "On the Fairness of Additive Welfarist Rules PDF",
-                "authors": "Sheung Man Yuen, Warut Suksompong, Karen Frilya Celine"
+                "authors": "Sheung Man Yuen, Warut Suksompong, Karen Frilya Celine",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/6.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:20–14:25",
                 "title": "Online EFX Allocations with Predictions PDF",
-                "authors": "Nicos Protopapas, Themistoklis Melissourgos"
+                "authors": "Nicos Protopapas, Themistoklis Melissourgos",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/29.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:25–14:30",
                 "title": "Almost Equitable Allocations of Indivisible Goods under Externalities PDF Online Session",
-                "authors": "Aditi Sethia, Manisha Padala, Neeldhara Misra"
+                "authors": "Aditi Sethia, Manisha Padala, Neeldhara Misra",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/53.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:45–14:50",
                 "title": "Reforming an Unfair Allocation by Exchanging Goods PDF",
-                "authors": "Warut Suksompong, Naoyuki Kamiyama, Ayumi Igarashi, Sheung Man Yuen"
+                "authors": "Warut Suksompong, Naoyuki Kamiyama, Ayumi Igarashi, Sheung Man Yuen",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/22.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:50–14:55",
                 "title": "Non-Monotonicity in Fair Division of Graphs PDF",
-                "authors": "Yu Zhou, Shraddha Pathak, Hadi Hosseini"
+                "authors": "Yu Zhou, Shraddha Pathak, Hadi Hosseini",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/16.pdf"
               },
               {
                 "is_heading": false,
@@ -3037,19 +3141,22 @@
                 "is_heading": false,
                 "time": "15:10–15:15",
                 "title": "Weighted Soft Condorcet Optimization Santeri Koivula PDF",
-                "authors": ""
+                "authors": "",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/11.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:15–15:20",
                 "title": "PeerBTS: Incentivizing Effort in Strategyproof Peer Selection PDF",
-                "authors": "Nicholas Mattei, Omer Lev, Harper Lyon"
+                "authors": "Nicholas Mattei, Omer Lev, Harper Lyon",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/10.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:20–15:25",
                 "title": "Analyzing the Effects of Two-Stage Peer Evaluation PDF",
-                "authors": "Kobi Gal, Nicholas Mattei, Omer Lev, Oshri Damty, Harper Lyon, Roy Fairstein"
+                "authors": "Kobi Gal, Nicholas Mattei, Omer Lev, Oshri Damty, Harper Lyon, Roy Fairstein",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/14.pdf"
               },
               {
                 "is_heading": false,
@@ -3061,7 +3168,8 @@
                 "is_heading": false,
                 "time": "16:15–16:30",
                 "title": "Representation in Peer Selection: A Liquid Democracy Perspective PDF",
-                "authors": "Georgios Papasotiropoulos, Grzegorz Lisowski, Davide Grossi"
+                "authors": "Georgios Papasotiropoulos, Grzegorz Lisowski, Davide Grossi",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/42.pdf"
               },
               {
                 "is_heading": false,
@@ -3073,7 +3181,8 @@
                 "is_heading": false,
                 "time": "16:35–16:40",
                 "title": "Is Four Enough? Automated Reasoning Approaches and Dual Bounds for Condorcet Dimensions of Elections PDF",
-                "authors": "Ruben Martins, George Zhaoqi Li, Ratip Emin Berker, Itai Zilberstein"
+                "authors": "Ruben Martins, George Zhaoqi Li, Ratip Emin Berker, Itai Zilberstein",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/24.pdf"
               },
               {
                 "is_heading": false,
@@ -3085,7 +3194,8 @@
                 "is_heading": false,
                 "time": "16:45–16:50",
                 "title": "What Are People’s Actual Utility Functions in Budget Aggregation? PDF",
-                "authors": "Erel Segal-Halevi, Rica Gonen, Lioz Akirav, Ayelet Amster"
+                "authors": "Erel Segal-Halevi, Rica Gonen, Lioz Akirav, Ayelet Amster",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/36.pdf"
               },
               {
                 "is_heading": false,
@@ -3097,7 +3207,8 @@
                 "is_heading": false,
                 "time": "16:55–17:00",
                 "title": "Optimized Distortion in Linear Social Choice PDF",
-                "authors": "Yevgeniy Vorobeychik, Luise Ge, Gregory Kehne"
+                "authors": "Yevgeniy Vorobeychik, Luise Ge, Gregory Kehne",
+                "paper_link": "https://gtep-workshops.github.io/gaiw2026/pdf/46.pdf"
               },
               {
                 "is_heading": false,
@@ -3138,19 +3249,22 @@
                 "is_heading": false,
                 "time": "08:45–09:35",
                 "title": "Invited Talk: Developing Distributed Autonomous Space Systems",
-                "authors": "Caleb Adams (NASA Ames)"
+                "authors": "Caleb Adams (NASA Ames)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Adams-Invited[1].pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:35–09:55",
                 "title": "Large-Scale Continual Scheduling and Execution for Dynamic Distributed Satellite Constellation Observation Allocation",
-                "authors": "Itai Zilberstein (Carnegie Mellon University), Steve Chien (Jet Propulsion Laboratory)"
+                "authors": "Itai Zilberstein (Carnegie Mellon University), Steve Chien (Jet Propulsion Laboratory)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Zilberstein.pdf"
               },
               {
                 "is_heading": false,
                 "time": "09:55–10:15",
                 "title": "The Role of Central Nodes in Multi-Task Allocation for Distributed Space-Based Observation Systems",
-                "authors": "Vincenzo Messina (Technical University of Munich), Marco Camporeale (Technical University of Munich), Rob Vingerhoeds (Fédération FONISEN, Université de Toulouse), Alessandro Golkar (Technical University of Munich)"
+                "authors": "Vincenzo Messina (Technical University of Munich), Marco Camporeale (Technical University of Munich), Rob Vingerhoeds (Fédération FONISEN, Université de Toulouse), Alessandro Golkar (Technical University of Munich)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Messina.pdf"
               },
               {
                 "is_heading": true,
@@ -3168,25 +3282,29 @@
                 "is_heading": false,
                 "time": "11:00–11:20",
                 "title": "Dynamic Tool Generation for Autonomous Multi-Agent Systems in Space Missions",
-                "authors": "Dominik Opitz (DLR) Carsten Hartmann (DLR-GSOC) Tobias Hecking (DLR) Michael Felderer (DLR)"
+                "authors": "Dominik Opitz (DLR) Carsten Hartmann (DLR-GSOC) Tobias Hecking (DLR) Michael Felderer (DLR)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Opitz.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:20–11:40",
                 "title": "Autonomous Federation of Earth Observation Constellations: An End-to-End Demonstrator based on the DOMINO Architecture",
-                "authors": "Cyrille De Lussy (Airbus Defence and Space) Stéphane Derrien (Cap Gemini) Marie Devant (Cap Gemini) Jean-Loup Farges (DTIS, ONERA, Université de Toulouse) Jonathan Guerra (Airbus Defence and Space) Philippe Pavero (Airbus Defence and Space) Gauthier Picard (DTIS, ONERA, Université de Toulouse) Cédric Pralet (DTIS, ONERA, Université de Toulouse) Jakub Rezler (ITTI) Raivis Skadiņš (Tilde)"
+                "authors": "Cyrille De Lussy (Airbus Defence and Space) Stéphane Derrien (Cap Gemini) Marie Devant (Cap Gemini) Jean-Loup Farges (DTIS, ONERA, Université de Toulouse) Jonathan Guerra (Airbus Defence and Space) Philippe Pavero (Airbus Defence and Space) Gauthier Picard (DTIS, ONERA, Université de Toulouse) Cédric Pralet (DTIS, ONERA, Université de Toulouse) Jakub Rezler (ITTI) Raivis Skadiņš (Tilde)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/DeLussy.pdf"
               },
               {
                 "is_heading": false,
                 "time": "11:40–12:00",
                 "title": "Solving Organizational Multi-Robot Task Allocation Problems with Consensus-based Auctions",
-                "authors": "Victor Guillet (DTIS, ONERA, Université de Toulouse) Christophe Grand (DTIS, ONERA, Université de Toulouse) Charles Lesire (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse)"
+                "authors": "Victor Guillet (DTIS, ONERA, Université de Toulouse) Christophe Grand (DTIS, ONERA, Université de Toulouse) Charles Lesire (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Guillet.pdf"
               },
               {
                 "is_heading": false,
                 "time": "12:00–12:20",
                 "title": "Multi-Satellite Observation Tasks Dispatching and Scheduling",
-                "authors": "Romain Barrault (DTIS, ONERA, Université de Toulouse) Cedric Pralet (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse) Eric Sawyer (CNES, Université de Toulouse)"
+                "authors": "Romain Barrault (DTIS, ONERA, Université de Toulouse) Cedric Pralet (DTIS, ONERA, Université de Toulouse) Gauthier Picard (DTIS, ONERA, Université de Toulouse) Eric Sawyer (CNES, Université de Toulouse)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Barrault.pdf"
               },
               {
                 "is_heading": true,
@@ -3204,19 +3322,22 @@
                 "is_heading": false,
                 "time": "14:00–14:50",
                 "title": "Invited Talk: A Game-Theoretic Framework for Distributed Fallback Autonomy in Satellite Mega-Constellations",
-                "authors": "Daniel Reynolds (MIT)"
+                "authors": "Daniel Reynolds (MIT)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Reynolds-Combined.pdf"
               },
               {
                 "is_heading": false,
                 "time": "14:50–15:10",
                 "title": "Satellite scheduling optimization for BepiColombo STC channel target-phase [ presentation ]",
-                "authors": "Alberto Avallone (University of Modena and Reggio Emilia) Francesco Sala (University of Modena and Reggio Emilia) Manuel Iori (University of Modena and Reggio Emilia)"
+                "authors": "Alberto Avallone (University of Modena and Reggio Emilia) Francesco Sala (University of Modena and Reggio Emilia) Manuel Iori (University of Modena and Reggio Emilia)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Avallone.pdf"
               },
               {
                 "is_heading": false,
                 "time": "15:10–15:30",
                 "title": "Toward Automated Operational Assist in Satellite Fleet Management via Organizational MARL",
-                "authors": "Julien Soulé (University of Luxembourg)"
+                "authors": "Julien Soulé (University of Luxembourg)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Soule.pdf"
               },
               {
                 "is_heading": true,
@@ -3234,25 +3355,29 @@
                 "is_heading": false,
                 "time": "16:15–16:35",
                 "title": "Decentralized Dynamic Task Allocation under Limited Communication Range",
-                "authors": "Alexandre Kha (Thales CortAIx-Labs) Mathieu Marchand (Thales CortAIx-Labs) Aurélie Beynier (Lip6-CNRS) Christophe Labreuche (Thales CortAIx-Labs)"
+                "authors": "Alexandre Kha (Thales CortAIx-Labs) Mathieu Marchand (Thales CortAIx-Labs) Aurélie Beynier (Lip6-CNRS) Christophe Labreuche (Thales CortAIx-Labs)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Kha.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:35–16:55",
                 "title": "A queue-based approach for fine-tuning the efficiency-fairness tradeoff in distributed satellite scheduling",
-                "authors": "Shai Krigman (Ariel University) Tal Grinshpoun (Ariel University) Lihi Dery (Ariel University)"
+                "authors": "Shai Krigman (Ariel University) Tal Grinshpoun (Ariel University) Lihi Dery (Ariel University)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Krigman.pdf"
               },
               {
                 "is_heading": false,
                 "time": "16:55–17:15",
                 "title": "Onboard Planning and Scheduling for Autonomous Satellite Operations Towards Multi-Agent Cooperation",
-                "authors": "Riccardo Maderna (AIKO Srl) Marco Morgese (AIKO Srl)"
+                "authors": "Riccardo Maderna (AIKO Srl) Marco Morgese (AIKO Srl)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Maderna.pdf"
               },
               {
                 "is_heading": false,
                 "time": "17:15–17:35",
                 "title": "Effects of Lookahead and Communication Dynamics on Multi-Agent Potential-Field Rover Navigation",
-                "authors": "Timothy Flavin (University of Tulsa) Sandip Sen (University of Tulsa) Joe Shymanski (University of Tulsa)"
+                "authors": "Timothy Flavin (University of Tulsa) Sandip Sen (University of Tulsa) Joe Shymanski (University of Tulsa)",
+                "paper_link": "https://mas-space.github.io/aamas2026ws/papers/Flavin.pdf"
               },
               {
                 "is_heading": true,

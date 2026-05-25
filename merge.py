@@ -49,6 +49,8 @@ def item_to_paper(item: dict) -> dict:
         "title": item.get("title", "").strip(),
         "authors": item.get("authors", "") or "",
     }
+    if item.get("paper_link"):
+        paper["paper_link"] = item["paper_link"]
     return paper
 
 

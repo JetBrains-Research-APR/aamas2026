@@ -13,7 +13,7 @@ import json, os, re
 from dataclasses import dataclass, asdict
 from typing import Optional
 
-from extractors import SITE_EXTRACTORS
+from extractors import SITE_EXTRACTORS, SITE_PAPER_LINK_EXTRACTORS, attach_paper_links
 
 SITES_DIR = "sites"
 
@@ -121,6 +121,7 @@ class Item:
     title: str
     authors: str = ""
     is_header: bool = False
+    paper_link: Optional[str] = None
 
 
 # Sentinels that, when seen mid-stream, stop further continuation text from
@@ -208,7 +209,8 @@ def process(file: str) -> dict:
         items_raw = SITE_EXTRACTORS[key](html)
         items = [Item(time=it["time"], end=it.get("end"),
                       title=it["title"], authors=it.get("authors", ""),
-                      is_header=bool(it.get("is_header"))) for it in items_raw]
+                      is_header=bool(it.get("is_header")),
+                      paper_link=it.get("paper_link")) for it in items_raw]
         text_chars = len(html)
         region_chars = -1  # not applicable
         extractor = "structured:" + key
@@ -219,6 +221,12 @@ def process(file: str) -> dict:
         text_chars = len(text)
         region_chars = len(region)
         extractor = "text"
+    # Text-parsed sites get their paper links by post-merging a title->link
+    # map extracted from the HTML against the parsed items. (Structured
+    # extractors already attach links inline.)
+    if key in SITE_PAPER_LINK_EXTRACTORS:
+        link_pairs = SITE_PAPER_LINK_EXTRACTORS[key](html)
+        attach_paper_links(items, link_pairs)
     return {
         "file": os.path.basename(file),
         "extractor": extractor,

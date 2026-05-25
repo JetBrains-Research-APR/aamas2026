@@ -345,6 +345,15 @@ a.tt-col-name:hover .ext-icon {
   vertical-align: 1px;
 }
 
+.paper-link {
+  text-decoration: none;
+  margin-left: 4px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.paper-link:hover { opacity: 1; }
+
 /* Heading paper rows (Session 1, Coffee Break, etc.) */
 .paper.heading {
   background: var(--separator);

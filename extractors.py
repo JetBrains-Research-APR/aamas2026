@@ -9,7 +9,34 @@ Each extractor returns a list of dicts shaped like the generic parser:
 """
 from __future__ import annotations
 import re
+from difflib import SequenceMatcher
 from typing import Optional
+from urllib.parse import urljoin
+
+
+# Per-site base URLs used to absolutize relative paper hrefs (./papers/x.pdf etc.).
+SITE_BASE_URLS = {
+    "EMAS_tue": "https://emas-workshop.github.io/2026/",
+    "EMAS_mon": "https://emas-workshop.github.io/2026/",
+    "ASI_mon": "https://panosd.eu/asi2026/",
+    "MASSpace_tue": "https://mas-space.github.io/aamas2026ws/",
+    "CLaRAMAS_tue": "https://claramas-workshop.github.io/claramas2026/schedule/",
+    "COINE_mon": "https://coin-workshop.github.io/coine-2026-paphos/",
+    "NEXUS_mon": "https://nexus.telecom-paris.fr/",
+    "OptLearnMAS_mon": "https://optlearnmas.github.io/",
+    "GAIW_tue": "https://gtep-workshops.github.io/gaiw2026/",
+}
+
+
+def absolutize(href: str, base: Optional[str]) -> str:
+    if not href:
+        return href
+    href = href.strip()
+    if href.startswith(("http://", "https://", "mailto:")):
+        return href
+    if not base:
+        return href
+    return urljoin(base, href)
 
 
 # --------- HTML helpers ---------
@@ -71,14 +98,18 @@ def looks_like_header(title: str) -> bool:
 
 
 def emit(items: list[dict], time: str, end: Optional[str], title: str,
-         authors: str = "", is_header: Optional[bool] = None):
+         authors: str = "", is_header: Optional[bool] = None,
+         paper_link: Optional[str] = None):
     title = title.strip(" \t.,;:|·-—–")
     if not title and not is_header:
         return
     if is_header is None:
         is_header = looks_like_header(title)
-    items.append({"time": time, "end": end, "title": title,
-                  "authors": strip_tags(authors), "is_header": is_header})
+    out = {"time": time, "end": end, "title": title,
+           "authors": strip_tags(authors), "is_header": is_header}
+    if paper_link:
+        out["paper_link"] = paper_link
+    items.append(out)
 
 
 # --------- EMAS ----------
@@ -113,9 +144,11 @@ def _extract_emas_items(fragment: str) -> list[dict]:
             inner = title_m.group(1)
             em_m = re.search(r"<em[^>]*>(.*?)</em>", inner, re.DOTALL)
             title = strip_tags(em_m.group(1) if em_m else inner)
+            link_m = re.search(r'<a[^>]*href="([^"]+)"', inner)
+            paper_link = absolutize(link_m.group(1), SITE_BASE_URLS.get("EMAS_tue")) if link_m else None
             auth_m = re.search(r'<span[^>]*class="authors"[^>]*>(.*?)</span>', body, re.DOTALL)
             authors = strip_tags(auth_m.group(1)) if auth_m else ""
-            emit(items, start, end, title, authors, is_header=False)
+            emit(items, start, end, title, authors, is_header=False, paper_link=paper_link)
         else:
             text = strip_tags(body)
             if text:
@@ -264,13 +297,15 @@ def extract_asi(html: str) -> list[dict]:
             if prelude_text:
                 emit(items, start, end, prelude_text, is_header=True)
             for li in lis:
-                # ASI <li> format: "Author1, Author2 and Author3. <a>TITLE</a>"
+                # ASI <li> format: "Author1, Author2 and Author3. <a href="...">TITLE</a>"
                 a_m = ASI_LINK_TITLE.search(li)
                 if a_m:
                     title = strip_tags(a_m.group(1))
                     pre = li[: a_m.start()]
                     authors = strip_tags(pre).rstrip(". ").strip()
-                    emit(items, start, end, title, authors, is_header=False)
+                    href_m = re.search(r'<a[^>]*href="([^"]+)"', li)
+                    paper_link = absolutize(href_m.group(1), SITE_BASE_URLS.get("ASI_mon")) if href_m else None
+                    emit(items, start, end, title, authors, is_header=False, paper_link=paper_link)
                 else:
                     text = strip_tags(li)
                     emit(items, start, end, text)
@@ -315,12 +350,15 @@ def extract_masspace(html: str) -> list[dict]:
             time_raw = c2_text
             start, end = normalize_time(time_raw)
             title_html = c3
+            # Capture the paper link from the "[<a>paper</a>]" block before stripping it.
+            link_m = re.search(r'\[\s*<a[^>]*href="([^"]+)"[^>]*>\s*paper\s*</a>\s*\]', title_html)
+            paper_link = absolutize(link_m.group(1), SITE_BASE_URLS.get("MASSpace_tue")) if link_m else None
             # Strip the "[paper]" link block — it's metadata, not part of the title
             title_html_clean = re.sub(r"\[\s*<a[^>]*>paper</a>\s*\]", "", title_html)
             # Also strip the "Invited Talk:" prefix if present, but keep title
             title = strip_tags(title_html_clean)
             authors = strip_tags(c4)
-            emit(items, start, end, title, authors, is_header=False)
+            emit(items, start, end, title, authors, is_header=False, paper_link=paper_link)
         # else: row has no time at all — skip
     return items
 
@@ -372,14 +410,160 @@ def extract_claramas(html: str) -> list[dict]:
     if paper_table_match:
         paper_html = paper_table_match.group(0)
         for m in CLARAMAS_PAPER_ROW.finditer(paper_html):
-            title = strip_tags(m.group("title"))
+            title_html = m.group("title")
+            title = strip_tags(title_html)
             if title.lower() in ("paper title", ""):
                 continue
+            href_m = re.search(r'<a[^>]*href="([^"]+)"', title_html)
+            paper_link = absolutize(href_m.group(1), SITE_BASE_URLS.get("CLaRAMAS_tue")) if href_m else None
             start_time = strip_tags(m.group("start"))
             ts, te = normalize_time(start_time) if start_time else ("", None)
             authors = strip_tags(m.group("authors"))
-            emit(items, ts, te, title, authors, is_header=False)
+            emit(items, ts, te, title, authors, is_header=False, paper_link=paper_link)
     return items
+
+
+# --------- Paper-link extractors for text-parsed workshops ----------
+# These return a list of {"title": ..., "link": ...} pairs scraped directly
+# from the HTML. extract.py uses attach_paper_links() to merge them into the
+# items produced by the line-based parser via fuzzy title matching, since
+# those workshops don't have structured extractors and the parsed titles
+# carry noise like trailing "[PDF]" or merged-in author lines.
+
+
+def _norm_title(s: str) -> str:
+    """Lowercase, strip punctuation/whitespace for tolerant matching."""
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+
+def _paper_links_coine(html: str) -> list[dict]:
+    """COINE: each <tr> row has <td>...<b>TITLE</b><a href="./papers/paper_N.pdf">[PDF]</a>...</td>.
+    Walk rows so a bold-tag opening doesn't span across rows when its row lacks a paper link."""
+    out = []
+    base = SITE_BASE_URLS.get("COINE_mon")
+    row_pat = re.compile(r"<tr[^>]*>(?P<body>.*?)</tr>", re.DOTALL)
+    inner = re.compile(
+        r'<b[^>]*>(?P<title>[^<]*(?:<(?!/?b\b)[^>]*>[^<]*)*)</b>\s*'
+        r'<a[^>]*href="(?P<href>[^"]*paper_\d+\.pdf)"',
+        re.DOTALL,
+    )
+    for rm in row_pat.finditer(html):
+        m = inner.search(rm.group("body"))
+        if m:
+            title = strip_tags(m.group("title"))
+            if title:
+                out.append({"title": title, "link": absolutize(m.group("href"), base)})
+    return out
+
+
+def _paper_links_nexus(html: str) -> list[dict]:
+    """NEXUS: <div class="schedule-talk-title"><a href="...">TITLE</a></div>"""
+    out = []
+    base = SITE_BASE_URLS.get("NEXUS_mon")
+    pat = re.compile(
+        r'<div[^>]*class="schedule-talk-title"[^>]*>\s*'
+        r'<a[^>]*href="(?P<href>[^"]+)"[^>]*>(?P<title>.*?)</a>',
+        re.DOTALL,
+    )
+    for m in pat.finditer(html):
+        out.append({"title": strip_tags(m.group("title")),
+                    "link": absolutize(m.group("href"), base)})
+    return out
+
+
+def _paper_links_gaiw(html: str) -> list[dict]:
+    """GAIW: 4-column table — TIME | TITLE | AUTHORS | PDF-link. Title is the
+    cell whose neighbor cell contains the .pdf link; in practice that's cells[1]."""
+    out = []
+    base = SITE_BASE_URLS.get("GAIW_tue")
+    row_pat = re.compile(r"<tr[^>]*>(?P<body>.*?)</tr>", re.DOTALL)
+    cell_pat = re.compile(r"<td[^>]*>(.*?)</td>", re.DOTALL)
+    pdf_pat = re.compile(r'<a[^>]*href="([^"]*\.pdf)"', re.IGNORECASE)
+    for rm in row_pat.finditer(html):
+        body = rm.group("body")
+        href_m = pdf_pat.search(body)
+        if not href_m:
+            continue
+        cells = cell_pat.findall(body)
+        if len(cells) < 2:
+            continue
+        title = strip_tags(cells[1])
+        if not title or title.lower() in ("title", "paper title"):
+            continue
+        out.append({"title": title, "link": absolutize(href_m.group(1), base)})
+    return out
+
+
+def _paper_links_optlearnmas(html: str) -> list[dict]:
+    """OptLearnMAS: each spotlight paper is a <li id="spN"><strong>TITLE</strong>
+    <a href="./files/spN.pdf">…</a></li>. Walk <li> blocks so the non-greedy
+    .*? can't reach across into a later <li>'s <a href>."""
+    out = []
+    base = SITE_BASE_URLS.get("OptLearnMAS_mon")
+    li_pat = re.compile(r'<li\s[^>]*id="sp\d+"[^>]*>(?P<body>.*?)</li>', re.DOTALL)
+    inner = re.compile(
+        r'<strong[^>]*>(?P<title>[^<]+)</strong>\s*'
+        r'<a[^>]*href="(?P<href>[^"]*\.pdf)"',
+        re.DOTALL,
+    )
+    for lm in li_pat.finditer(html):
+        m = inner.search(lm.group("body"))
+        if m:
+            out.append({"title": strip_tags(m.group("title")),
+                        "link": absolutize(m.group("href"), base)})
+    return out
+
+
+SITE_PAPER_LINK_EXTRACTORS = {
+    "COINE_mon": _paper_links_coine,
+    "NEXUS_mon": _paper_links_nexus,
+    "GAIW_tue": _paper_links_gaiw,
+    "OptLearnMAS_mon": _paper_links_optlearnmas,
+}
+
+
+_MIN_TITLE_NORM_LEN = 20  # min normalized length for any match
+
+
+def attach_paper_links(items, link_pairs):
+    """Match each item's title against the link map and set item.paper_link.
+
+    Both sides are normalized to lowercase alphanumeric. We pick, per item,
+    the link whose normalized title shares the longest contiguous substring
+    with the item's normalized title, provided that substring is at least
+    _MIN_TITLE_NORM_LEN characters. This handles three real-world cases at
+    once: trailing noise in text-parsed titles ("[PDF]", appended authors),
+    leading boilerplate ("Contributed talk : ..."), and mid-title truncation
+    by the text parser's 300-char cap. Items with no link in the map (e.g.
+    breaks, keynotes) stay untouched.
+    """
+    if not link_pairs:
+        return
+    norm_pairs = [(p, _norm_title(p["title"])) for p in link_pairs]
+    norm_pairs = [x for x in norm_pairs if len(x[1]) >= _MIN_TITLE_NORM_LEN]
+    for it in items:
+        if isinstance(it, dict):
+            title = it.get("title", "")
+            is_header = it.get("is_header")
+        else:
+            title = getattr(it, "title", "") or ""
+            is_header = getattr(it, "is_header", False)
+        if is_header or not title:
+            continue
+        nt = _norm_title(title)
+        if len(nt) < _MIN_TITLE_NORM_LEN:
+            continue
+        best, best_len = None, _MIN_TITLE_NORM_LEN - 1
+        for p, np_ in norm_pairs:
+            m = SequenceMatcher(None, nt, np_, autojunk=False).find_longest_match()
+            if m.size > best_len:
+                best_len = m.size
+                best = p
+        if best is not None:
+            if isinstance(it, dict):
+                it["paper_link"] = best["link"]
+            else:
+                it.paper_link = best["link"]
 
 
 # --------- Dispatch ----------
