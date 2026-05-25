@@ -20,6 +20,7 @@ const state = {
   activeDay: 'All',    // 'All' or one of the day strings
   search: '',
   starredOnly: false,
+  hidePast: false,
 };
 
 // ---------------- DOM helpers ----------------
@@ -27,6 +28,69 @@ const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 }[c]));
+
+// ---------------- Time / past-event helpers ----------------
+// "Hide past" uses the user's local clock. For attendees that's Cyprus time
+// (matching the schedule); remote viewers in other zones get a best-effort
+// approximation — same compromise as the existing "today" tab highlighting.
+function getNowContext() {
+  const d = new Date();
+  const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  return { today, nowMin: d.getHours() * 60 + d.getMinutes() };
+}
+
+function parseEndMinutes(s) {
+  if (!s) return null;
+  const matches = [...String(s).matchAll(/(\d{1,2})[:h.](\d{2})/g)];
+  if (!matches.length) return null;
+  const last = matches[matches.length - 1];
+  const h = parseInt(last[1], 10), m = parseInt(last[2], 10);
+  if (h > 23 || m > 59) return null;
+  return h * 60 + m;
+}
+
+function getDayDate(day) {
+  return (DAY_LABELS[day.day] || {}).date || null;
+}
+
+function isDayPast(day, ctx) {
+  const dd = getDayDate(day);
+  return dd ? dd < ctx.today : false;
+}
+
+function isSlotPast(slot, dayDate, ctx) {
+  if (!dayDate) return false;
+  if (dayDate < ctx.today) return true;
+  if (dayDate > ctx.today) return false;
+  const end = parseEndMinutes(slot.slot);
+  return end != null && end <= ctx.nowMin;
+}
+
+function isPaperPast(p, dayDate, ctx) {
+  if (!dayDate) return false;
+  if (dayDate < ctx.today) return true;
+  if (dayDate > ctx.today) return false;
+  const end = parseEndMinutes(p.time);
+  return end != null && end <= ctx.nowMin;
+}
+
+// Hide a session whose timed papers are all past, so a finished all-day
+// workshop (whose slot has no parseable time) doesn't render an empty card.
+function isSessionPast(s, dayDate, ctx) {
+  if (!dayDate) return false;
+  if (dayDate < ctx.today) return true;
+  if (dayDate > ctx.today) return false;
+  const papers = s.papers || [];
+  if (!papers.length) return false;
+  let anyTimed = false, anyFuture = false;
+  for (const p of papers) {
+    const end = parseEndMinutes(p.time);
+    if (end == null) { anyFuture = true; continue; } // untimed → assume future
+    anyTimed = true;
+    if (end > ctx.nowMin) anyFuture = true;
+  }
+  return anyTimed && !anyFuture;
+}
 
 // ---------------- Load + ID assignment ----------------
 async function loadData() {
@@ -128,7 +192,7 @@ function paperHTML(p) {
   </div>`;
 }
 
-function sessionHTML(s) {
+function sessionHTML(s, dayDate, ctx) {
   const starred = state.starred.has(s._id);
   const badges = [];
   if (s.track) badges.push(badgeHTML(s.track, 'track'));
@@ -145,7 +209,8 @@ function sessionHTML(s) {
     : '';
 
   const visiblePapers = (s.papers || [])
-    .filter((p) => p.is_heading || paperMatchesSearch(p, state.search));
+    .filter((p) => p.is_heading || paperMatchesSearch(p, state.search))
+    .filter((p) => !ctx || !isPaperPast(p, dayDate, ctx));
   const papersHTML = visiblePapers.map(paperHTML).join('');
 
   // Collapsible body. Default-collapsed for very-long sessions (DC). When
@@ -178,14 +243,18 @@ function sessionHTML(s) {
 }
 
 function dayHTML(day) {
+  const dayDate = getDayDate(day);
+  const ctx = state.hidePast ? getNowContext() : null;
+  const slots = ctx ? day.slots.filter((s) => !isSlotPast(s, dayDate, ctx)) : day.slots;
   let visibleSessions = 0;
-  const slotsHTML = day.slots.map((slot) => {
-    const sessions = slot.sessions.filter(isSessionVisible);
+  const slotsHTML = slots.map((slot) => {
+    let sessions = slot.sessions.filter(isSessionVisible);
+    if (ctx) sessions = sessions.filter((s) => !isSessionPast(s, dayDate, ctx));
     visibleSessions += sessions.length;
     if (!sessions.length) return '';
     return `<section class="slot">
       <h3 class="slot-heading">${esc(slot.slot)}</h3>
-      <div class="session-grid">${sessions.map(sessionHTML).join('')}</div>
+      <div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, ctx)).join('')}</div>
     </section>`;
   }).join('');
 
@@ -214,9 +283,13 @@ function renderTabs() {
 }
 
 function render() {
-  const days = state.activeDay === 'All'
+  let days = state.activeDay === 'All'
     ? state.data
     : state.data.filter((d) => d.day === state.activeDay);
+  if (state.hidePast) {
+    const ctx = getNowContext();
+    days = days.filter((d) => !isDayPast(d, ctx));
+  }
   const parts = days.map(dayHTML);
   const html = parts.map((p) => p.html).join('');
   const total = parts.reduce((acc, p) => acc + p.count, 0);
@@ -259,6 +332,12 @@ function wireEvents() {
   // Starred-only toggle
   $('#starredOnly').addEventListener('change', (e) => {
     state.starredOnly = e.target.checked;
+    render();
+  });
+
+  // Hide-past toggle
+  $('#hidePast').addEventListener('change', (e) => {
+    state.hidePast = e.target.checked;
     render();
   });
 
