@@ -13,6 +13,8 @@ import json, os, re
 from dataclasses import dataclass, asdict
 from typing import Optional
 
+from extractors import SITE_EXTRACTORS
+
 SITES_DIR = "sites"
 
 # Time patterns:
@@ -100,7 +102,10 @@ def find_schedule_region(text: str) -> str:
     stop_pat = re.compile(
         r"^\s*(organi[sz]ers?|organi[sz]ation|committees?|sponsors|important\s+dates|"
         r"call\s+for\s+papers|invited\s+speakers|registration|venue|contact|"
-        r"program\s+committee|programme\s+committee|past\s+editions|related\s+work)\s*$",
+        r"program\s+committee|programme\s+committee|past\s+editions|related\s+work|"
+        # Page-footer / page-chrome lines that frequently appear after the schedule
+        r"banner\s+photo|report\s+abuse|page\s+details|page\s+updated|google\s+sites|"
+        r"this\s+site\s+uses\s+cookies|subscribe|contact\s+us\s+at|accepted\s+papers)\s*$",
         re.IGNORECASE | re.MULTILINE,
     )
     m = stop_pat.search(region, pos=80)
@@ -118,12 +123,24 @@ class Item:
     is_header: bool = False
 
 
+# Sentinels that, when seen mid-stream, stop further continuation text from
+# being appended to the current item's title (catches "Abstract -", page footer markers).
+STOP_ACCUMULATION_RE = re.compile(
+    r"^(Abstract\b[\s\-—–:]|Banner\s+photo|Report\s+abuse|Page\s+details|"
+    r"Page\s+updated|Google\s+Sites|This\s+site\s+uses\s+cookies|Contact\s+us\s+at|"
+    r"Subscribe\b|Session\s+\d|Track\s+\d)",
+    re.IGNORECASE,
+)
+
+
 def parse_schedule(text: str) -> list[Item]:
     """Walk lines; when a line starts with (or contains) a time, treat it as a new item.
-    Continuation lines (no time) append to the previous item until the next time.
+    Continuation lines (no time) append to the previous item until the next time
+    or a stop-accumulation sentinel is hit.
     """
     items: list[Item] = []
     cur: Optional[Item] = None
+    stop_current = False
 
     for raw in text.splitlines():
         ln = raw.strip(" \t |•·-—–")
@@ -141,8 +158,12 @@ def parse_schedule(text: str) -> list[Item]:
             is_hdr = any(kw in low for kw in HEADER_KEYWORDS) and len(rest) < 100
             cur = Item(time=start_time, end=end_time, title=rest, is_header=is_hdr)
             items.append(cur)
+            stop_current = False
         else:
-            if cur is None:
+            if cur is None or stop_current:
+                continue
+            if STOP_ACCUMULATION_RE.match(ln):
+                stop_current = True
                 continue
             # Continuation: append to title or authors
             # Heuristic: if the line looks like a list of names (commas, capital words), it's authors.
@@ -181,13 +202,28 @@ def looks_like_authors(s: str) -> bool:
 
 def process(file: str) -> dict:
     html = open(file, encoding="utf-8", errors="ignore").read()
-    text = html_to_text(html)
-    region = find_schedule_region(text)
-    items = parse_schedule(region)
+    key = os.path.splitext(os.path.basename(file))[0]
+    # Dispatch to per-site structured extractor if one exists; otherwise text parser.
+    if key in SITE_EXTRACTORS:
+        items_raw = SITE_EXTRACTORS[key](html)
+        items = [Item(time=it["time"], end=it.get("end"),
+                      title=it["title"], authors=it.get("authors", ""),
+                      is_header=bool(it.get("is_header"))) for it in items_raw]
+        text_chars = len(html)
+        region_chars = -1  # not applicable
+        extractor = "structured:" + key
+    else:
+        text = html_to_text(html)
+        region = find_schedule_region(text)
+        items = parse_schedule(region)
+        text_chars = len(text)
+        region_chars = len(region)
+        extractor = "text"
     return {
         "file": os.path.basename(file),
-        "text_chars": len(text),
-        "region_chars": len(region) if region else 0,
+        "extractor": extractor,
+        "text_chars": text_chars,
+        "region_chars": region_chars,
         "item_count": len(items),
         "header_count": sum(1 for i in items if i.is_header),
         "items": [asdict(i) for i in items],

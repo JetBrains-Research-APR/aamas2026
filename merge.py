@@ -7,23 +7,35 @@ both day's session entries — splitting cleanly is brittle without explicit
 day markers.
 """
 import json
+import os
 from copy import deepcopy
 
-# Map workshop-extracts.json keys -> list of (day_substr, session_code) targets in PROGRAM_DATA.
-# A key may attach to multiple sessions (e.g., the two-day ALA).
-MAPPINGS: dict[str, list[tuple[str, str]]] = {
-    "ALA_mon": [("Monday, 25 May", "ALA"), ("Tuesday, 26 May", "ALA")],
-    "ARMS_mon": [("Monday, 25 May", "ARMS")],
-    "ASI_mon": [("Monday, 25 May", "ASI")],
-    "ATT_tue": [("Tuesday, 26 May", "ATT")],
-    "CLaRAMAS_tue": [("Tuesday, 26 May", "CLaRAMAS")],
-    "COINE_mon": [("Monday, 25 May", "COINE")],
-    "EMAS_tue": [("Monday, 25 May", "EMAS"), ("Tuesday, 26 May", "EMAS")],
-    "GAIW_tue": [("Tuesday, 26 May", "GAIW")],
-    "MASSpace_tue": [("Tuesday, 26 May", "MASSpace")],
-    "NEXUS_mon": [("Monday, 25 May", "NEXUS")],
-    "OptLearnMAS_mon": [("Monday, 25 May", "OptLearnMAS")],
-    "SE_mon": [("Monday, 25 May", "SE")],
+from extractors import extract_emas_day1, extract_emas_day2
+
+# Map workshop-extracts.json keys -> list of (day_substr, session_code, override_extractor_fn) targets.
+# override_extractor_fn (if set) is run against the original site HTML and replaces the merged items
+# for that target — used for two-day workshops where a single page covers both days (EMAS).
+MAPPINGS: dict[str, list[tuple]] = {
+    "ALA_mon": [("Monday, 25 May", "ALA", None), ("Tuesday, 26 May", "ALA", None)],
+    "ARMS_mon": [("Monday, 25 May", "ARMS", None)],
+    "ASI_mon": [("Monday, 25 May", "ASI", None)],
+    "ATT_tue": [("Tuesday, 26 May", "ATT", None)],
+    "CLaRAMAS_tue": [("Tuesday, 26 May", "CLaRAMAS", None)],
+    "COINE_mon": [("Monday, 25 May", "COINE", None)],
+    "EMAS_tue": [
+        ("Monday, 25 May", "EMAS", "emas_day1"),
+        ("Tuesday, 26 May", "EMAS", "emas_day2"),
+    ],
+    "GAIW_tue": [("Tuesday, 26 May", "GAIW", None)],
+    "MASSpace_tue": [("Tuesday, 26 May", "MASSpace", None)],
+    "NEXUS_mon": [("Monday, 25 May", "NEXUS", None)],
+    "OptLearnMAS_mon": [("Monday, 25 May", "OptLearnMAS", None)],
+    "SE_mon": [("Monday, 25 May", "SE", None)],
+}
+
+OVERRIDE_EXTRACTORS = {
+    "emas_day1": extract_emas_day1,
+    "emas_day2": extract_emas_day2,
 }
 
 
@@ -58,12 +70,22 @@ def main():
         if not ex or not ex.get("items"):
             print(f"  SKIP {key}: no extract items")
             continue
-        papers = [item_to_paper(it) for it in ex["items"]]
-        for day, code in targets:
+        default_papers = [item_to_paper(it) for it in ex["items"]]
+        for day, code, override_key in targets:
             sess = sessions_index.get((day, code))
             if not sess:
                 missing_targets.append((key, day, code))
                 continue
+            # If this target uses an override extractor (e.g. day-split EMAS),
+            # re-run it against the original HTML file to get a day-specific slice.
+            if override_key:
+                site_path = os.path.join("sites", ex["file"])
+                with open(site_path, encoding="utf-8", errors="ignore") as f:
+                    src_html = f.read()
+                items = OVERRIDE_EXTRACTORS[override_key](src_html)
+                papers = [item_to_paper(it) for it in items]
+            else:
+                papers = default_papers
             # Replace papers if currently empty; otherwise extend.
             if not sess.get("papers"):
                 sess["papers"] = deepcopy(papers)
@@ -71,7 +93,7 @@ def main():
                 sess["papers"].extend(deepcopy(papers))
             sess["schedule_source"] = ex.get("file", key)
             merged_count += 1
-            print(f"  MERGED {key} -> {day} / {code}  ({len(papers)} items)")
+            print(f"  MERGED {key} -> {day} / {code}  ({len(papers)} items{', day-split' if override_key else ''})")
 
     if missing_targets:
         print("\nMissing session targets:")
