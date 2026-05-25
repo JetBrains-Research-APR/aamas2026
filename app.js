@@ -21,7 +21,10 @@ const state = {
   search: '',
   starredOnly: false,
   hidePast: false,
+  nextWindow: false,
 };
+
+const NEXT_WINDOW_MIN = 120;
 
 // ---------------- DOM helpers ----------------
 const $ = (sel) => document.querySelector(sel);
@@ -29,8 +32,8 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 }[c]));
 
-// ---------------- Time / past-event helpers ----------------
-// "Hide past" uses the user's local clock. For attendees that's Cyprus time
+// ---------------- Time-based filters ("Hide past" + "Next 2 hours") ----------------
+// Both filters use the user's local clock. For attendees that's Cyprus time
 // (matching the schedule); remote viewers in other zones get a best-effort
 // approximation — same compromise as the existing "today" tab highlighting.
 function getNowContext() {
@@ -39,57 +42,100 @@ function getNowContext() {
   return { today, nowMin: d.getHours() * 60 + d.getMinutes() };
 }
 
-function parseEndMinutes(s) {
-  if (!s) return null;
-  const matches = [...String(s).matchAll(/(\d{1,2})[:h.](\d{2})/g)];
-  if (!matches.length) return null;
-  const last = matches[matches.length - 1];
-  const h = parseInt(last[1], 10), m = parseInt(last[2], 10);
-  if (h > 23 || m > 59) return null;
-  return h * 60 + m;
-}
-
 function getDayDate(day) {
   return (DAY_LABELS[day.day] || {}).date || null;
 }
 
-function isDayPast(day, ctx) {
-  const dd = getDayDate(day);
-  return dd ? dd < ctx.today : false;
+// Pull a {start,end} minute range out of a string like "Morning · 10:45–12:30"
+// or "8:45-9:15". For single-time entries ("8:45"), assume a 30-minute event.
+function parseTimeRange(s) {
+  if (!s) return null;
+  const ms = [...String(s).matchAll(/(\d{1,2})[:h.](\d{2})/g)];
+  if (!ms.length) return null;
+  const toMin = (m) => {
+    const h = parseInt(m[1], 10), mn = parseInt(m[2], 10);
+    return (h > 23 || mn > 59) ? null : h * 60 + mn;
+  };
+  const start = toMin(ms[0]);
+  if (start == null) return null;
+  let end = ms.length >= 2 ? toMin(ms[ms.length - 1]) : null;
+  if (end == null || end <= start) end = start + 30;
+  return { start, end };
 }
 
-function isSlotPast(slot, dayDate, ctx) {
-  if (!dayDate) return false;
-  if (dayDate < ctx.today) return true;
-  if (dayDate > ctx.today) return false;
-  const end = parseEndMinutes(slot.slot);
-  return end != null && end <= ctx.nowMin;
+// Bundle the active time filters into one object (or null if neither is on).
+// "Next 2 hours" is strictly stricter than "Hide past", so when both are on
+// the window logic takes over and hidePast becomes redundant.
+function buildTimeFilter() {
+  if (!state.hidePast && !state.nextWindow) return null;
+  return {
+    now: getNowContext(),
+    hidePast: state.hidePast,
+    windowMin: state.nextWindow ? NEXT_WINDOW_MIN : null,
+  };
 }
 
-function isPaperPast(p, dayDate, ctx) {
-  if (!dayDate) return false;
-  if (dayDate < ctx.today) return true;
-  if (dayDate > ctx.today) return false;
-  const end = parseEndMinutes(p.time);
-  return end != null && end <= ctx.nowMin;
-}
-
-// Hide a session whose timed papers are all past, so a finished all-day
-// workshop (whose slot has no parseable time) doesn't render an empty card.
-function isSessionPast(s, dayDate, ctx) {
-  if (!dayDate) return false;
-  if (dayDate < ctx.today) return true;
-  if (dayDate > ctx.today) return false;
-  const papers = s.papers || [];
-  if (!papers.length) return false;
-  let anyTimed = false, anyFuture = false;
-  for (const p of papers) {
-    const end = parseEndMinutes(p.time);
-    if (end == null) { anyFuture = true; continue; } // untimed → assume future
-    anyTimed = true;
-    if (end > ctx.nowMin) anyFuture = true;
+// Core predicate: does an event on dayDate occupying [startMin, endMin] pass
+// the active time filter? Null start/end mean "unknown time" → keep visible
+// (we don't want untimed entries hidden by accident).
+function rangePasses(dayDate, startMin, endMin, tf) {
+  if (!tf) return true;
+  if (!dayDate) return true;
+  const t = tf.now;
+  if (dayDate < t.today) return false;
+  if (tf.windowMin != null) {
+    if (dayDate > t.today) return false;
+    if (startMin == null || endMin == null) return true;
+    return startMin < t.nowMin + tf.windowMin && endMin > t.nowMin;
   }
-  return anyTimed && !anyFuture;
+  // hidePast only
+  if (dayDate > t.today) return true;
+  return endMin == null || endMin > t.nowMin;
+}
+
+function dayPasses(day, tf) {
+  if (!tf) return true;
+  const dd = getDayDate(day);
+  if (!dd) return true;
+  if (dd < tf.now.today) return false;
+  if (tf.windowMin != null && dd > tf.now.today) return false;
+  return true;
+}
+
+function slotPasses(slot, dayDate, tf) {
+  const r = parseTimeRange(slot.slot);
+  return rangePasses(dayDate, r?.start ?? null, r?.end ?? null, tf);
+}
+
+function paperPasses(p, dayDate, slotRange, tf) {
+  if (!tf) return true;
+  const r = parseTimeRange(p.time);
+  if (r) return rangePasses(dayDate, r.start, r.end, tf);
+  // Untimed paper: inherit the enclosing slot's range when available, so that
+  // a main-track session whose papers have no individual times still survives
+  // when its "Morning · 10:45–12:30" slot is currently active.
+  if (slotRange) return rangePasses(dayDate, slotRange.start, slotRange.end, tf);
+  return rangePasses(dayDate, null, null, tf);
+}
+
+// A session passes if at least one of its timed papers passes. If no paper is
+// timed, fall back to the slot range. This hides a finished all-day workshop
+// (slot title has no time, all timed papers past) and keeps a workshop where
+// only the next 2 hours' worth of talks remain.
+function sessionPasses(s, dayDate, slotRange, tf) {
+  if (!tf) return true;
+  if (!dayDate || dayDate < tf.now.today) return rangePasses(dayDate, null, null, tf);
+  const papers = s.papers || [];
+  let anyTimed = false;
+  for (const p of papers) {
+    const r = parseTimeRange(p.time);
+    if (!r) continue;
+    anyTimed = true;
+    if (rangePasses(dayDate, r.start, r.end, tf)) return true;
+  }
+  if (anyTimed) return false;
+  if (slotRange) return rangePasses(dayDate, slotRange.start, slotRange.end, tf);
+  return rangePasses(dayDate, null, null, tf);
 }
 
 // ---------------- Load + ID assignment ----------------
@@ -192,7 +238,7 @@ function paperHTML(p) {
   </div>`;
 }
 
-function sessionHTML(s, dayDate, ctx) {
+function sessionHTML(s, dayDate, slotRange, tf) {
   const starred = state.starred.has(s._id);
   const badges = [];
   if (s.track) badges.push(badgeHTML(s.track, 'track'));
@@ -210,7 +256,7 @@ function sessionHTML(s, dayDate, ctx) {
 
   const visiblePapers = (s.papers || [])
     .filter((p) => p.is_heading || paperMatchesSearch(p, state.search))
-    .filter((p) => !ctx || !isPaperPast(p, dayDate, ctx));
+    .filter((p) => paperPasses(p, dayDate, slotRange, tf));
   const papersHTML = visiblePapers.map(paperHTML).join('');
 
   // Collapsible body. Default-collapsed for very-long sessions (DC). When
@@ -242,19 +288,19 @@ function sessionHTML(s, dayDate, ctx) {
   </article>`;
 }
 
-function dayHTML(day) {
+function dayHTML(day, tf) {
   const dayDate = getDayDate(day);
-  const ctx = state.hidePast ? getNowContext() : null;
-  const slots = ctx ? day.slots.filter((s) => !isSlotPast(s, dayDate, ctx)) : day.slots;
+  const slots = tf ? day.slots.filter((s) => slotPasses(s, dayDate, tf)) : day.slots;
   let visibleSessions = 0;
   const slotsHTML = slots.map((slot) => {
+    const slotRange = parseTimeRange(slot.slot);
     let sessions = slot.sessions.filter(isSessionVisible);
-    if (ctx) sessions = sessions.filter((s) => !isSessionPast(s, dayDate, ctx));
+    if (tf) sessions = sessions.filter((s) => sessionPasses(s, dayDate, slotRange, tf));
     visibleSessions += sessions.length;
     if (!sessions.length) return '';
     return `<section class="slot">
       <h3 class="slot-heading">${esc(slot.slot)}</h3>
-      <div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, ctx)).join('')}</div>
+      <div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, slotRange, tf)).join('')}</div>
     </section>`;
   }).join('');
 
@@ -283,14 +329,12 @@ function renderTabs() {
 }
 
 function render() {
+  const tf = buildTimeFilter();
   let days = state.activeDay === 'All'
     ? state.data
     : state.data.filter((d) => d.day === state.activeDay);
-  if (state.hidePast) {
-    const ctx = getNowContext();
-    days = days.filter((d) => !isDayPast(d, ctx));
-  }
-  const parts = days.map(dayHTML);
+  if (tf) days = days.filter((d) => dayPasses(d, tf));
+  const parts = days.map((d) => dayHTML(d, tf));
   const html = parts.map((p) => p.html).join('');
   const total = parts.reduce((acc, p) => acc + p.count, 0);
   const root = $('#program');
@@ -338,6 +382,12 @@ function wireEvents() {
   // Hide-past toggle
   $('#hidePast').addEventListener('change', (e) => {
     state.hidePast = e.target.checked;
+    render();
+  });
+
+  // Next-2-hours toggle
+  $('#nextWindow').addEventListener('change', (e) => {
+    state.nextWindow = e.target.checked;
     render();
   });
 
