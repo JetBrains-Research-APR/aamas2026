@@ -7,7 +7,9 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 // and must never be put here.)
 const SUPABASE_URL = 'https://sicuhjmgtnwmaorjcfbh.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_RfLvvEG_rJ0vsh4myvsjpQ_yHW2BM0v';
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  auth: { flowType: 'implicit' },
+});
 
 const STAR_KEY = 'aamas2026:starred';
 const BORING_KEY = 'aamas2026:boring';
