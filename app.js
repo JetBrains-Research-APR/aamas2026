@@ -5,8 +5,8 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 // Level Security on the user_state table is what actually gates per-user
 // access. (The JWT Secret shown next to it in the dashboard is server-only
 // and must never be put here.)
-const SUPABASE_URL = 'https://ansxkxeyymseplguydft.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_OoHl0pdjcT_cznxJR084dA_0W-qv_2d';
+const SUPABASE_URL = 'https://sicuhjmgtnwmaorjcfbh.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_RfLvvEG_rJ0vsh4myvsjpQ_yHW2BM0v';
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const STAR_KEY = 'aamas2026:starred';
