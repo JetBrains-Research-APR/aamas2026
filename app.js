@@ -1,6 +1,14 @@
-'use strict';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 // ---------------- Constants ----------------
+// Supabase project credentials. The publishable key is safe to commit — Row
+// Level Security on the user_state table is what actually gates per-user
+// access. (The JWT Secret shown next to it in the dashboard is server-only
+// and must never be put here.)
+const SUPABASE_URL = 'https://ansxkxeyymseplguydft.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_OoHl0pdjcT_cznxJR084dA_0W-qv_2d';
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 const STAR_KEY = 'aamas2026:starred';
 const BORING_KEY = 'aamas2026:boring';
 const PREFS_KEY = 'aamas2026:prefs';
@@ -21,6 +29,7 @@ const state = {
   data: [],            // augmented PROGRAM_DATA with stable IDs
   starred: new Set(),  // string IDs
   boring: new Set(),   // string IDs marked "not interested"
+  uid: null,           // Supabase auth user id when signed in, else null
   activeDay: 'All',    // 'All' or one of the day strings
   search: '',
   starredOnly: false,
@@ -183,6 +192,7 @@ function toggleStar(id) {
   if (state.starred.has(id)) state.starred.delete(id);
   else state.starred.add(id);
   saveStars();
+  pushCloudState();
 }
 
 // ---------------- "Boring" mark persistence ----------------
@@ -205,6 +215,7 @@ function toggleBoring(id) {
   if (state.boring.has(id)) state.boring.delete(id);
   else state.boring.add(id);
   saveBoring();
+  pushCloudState();
 }
 
 // ---------------- Toggle persistence ----------------
@@ -223,6 +234,101 @@ function savePrefs() {
   const p = {};
   for (const k of PREF_FIELDS) p[k] = state[k];
   localStorage.setItem(PREFS_KEY, JSON.stringify(p));
+}
+
+// ---------------- Cloud sync (Supabase) ----------------
+// When the user is signed in, mirror the local star/boring sets to a row in
+// the `user_state` table. localStorage continues to be written as a warm
+// cache and signed-out fallback. Auth-area UI is wired up by renderAuthArea.
+
+async function signInWithGoogle() {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo: window.location.href },
+  });
+  if (error) console.warn('signInWithGoogle failed:', error);
+}
+
+async function doSignOut() {
+  const { error } = await supabase.auth.signOut();
+  if (error) console.warn('signOut failed:', error);
+}
+
+// Push the current local marks to the cloud (full-row upsert). Fire-and-forget.
+function pushCloudState() {
+  if (!state.uid) return;
+  supabase
+    .from('user_state')
+    .upsert({
+      user_id: state.uid,
+      starred: [...state.starred],
+      boring: [...state.boring],
+      updated_at: new Date().toISOString(),
+    })
+    .then(({ error }) => { if (error) console.warn('cloud upsert failed:', error); });
+}
+
+// Driven by supabase.auth.onAuthStateChange and the initial INITIAL_SESSION
+// event. Migrates local marks up on first sign-in; on subsequent sign-ins,
+// unions local with cloud (presence-favouring merge — no deletions
+// propagated) and overwrites local state from the merged arrays.
+async function handleAuthChange(session) {
+  const user = session?.user;
+  if (!user) {
+    state.uid = null;
+    renderAuthArea(null);
+    return;
+  }
+  state.uid = user.id;
+  const { data, error } = await supabase
+    .from('user_state')
+    .select('starred, boring')
+    .eq('user_id', user.id)
+    .maybeSingle();
+  if (error) {
+    console.warn('user_state fetch failed:', error);
+    renderAuthArea(user);
+    return;
+  }
+  if (!data) {
+    // First sign-in for this account: lift local marks into the new row.
+    const insertRes = await supabase.from('user_state').insert({
+      user_id: user.id,
+      starred: [...state.starred],
+      boring: [...state.boring],
+    });
+    if (insertRes.error) console.warn('initial user_state insert failed:', insertRes.error);
+  } else {
+    const mergedStarred = new Set([...(data.starred || []), ...state.starred]);
+    const mergedBoring = new Set([...(data.boring || []), ...state.boring]);
+    state.starred = mergedStarred;
+    state.boring = mergedBoring;
+    saveStars();    // refresh the localStorage cache
+    saveBoring();
+    pushCloudState();  // upsert the merged arrays back
+  }
+  renderAuthArea(user);
+  render();
+}
+
+function renderAuthArea(user) {
+  const el = $('#authArea');
+  if (!el) return;
+  if (!user) {
+    el.innerHTML = `<button class="auth-btn" id="signInBtn">Sign in with Google</button>`;
+    const btn = $('#signInBtn');
+    if (btn) btn.onclick = signInWithGoogle;
+    return;
+  }
+  const avatarUrl = user.user_metadata?.avatar_url;
+  const avatar = avatarUrl ? `<img class="auth-avatar" src="${esc(avatarUrl)}" alt="">` : '';
+  const name = user.email || user.user_metadata?.name || 'signed in';
+  el.innerHTML = `
+    ${avatar}
+    <span class="auth-email">${esc(name)}</span>
+    <button class="auth-link" id="signOutBtn">sign out</button>`;
+  const btn = $('#signOutBtn');
+  if (btn) btn.onclick = doSignOut;
 }
 
 // ---------------- Matching / filtering ----------------
@@ -646,6 +752,12 @@ async function main() {
     renderTabs();
     render();
     wireEvents();
+
+    // Auth: paint the signed-out baseline, then subscribe — the SDK will
+    // immediately fire onAuthStateChange with INITIAL_SESSION if a saved
+    // session exists, which then triggers the cloud-merge path.
+    renderAuthArea(null);
+    supabase.auth.onAuthStateChange((_event, session) => handleAuthChange(session));
   } catch (err) {
     $('#loadingMsg').hidden = true;
     const e = $('#errorMsg');
