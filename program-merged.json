@@ -1610,9 +1610,202 @@
             "track": "Workshop",
             "description": "One-day workshop · May 25, 2026",
             "link": "https://extraamas.ehealth.hevs.ch/program.html",
-            "papers": [],
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "09:00–09:05",
+                "title": "Welcome and Opening Remarks",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "09:05–10:30",
+                "title": "Session 1: Foundations & Limits of Explainability in Agent(s/ic) Systems (Chair: Prof. Davide Calvaresi)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "09:05–09:35",
+                "title": "Keynote: Re-evaluating Responsible AI in the AI-First Age",
+                "authors": "Rachele Carli"
+              },
+              {
+                "is_heading": false,
+                "time": "09:35–09:50",
+                "title": "Making AI Memory Transparent: Explainability for Persistent State in Agentic Systems",
+                "authors": "Matthew Stewart"
+              },
+              {
+                "is_heading": false,
+                "time": "09:50–10:05",
+                "title": "Predicting the Cost of Explanations in Optimisation Problems",
+                "authors": "Roger Lera-Leri et al."
+              },
+              {
+                "is_heading": false,
+                "time": "10:05–10:20",
+                "title": "The Illusion of Explainability with LLMs and LLM-Agents",
+                "authors": "Sara Montese, Sergio Alvarez-Napagao, Victor Gimenez-Abalos, Ulises Cortés"
+              },
+              {
+                "is_heading": false,
+                "time": "10:20–10:30",
+                "title": "Explainable Agentic Oversight: A Multi-Agent System for Transparent Groundwater Regulatory Decision Support (Demo)",
+                "authors": "Ayyub Alzahem et al."
+              },
+              {
+                "is_heading": true,
+                "time": "10:30–11:00",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "11:00–12:30",
+                "title": "Session 2: Trust, Ethics, and Human-Centred Explainable AI (Chair: Dr. Rachele Carli & Dr. Amro Najjar)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "11:00–11:15",
+                "title": "Social Dynamics of Trust Formation in XAI Systems: A Multi-Agent Approach",
+                "authors": "Narendar Kumar et al."
+              },
+              {
+                "is_heading": false,
+                "time": "11:15–11:30",
+                "title": "Perceived Trustworthiness of Large Language Models and Attitudes Toward Them",
+                "authors": "Muaadh Noman et al."
+              },
+              {
+                "is_heading": false,
+                "time": "11:30–11:45",
+                "title": "Auditing LLM Multi-Agent Systems via Protocolized Interaction Traces",
+                "authors": "Azzedine Idir Ait Said et al."
+              },
+              {
+                "is_heading": false,
+                "time": "11:45–12:00",
+                "title": "Bias Mitigation in Quantum Machine Learning",
+                "authors": "Alessandro Marchetti et al."
+              },
+              {
+                "is_heading": false,
+                "time": "12:00–12:15",
+                "title": "Designing a Trustworthy Intelligent Agent for Legal Reasoning",
+                "authors": "Alessia Donata Camarda et al."
+              },
+              {
+                "is_heading": false,
+                "time": "12:15–12:30",
+                "title": "Emergence of Secondary Norm from Distributed Interaction of Autonomous Agents",
+                "authors": "Edoardo Zappia et al."
+              },
+              {
+                "is_heading": true,
+                "time": "12:30–14:00",
+                "title": "Lunch Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "14:00–15:30",
+                "title": "Session 3: Methods for Explainability: Argumentation, Learning, and Hybrid AI (Chair: Prof. Kary Främling)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "14:05–14:35",
+                "title": "Keynote: Human-AI Collaboration: From Support to Dependency and What Design Can Do",
+                "authors": "Prof. Dr. Raian Ali"
+              },
+              {
+                "is_heading": false,
+                "time": "14:35–14:50",
+                "title": "ArgVLLMs: Structuring Multimodal Reasoning",
+                "authors": "Tianyi Ma, Francesca Toni, Soteris Demetriou"
+              },
+              {
+                "is_heading": false,
+                "time": "14:50–15:05",
+                "title": "Towards Trustworthy Temporal Event Reasoning",
+                "authors": "Sukriti Bhattacharya et al."
+              },
+              {
+                "is_heading": false,
+                "time": "15:05–15:20",
+                "title": "M2-PALE: Explaining Multi-Agent MCTS–Minimax Hybrids",
+                "authors": "Yiyu Qian et al."
+              },
+              {
+                "is_heading": false,
+                "time": "15:20–15:30",
+                "title": "Critic-Driven Voronoi-Quantization for Distilling Deep RL Policies",
+                "authors": "Senne Deproost et al."
+              },
+              {
+                "is_heading": true,
+                "time": "15:30–16:00",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "16:00–17:45",
+                "title": "Session 4: Systems and Applications of Explainable Multi-Agent Systems (Chair: Dr. Amro Najjar)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "16:00–16:15",
+                "title": "Evolutionary Rule Extraction from Corporate Default Prediction Models",
+                "authors": "Desiré Fabbretti et al."
+              },
+              {
+                "is_heading": false,
+                "time": "16:15–16:30",
+                "title": "User-Adapted and Interactive Explainability with Knowledge Graphs",
+                "authors": "Kary Främling"
+              },
+              {
+                "is_heading": false,
+                "time": "16:30–16:45",
+                "title": "Translation as a Decision Space: A Multi-Agent Perspective",
+                "authors": "Hasan Alkhder et al."
+              },
+              {
+                "is_heading": false,
+                "time": "16:45–17:00",
+                "title": "Rashomon Memory",
+                "authors": "Albert Sadowski, Jaroslaw A. Chudziak"
+              },
+              {
+                "is_heading": false,
+                "time": "17:00–17:15",
+                "title": "Talk2Prolog: from Controlled Natural Language to Prolog",
+                "authors": "Laura Fuciarelli et al."
+              },
+              {
+                "is_heading": false,
+                "time": "17:15–17:30",
+                "title": "Toward Explanatory Equilibrium: Verifiable Reasoning as a Coordination Mechanism under Asymmetric Information",
+                "authors": "Feliks Bańka and Jaroslaw A. Chudziak"
+              },
+              {
+                "is_heading": false,
+                "time": "17:30–17:45",
+                "title": "Exploring Vision Features with Sparse Autoencoders",
+                "authors": "Marlin Lee et al."
+              },
+              {
+                "is_heading": true,
+                "time": "17:45–17:50",
+                "title": "Closing Remarks and Thanks",
+                "authors": ""
+              }
+            ],
             "room": "Aphrodite B",
-            "schedule_status": "not yet published on workshop site"
+            "schedule_source": "extraamas.histlab.hevs.ch/data/program.json"
           },
           {
             "key": "NEXUS Workshop",
@@ -2077,9 +2270,94 @@
             "track": "Workshop",
             "description": "One-day workshop · May 26, 2026",
             "link": "https://sites.google.com/view/ai4cni-26/",
-            "papers": [],
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "09:20",
+                "title": "Opening Remarks",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "09:35",
+                "title": "Research Paper: Stress-Testing Learned Dispatch Policies for Maritime Logistics Networks",
+                "authors": "Sanjna Ravichandar, Peter Morales"
+              },
+              {
+                "is_heading": false,
+                "time": "10:00",
+                "title": "Highlight: CONSENT: A Negotiation Framework for Leveraging User Flexibility in Vehicle-to-Building Charging under Uncertainty",
+                "authors": "Rishav Sen, Fangqi Liu, Jose Paolo Talusan, Ava Pettet, Yoshinori Suzue, Mark Bailey, Ayan Mukhopadhyay, Abhishek Dubey"
+              },
+              {
+                "is_heading": true,
+                "time": "10:15",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "11:00",
+                "title": "Keynote: Engineering Secure Critical Infrastructures in the Age of AI, IT, and Smart Systems",
+                "authors": "Omar Abdul Wahab (Polytechnique Montréal)"
+              },
+              {
+                "is_heading": false,
+                "time": "12:00",
+                "title": "Demo: Evaluating Autonomous Cyber Agents Against Virtualised Critical Infrastructure",
+                "authors": "Philippos Maximos Giavridis"
+              },
+              {
+                "is_heading": true,
+                "time": "12:30",
+                "title": "Lunch",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "14:00",
+                "title": "Research Paper: Building Better Environments for Autonomous Cyber Defence",
+                "authors": "Chris Hicks, Elizabeth Bates, Shae McFadden, Isaac Symes Thompson, Myles Foley, Ed Chapman, Nicolas Espinosa-Dice, Ankita Samaddar, Joshua Sylvester, Himanshu Neema, Nicholas Butts, Nate Foster, Ahmad Ridley, Zoe M, Paul Jones"
+              },
+              {
+                "is_heading": false,
+                "time": "14:25",
+                "title": "Research Paper: Grid Integration of AI Data Centers: A Brief Review of Energy Storage Systems Solutions",
+                "authors": "Sina Mohammadi, Marcus Chen I Wada, Rouzbeh Haghighi, Hualong Liu, Wencong Su, Wayne Wang, Archit Bhatnagar, Ang Chen"
+              },
+              {
+                "is_heading": false,
+                "time": "14:50",
+                "title": "Research Paper: Telecom Plan-to-Field Verification: Evidence-Grounded Plan-to-Field Telecom Anomaly Verification with Tool-Using Multimodal Agents",
+                "authors": "Mahdi Setayesh, James Lee, Paul Butler, Kelsey Huebner, Maitreyi A. Nair, Shane Patterson"
+              },
+              {
+                "is_heading": true,
+                "time": "15:15",
+                "title": "Coffee Break and Poster Session",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "16:15",
+                "title": "WIP: Linear Probes for Strategic Deception Generalize Across Three LLM Families in Multi-Agent Negotiation",
+                "authors": "Teanna Sims"
+              },
+              {
+                "is_heading": false,
+                "time": "16:30",
+                "title": "Keynote: Using high performance computing and distributed optimization to solve an EU-wide electricity generation capacity expansion problem subject to network constraints",
+                "authors": "Anthony Papavasiliou (NTUA)"
+              },
+              {
+                "is_heading": true,
+                "time": "17:30",
+                "title": "Closing Remarks",
+                "authors": ""
+              }
+            ],
             "room": "Akamas C",
-            "schedule_status": "not yet published on workshop site"
+            "schedule_source": "sites.google.com/view/ai4cni-26 + Google Sheet agenda"
           },
           {
             "key": "ALA Workshop",
@@ -2652,9 +2930,130 @@
             "track": "Workshop",
             "description": "One-day workshop · May 26, 2026",
             "link": "https://sites.google.com/view/cmas2026",
-            "papers": [],
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "08:45",
+                "title": "Welcome",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "09:00–10:15",
+                "title": "Session 1 — Citizen Values, Fairness, and Collective Behaviour (Chair: Mayesha Tasnim)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "09:00",
+                "title": "Biased social norms of cooperation in large language models",
+                "authors": "Alexandre S. Pires, Fernando P. Santos"
+              },
+              {
+                "is_heading": false,
+                "time": "09:25",
+                "title": "Resolving Complex Social Dilemmas by Aligning Preferences with Counterfactual Regret",
+                "authors": "Shuqing Shi, Yudi Zhang, Joel Z Leibo, Yali Du"
+              },
+              {
+                "is_heading": false,
+                "time": "09:50",
+                "title": "Long-term Effects of Fairness Metrics on Population Dynamics",
+                "authors": "Mirthe Dankloff, Yining Yuan, Nirav Ajmeri, Vahid Yazdanpanah"
+              },
+              {
+                "is_heading": true,
+                "time": "10:15–11:00",
+                "title": "Coffee break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "11:00–12:30",
+                "title": "Session 2 — Keynote and Citizen Information Ecosystems (Chair: Sebastian Stein)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "11:00",
+                "title": "Keynote: From Friction to Synergy: Building Human-Aligned Agents with Multi-Objective Reinforcement Learning",
+                "authors": "Roxana Rădulescu (Utrecht University)"
+              },
+              {
+                "is_heading": false,
+                "time": "12:00",
+                "title": "Algorithmic Recommendations Alter the Spread of Competing Information",
+                "authors": "João N.B. Fonseca, Giuseppe M. Ferro, Fernando P. Santos"
+              },
+              {
+                "is_heading": true,
+                "time": "12:30–14:00",
+                "title": "Lunch break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "14:00–15:30",
+                "title": "Session 3 — Citizen-Centric Services, Mobility, and Human-AI Interaction (Chair: Dimitris Michailidis)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "14:00",
+                "title": "A Citizen-Centric Multi-Agent Framework for Emotionally Intelligent Human–AI Interaction (online)",
+                "authors": "Sam Nallaperuma-Herzberg, Rishabh Balse, Sonia Koszut, Lilith Stenhouse, Anna Bevan, Tristan Bekinschtein, Pietro Lio"
+              },
+              {
+                "is_heading": false,
+                "time": "14:25",
+                "title": "Tripartite Tender Game Framework for MARL in Crowdsource First-Last Mile Logistics (online)",
+                "authors": "Aleksandra Vatian, Ivan Tomilov, Natalia Gusarova, Igor Kondrashov, Ekaterina Batsanova, Aleksandr Chernyavskii"
+              },
+              {
+                "is_heading": false,
+                "time": "14:50",
+                "title": "Human-Centric AI Modeling for Fair and Cooperative Microtransit Ride Prioritization",
+                "authors": "Divya Sundaresan, Danushka Edirimanna, Liwen Du, Eleni Bardaka, Samitha Samaranayake, Munindar Singh"
+              },
+              {
+                "is_heading": false,
+                "time": "15:10",
+                "title": "Strategic Exploitation of Placement Guarantees in Random Serial Dictatorship: Modeling the Amsterdam School Choice System",
+                "authors": "Mayesha Tasnim, Joseph Trevorrow, Nirav Ajmeri"
+              },
+              {
+                "is_heading": true,
+                "time": "15:30–16:15",
+                "title": "Coffee break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "16:15–17:30",
+                "title": "Session 4 — Accountability, Institutions, and Citizen Behaviour (Chair: Sebastian Stein)",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "16:15",
+                "title": "The Challenge of Realistic Personas in Generative Agent-Based Modeling",
+                "authors": "Dimitris Michailidis, Fernando P. Santos"
+              },
+              {
+                "is_heading": false,
+                "time": "16:40",
+                "title": "Explainability through Accountability in Citizen-Centric Multiagent Systems",
+                "authors": "Matteo Baldoni, Cristina Baroglio, Elisa Marengo, Roberto Micalizio, Stefano Tedeschi"
+              },
+              {
+                "is_heading": false,
+                "time": "17:10",
+                "title": "The Role of Regulatory Institutions in Strategic Lending",
+                "authors": "Mayesha Tasnim, Marta C. Couto, Giovanni Sileno"
+              }
+            ],
             "room": "Athena",
-            "schedule_status": "not yet published on workshop site"
+            "schedule_source": "sites.google.com/view/cmas2026/schedule"
           },
           {
             "key": "CLaRAMAS Workshop",
@@ -3227,9 +3626,148 @@
             "track": "Workshop",
             "description": "One-day workshop · May 26, 2026",
             "link": "https://mabsworkshop.github.io/",
-            "papers": [],
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "08:30–08:50",
+                "title": "Arrival and Registration",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "08:50–09:00",
+                "title": "General Introduction (Workshop Organizers)",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "09:00–10:20",
+                "title": "First Session: MABS of Social Dynamics",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "09:00–09:20",
+                "title": "Endogenous Social Identity in Agent-Based Economics: From Micro-Categorisation to Macro-Firm Structure",
+                "authors": "Alejandra López de Aberasturi Gómez, Daniel Jarne Ornia, Arnau Quera-Bofarull, Jordi Sabater-Mir, Carles Sierra"
+              },
+              {
+                "is_heading": false,
+                "time": "09:20–09:40",
+                "title": "Adaptive Self-Preservation in Flocking Systems: How Dynamic Risk Thresholds Shape Collective Safety",
+                "authors": "Jiaman Li, William G. Kennedy"
+              },
+              {
+                "is_heading": false,
+                "time": "09:40–10:00",
+                "title": "Impact of Network Rewiring on Opinion and Belief Echo Chambers",
+                "authors": "Hiro Kataoka, Jérôme Euzenat, Koji Hasebe"
+              },
+              {
+                "is_heading": false,
+                "time": "10:00–10:20",
+                "title": "Social Norm Dynamics in a Behavioral Epidemic Model",
+                "authors": "Christos Charalambous"
+              },
+              {
+                "is_heading": true,
+                "time": "10:30–11:00",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "11:00–12:20",
+                "title": "Second Session: Application of MABS for Socio-Ecological Systems",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "11:00–11:20",
+                "title": "Assessing Traffic's Impact on Urban Heat Islands: An Agent-Based Approach Using Real-World and Simulated Data",
+                "authors": "Aygun Ismayilova, Manon Prédhumeau"
+              },
+              {
+                "is_heading": false,
+                "time": "11:20–12:20",
+                "title": "Keynote: Toward Agent-based Simulations of Complex Human Societies",
+                "authors": "Jacob Crandall (Brigham Young University)"
+              },
+              {
+                "is_heading": true,
+                "time": "12:30–14:00",
+                "title": "Networking and Lunch",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "14:00–15:20",
+                "title": "Third Session: LLMs to Support MABS",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "14:00–14:20",
+                "title": "Separating Diagnosis from Control: Auditable Policy Adaptation in Agent-Based Simulations with LLM-Based Diagnostics",
+                "authors": "Shaoxin Zhong, Yuchen Su, Michael J. Witbrock"
+              },
+              {
+                "is_heading": false,
+                "time": "14:20–14:40",
+                "title": "Deliberation in Silico: Validating LLM Multi-Agent Simulation Against Verbatim Council Records",
+                "authors": "Christine Sheldon, Michael Laver, Slava Jankin"
+              },
+              {
+                "is_heading": false,
+                "time": "14:40–15:00",
+                "title": "Simulating Social Media with LLM-Powered Agents: Demography, Psychography, and Disinformation Dynamics",
+                "authors": "Edoardo Allegrini, Edoardo Di Paolo, Angelo Spognardi, Marinella Petrocchi"
+              },
+              {
+                "is_heading": false,
+                "time": "15:00–15:20",
+                "title": "Towards a Principled Multi-Agent Approach to Simulating Social Platforms",
+                "authors": "Stephanie Anneris Malvicini, Gerardo Simari, Maria Vanina Martinez"
+              },
+              {
+                "is_heading": true,
+                "time": "15:30–16:00",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "16:00–17:00",
+                "title": "Fourth Session: MABS Methodologies and Tools",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "16:00–16:20",
+                "title": "CHAD: A Scalable Turn-Based Simulator for Complex Heterogeneous Agent Dynamics",
+                "authors": "Patrick Liston, Artem Lensky, Charles Gretton"
+              },
+              {
+                "is_heading": false,
+                "time": "16:20–16:40",
+                "title": "From Model-Based Screening to Data-Driven Surrogates: A Multi-Stage Workflow for Exploring Stochastic Agent-Based Models",
+                "authors": "Paul Saves, Matthieu Mastio, Nicolas Verstaevel, Benoit Gaudou"
+              },
+              {
+                "is_heading": false,
+                "time": "16:40–17:00",
+                "title": "Towards a Multi-Model Approach to Agent-Based Social Simulation for Policymaking",
+                "authors": "Emil Johansson, Fabian Lorig, Paul Davidsson"
+              },
+              {
+                "is_heading": true,
+                "time": "17:00–17:30",
+                "title": "Panel Discussion / Round Table + Closing",
+                "authors": ""
+              }
+            ],
             "room": "Leda",
-            "schedule_status": "not yet published on workshop site"
+            "schedule_source": "mabsworkshop.github.io/program"
           },
           {
             "key": "MASSpace Workshop",
@@ -3396,9 +3934,65 @@
             "track": "Workshop",
             "description": "One-day workshop · May 26, 2026",
             "link": "https://sites.google.com/view/rad-ai/rad-ai/cfp",
-            "papers": [],
+            "papers": [
+              {
+                "is_heading": true,
+                "time": "09:00–09:10",
+                "title": "Opening Remarks",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "09:10–10:00",
+                "title": "Session 1",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "09:10–10:00",
+                "title": "Invited Talk: Dr. Réka Markovich",
+                "authors": "Réka Markovich (University of Luxembourg)"
+              },
+              {
+                "is_heading": false,
+                "time": "10:00–10:30",
+                "title": "Invited Talk (Part 1): Dr. Stefan Sarkadi",
+                "authors": "Stefan Sarkadi (University of Lincoln)"
+              },
+              {
+                "is_heading": true,
+                "time": "10:30–11:00",
+                "title": "Coffee Break",
+                "authors": ""
+              },
+              {
+                "is_heading": true,
+                "time": "11:00–12:30",
+                "title": "Session 2",
+                "authors": ""
+              },
+              {
+                "is_heading": false,
+                "time": "11:00–11:30",
+                "title": "Invited Talk (Part 2): Dr. Stefan Sarkadi",
+                "authors": "Stefan Sarkadi (University of Lincoln)"
+              },
+              {
+                "is_heading": false,
+                "time": "11:30–12:30",
+                "title": "Invited Talk: Dr. Felipe Meneguzzi",
+                "authors": "Felipe Meneguzzi (University of Aberdeen)"
+              },
+              {
+                "is_heading": true,
+                "time": "12:30–14:00",
+                "title": "Social Lunch",
+                "authors": ""
+              }
+            ],
             "room": "Zeus",
-            "schedule_status": "not yet published on workshop site"
+            "schedule_status": "partial — afternoon program not yet published",
+            "schedule_source": "sites.google.com/view/rad-ai/rad-ai/program"
           }
         ]
       },
