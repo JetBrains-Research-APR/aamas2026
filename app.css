@@ -577,9 +577,7 @@ a.tt-col-name:hover .ext-icon {
 }
 
 .tt-col-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: break-word;
 }
 
 .tt-col-room {
