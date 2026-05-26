@@ -32,6 +32,7 @@ const state = {
   starred: new Set(),  // string IDs
   boring: new Set(),   // string IDs marked "not interested"
   uid: null,           // Supabase auth user id when signed in, else null
+  markCounts: new Map(),  // item_id -> { stars: number, borings: number }; filled on sign-in
   activeDay: 'All',    // 'All' or one of the day strings
   search: '',
   starredOnly: false,
@@ -270,6 +271,26 @@ function pushCloudState() {
     .then(({ error }) => { if (error) console.warn('cloud upsert failed:', error); });
 }
 
+// Aggregate ★ / 👎 counts per item, fetched via a security-definer RPC that
+// exposes only group counts (no per-user data). Signed-out users skip the
+// fetch and see no counts at all.
+async function fetchMarkCounts() {
+  if (!state.uid) { state.markCounts = new Map(); return; }
+  const { data, error } = await supabase.rpc('item_mark_counts');
+  if (error) { console.warn('item_mark_counts failed:', error); return; }
+  state.markCounts = new Map(
+    (data || []).map((r) => [r.item_id, { stars: Number(r.stars), borings: Number(r.borings) }]),
+  );
+}
+
+// Optimistic local bump after the viewer toggles their own mark, so the count
+// updates instantly without waiting for the next reload.
+function bumpCount(id, kind, delta) {
+  const cur = state.markCounts.get(id) || { stars: 0, borings: 0 };
+  cur[kind] = Math.max(0, cur[kind] + delta);
+  state.markCounts.set(id, cur);
+}
+
 // Driven by supabase.auth.onAuthStateChange and the initial INITIAL_SESSION
 // event. Migrates local marks up on first sign-in; on subsequent sign-ins,
 // unions local with cloud (presence-favouring merge — no deletions
@@ -278,7 +299,9 @@ async function handleAuthChange(session) {
   const user = session?.user;
   if (!user) {
     state.uid = null;
+    state.markCounts = new Map();
     renderAuthArea(null);
+    render();
     return;
   }
   state.uid = user.id;
@@ -309,6 +332,7 @@ async function handleAuthChange(session) {
     saveBoring();
     pushCloudState();  // upsert the merged arrays back
   }
+  await fetchMarkCounts();
   renderAuthArea(user);
   render();
 }
@@ -369,13 +393,19 @@ function badgeHTML(text, cls) {
 function starButton(id, isHeading = false) {
   if (isHeading) return '';
   const on = state.starred.has(id);
-  return `<button class="star ${on ? 'on' : ''}" data-star-id="${esc(id)}" aria-label="${on ? 'Unstar' : 'Star'}">${on ? '★' : '☆'}</button>`;
+  const cnt = state.uid ? (state.markCounts.get(id)?.stars || 0) : 0;
+  const countHTML = cnt > 0 ? `<span class="mark-count">${cnt}</span>` : '';
+  return `<button class="star ${on ? 'on' : ''}" data-star-id="${esc(id)}" aria-label="${on ? 'Unstar' : 'Star'}">`
+       + `<span class="mark-glyph">${on ? '★' : '☆'}</span>${countHTML}</button>`;
 }
 
 function boringButton(id, isHeading = false) {
   if (isHeading) return '';
   const on = state.boring.has(id);
-  return `<button class="boring ${on ? 'on' : ''}" data-boring-id="${esc(id)}" aria-label="${on ? 'Unmark boring' : 'Mark boring'}" title="${on ? 'Unmark as boring' : 'Mark as boring (hide when filter is on)'}">👎</button>`;
+  const cnt = state.uid ? (state.markCounts.get(id)?.borings || 0) : 0;
+  const countHTML = cnt > 0 ? `<span class="mark-count">${cnt}</span>` : '';
+  return `<button class="boring ${on ? 'on' : ''}" data-boring-id="${esc(id)}" aria-label="${on ? 'Unmark boring' : 'Mark boring'}" title="${on ? 'Unmark as boring' : 'Mark as boring (hide when filter is on)'}">`
+       + `<span class="mark-glyph">👎</span>${countHTML}</button>`;
 }
 
 function paperHTML(p) {
@@ -706,6 +736,9 @@ function wireEvents() {
   bindToggle('hideBoring', 'hideBoring');
 
   // Star + boring button clicks (event delegation on the program root).
+  // After toggling, we bump the local count map and re-render the button via
+  // outerHTML using the same template — this keeps the glyph + count span in
+  // sync without ad-hoc DOM surgery.
   $('#program').addEventListener('click', (e) => {
     const starBtn = e.target.closest('.star');
     if (starBtn) {
@@ -713,11 +746,10 @@ function wireEvents() {
       if (!id) return;
       toggleStar(id);
       const on = state.starred.has(id);
-      starBtn.classList.toggle('on', on);
-      starBtn.textContent = on ? '★' : '☆';
-      starBtn.setAttribute('aria-label', on ? 'Unstar' : 'Star');
+      bumpCount(id, 'stars', on ? 1 : -1);
       const card = starBtn.closest('.session, .paper, .tt-card, .tt-col-header, .tt-group-item');
       if (card) card.classList.toggle('starred', on);
+      starBtn.outerHTML = starButton(id);
       $('#starCount').textContent = String(state.starred.size);
       if (state.starredOnly) render();
       return;
@@ -728,8 +760,8 @@ function wireEvents() {
       if (!id) return;
       toggleBoring(id);
       const on = state.boring.has(id);
-      boringBtn.classList.toggle('on', on);
-      boringBtn.setAttribute('aria-label', on ? 'Unmark boring' : 'Mark boring');
+      bumpCount(id, 'borings', on ? 1 : -1);
+      boringBtn.outerHTML = boringButton(id);
       // When the hide filter is active, the just-marked item should disappear
       // from view; the cheapest correct option is a full re-render.
       if (state.hideBoring) render();

@@ -126,6 +126,46 @@ Google sign-in completes.
    ```
 4. **Save**.
 
+## Stage E — Aggregate counts function
+
+Per-user RLS on `user_state` blocks the client from running a `count(*)`
+across rows, which is what we need to display "how many people starred
+this" under each event button. The fix is a `security definer` function
+that returns only aggregate counts (no per-user data) and is granted to
+`authenticated` only — signed-out users still can't call it.
+
+Apply via the Supabase SQL editor (or the supabase MCP migration tool,
+the same way the original schema was applied):
+
+```sql
+create or replace function public.item_mark_counts()
+returns table (item_id text, stars bigint, borings bigint)
+language sql
+security definer
+stable
+set search_path = public
+as $$
+  select
+    item_id,
+    count(*) filter (where kind = 'star')   as stars,
+    count(*) filter (where kind = 'boring') as borings
+  from (
+    select unnest(starred) as item_id, 'star'::text   as kind from public.user_state
+    union all
+    select unnest(boring)  as item_id, 'boring'::text as kind from public.user_state
+  ) t
+  group by item_id;
+$$;
+
+revoke all on function public.item_mark_counts() from public, anon;
+grant execute on function public.item_mark_counts() to authenticated;
+```
+
+After applying, verify in **Database → Functions** that the function
+exists, and confirm the `anon` role has no execute privilege (the
+`revoke` line above takes care of that — the function should only show
+`authenticated` in its permissions list).
+
 ## Verification
 
 Open an **incognito window** (no leftover sessions) and:

@@ -432,6 +432,26 @@ a.tt-col-name:hover .ext-icon {
   transition: color 0.1s ease, transform 0.08s ease;
 }
 
+/* Stack glyph above the aggregate count inside each mark button. The .star
+   and .boring buttons share the layout; the count itself is rendered only
+   for signed-in users when the count is > 0 (see starButton/boringButton). */
+.star, .boring {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.mark-count {
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--text-faint);
+  margin-top: 1px;
+}
+
+.star.on .mark-count { color: var(--accent); }
+.boring.on .mark-count { color: var(--text); }
+
 .star:hover { color: var(--accent-dim); }
 .star.on { color: var(--accent); }
 .star:active { transform: scale(1.15); }
