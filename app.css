@@ -171,6 +171,28 @@ a:hover { text-decoration: underline; }
 
 .toggle input { margin: 0; }
 
+/* Star filter radio group. Three pills grouped behind a "★ Show:" label so
+   they visually read as one control. */
+.filter-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-group-label {
+  font-size: 13px;
+  color: var(--text-dim);
+  user-select: none;
+}
+
+.filter-radio { gap: 4px; }
+
+/* "Anyone's" option needs aggregate counts, which are only fetched for
+   signed-in users. Hide until the body class is set in handleAuthChange. */
+.requires-auth { display: none; }
+body.signed-in .requires-auth { display: inline-flex; }
+
 /* ----- Program area ----- */
 .program {
   padding: 16px;

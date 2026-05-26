@@ -14,7 +14,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
 const STAR_KEY = 'aamas2026:starred';
 const BORING_KEY = 'aamas2026:boring';
 const PREFS_KEY = 'aamas2026:prefs';
-const PREF_FIELDS = ['starredOnly', 'hidePast', 'nextWindow', 'timetable', 'hideBoring'];
+const PREF_FIELDS = ['starredFilter', 'hidePast', 'nextWindow', 'timetable', 'hideBoring'];
 const DATA_URL = 'program-merged.json';
 
 // Map full day strings -> short tab labels and date keys.
@@ -35,7 +35,7 @@ const state = {
   markCounts: new Map(),  // item_id -> { stars: number, borings: number }; filled on sign-in
   activeDay: 'All',    // 'All' or one of the day strings
   search: '',
-  starredOnly: false,
+  starredFilter: 'all',  // 'all' | 'me' | 'anyone' (anyone uses markCounts → signed-in only)
   hidePast: false,
   nextWindow: false,
   timetable: false,
@@ -49,6 +49,12 @@ const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 }[c]));
+
+function syncStarRadios() {
+  document.querySelectorAll('input[name="starredFilter"]').forEach((el) => {
+    el.checked = el.value === state.starredFilter;
+  });
+}
 
 // ---------------- Time-based filters ("Hide past" + "Next 2 hours") ----------------
 // Both filters use the user's local clock. For attendees that's Cyprus time
@@ -228,7 +234,7 @@ function loadPrefs() {
     if (!raw) return;
     const p = JSON.parse(raw);
     for (const k of PREF_FIELDS) {
-      if (typeof p?.[k] === 'boolean') state[k] = p[k];
+      if (p && k in p && typeof p[k] === typeof state[k]) state[k] = p[k];
     }
   } catch {}
 }
@@ -300,11 +306,18 @@ async function handleAuthChange(session) {
   if (!user) {
     state.uid = null;
     state.markCounts = new Map();
+    document.body.classList.remove('signed-in');
+    if (state.starredFilter === 'anyone') {
+      state.starredFilter = 'all';
+      savePrefs();
+      syncStarRadios();
+    }
     renderAuthArea(null);
     render();
     return;
   }
   state.uid = user.id;
+  document.body.classList.add('signed-in');
   const { data, error } = await supabase
     .from('user_state')
     .select('starred, boring')
@@ -375,11 +388,17 @@ function isSessionVisible(s) {
   const q = state.search;
   if (!sessionMatchesSearch(s, q)) return false;
   if (state.hideBoring && state.boring.has(s._id)) return false;
-  if (state.starredOnly) {
+  const filter = state.starredFilter;
+  if (filter === 'me') {
     const sessionStarred = state.starred.has(s._id);
     const anyPaperStarred = (s.papers || []).some(
       (p) => !p.is_heading && state.starred.has(p._id),
     );
+    if (!sessionStarred && !anyPaperStarred) return false;
+  } else if (filter === 'anyone') {
+    const stars = (id) => state.markCounts.get(id)?.stars || 0;
+    const sessionStarred = stars(s._id) > 0;
+    const anyPaperStarred = (s.papers || []).some((p) => !p.is_heading && stars(p._id) > 0);
     if (!sessionStarred && !anyPaperStarred) return false;
   }
   return true;
@@ -462,7 +481,7 @@ function sessionHTML(s, dayDate, slotRange, tf) {
   const totalCount = (s.papers || []).length;
   const itemNoun = totalCount === 1 ? 'item' : 'items';
   const isDC = s.track === 'Doctoral Consortium';
-  const forceOpen = state.starredOnly || !!state.search;
+  const forceOpen = state.starredFilter !== 'all' || !!state.search;
   const openAttr = (forceOpen || !isDC) ? ' open' : '';
 
   const papersBlock = papersHTML
@@ -729,7 +748,18 @@ function wireEvents() {
       render();
     });
   };
-  bindToggle('starredOnly', 'starredOnly');
+  // Star filter radio group: 'all' | 'me' | 'anyone'. The "anyone" option is
+  // present in the DOM but hidden via CSS until body.signed-in is set.
+  document.querySelectorAll('input[name="starredFilter"]').forEach((el) => {
+    el.addEventListener('change', (e) => {
+      if (!e.target.checked) return;
+      state.starredFilter = e.target.value;
+      savePrefs();
+      render();
+    });
+  });
+  syncStarRadios();
+
   bindToggle('hidePast', 'hidePast');
   bindToggle('nextWindow', 'nextWindow');
   bindToggle('timetable', 'timetable');
@@ -751,7 +781,7 @@ function wireEvents() {
       if (card) card.classList.toggle('starred', on);
       starBtn.outerHTML = starButton(id);
       $('#starCount').textContent = String(state.starred.size);
-      if (state.starredOnly) render();
+      if (state.starredFilter !== 'all') render();
       return;
     }
     const boringBtn = e.target.closest('.boring');

@@ -21,10 +21,21 @@
     </div>
     <div class="topbar-row controls">
       <input id="searchBox" type="search" placeholder="Search title, author, track, chair…" autocomplete="off">
-      <label class="toggle">
-        <input type="checkbox" id="starredOnly">
-        <span>★ Starred only</span>
-      </label>
+      <span class="filter-group" role="radiogroup" aria-label="Star filter">
+        <span class="filter-group-label">★ Show:</span>
+        <label class="toggle filter-radio">
+          <input type="radio" name="starredFilter" value="all">
+          <span>all</span>
+        </label>
+        <label class="toggle filter-radio">
+          <input type="radio" name="starredFilter" value="me">
+          <span>mine</span>
+        </label>
+        <label class="toggle filter-radio requires-auth">
+          <input type="radio" name="starredFilter" value="anyone">
+          <span>anyone's</span>
+        </label>
+      </span>
       <label class="toggle">
         <input type="checkbox" id="hideBoring">
         <span>👎 Hide boring</span>
