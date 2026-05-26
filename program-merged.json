@@ -3421,6 +3421,45 @@
     "day": "Wednesday, 27 May",
     "slots": [
       {
+        "slot": "Opening · 08:30–09:00",
+        "sessions": [
+          {
+            "key": "Opening Session",
+            "display": "Opening Session",
+            "code": "OPENING",
+            "track": "Plenary",
+            "description": "Wednesday, 27 May · 08:30–09:00",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Keynote · 09:00–10:00",
+        "sessions": [
+          {
+            "key": "Keynote: Sabine Hauert",
+            "display": "Keynote: Sabine Hauert — Designing Trustworthy Robot Swarms for Real-World Applications",
+            "code": "KEYNOTE",
+            "track": "Keynote",
+            "description": "Wednesday, 27 May · 09:00–10:00 · Sabine Hauert (University of Bristol)",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Break · 10:00–10:45",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Wed AM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Wednesday, 27 May · 10:00–10:45",
+            "papers": []
+          }
+        ]
+      },
+      {
         "slot": "Morning · 10:45–12:30",
         "sessions": [
           {
@@ -3936,6 +3975,19 @@
         ]
       },
       {
+        "slot": "Lunch · 12:30–14:00",
+        "sessions": [
+          {
+            "key": "Lunch · Wed",
+            "display": "Lunch",
+            "code": "LUNCH",
+            "track": "Break",
+            "description": "Wednesday, 27 May · 12:30–14:00",
+            "papers": []
+          }
+        ]
+      },
+      {
         "slot": "Afternoon · 14:00–15:45",
         "sessions": [
           {
@@ -4404,12 +4456,77 @@
             "room": "Leda"
           }
         ]
+      },
+      {
+        "slot": "Break · 15:45–16:30",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Wed PM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Wednesday, 27 May · 15:45–16:30",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Award Talk · 16:30–17:30",
+        "sessions": [
+          {
+            "key": "Award Talk · Wed",
+            "display": "Award Talk",
+            "code": "AWARD",
+            "track": "Plenary",
+            "description": "Wednesday, 27 May · 16:30–17:30",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Panel · 17:30–18:30",
+        "sessions": [
+          {
+            "key": "Panel · Wed",
+            "display": "Panel",
+            "code": "PANEL",
+            "track": "Plenary",
+            "description": "Wednesday, 27 May · 17:30–18:30",
+            "papers": []
+          }
+        ]
       }
     ]
   },
   {
     "day": "Thursday, 28 May",
     "slots": [
+      {
+        "slot": "Award Plenary · 09:00–10:00",
+        "sessions": [
+          {
+            "key": "Award Plenary: Sven Koenig",
+            "display": "Autonomous Agents Research Award Plenary: Sven Koenig",
+            "code": "AWARD",
+            "track": "Plenary",
+            "description": "Thursday, 28 May · 09:00–10:00 · Sven Koenig (UC Irvine) — 2026 ACM/SIGAI Autonomous Agents Research Award",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Break · 10:00–10:45",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Thu AM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Thursday, 28 May · 10:00–10:45",
+            "papers": []
+          }
+        ]
+      },
       {
         "slot": "Morning · 10:45–12:30",
         "sessions": [
@@ -4978,6 +5095,19 @@
         ]
       },
       {
+        "slot": "Lunch · 12:30–13:30",
+        "sessions": [
+          {
+            "key": "Lunch · Thu",
+            "display": "Lunch",
+            "code": "LUNCH",
+            "track": "Break",
+            "description": "Thursday, 28 May · 12:30–13:30",
+            "papers": []
+          }
+        ]
+      },
+      {
         "slot": "Afternoon · 13:30–15:15",
         "sessions": [
           {
@@ -5455,6 +5585,32 @@
         ]
       },
       {
+        "slot": "Break · 15:15–16:00",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Thu PM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Thursday, 28 May · 15:15–16:00",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Keynote · 16:00–17:00",
+        "sessions": [
+          {
+            "key": "Keynote: Michael Wooldridge",
+            "display": "Keynote: Michael Wooldridge — Rethinking Multi-agent Systems in the Era of LLMs",
+            "code": "KEYNOTE",
+            "track": "Keynote",
+            "description": "Thursday, 28 May · 16:00–17:00 · Michael Wooldridge (University of Oxford)",
+            "papers": []
+          }
+        ]
+      },
+      {
         "slot": "Social Event · 17:15–23:00",
         "sessions": [
           {
@@ -5472,6 +5628,32 @@
   {
     "day": "Friday, 29 May",
     "slots": [
+      {
+        "slot": "Keynote · 09:00–10:00",
+        "sessions": [
+          {
+            "key": "EurAI Keynote: Joanna Bryson",
+            "display": "EurAI Keynote: Joanna Bryson — The Limits of Artificial Agency",
+            "code": "KEYNOTE",
+            "track": "Keynote",
+            "description": "Friday, 29 May · 09:00–10:00 · Joanna Bryson (Hertie School, Berlin)",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Break · 10:00–10:45",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Fri AM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Friday, 29 May · 10:00–10:45",
+            "papers": []
+          }
+        ]
+      },
       {
         "slot": "Morning · 10:45–12:30",
         "sessions": [
@@ -5988,6 +6170,19 @@
         ]
       },
       {
+        "slot": "Lunch · 12:30–14:00",
+        "sessions": [
+          {
+            "key": "Lunch · Fri",
+            "display": "Lunch",
+            "code": "LUNCH",
+            "track": "Break",
+            "description": "Friday, 29 May · 12:30–14:00",
+            "papers": []
+          }
+        ]
+      },
+      {
         "slot": "Afternoon · 14:00–15:45",
         "sessions": [
           {
@@ -6387,6 +6582,32 @@
               }
             ],
             "room": "Leda"
+          }
+        ]
+      },
+      {
+        "slot": "Break · 15:45–16:30",
+        "sessions": [
+          {
+            "key": "Coffee Break / Posters / Demos · Fri PM",
+            "display": "Coffee Break / Posters / Demos",
+            "code": "BREAK",
+            "track": "Break",
+            "description": "Friday, 29 May · 15:45–16:30",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "slot": "Community Meeting · 16:30–17:45",
+        "sessions": [
+          {
+            "key": "Community Meeting",
+            "display": "Community Meeting",
+            "code": "COMMUNITY",
+            "track": "Plenary",
+            "description": "Friday, 29 May · 16:30–17:45",
+            "papers": []
           }
         ]
       }
