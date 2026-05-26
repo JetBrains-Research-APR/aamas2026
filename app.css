@@ -523,7 +523,7 @@ a.tt-col-name:hover .ext-icon {
   margin-top: 32px;
 }
 
-/* ----- Workshop timetable (parallel view, time-banded grid) ----- */
+/* ----- Parallel-sessions timetable (workshops + Wed–Fri tracks) ----- */
 .timetable {
   --tt-rail-w: 56px;
   --tt-col-w: 240px;
@@ -535,12 +535,18 @@ a.tt-col-name:hover .ext-icon {
   background: var(--bg-card);
 }
 
-/* One big grid: column 1 is the time rail, columns 2..N+1 are workshops.
+/* One big grid: column 1 is the time rail, columns 2..N+1 are sessions.
    Row 1 is the sticky header row; subsequent rows are 30-min time bands
-   whose height auto-fits the densest column. */
+   whose height auto-fits the densest column. The `no-rail` variant is used
+   for conference tracks where papers carry no individual times — the rail
+   column is dropped and each session column has a single stacked cell. */
 .tt-grid {
   display: grid;
   grid-template-columns: var(--tt-rail-w) repeat(var(--col-count), var(--tt-col-w));
+}
+
+.timetable.no-rail .tt-grid {
+  grid-template-columns: repeat(var(--col-count), var(--tt-col-w));
 }
 
 .tt-rail-header,

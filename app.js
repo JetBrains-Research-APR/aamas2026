@@ -505,18 +505,19 @@ function sessionHTML(s, dayDate, slotRange, tf) {
   </article>`;
 }
 
-// Time-banded columns for the workshops slot. Each surviving workshop becomes
-// a column; the day is divided into TT_BAND_MIN-minute bands and papers are
-// grouped into the band their start time falls in. Each row's height grows to
-// fit the densest column in that band — so cards stay readable even when many
-// short talks land in the same window. Strict pixel-perfect time alignment is
-// traded away for legibility; columns still align at band boundaries, and the
-// card itself shows the precise start/end time. Workshops with zero usable
+// Parallel-sessions timetable. Each surviving session becomes a column. When
+// papers carry individual times (workshops), the day is divided into
+// TT_BAND_MIN-minute bands and papers are grouped into the band their start
+// time falls in — cards stay readable even when many short talks land in the
+// same window. When papers don't carry times (Wed–Fri conference tracks,
+// where only the slot itself is timed), the rail is dropped and each column
+// becomes a single cell stacking all its papers. Sessions with zero usable
 // papers (e.g. "schedule not yet published") drop out but remain in card view.
 const TT_BAND_MIN = 30;
 
 function timetableHTML(sessions, dayDate, slotRange, tf) {
   const cols = [];
+  let anyTimed = false;
   for (const s of sessions) {
     const items = [];
     for (const p of s.papers || []) {
@@ -524,34 +525,14 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
       if (!paperPasses(p, dayDate, slotRange, tf)) continue;
       if (!p.is_heading && state.hideBoring && state.boring.has(p._id)) continue;
       const r = parseTimeRange(p.time);
-      if (!r) continue;
+      if (r) anyTimed = true;
       items.push({ p, range: r });
     }
     if (items.length) cols.push({ session: s, items });
   }
   if (!cols.length) {
-    return '<div class="tt-empty">No timed workshop entries match the current filters.</div>';
+    return '<div class="tt-empty">No entries match the current filters.</div>';
   }
-
-  let lo = Infinity, hi = -Infinity;
-  for (const c of cols) for (const { range } of c.items) {
-    if (range.start < lo) lo = range.start;
-    if (range.end > hi) hi = range.end;
-  }
-  lo = Math.floor(lo / TT_BAND_MIN) * TT_BAND_MIN;
-  hi = Math.ceil(hi / TT_BAND_MIN) * TT_BAND_MIN;
-  const bandCount = (hi - lo) / TT_BAND_MIN;
-  const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
-
-  // For each column, bucket its items by band index of the start time.
-  const buckets = cols.map(() => Array.from({ length: bandCount }, () => []));
-  cols.forEach((c, ci) => {
-    for (const item of c.items) {
-      const bi = Math.min(bandCount - 1, Math.max(0, Math.floor((item.range.start - lo) / TT_BAND_MIN)));
-      buckets[ci][bi].push(item);
-    }
-    buckets[ci].forEach((arr) => arr.sort((a, b) => a.range.start - b.range.start));
-  });
 
   const headers = cols.map((c) => {
     const s = c.session;
@@ -571,22 +552,6 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     </div>`;
   }).join('');
 
-  // Within a band cell, group items that share an identical parsed time range.
-  // This collapses things like "Poster Session" + 8 posters all marked 14:30–
-  // 15:30 into one heading card with a <details> list, so a dense block doesn't
-  // blow the row's height out.
-  const groupItems = (items) => {
-    const map = new Map();
-    for (const it of items) {
-      const key = `${it.range.start}-${it.range.end}`;
-      let g = map.get(key);
-      if (!g) { g = { heading: null, papers: [], time: it.p.time, range: it.range }; map.set(key, g); }
-      if (it.p.is_heading && !g.heading) g.heading = it.p;
-      else g.papers.push(it.p);
-    }
-    return [...map.values()].sort((a, b) => a.range.start - b.range.start);
-  };
-
   const paperCard = (p) => {
     const cls = state.starred.has(p._id) ? 'tt-card starred' : 'tt-card';
     return `<div class="${cls}">
@@ -602,6 +567,58 @@ function timetableHTML(sessions, dayDate, slotRange, tf) {
     <div class="tt-card-time">${esc(h.time || '')}</div>
     <div class="tt-card-title">${esc(h.title)}</div>
   </div>`;
+
+  // Conference-track mode: no individual paper times, so skip the band rail
+  // and stack each column's items in a single cell. The slot heading above
+  // already shows the slot's time range.
+  if (!anyTimed) {
+    const cells = cols.map((c) => {
+      const cards = c.items.map((it) => (it.p.is_heading ? headingCard(it.p) : paperCard(it.p))).join('');
+      return `<div class="tt-cell">${cards}</div>`;
+    }).join('');
+    return `<div class="timetable no-rail" style="--col-count: ${cols.length}">
+      <div class="tt-grid">${headers}${cells}</div>
+    </div>`;
+  }
+
+  let lo = Infinity, hi = -Infinity;
+  for (const c of cols) for (const { range } of c.items) {
+    if (!range) continue;
+    if (range.start < lo) lo = range.start;
+    if (range.end > hi) hi = range.end;
+  }
+  lo = Math.floor(lo / TT_BAND_MIN) * TT_BAND_MIN;
+  hi = Math.ceil(hi / TT_BAND_MIN) * TT_BAND_MIN;
+  const bandCount = (hi - lo) / TT_BAND_MIN;
+  const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+
+  // For each column, bucket its timed items by band index of the start time.
+  // Untimed items are skipped here (only possible in a mixed-mode slot).
+  const buckets = cols.map(() => Array.from({ length: bandCount }, () => []));
+  cols.forEach((c, ci) => {
+    for (const item of c.items) {
+      if (!item.range) continue;
+      const bi = Math.min(bandCount - 1, Math.max(0, Math.floor((item.range.start - lo) / TT_BAND_MIN)));
+      buckets[ci][bi].push(item);
+    }
+    buckets[ci].forEach((arr) => arr.sort((a, b) => a.range.start - b.range.start));
+  });
+
+  // Within a band cell, group items that share an identical parsed time range.
+  // This collapses things like "Poster Session" + 8 posters all marked 14:30–
+  // 15:30 into one heading card with a <details> list, so a dense block doesn't
+  // blow the row's height out.
+  const groupItems = (items) => {
+    const map = new Map();
+    for (const it of items) {
+      const key = `${it.range.start}-${it.range.end}`;
+      let g = map.get(key);
+      if (!g) { g = { heading: null, papers: [], time: it.p.time, range: it.range }; map.set(key, g); }
+      if (it.p.is_heading && !g.heading) g.heading = it.p;
+      else g.papers.push(it.p);
+    }
+    return [...map.values()].sort((a, b) => a.range.start - b.range.start);
+  };
 
   const groupCard = (g) => {
     const time = g.heading?.time || g.time || '';
@@ -658,8 +675,12 @@ function dayHTML(day, tf) {
     if (tf) sessions = sessions.filter((s) => sessionPasses(s, dayDate, slotRange, tf));
     visibleSessions += sessions.length;
     if (!sessions.length) return '';
-    const isWorkshopsSlot = slot.slot === 'Workshops';
-    const body = state.timetable && isWorkshopsSlot
+    // Parallel-track slots: workshops (Mon/Tue) plus main-track Morning and
+    // Afternoon slots (Wed–Fri). Single-session slots fall through to the
+    // regular card layout regardless of the checkbox state.
+    const isParallelSlot = sessions.length > 1
+      && (slot.slot === 'Workshops' || /^(Morning|Afternoon)\b/.test(slot.slot));
+    const body = state.timetable && isParallelSlot
       ? timetableHTML(sessions, dayDate, slotRange, tf)
       : `<div class="session-grid">${sessions.map((s) => sessionHTML(s, dayDate, slotRange, tf)).join('')}</div>`;
     return `<section class="slot">
