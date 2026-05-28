@@ -786,6 +786,8 @@ function wireEvents() {
   bindToggle('timetable', 'timetable');
   bindToggle('hideBoring', 'hideBoring');
 
+  $('#downloadBtn').addEventListener('click', downloadMarkings);
+
   // Star + boring button clicks (event delegation on the program root).
   // After toggling, we bump the local count map and re-render the button via
   // outerHTML using the same template — this keeps the glyph + count span in
@@ -818,6 +820,66 @@ function wireEvents() {
       if (state.hideBoring) render();
     }
   });
+}
+
+// ---------------- Download markings ----------------
+function downloadMarkings() {
+  const csvRow = (cells) =>
+    cells.map((c) => {
+      const s = String(c ?? '');
+      return s.includes(',') || s.includes('"') || s.includes('\n')
+        ? '"' + s.replace(/"/g, '""') + '"'
+        : s;
+    }).join(',');
+
+  const lines = [csvRow(['marking', 'title', 'authors', 'date', 'time', 'session'])];
+
+  for (const day of state.data) {
+    for (const slot of day.slots) {
+      for (const sess of slot.sessions) {
+        const isStarred = state.starred.has(sess._id);
+        const isBoring = state.boring.has(sess._id);
+        if (isStarred || isBoring) {
+          const marking = [isStarred && 'star', isBoring && 'boring'].filter(Boolean).join('+');
+          lines.push(csvRow([
+            marking,
+            sess.display || sess.code || '',
+            sess.chair || '',
+            day.day,
+            slot.slot,
+            '',
+          ]));
+        }
+        for (const p of sess.papers || []) {
+          if (p.is_heading) continue;
+          const isStarredP = state.starred.has(p._id);
+          const isBoringP = state.boring.has(p._id);
+          if (!isStarredP && !isBoringP) continue;
+          const marking = [isStarredP && 'star', isBoringP && 'boring'].filter(Boolean).join('+');
+          lines.push(csvRow([
+            marking,
+            p.title || '',
+            p.authors || '',
+            day.day,
+            p.time || slot.slot,
+            sess.display || sess.code || '',
+          ]));
+        }
+      }
+    }
+  }
+
+  const csv = lines.join('\n');
+  // BOM prefix makes Excel auto-detect UTF-8
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'aamas2026-markings.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 // ---------------- Init ----------------
